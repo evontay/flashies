@@ -1,5 +1,6 @@
 <h1><%= @deck.title %></h1>
 <p><%= @deck.description %></p>
+<p>By <%= @deck.user.email %></p>
 
 <%= link_to "Edit", edit_deck_path %>
 <%= link_to "Delete", deck_path, method: :delete, data: {confirm: "Are you sure?"} %>
