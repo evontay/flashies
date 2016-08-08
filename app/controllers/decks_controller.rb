@@ -2,7 +2,10 @@ class DecksController < ApplicationController
   before_action :find_deck, only: [:show, :edit, :update, :destroy]
 
   def index
-    @decks = Deck.all.order("created_at DESC")
+
+    # @decks = Deck.all.order("created_at DESC")
+    @decks = Deck.where(user_id: current_user)
+
   end
 
   def new

@@ -1,6 +1,6 @@
 Rails.application.routes.draw do
   devise_for :users
-  root '/'
+  root 'static#index'
   resources :decks do
     resources :cards
   end
