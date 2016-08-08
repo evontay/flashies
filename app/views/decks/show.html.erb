@@ -8,7 +8,7 @@
   <p><%= card.answer %></p>
 <% end %>
 
-<%= link_to "Add card", new_deck_card_path(@deck.id) %>
-<%= link_to "Edit", edit_deck_path %>
-<%= link_to "Delete", deck_path, method: :delete, data: {confirm: "Are you sure?"} %>
-<%= link_to "Back", root_path %>
+<%= link_to "Add a card", new_deck_card_path(@deck.id) %>
+<%= link_to "Edit Deck", edit_deck_path %>
+<%= link_to "Delete this deck", deck_path, method: :delete, data: {confirm: "Are you sure?"} %>
+<%= link_to "Home", root_path %>

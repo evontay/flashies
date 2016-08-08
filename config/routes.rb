@@ -1,7 +1,7 @@
 Rails.application.routes.draw do
   devise_for :users
+  root '/'
   resources :decks do
     resources :cards
   end
-  root "decks#index"
 end
