@@ -18,6 +18,7 @@
 
     <nav>
       <% if user_signed_in? %>
+        <%= current_user.username %>
         <%= link_to 'New Deck', new_deck_path %>
         <%= link_to 'My Decks', decks_path %>
         <%= link_to 'Account', edit_user_registration_path %>
