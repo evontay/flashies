@@ -23,6 +23,22 @@ class CardsController < ApplicationController
   def show
   end
 
+  def edit
+  end
+
+  def update
+    if @card.update(card_params)
+      redirect_to @deck, notice: "Card was Successfully updated!"
+    else
+      render 'edit'
+    end
+  end
+
+  def destroy
+    @card.destroy
+    redirect_to @deck
+  end
+
   private
 
 

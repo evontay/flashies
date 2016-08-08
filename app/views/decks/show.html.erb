@@ -6,6 +6,8 @@
 <% @deck.cards.each do |card| %>
   <h3><%= card.prompt_text %></h3>
   <p><%= card.answer %></p>
+  <%= link_to "Edit this card", edit_deck_card_path(@deck.id, card.id) %>
+  <%= link_to "Delete this card", deck_card_path(@deck.id, card.id), method: :delete, data: {confirm: "Are you sure?"} %>
 <% end %>
 
 <%= link_to "Add a card", new_deck_card_path(@deck.id) %>
