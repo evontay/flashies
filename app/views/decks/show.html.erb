@@ -2,6 +2,13 @@
 <p><%= @deck.description %></p>
 <p>By <%= @deck.user.email %></p>
 
+<h2>Cards</h2>
+<% @deck.cards.each do |card| %>
+  <h3><%= card.prompt_text %></h3>
+  <p><%= card.answer %></p>
+<% end %>
+
+<%= link_to "Add card", new_deck_card_path(@deck.id) %>
 <%= link_to "Edit", edit_deck_path %>
 <%= link_to "Delete", deck_path, method: :delete, data: {confirm: "Are you sure?"} %>
 <%= link_to "Back", root_path %>
