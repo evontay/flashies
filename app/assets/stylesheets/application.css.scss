@@ -1,0 +1,279 @@
+/*
+ * This is a manifest file that'll be compiled into application.css, which will include all the files
+ * listed below.
+ *
+ * Any CSS and SCSS file within this directory, lib/assets/stylesheets, vendor/assets/stylesheets,
+ * or any plugin's vendor/assets/stylesheets directory can be referenced here using a relative path.
+ *
+ * You're free to add application-wide styles to this file and they'll appear at the bottom of the
+ * compiled file so the styles you add here take precedence over styles defined in any other CSS/SCSS
+ * files in this directory. Styles in this file should be added after the last require_* statement.
+ * It is generally better to create a new file per style scope.
+ *
+ *= require_tree .
+ *= require_self
+
+ */
+
+ // @import 'bootstrap-sprockets';
+ // @import 'bootstrap';
+
+// @import "materialize/components/color";
+// $primary-color: color("blue", "lighten-2") !default;
+@import 'materialize';
+
+
+body {
+  font-family: 'Raleway', sans-serif;
+  background-color: #eee;
+  background: url('noisePattern.png');
+  background-repeat: repeat;
+}
+// COLOR ================
+$blue: #0000ff;
+$darkblue: #2e3192;
+$pink: #ff00ff;
+$slate: #4d4d4d;
+$light: #f2f2f2;
+
+.blue {color: $blue;}
+.darkblue {color: $darkblue;}
+.pink {color: $pink;}
+.slate {color: $slate;}
+.white {color: white;}
+.light {color: $light; }
+
+a {color: inherit;}
+a:hover {
+  -webkit-transition: 0.2s ease-out;
+  -moz-transition: 0.2s ease-out;
+  transition: 0.2s ease-out;
+}
+
+// TYPOGRAPHY ===================
+h1, h2, h3, h4, h5, h6 {
+  font-weight: 800;
+}
+
+.em {
+  font-style: italic;
+}
+
+p {
+  font-weight: 600;
+  font-size: 1em;
+}
+
+h1 {font-size: 3em;}
+h2 {font-size: 2.5em;}
+h3 {font-size: 2em;}
+h4 {font-size: 1.8em;}
+h5 {font-size: 1.5em;}
+h6 {font-size: 1.3em;}
+
+// LAYOUT ===================
+.wrapper {
+  width: 90%;
+  margin: 0 auto;
+}
+
+.center {
+  text-align: center;
+  margin: 0 auto;
+}
+
+.toppad {
+  padding-top: 20px;
+}
+
+.bottompad {
+  padding-bottom: 20px;
+}
+
+.alert {
+  margin: 10px auto;
+  padding: 10px;
+  border: 1px solid $pink;
+  border-radius: 3px;
+  color: $pink;
+  text-align: center;
+  max-width: 50%;
+
+}
+
+// NAV ===================
+.nav, .nav1 {
+  background-color: none;
+  color: blue;
+  img {
+    height: 30px;
+    margin-top: 10px;
+  }
+
+  .nav-wrapper {
+    width: 90%;
+    margin: 0 auto;
+  }
+  ul li {
+    display: inline;
+    padding-left: 20px;
+    font-size: 0.9em;
+
+  }
+}
+
+.nav {
+  li a {color: white;}
+  li a:hover {
+    color:$pink;
+    padding-bottom: 5px;
+    border-bottom: 2px solid white;
+  }
+
+  a img:hover {
+    border: none;
+  }
+}
+
+.nav1 {
+  li a {color: $darkblue;}
+  li a:hover {
+    color:$pink;
+    padding-bottom: 5px;
+    border-bottom: 2px solid $darkblue;
+  }
+  a img:hover {
+    border: none;
+  }
+}
+
+
+// DEVISE FORMS ===================
+.paper-wrap {
+  background-color: white;
+  padding: 30px;
+  border-radius: 4px;
+  margin: 20px auto 50px auto;
+  box-shadow: 2px 2px 5px -2px #999;
+  max-width: 600px;
+  font-size: 0.9em;
+  color: #999;
+
+  h2 {
+    color: $darkblue;
+  }
+  label {
+    font-size: 0.9em;
+    color: $slate;
+  }
+  .btn {
+    background-color: $slate;
+  }
+
+  a {color: $pink;}
+  a:hover {
+    color: $blue;
+    -webkit-transition: 0.2s ease-out;
+    -moz-transition: 0.2s ease-out;
+    transition: 0.2s ease-out;
+  }
+
+  input:-webkit-autofill, textarea:-webkit-autofill, select:-webkit-autofill {
+    background-color: $light;
+    padding-left: 10px;
+}
+
+  input:not([type]):focus:not([readonly]), input[type=text]:focus:not([readonly]), input[type=password]:focus:not([readonly]), input[type=email]:focus:not([readonly]), input[type=url]:focus:not([readonly]), input[type=time]:focus:not([readonly]), input[type=date]:focus:not([readonly]), input[type=datetime]:focus:not([readonly]), input[type=datetime-local]:focus:not([readonly]), input[type=tel]:focus:not([readonly]), input[type=number]:focus:not([readonly]), input[type=search]:focus:not([readonly]), textarea.materialize-textarea:focus:not([readonly]) {
+    border-bottom: 1px solid $pink;
+    box-shadow: 0 1px 0 0 $pink;
+  }
+
+  input:not([type]), input[type=text], input[type=password], input[type=email], input[type=url], input[type=time], input[type=date], input[type=datetime], input[type=datetime-local], input[type=tel], input[type=number], input[type=search], textarea.materialize-textarea {
+    margin: 0 0 10px 0;
+  }
+}
+
+
+// APP INDEX ===================
+.home {
+  //background-image: url('background.jpeg');
+
+  //background-color: $blue;
+  //background-blend-mode: multiply;
+  background:
+    linear-gradient(to right, $blue 0%, $pink 90%),
+    url('background.jpeg');
+  background-size: cover;
+  background-blend-mode: multiply, difference;
+
+  h5 {
+    font-weight: 600;
+    letter-spacing: 1px;
+  }
+
+  .wrapper {
+    padding: 100px 0;
+    text-align: center;
+  }
+
+  .home-logo {
+    height: 70px;
+  }
+}
+
+.intro {
+  margin: 0 auto;
+  max-width: 80%;
+  display: inline;
+  display: flex;
+  flex-direction: row;
+
+  .home-deck {
+    // background-image: url('noisePattern.png');
+    // background-color: $light;
+    // background-blend-mode: multiply;
+    flex:1;
+    background-image: url('deck.svg');
+    background-size: contain;
+    background-repeat: no-repeat;
+    background-position: center;
+    max-width: 230px;
+    height: 350px;
+    border-radius: 4px;
+    padding: 50px 30px 20px 25px;
+    margin: 0 auto;
+    color: $slate;
+    h3 {
+      color: $blue;
+    }
+    img {
+      height: 60px;
+    }
+  }
+}
+
+.start {
+  border-radius: 4px;
+  border: 2px solid white;
+  color: white;
+  padding: 10px;
+  max-width: 150px;
+  margin: 50px auto;
+}
+
+.start:hover {
+  color: $pink;
+  border: 2px solid $pink;
+  -webkit-transition: 0.2s ease-out;
+  -moz-transition: 0.2s ease-out;
+  transition: 0.2s ease-out;
+}
+// DECK INDEX ===================
+
+// DECK NEW ===================
+
+// CARD NEW ===================
+
+// FLASH MODE ===================
+
+// FOOTER ===================

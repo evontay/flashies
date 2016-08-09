@@ -1,11 +1,37 @@
-<h1>Flashies</h1>
-<h4>A quick way to memorise things.</h4>
+<div class="home">
+  <%= render "layouts/navbar2" %>
+  <div class="wrapper">
 
-<h3>Create</h3>
-<p>Create your own two-sided flashcards and organise them by decks.</p>
+    <img class="home-logo" src="<%= asset_path('flashieslogo_light.svg')%>"/>
 
-<h3>Flash 'Em!</h3>
-<p>Enter Flash Mode and start studying with your selected deck. Flip card to reveal answers.</p>
+    <h5 class="light em bottompad">Quick way to memorise things.</h5>
 
-<h3>Easy Share</h3>
-<p>Share your decks with friends easily with a public URL.</p>
+    <div class="intro">
+      <div class="home-deck">
+        <h3 class="em">Create</h3>
+        <img src="<%= asset_path('create.svg')%>"/>
+        <p>Write your own two-sided study flashcards and organise them by decks.</p>
+      </div>
+
+      <div class="home-deck">
+        <h3 class="em">Flash 'Em!</h3>
+        <img src="<%= asset_path('flash.svg')%>"/>
+        <p>Enter Flash Mode and start studying with your selected deck. Flip card to reveal answers.</p>
+      </div>
+
+      <div class="home-deck">
+        <h3 class="em">Share</h3>
+        <img src="<%= asset_path('share.svg')%>"/>
+        <p>Share your decks with friends easily with a public URL.</p>
+      </div>
+    </div>
+
+    <div class="start">
+      <% if user_signed_in? %>
+        <%= link_to 'My Decks', decks_path %>
+      <% else %>
+        <%= link_to 'Get Started', new_user_registration_path %>
+      <% end %>
+    </div>
+  </div>
+</div>

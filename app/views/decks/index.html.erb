@@ -1,9 +1,21 @@
-<h1>Decks</h1>
-<%= current_user.username %>
+<%= render "layouts/navbar" %>
+<div class="wrapper">
+  <h1 class="darkblue"><%= current_user.username %>'s Decks</h1>
 
-<% @decks.each do |deck| %>
-  <h2> <%= link_to deck.title, deck %> </h2>
-  <p><%= deck.description %></p>
-<% end %>
+  <div class="deck">
+    <h5> Deck Title</h5>
+    <p>deck.description</p>
 
-<%= link_to "New Deck", new_deck_path %>
+    <% if @deck === 0 %>
+      <h5> Deck Title</h5>
+      <p>deck.description</p>
+    <% else %>
+      <% @decks.each do |deck| %>
+        <h5> <%= link_to deck.title, deck %> </h5>
+        <p><%= deck.description %></p>
+      <% end %>
+    <% end %>
+  </div>
+
+  <%= link_to "New Deck", new_deck_path %>
+</div>
