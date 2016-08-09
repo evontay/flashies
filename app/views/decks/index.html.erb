@@ -2,6 +2,21 @@
 <div class="wrapper">
   <h1 class="darkblue center"><%= current_user.username %>'s Decks</h1>
 
+    <!-- Modal Trigger -->
+  <a class="add_btn modal-trigger" href="#modal1">Modal</a>
+
+  <!-- Modal Structure -->
+  <div id="modal1" class="modal">
+    <div class="modal-content">
+      <h4>Modal Header</h4>
+      <p>A bunch of text</p>
+    </div>
+    <div class="modal-footer">
+      <a href="#!" class=" modal-action modal-close waves-effect waves-green btn-flat">Agree</a>
+    </div>
+  </div>
+
+
   <div class="add_btn center">
     <%= link_to new_deck_path do %>
       <span class="shift"><i class="tiny material-icons">queue</i></span> New Deck
@@ -11,25 +26,13 @@
   <div class="deck-wrap">
     <% @decks.each do |deck| %>
       <div class="deck">
-        <h5> <%= link_to deck.title, deck %> </h5>
+        <h6> <%= link_to deck.title, deck %> </h6>
         <p><%= deck.description %></p>
 
       </div>
     <% end %>
   </div>
 
-  <!-- Modal Trigger -->
-<a class="waves-effect waves-light btn modal-trigger" href="#modal1">Modal</a>
 
-<!-- Modal Structure -->
-<div id="modal1" class="modal">
-  <div class="modal-content">
-    <h4>Modal Header</h4>
-    <p>A bunch of text</p>
-  </div>
-  <div class="modal-footer">
-    <a href="#!" class=" modal-action modal-close waves-effect waves-green btn-flat">Agree</a>
-  </div>
-</div>
 
 </div>

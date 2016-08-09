@@ -9084,3 +9084,2732 @@ Processing by DecksController#index as HTML
 Completed 200 OK in 166ms (Views: 151.0ms | ActiveRecord: 3.8ms)
 
 
+Started GET "/" for ::1 at 2016-08-10 00:39:23 +0800
+Processing by StaticController#index as HTML
+  Rendering static/index.html.erb within layouts/application
+  [1m[36mUser Load (0.7ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = $1 ORDER BY "users"."id" ASC LIMIT $2[0m  [["id", 2], ["LIMIT", 1]]
+  Rendered layouts/_navbar2.html.erb (9.6ms)
+  Rendered static/index.html.erb within layouts/application (20.6ms)
+Completed 200 OK in 156ms (Views: 147.5ms | ActiveRecord: 0.7ms)
+
+
+Started GET "/decks" for ::1 at 2016-08-10 00:39:38 +0800
+Processing by DecksController#index as HTML
+  [1m[36mUser Load (0.8ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = $1 ORDER BY "users"."id" ASC LIMIT $2[0m  [["id", 2], ["LIMIT", 1]]
+  Rendering decks/index.html.erb within layouts/application
+  Rendered layouts/_navbar.html.erb (3.9ms)
+  [1m[36mDeck Load (0.8ms)[0m  [1m[34mSELECT "decks".* FROM "decks" WHERE "decks"."user_id" = 2[0m
+  Rendered decks/index.html.erb within layouts/application (12.3ms)
+Completed 200 OK in 160ms (Views: 153.4ms | ActiveRecord: 1.6ms)
+
+
+Started GET "/decks" for ::1 at 2016-08-10 00:40:53 +0800
+Processing by DecksController#index as HTML
+  [1m[36mUser Load (1.0ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = $1 ORDER BY "users"."id" ASC LIMIT $2[0m  [["id", 2], ["LIMIT", 1]]
+  Rendering decks/index.html.erb within layouts/application
+  Rendered layouts/_navbar.html.erb (5.6ms)
+  [1m[36mDeck Load (0.7ms)[0m  [1m[34mSELECT "decks".* FROM "decks" WHERE "decks"."user_id" = 2[0m
+  Rendered decks/index.html.erb within layouts/application (12.8ms)
+Completed 200 OK in 2783ms (Views: 2774.1ms | ActiveRecord: 1.7ms)
+
+
+Started GET "/decks" for ::1 at 2016-08-10 00:41:14 +0800
+Processing by DecksController#index as HTML
+  [1m[36mUser Load (1.9ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = $1 ORDER BY "users"."id" ASC LIMIT $2[0m  [["id", 2], ["LIMIT", 1]]
+  Rendering decks/index.html.erb within layouts/application
+  Rendered layouts/_navbar.html.erb (3.3ms)
+  [1m[36mDeck Load (0.6ms)[0m  [1m[34mSELECT "decks".* FROM "decks" WHERE "decks"."user_id" = 2[0m
+  Rendered decks/index.html.erb within layouts/application (9.3ms)
+Completed 200 OK in 2642ms (Views: 2634.2ms | ActiveRecord: 2.6ms)
+
+
+Started GET "/decks" for ::1 at 2016-08-10 00:41:47 +0800
+Processing by DecksController#index as HTML
+  [1m[36mUser Load (1.4ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = $1 ORDER BY "users"."id" ASC LIMIT $2[0m  [["id", 2], ["LIMIT", 1]]
+  Rendering decks/index.html.erb within layouts/application
+  Rendered layouts/_navbar.html.erb (4.6ms)
+  [1m[36mDeck Load (0.7ms)[0m  [1m[34mSELECT "decks".* FROM "decks" WHERE "decks"."user_id" = 2[0m
+  Rendered decks/index.html.erb within layouts/application (11.3ms)
+Completed 200 OK in 2727ms (Views: 2719.3ms | ActiveRecord: 2.1ms)
+
+
+Started GET "/decks" for ::1 at 2016-08-10 00:43:46 +0800
+Processing by DecksController#index as HTML
+  [1m[36mUser Load (1.2ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = $1 ORDER BY "users"."id" ASC LIMIT $2[0m  [["id", 2], ["LIMIT", 1]]
+  Rendering decks/index.html.erb within layouts/application
+  Rendered layouts/_navbar.html.erb (4.4ms)
+  [1m[36mDeck Load (0.6ms)[0m  [1m[34mSELECT "decks".* FROM "decks" WHERE "decks"."user_id" = 2[0m
+  Rendered decks/index.html.erb within layouts/application (9.0ms)
+Completed 200 OK in 117ms (Views: 110.8ms | ActiveRecord: 1.7ms)
+
+
+Started GET "/decks" for ::1 at 2016-08-10 00:43:51 +0800
+Processing by DecksController#index as HTML
+  [1m[36mUser Load (1.5ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = $1 ORDER BY "users"."id" ASC LIMIT $2[0m  [["id", 2], ["LIMIT", 1]]
+  Rendering decks/index.html.erb within layouts/application
+  Rendered layouts/_navbar.html.erb (4.1ms)
+  [1m[36mDeck Load (1.0ms)[0m  [1m[34mSELECT "decks".* FROM "decks" WHERE "decks"."user_id" = 2[0m
+  Rendered decks/index.html.erb within layouts/application (11.0ms)
+Completed 200 OK in 118ms (Views: 109.3ms | ActiveRecord: 2.5ms)
+
+
+Started GET "/decks" for ::1 at 2016-08-10 00:43:57 +0800
+Processing by DecksController#index as HTML
+  [1m[36mUser Load (3.4ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = $1 ORDER BY "users"."id" ASC LIMIT $2[0m  [["id", 2], ["LIMIT", 1]]
+  Rendering decks/index.html.erb within layouts/application
+  Rendered layouts/_navbar.html.erb (35.3ms)
+  [1m[36mDeck Load (0.9ms)[0m  [1m[34mSELECT "decks".* FROM "decks" WHERE "decks"."user_id" = 2[0m
+  Rendered decks/index.html.erb within layouts/application (46.1ms)
+Completed 200 OK in 264ms (Views: 251.9ms | ActiveRecord: 4.3ms)
+
+
+Started GET "/decks" for ::1 at 2016-08-10 00:46:09 +0800
+Processing by DecksController#index as HTML
+  [1m[36mUser Load (1.6ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = $1 ORDER BY "users"."id" ASC LIMIT $2[0m  [["id", 2], ["LIMIT", 1]]
+  Rendering decks/index.html.erb within layouts/application
+  Rendered layouts/_navbar.html.erb (25.4ms)
+  [1m[36mDeck Load (1.3ms)[0m  [1m[34mSELECT "decks".* FROM "decks" WHERE "decks"."user_id" = 2[0m
+  Rendered decks/index.html.erb within layouts/application (39.7ms)
+Completed 200 OK in 461ms (Views: 424.8ms | ActiveRecord: 2.9ms)
+
+
+Started GET "/decks" for ::1 at 2016-08-10 00:46:34 +0800
+Processing by DecksController#index as HTML
+  [1m[36mUser Load (3.5ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = $1 ORDER BY "users"."id" ASC LIMIT $2[0m  [["id", 2], ["LIMIT", 1]]
+  Rendering decks/index.html.erb within layouts/application
+  Rendered layouts/_navbar.html.erb (4.4ms)
+  [1m[36mDeck Load (0.8ms)[0m  [1m[34mSELECT "decks".* FROM "decks" WHERE "decks"."user_id" = 2[0m
+  Rendered decks/index.html.erb within layouts/application (12.9ms)
+Completed 200 OK in 334ms (Views: 320.5ms | ActiveRecord: 4.3ms)
+
+
+Started GET "/decks" for ::1 at 2016-08-10 00:46:53 +0800
+Processing by DecksController#index as HTML
+  [1m[36mUser Load (8.0ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = $1 ORDER BY "users"."id" ASC LIMIT $2[0m  [["id", 2], ["LIMIT", 1]]
+  Rendering decks/index.html.erb within layouts/application
+  Rendered layouts/_navbar.html.erb (6.3ms)
+  [1m[36mDeck Load (1.0ms)[0m  [1m[34mSELECT "decks".* FROM "decks" WHERE "decks"."user_id" = 2[0m
+  Rendered decks/index.html.erb within layouts/application (19.4ms)
+Completed 200 OK in 255ms (Views: 219.4ms | ActiveRecord: 9.0ms)
+
+
+Started GET "/decks/6" for ::1 at 2016-08-10 00:48:32 +0800
+Processing by DecksController#show as HTML
+  Parameters: {"id"=>"6"}
+  [1m[36mDeck Load (2.2ms)[0m  [1m[34mSELECT  "decks".* FROM "decks" WHERE "decks"."id" = $1 LIMIT $2[0m  [["id", 6], ["LIMIT", 1]]
+  Rendering decks/show.html.erb within layouts/application
+  [1m[36mUser Load (1.9ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = $1 LIMIT $2[0m  [["id", 2], ["LIMIT", 1]]
+  [1m[36mCard Load (1.4ms)[0m  [1m[34mSELECT "cards".* FROM "cards" WHERE "cards"."deck_id" = $1[0m  [["deck_id", 6]]
+  Rendered decks/show.html.erb within layouts/application (15.1ms)
+Completed 200 OK in 204ms (Views: 194.1ms | ActiveRecord: 5.6ms)
+
+
+Started GET "/decks" for ::1 at 2016-08-10 00:48:33 +0800
+Processing by DecksController#index as HTML
+  [1m[36mUser Load (1.6ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = $1 ORDER BY "users"."id" ASC LIMIT $2[0m  [["id", 2], ["LIMIT", 1]]
+  Rendering decks/index.html.erb within layouts/application
+  Rendered layouts/_navbar.html.erb (4.0ms)
+  [1m[36mDeck Load (0.7ms)[0m  [1m[34mSELECT "decks".* FROM "decks" WHERE "decks"."user_id" = 2[0m
+  Rendered decks/index.html.erb within layouts/application (20.8ms)
+Completed 200 OK in 150ms (Views: 141.9ms | ActiveRecord: 2.3ms)
+
+
+Started GET "/decks" for ::1 at 2016-08-10 00:49:29 +0800
+Processing by DecksController#index as HTML
+  [1m[36mUser Load (3.2ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = $1 ORDER BY "users"."id" ASC LIMIT $2[0m  [["id", 2], ["LIMIT", 1]]
+  Rendering decks/index.html.erb within layouts/application
+  Rendered layouts/_navbar.html.erb (7.5ms)
+  [1m[36mDeck Load (1.0ms)[0m  [1m[34mSELECT "decks".* FROM "decks" WHERE "decks"."user_id" = 2[0m
+  Rendered decks/index.html.erb within layouts/application (15.7ms)
+Completed 200 OK in 3220ms (Views: 3210.5ms | ActiveRecord: 4.2ms)
+
+
+Started GET "/decks" for ::1 at 2016-08-10 00:50:32 +0800
+Processing by DecksController#index as HTML
+  [1m[36mUser Load (1.3ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = $1 ORDER BY "users"."id" ASC LIMIT $2[0m  [["id", 2], ["LIMIT", 1]]
+  Rendering decks/index.html.erb within layouts/application
+  Rendered layouts/_navbar.html.erb (6.4ms)
+  [1m[36mDeck Load (0.9ms)[0m  [1m[34mSELECT "decks".* FROM "decks" WHERE "decks"."user_id" = 2[0m
+  Rendered decks/index.html.erb within layouts/application (13.5ms)
+Completed 200 OK in 3584ms (Views: 3575.5ms | ActiveRecord: 2.2ms)
+
+
+Started GET "/decks" for ::1 at 2016-08-10 00:51:32 +0800
+Processing by DecksController#index as HTML
+  [1m[36mUser Load (1.5ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = $1 ORDER BY "users"."id" ASC LIMIT $2[0m  [["id", 2], ["LIMIT", 1]]
+  Rendering decks/index.html.erb within layouts/application
+  Rendered layouts/_navbar.html.erb (4.0ms)
+  [1m[36mDeck Load (0.8ms)[0m  [1m[34mSELECT "decks".* FROM "decks" WHERE "decks"."user_id" = 2[0m
+  Rendered decks/index.html.erb within layouts/application (9.4ms)
+Completed 200 OK in 2651ms (Views: 2642.0ms | ActiveRecord: 2.3ms)
+
+
+Started GET "/decks" for ::1 at 2016-08-10 00:52:24 +0800
+Processing by DecksController#index as HTML
+  [1m[36mUser Load (1.2ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = $1 ORDER BY "users"."id" ASC LIMIT $2[0m  [["id", 2], ["LIMIT", 1]]
+  Rendering decks/index.html.erb within layouts/application
+  Rendered layouts/_navbar.html.erb (4.2ms)
+  [1m[36mDeck Load (0.6ms)[0m  [1m[34mSELECT "decks".* FROM "decks" WHERE "decks"."user_id" = 2[0m
+  Rendered decks/index.html.erb within layouts/application (9.7ms)
+Completed 200 OK in 2676ms (Views: 2670.0ms | ActiveRecord: 1.8ms)
+
+
+Started GET "/decks" for ::1 at 2016-08-10 00:53:09 +0800
+Processing by DecksController#index as HTML
+  [1m[36mUser Load (8.2ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = $1 ORDER BY "users"."id" ASC LIMIT $2[0m  [["id", 2], ["LIMIT", 1]]
+  Rendering decks/index.html.erb within layouts/application
+  Rendered layouts/_navbar.html.erb (3.9ms)
+  [1m[36mDeck Load (4.4ms)[0m  [1m[34mSELECT "decks".* FROM "decks" WHERE "decks"."user_id" = 2[0m
+  Rendered decks/index.html.erb within layouts/application (14.5ms)
+Completed 200 OK in 233ms (Views: 213.3ms | ActiveRecord: 12.6ms)
+
+
+Started GET "/decks" for ::1 at 2016-08-10 00:53:44 +0800
+Processing by DecksController#index as HTML
+  [1m[36mUser Load (4.3ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = $1 ORDER BY "users"."id" ASC LIMIT $2[0m  [["id", 2], ["LIMIT", 1]]
+  Rendering decks/index.html.erb within layouts/application
+  Rendered layouts/_navbar.html.erb (3.5ms)
+  [1m[36mDeck Load (0.6ms)[0m  [1m[34mSELECT "decks".* FROM "decks" WHERE "decks"."user_id" = 2[0m
+  Rendered decks/index.html.erb within layouts/application (9.8ms)
+Completed 200 OK in 155ms (Views: 143.3ms | ActiveRecord: 5.0ms)
+
+
+Started GET "/decks" for ::1 at 2016-08-10 00:54:01 +0800
+Processing by DecksController#index as HTML
+  [1m[36mUser Load (1.0ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = $1 ORDER BY "users"."id" ASC LIMIT $2[0m  [["id", 2], ["LIMIT", 1]]
+  Rendering decks/index.html.erb within layouts/application
+  Rendered layouts/_navbar.html.erb (4.0ms)
+  [1m[36mDeck Load (0.7ms)[0m  [1m[34mSELECT "decks".* FROM "decks" WHERE "decks"."user_id" = 2[0m
+  Rendered decks/index.html.erb within layouts/application (9.7ms)
+Completed 200 OK in 129ms (Views: 122.3ms | ActiveRecord: 1.7ms)
+
+
+Started GET "/decks" for ::1 at 2016-08-10 00:54:08 +0800
+Processing by DecksController#index as HTML
+  [1m[36mUser Load (2.6ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = $1 ORDER BY "users"."id" ASC LIMIT $2[0m  [["id", 2], ["LIMIT", 1]]
+  Rendering decks/index.html.erb within layouts/application
+  Rendered layouts/_navbar.html.erb (6.7ms)
+  [1m[36mDeck Load (0.7ms)[0m  [1m[34mSELECT "decks".* FROM "decks" WHERE "decks"."user_id" = 2[0m
+  Rendered decks/index.html.erb within layouts/application (14.6ms)
+Completed 200 OK in 189ms (Views: 179.0ms | ActiveRecord: 3.4ms)
+
+
+Started GET "/decks" for ::1 at 2016-08-10 00:55:30 +0800
+Processing by DecksController#index as HTML
+  [1m[36mUser Load (1.2ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = $1 ORDER BY "users"."id" ASC LIMIT $2[0m  [["id", 2], ["LIMIT", 1]]
+  Rendering decks/index.html.erb within layouts/application
+  Rendered layouts/_navbar.html.erb (16.1ms)
+  [1m[36mDeck Load (0.7ms)[0m  [1m[34mSELECT "decks".* FROM "decks" WHERE "decks"."user_id" = 2[0m
+  Rendered decks/index.html.erb within layouts/application (28.0ms)
+Completed 200 OK in 225ms (Views: 216.4ms | ActiveRecord: 1.9ms)
+
+
+Started GET "/decks" for ::1 at 2016-08-10 00:55:45 +0800
+Processing by DecksController#index as HTML
+  [1m[36mUser Load (0.9ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = $1 ORDER BY "users"."id" ASC LIMIT $2[0m  [["id", 2], ["LIMIT", 1]]
+  Rendering decks/index.html.erb within layouts/application
+  Rendered layouts/_navbar.html.erb (3.5ms)
+  [1m[36mDeck Load (1.1ms)[0m  [1m[34mSELECT "decks".* FROM "decks" WHERE "decks"."user_id" = 2[0m
+  Rendered decks/index.html.erb within layouts/application (10.4ms)
+Completed 200 OK in 137ms (Views: 129.3ms | ActiveRecord: 1.9ms)
+
+
+Started GET "/decks" for ::1 at 2016-08-10 00:57:16 +0800
+Processing by DecksController#index as HTML
+  [1m[36mUser Load (3.6ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = $1 ORDER BY "users"."id" ASC LIMIT $2[0m  [["id", 2], ["LIMIT", 1]]
+  Rendering decks/index.html.erb within layouts/application
+  Rendered layouts/_navbar.html.erb (6.0ms)
+  [1m[36mDeck Load (0.9ms)[0m  [1m[34mSELECT "decks".* FROM "decks" WHERE "decks"."user_id" = 2[0m
+  Rendered decks/index.html.erb within layouts/application (14.3ms)
+Completed 200 OK in 3995ms (Views: 3984.9ms | ActiveRecord: 4.5ms)
+
+
+Started GET "/decks/6" for ::1 at 2016-08-10 00:58:44 +0800
+Processing by DecksController#show as HTML
+  Parameters: {"id"=>"6"}
+  [1m[36mDeck Load (1.6ms)[0m  [1m[34mSELECT  "decks".* FROM "decks" WHERE "decks"."id" = $1 LIMIT $2[0m  [["id", 6], ["LIMIT", 1]]
+  Rendering decks/show.html.erb within layouts/application
+  [1m[36mUser Load (0.8ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = $1 LIMIT $2[0m  [["id", 2], ["LIMIT", 1]]
+  [1m[36mCard Load (1.7ms)[0m  [1m[34mSELECT "cards".* FROM "cards" WHERE "cards"."deck_id" = $1[0m  [["deck_id", 6]]
+  Rendered decks/show.html.erb within layouts/application (9.0ms)
+Completed 200 OK in 129ms (Views: 120.8ms | ActiveRecord: 4.2ms)
+
+
+Started GET "/decks" for ::1 at 2016-08-10 00:58:46 +0800
+Processing by DecksController#index as HTML
+  [1m[36mUser Load (6.9ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = $1 ORDER BY "users"."id" ASC LIMIT $2[0m  [["id", 2], ["LIMIT", 1]]
+  Rendering decks/index.html.erb within layouts/application
+  Rendered layouts/_navbar.html.erb (6.1ms)
+  [1m[36mDeck Load (0.9ms)[0m  [1m[34mSELECT "decks".* FROM "decks" WHERE "decks"."user_id" = 2[0m
+  Rendered decks/index.html.erb within layouts/application (13.9ms)
+Completed 200 OK in 168ms (Views: 154.5ms | ActiveRecord: 7.7ms)
+
+
+Started GET "/decks" for ::1 at 2016-08-10 00:59:22 +0800
+Processing by DecksController#index as HTML
+  [1m[36mUser Load (9.6ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = $1 ORDER BY "users"."id" ASC LIMIT $2[0m  [["id", 2], ["LIMIT", 1]]
+  Rendering decks/index.html.erb within layouts/application
+  Rendered layouts/_navbar.html.erb (6.0ms)
+  [1m[36mDeck Load (1.2ms)[0m  [1m[34mSELECT "decks".* FROM "decks" WHERE "decks"."user_id" = 2[0m
+  Rendered decks/index.html.erb within layouts/application (12.6ms)
+Completed 200 OK in 252ms (Views: 234.3ms | ActiveRecord: 10.8ms)
+
+
+Started GET "/decks" for ::1 at 2016-08-10 00:59:23 +0800
+Processing by DecksController#index as HTML
+  [1m[36mUser Load (1.5ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = $1 ORDER BY "users"."id" ASC LIMIT $2[0m  [["id", 2], ["LIMIT", 1]]
+  Rendering decks/index.html.erb within layouts/application
+  Rendered layouts/_navbar.html.erb (3.7ms)
+  [1m[36mDeck Load (0.9ms)[0m  [1m[34mSELECT "decks".* FROM "decks" WHERE "decks"."user_id" = 2[0m
+  Rendered decks/index.html.erb within layouts/application (9.8ms)
+Completed 200 OK in 207ms (Views: 198.7ms | ActiveRecord: 2.4ms)
+
+
+Started GET "/decks" for ::1 at 2016-08-10 00:59:24 +0800
+Processing by DecksController#index as HTML
+  [1m[36mUser Load (1.6ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = $1 ORDER BY "users"."id" ASC LIMIT $2[0m  [["id", 2], ["LIMIT", 1]]
+  Rendering decks/index.html.erb within layouts/application
+  Rendered layouts/_navbar.html.erb (6.0ms)
+  [1m[36mDeck Load (5.2ms)[0m  [1m[34mSELECT "decks".* FROM "decks" WHERE "decks"."user_id" = 2[0m
+  Rendered decks/index.html.erb within layouts/application (19.7ms)
+Completed 200 OK in 193ms (Views: 178.7ms | ActiveRecord: 6.9ms)
+
+
+Started GET "/decks" for ::1 at 2016-08-10 00:59:35 +0800
+Processing by DecksController#index as HTML
+  [1m[36mUser Load (0.9ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = $1 ORDER BY "users"."id" ASC LIMIT $2[0m  [["id", 2], ["LIMIT", 1]]
+  Rendering decks/index.html.erb within layouts/application
+  Rendered layouts/_navbar.html.erb (3.4ms)
+  [1m[36mDeck Load (2.0ms)[0m  [1m[34mSELECT "decks".* FROM "decks" WHERE "decks"."user_id" = 2[0m
+  Rendered decks/index.html.erb within layouts/application (12.6ms)
+Completed 200 OK in 2737ms (Views: 2728.6ms | ActiveRecord: 3.0ms)
+
+
+Started GET "/decks" for ::1 at 2016-08-10 00:59:45 +0800
+Processing by DecksController#index as HTML
+  [1m[36mUser Load (4.2ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = $1 ORDER BY "users"."id" ASC LIMIT $2[0m  [["id", 2], ["LIMIT", 1]]
+  Rendering decks/index.html.erb within layouts/application
+  Rendered layouts/_navbar.html.erb (3.7ms)
+  [1m[36mDeck Load (0.7ms)[0m  [1m[34mSELECT "decks".* FROM "decks" WHERE "decks"."user_id" = 2[0m
+  Rendered decks/index.html.erb within layouts/application (30.9ms)
+Completed 200 OK in 259ms (Views: 247.4ms | ActiveRecord: 5.0ms)
+
+
+Started GET "/decks" for ::1 at 2016-08-10 01:00:03 +0800
+Processing by DecksController#index as HTML
+  [1m[36mUser Load (0.7ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = $1 ORDER BY "users"."id" ASC LIMIT $2[0m  [["id", 2], ["LIMIT", 1]]
+  Rendering decks/index.html.erb within layouts/application
+  Rendered layouts/_navbar.html.erb (3.2ms)
+  [1m[36mDeck Load (0.6ms)[0m  [1m[34mSELECT "decks".* FROM "decks" WHERE "decks"."user_id" = 2[0m
+  Rendered decks/index.html.erb within layouts/application (8.6ms)
+Completed 200 OK in 320ms (Views: 313.7ms | ActiveRecord: 1.4ms)
+
+
+Started GET "/decks" for ::1 at 2016-08-10 01:00:23 +0800
+Processing by DecksController#index as HTML
+  [1m[36mUser Load (0.9ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = $1 ORDER BY "users"."id" ASC LIMIT $2[0m  [["id", 2], ["LIMIT", 1]]
+  Rendering decks/index.html.erb within layouts/application
+  Rendered layouts/_navbar.html.erb (3.4ms)
+  [1m[36mDeck Load (0.7ms)[0m  [1m[34mSELECT "decks".* FROM "decks" WHERE "decks"."user_id" = 2[0m
+  Rendered decks/index.html.erb within layouts/application (8.7ms)
+Completed 200 OK in 132ms (Views: 125.5ms | ActiveRecord: 1.7ms)
+
+
+Started GET "/decks" for ::1 at 2016-08-10 01:01:18 +0800
+Processing by DecksController#index as HTML
+  [1m[36mUser Load (0.9ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = $1 ORDER BY "users"."id" ASC LIMIT $2[0m  [["id", 2], ["LIMIT", 1]]
+  Rendering decks/index.html.erb within layouts/application
+  Rendered layouts/_navbar.html.erb (3.4ms)
+  [1m[36mDeck Load (0.6ms)[0m  [1m[34mSELECT "decks".* FROM "decks" WHERE "decks"."user_id" = 2[0m
+  Rendered decks/index.html.erb within layouts/application (8.2ms)
+Completed 200 OK in 101ms (Views: 94.0ms | ActiveRecord: 1.6ms)
+
+
+Started GET "/decks" for ::1 at 2016-08-10 01:01:29 +0800
+Processing by DecksController#index as HTML
+  [1m[36mUser Load (1.0ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = $1 ORDER BY "users"."id" ASC LIMIT $2[0m  [["id", 2], ["LIMIT", 1]]
+  Rendering decks/index.html.erb within layouts/application
+  Rendered layouts/_navbar.html.erb (3.0ms)
+  [1m[36mDeck Load (0.7ms)[0m  [1m[34mSELECT "decks".* FROM "decks" WHERE "decks"."user_id" = 2[0m
+  Rendered decks/index.html.erb within layouts/application (8.1ms)
+Completed 200 OK in 131ms (Views: 124.6ms | ActiveRecord: 1.6ms)
+
+
+Started GET "/decks" for ::1 at 2016-08-10 01:02:03 +0800
+Processing by DecksController#index as HTML
+  [1m[36mUser Load (1.8ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = $1 ORDER BY "users"."id" ASC LIMIT $2[0m  [["id", 2], ["LIMIT", 1]]
+  Rendering decks/index.html.erb within layouts/application
+  Rendered layouts/_navbar.html.erb (5.1ms)
+  [1m[36mDeck Load (0.6ms)[0m  [1m[34mSELECT "decks".* FROM "decks" WHERE "decks"."user_id" = 2[0m
+  Rendered decks/index.html.erb within layouts/application (11.6ms)
+Completed 200 OK in 132ms (Views: 124.9ms | ActiveRecord: 2.4ms)
+
+
+Started GET "/decks/6" for ::1 at 2016-08-10 01:02:31 +0800
+Processing by DecksController#show as HTML
+  Parameters: {"id"=>"6"}
+  [1m[36mDeck Load (5.9ms)[0m  [1m[34mSELECT  "decks".* FROM "decks" WHERE "decks"."id" = $1 LIMIT $2[0m  [["id", 6], ["LIMIT", 1]]
+  Rendering decks/show.html.erb within layouts/application
+  [1m[36mUser Load (1.6ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = $1 LIMIT $2[0m  [["id", 2], ["LIMIT", 1]]
+  [1m[36mCard Load (1.1ms)[0m  [1m[34mSELECT "cards".* FROM "cards" WHERE "cards"."deck_id" = $1[0m  [["deck_id", 6]]
+  Rendered decks/show.html.erb within layouts/application (12.7ms)
+Completed 200 OK in 152ms (Views: 138.8ms | ActiveRecord: 8.6ms)
+
+
+Started GET "/decks" for ::1 at 2016-08-10 01:03:33 +0800
+Processing by DecksController#index as HTML
+  [1m[36mUser Load (9.4ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = $1 ORDER BY "users"."id" ASC LIMIT $2[0m  [["id", 2], ["LIMIT", 1]]
+  Rendering decks/index.html.erb within layouts/application
+  Rendered layouts/_navbar.html.erb (4.7ms)
+  [1m[36mDeck Load (0.7ms)[0m  [1m[34mSELECT "decks".* FROM "decks" WHERE "decks"."user_id" = 2[0m
+  Rendered decks/index.html.erb within layouts/application (11.5ms)
+Completed 200 OK in 168ms (Views: 146.7ms | ActiveRecord: 10.2ms)
+
+
+Started GET "/decks/new" for ::1 at 2016-08-10 01:03:35 +0800
+Processing by DecksController#new as HTML
+  [1m[36mUser Load (3.8ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = $1 ORDER BY "users"."id" ASC LIMIT $2[0m  [["id", 2], ["LIMIT", 1]]
+  Rendering decks/new.html.erb within layouts/application
+  Rendered layouts/_navbar.html.erb (5.8ms)
+  Rendered decks/_form.html.erb (10.6ms)
+  Rendered decks/new.html.erb within layouts/application (29.2ms)
+Completed 200 OK in 139ms (Views: 126.4ms | ActiveRecord: 3.8ms)
+
+
+Started GET "/decks/new" for ::1 at 2016-08-10 01:04:24 +0800
+Processing by DecksController#new as HTML
+  [1m[36mUser Load (1.2ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = $1 ORDER BY "users"."id" ASC LIMIT $2[0m  [["id", 2], ["LIMIT", 1]]
+  Rendering decks/new.html.erb within layouts/application
+  Rendered layouts/_navbar.html.erb (3.0ms)
+  Rendered decks/_form.html.erb (7.0ms)
+  Rendered decks/_form.html.erb (5.9ms)
+  Rendered decks/new.html.erb within layouts/application (21.1ms)
+Completed 200 OK in 216ms (Views: 208.7ms | ActiveRecord: 1.2ms)
+
+
+Started GET "/decks/new" for ::1 at 2016-08-10 01:05:12 +0800
+Processing by DecksController#new as HTML
+  [1m[36mUser Load (0.6ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = $1 ORDER BY "users"."id" ASC LIMIT $2[0m  [["id", 2], ["LIMIT", 1]]
+  Rendering decks/new.html.erb within layouts/application
+  Rendered layouts/_navbar.html.erb (2.9ms)
+  Rendered decks/_form.html.erb (8.5ms)
+  Rendered decks/new.html.erb within layouts/application (15.4ms)
+Completed 200 OK in 130ms (Views: 123.8ms | ActiveRecord: 0.6ms)
+
+
+Started GET "/decks/new" for ::1 at 2016-08-10 01:05:56 +0800
+Processing by DecksController#new as HTML
+  [1m[36mUser Load (2.0ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = $1 ORDER BY "users"."id" ASC LIMIT $2[0m  [["id", 2], ["LIMIT", 1]]
+  Rendering decks/new.html.erb within layouts/application
+  Rendered layouts/_navbar.html.erb (3.2ms)
+  Rendered decks/_form.html.erb (8.6ms)
+  Rendered decks/new.html.erb within layouts/application (15.4ms)
+Completed 200 OK in 153ms (Views: 146.3ms | ActiveRecord: 2.0ms)
+
+
+Started GET "/decks" for ::1 at 2016-08-10 01:06:00 +0800
+Processing by DecksController#index as HTML
+  [1m[36mUser Load (1.1ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = $1 ORDER BY "users"."id" ASC LIMIT $2[0m  [["id", 2], ["LIMIT", 1]]
+  Rendering decks/index.html.erb within layouts/application
+  Rendered layouts/_navbar.html.erb (5.1ms)
+  [1m[36mDeck Load (1.6ms)[0m  [1m[34mSELECT "decks".* FROM "decks" WHERE "decks"."user_id" = 2[0m
+  Rendered decks/index.html.erb within layouts/application (15.2ms)
+Completed 200 OK in 143ms (Views: 135.6ms | ActiveRecord: 2.6ms)
+
+
+Started GET "/decks/new" for ::1 at 2016-08-10 01:06:04 +0800
+Processing by DecksController#new as HTML
+  [1m[36mUser Load (2.1ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = $1 ORDER BY "users"."id" ASC LIMIT $2[0m  [["id", 2], ["LIMIT", 1]]
+  Rendering decks/new.html.erb within layouts/application
+  Rendered layouts/_navbar.html.erb (3.1ms)
+  Rendered decks/_form.html.erb (20.2ms)
+  Rendered decks/new.html.erb within layouts/application (29.3ms)
+Completed 200 OK in 138ms (Views: 126.5ms | ActiveRecord: 2.1ms)
+
+
+Started GET "/decks/new" for ::1 at 2016-08-10 01:08:44 +0800
+Processing by DecksController#new as HTML
+  [1m[36mUser Load (1.0ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = $1 ORDER BY "users"."id" ASC LIMIT $2[0m  [["id", 2], ["LIMIT", 1]]
+  Rendering decks/new.html.erb within layouts/application
+  Rendered layouts/_navbar.html.erb (4.3ms)
+  Rendered decks/_form.html.erb (10.4ms)
+  Rendered decks/new.html.erb within layouts/application (20.4ms)
+Completed 200 OK in 3145ms (Views: 3137.8ms | ActiveRecord: 1.0ms)
+
+
+Started GET "/decks/new" for ::1 at 2016-08-10 01:09:17 +0800
+Processing by DecksController#new as HTML
+  [1m[36mUser Load (1.1ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = $1 ORDER BY "users"."id" ASC LIMIT $2[0m  [["id", 2], ["LIMIT", 1]]
+  Rendering decks/new.html.erb within layouts/application
+  Rendered layouts/_navbar.html.erb (3.9ms)
+  Rendered decks/_form.html.erb (9.2ms)
+  Rendered decks/new.html.erb within layouts/application (18.6ms)
+Completed 200 OK in 2579ms (Views: 2571.4ms | ActiveRecord: 1.1ms)
+
+
+Started GET "/decks/new" for ::1 at 2016-08-10 01:11:28 +0800
+Processing by DecksController#new as HTML
+  [1m[36mUser Load (0.8ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = $1 ORDER BY "users"."id" ASC LIMIT $2[0m  [["id", 2], ["LIMIT", 1]]
+  Rendering decks/new.html.erb within layouts/application
+  Rendered layouts/_navbar.html.erb (4.3ms)
+  Rendered decks/_form.html.erb (9.3ms)
+  Rendered decks/new.html.erb within layouts/application (19.1ms)
+Completed 500 Internal Server Error in 95ms (ActiveRecord: 0.8ms)
+
+
+  
+ActionView::Template::Error (Invalid CSS after "  flex": expected "{", was "; 1;"):
+    4:   <title>Flashies</title>
+    5:   <%= csrf_meta_tags %>
+    6: 
+    7:   <%= stylesheet_link_tag    'application', media: 'all', 'data-turbolinks-track': 'reload' %>
+    8:   <%= javascript_include_tag 'application', 'data-turbolinks-track': 'reload' %>
+    9: 
+   10:   <link href="https://fonts.googleapis.com/css?family=Raleway:600,600i,800,800i" rel="stylesheet">
+  
+app/assets/stylesheets/application.scss:342
+app/views/layouts/application.html.erb:7:in `_app_views_layouts_application_html_erb___4119190950095107066_70328649987640'
+  Rendering /Users/tayevon/.rvm/gems/ruby-2.3.0/gems/actionpack-5.0.0/lib/action_dispatch/middleware/templates/rescues/template_error.html.erb within rescues/layout
+  Rendering /Users/tayevon/.rvm/gems/ruby-2.3.0/gems/actionpack-5.0.0/lib/action_dispatch/middleware/templates/rescues/_source.html.erb
+  Rendered /Users/tayevon/.rvm/gems/ruby-2.3.0/gems/actionpack-5.0.0/lib/action_dispatch/middleware/templates/rescues/_source.html.erb (15.1ms)
+  Rendering /Users/tayevon/.rvm/gems/ruby-2.3.0/gems/actionpack-5.0.0/lib/action_dispatch/middleware/templates/rescues/_trace.html.erb
+  Rendered /Users/tayevon/.rvm/gems/ruby-2.3.0/gems/actionpack-5.0.0/lib/action_dispatch/middleware/templates/rescues/_trace.html.erb (5.1ms)
+  Rendering /Users/tayevon/.rvm/gems/ruby-2.3.0/gems/actionpack-5.0.0/lib/action_dispatch/middleware/templates/rescues/_request_and_response.html.erb
+  Rendered /Users/tayevon/.rvm/gems/ruby-2.3.0/gems/actionpack-5.0.0/lib/action_dispatch/middleware/templates/rescues/_request_and_response.html.erb (1.9ms)
+  Rendered /Users/tayevon/.rvm/gems/ruby-2.3.0/gems/actionpack-5.0.0/lib/action_dispatch/middleware/templates/rescues/template_error.html.erb within rescues/layout (195.9ms)
+Started GET "/decks/new" for ::1 at 2016-08-10 01:11:45 +0800
+Processing by DecksController#new as HTML
+  [1m[36mUser Load (0.9ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = $1 ORDER BY "users"."id" ASC LIMIT $2[0m  [["id", 2], ["LIMIT", 1]]
+  Rendering decks/new.html.erb within layouts/application
+  Rendered layouts/_navbar.html.erb (3.5ms)
+  Rendered decks/_form.html.erb (9.0ms)
+  Rendered decks/new.html.erb within layouts/application (17.6ms)
+Completed 200 OK in 3878ms (Views: 3870.5ms | ActiveRecord: 0.9ms)
+
+
+Started GET "/decks/new" for ::1 at 2016-08-10 01:12:37 +0800
+Processing by DecksController#new as HTML
+  [1m[36mUser Load (3.7ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = $1 ORDER BY "users"."id" ASC LIMIT $2[0m  [["id", 2], ["LIMIT", 1]]
+  Rendering decks/new.html.erb within layouts/application
+  Rendered layouts/_navbar.html.erb (3.2ms)
+  Rendered decks/_form.html.erb (8.5ms)
+  Rendered decks/new.html.erb within layouts/application (16.1ms)
+Completed 200 OK in 2600ms (Views: 2588.6ms | ActiveRecord: 3.6ms)
+
+
+Started GET "/decks/new" for ::1 at 2016-08-10 01:13:59 +0800
+Processing by DecksController#new as HTML
+  [1m[36mUser Load (2.1ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = $1 ORDER BY "users"."id" ASC LIMIT $2[0m  [["id", 2], ["LIMIT", 1]]
+  Rendering decks/new.html.erb within layouts/application
+  Rendered layouts/_navbar.html.erb (2.4ms)
+  Rendered decks/_form.html.erb (5.6ms)
+  Rendered decks/new.html.erb within layouts/application (12.7ms)
+Completed 200 OK in 97ms (Views: 89.6ms | ActiveRecord: 2.1ms)
+
+
+Started GET "/decks/new" for ::1 at 2016-08-10 01:16:23 +0800
+Processing by DecksController#new as HTML
+  [1m[36mUser Load (1.2ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = $1 ORDER BY "users"."id" ASC LIMIT $2[0m  [["id", 2], ["LIMIT", 1]]
+  Rendering decks/new.html.erb within layouts/application
+  Rendered layouts/_navbar.html.erb (4.7ms)
+  Rendered decks/_form.html.erb (20.8ms)
+  Rendered decks/new.html.erb within layouts/application (31.8ms)
+Completed 200 OK in 264ms (Views: 248.1ms | ActiveRecord: 1.2ms)
+
+
+Started GET "/decks/new" for ::1 at 2016-08-10 01:16:59 +0800
+Processing by DecksController#new as HTML
+  [1m[36mUser Load (1.8ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = $1 ORDER BY "users"."id" ASC LIMIT $2[0m  [["id", 2], ["LIMIT", 1]]
+  Rendering decks/new.html.erb within layouts/application
+  Rendered layouts/_navbar.html.erb (3.5ms)
+  Rendered decks/_form.html.erb (9.6ms)
+  Rendered decks/new.html.erb within layouts/application (18.9ms)
+Completed 200 OK in 146ms (Views: 137.6ms | ActiveRecord: 1.8ms)
+
+
+Started GET "/decks/new" for ::1 at 2016-08-10 01:17:19 +0800
+Processing by DecksController#new as HTML
+  [1m[36mUser Load (0.9ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = $1 ORDER BY "users"."id" ASC LIMIT $2[0m  [["id", 2], ["LIMIT", 1]]
+  Rendering decks/new.html.erb within layouts/application
+  Rendered layouts/_navbar.html.erb (3.8ms)
+  Rendered decks/_form.html.erb (10.3ms)
+  Rendered decks/new.html.erb within layouts/application (19.4ms)
+Completed 200 OK in 161ms (Views: 154.4ms | ActiveRecord: 0.9ms)
+
+
+Started GET "/decks/new" for ::1 at 2016-08-10 01:17:39 +0800
+Processing by DecksController#new as HTML
+  [1m[36mUser Load (0.7ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = $1 ORDER BY "users"."id" ASC LIMIT $2[0m  [["id", 2], ["LIMIT", 1]]
+  Rendering decks/new.html.erb within layouts/application
+  Rendered layouts/_navbar.html.erb (3.1ms)
+  Rendered decks/_form.html.erb (10.5ms)
+  Rendered decks/new.html.erb within layouts/application (18.0ms)
+Completed 200 OK in 137ms (Views: 131.4ms | ActiveRecord: 0.7ms)
+
+
+Started GET "/decks/new" for ::1 at 2016-08-10 01:18:51 +0800
+Processing by DecksController#new as HTML
+  [1m[36mUser Load (1.0ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = $1 ORDER BY "users"."id" ASC LIMIT $2[0m  [["id", 2], ["LIMIT", 1]]
+  Rendering decks/new.html.erb within layouts/application
+  Rendered layouts/_navbar.html.erb (4.4ms)
+  Rendered decks/_form.html.erb (11.1ms)
+  Rendered decks/new.html.erb within layouts/application (21.1ms)
+Completed 500 Internal Server Error in 167ms (ActiveRecord: 1.0ms)
+
+
+  
+ActionView::Template::Error (Invalid CSS after "  padding": expected ";", was ": 30px;"):
+    4:   <title>Flashies</title>
+    5:   <%= csrf_meta_tags %>
+    6: 
+    7:   <%= stylesheet_link_tag    'application', media: 'all', 'data-turbolinks-track': 'reload' %>
+    8:   <%= javascript_include_tag 'application', 'data-turbolinks-track': 'reload' %>
+    9: 
+   10:   <link href="https://fonts.googleapis.com/css?family=Raleway:600,600i,800,800i" rel="stylesheet">
+  
+app/assets/stylesheets/application.scss:339
+app/views/layouts/application.html.erb:7:in `_app_views_layouts_application_html_erb___4119190950095107066_70328649373820'
+  Rendering /Users/tayevon/.rvm/gems/ruby-2.3.0/gems/actionpack-5.0.0/lib/action_dispatch/middleware/templates/rescues/template_error.html.erb within rescues/layout
+  Rendering /Users/tayevon/.rvm/gems/ruby-2.3.0/gems/actionpack-5.0.0/lib/action_dispatch/middleware/templates/rescues/_source.html.erb
+  Rendered /Users/tayevon/.rvm/gems/ruby-2.3.0/gems/actionpack-5.0.0/lib/action_dispatch/middleware/templates/rescues/_source.html.erb (11.5ms)
+  Rendering /Users/tayevon/.rvm/gems/ruby-2.3.0/gems/actionpack-5.0.0/lib/action_dispatch/middleware/templates/rescues/_trace.html.erb
+  Rendered /Users/tayevon/.rvm/gems/ruby-2.3.0/gems/actionpack-5.0.0/lib/action_dispatch/middleware/templates/rescues/_trace.html.erb (4.9ms)
+  Rendering /Users/tayevon/.rvm/gems/ruby-2.3.0/gems/actionpack-5.0.0/lib/action_dispatch/middleware/templates/rescues/_request_and_response.html.erb
+  Rendered /Users/tayevon/.rvm/gems/ruby-2.3.0/gems/actionpack-5.0.0/lib/action_dispatch/middleware/templates/rescues/_request_and_response.html.erb (1.4ms)
+  Rendered /Users/tayevon/.rvm/gems/ruby-2.3.0/gems/actionpack-5.0.0/lib/action_dispatch/middleware/templates/rescues/template_error.html.erb within rescues/layout (118.9ms)
+Started GET "/decks/new" for ::1 at 2016-08-10 01:19:02 +0800
+Processing by DecksController#new as HTML
+  [1m[36mUser Load (1.3ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = $1 ORDER BY "users"."id" ASC LIMIT $2[0m  [["id", 2], ["LIMIT", 1]]
+  Rendering decks/new.html.erb within layouts/application
+  Rendered layouts/_navbar.html.erb (3.6ms)
+  Rendered decks/_form.html.erb (7.7ms)
+  Rendered decks/new.html.erb within layouts/application (16.7ms)
+Completed 200 OK in 2109ms (Views: 2099.0ms | ActiveRecord: 1.3ms)
+
+
+Started GET "/decks/new" for ::1 at 2016-08-10 01:19:38 +0800
+Processing by DecksController#new as HTML
+  [1m[36mUser Load (1.8ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = $1 ORDER BY "users"."id" ASC LIMIT $2[0m  [["id", 2], ["LIMIT", 1]]
+  Rendering decks/new.html.erb within layouts/application
+  Rendered layouts/_navbar.html.erb (3.8ms)
+  Rendered decks/_form.html.erb (10.0ms)
+  Rendered decks/new.html.erb within layouts/application (20.1ms)
+Completed 200 OK in 164ms (Views: 154.8ms | ActiveRecord: 1.8ms)
+
+
+Started GET "/decks/new" for ::1 at 2016-08-10 01:20:04 +0800
+Processing by DecksController#new as HTML
+  [1m[36mUser Load (1.0ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = $1 ORDER BY "users"."id" ASC LIMIT $2[0m  [["id", 2], ["LIMIT", 1]]
+  Rendering decks/new.html.erb within layouts/application
+  Rendered layouts/_navbar.html.erb (3.4ms)
+  Rendered decks/_form.html.erb (8.7ms)
+  Rendered decks/new.html.erb within layouts/application (17.6ms)
+Completed 200 OK in 128ms (Views: 120.8ms | ActiveRecord: 1.0ms)
+
+
+Started GET "/decks/new" for ::1 at 2016-08-10 01:20:58 +0800
+Processing by DecksController#new as HTML
+  [1m[36mUser Load (2.1ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = $1 ORDER BY "users"."id" ASC LIMIT $2[0m  [["id", 2], ["LIMIT", 1]]
+  Rendering decks/new.html.erb within layouts/application
+  Rendered layouts/_navbar.html.erb (2.8ms)
+  Rendered decks/_form.html.erb (6.7ms)
+  Rendered decks/new.html.erb within layouts/application (14.7ms)
+Completed 200 OK in 126ms (Views: 117.6ms | ActiveRecord: 2.1ms)
+
+
+Started GET "/decks/new" for ::1 at 2016-08-10 01:21:34 +0800
+Processing by DecksController#new as HTML
+  [1m[36mUser Load (0.9ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = $1 ORDER BY "users"."id" ASC LIMIT $2[0m  [["id", 2], ["LIMIT", 1]]
+  Rendering decks/new.html.erb within layouts/application
+  Rendered layouts/_navbar.html.erb (3.7ms)
+  Rendered decks/_form.html.erb (7.5ms)
+  Rendered decks/new.html.erb within layouts/application (15.0ms)
+Completed 200 OK in 2507ms (Views: 2500.6ms | ActiveRecord: 0.9ms)
+
+
+Started GET "/decks/new" for ::1 at 2016-08-10 01:21:59 +0800
+Processing by DecksController#new as HTML
+  [1m[36mUser Load (0.7ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = $1 ORDER BY "users"."id" ASC LIMIT $2[0m  [["id", 2], ["LIMIT", 1]]
+  Rendering decks/new.html.erb within layouts/application
+  Rendered layouts/_navbar.html.erb (3.3ms)
+  Rendered decks/_form.html.erb (8.2ms)
+  Rendered decks/new.html.erb within layouts/application (16.1ms)
+Completed 200 OK in 2956ms (Views: 2949.5ms | ActiveRecord: 0.7ms)
+
+
+Started GET "/decks" for ::1 at 2016-08-10 01:23:06 +0800
+Processing by DecksController#index as HTML
+  [1m[36mUser Load (1.9ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = $1 ORDER BY "users"."id" ASC LIMIT $2[0m  [["id", 2], ["LIMIT", 1]]
+  Rendering decks/index.html.erb within layouts/application
+  Rendered layouts/_navbar.html.erb (5.1ms)
+  [1m[36mDeck Load (0.9ms)[0m  [1m[34mSELECT "decks".* FROM "decks" WHERE "decks"."user_id" = 2[0m
+  Rendered decks/index.html.erb within layouts/application (12.9ms)
+Completed 200 OK in 120ms (Views: 111.4ms | ActiveRecord: 2.8ms)
+
+
+Started GET "/decks/new" for ::1 at 2016-08-10 01:23:11 +0800
+Processing by DecksController#new as HTML
+  [1m[36mUser Load (2.9ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = $1 ORDER BY "users"."id" ASC LIMIT $2[0m  [["id", 2], ["LIMIT", 1]]
+  Rendering decks/new.html.erb within layouts/application
+  Rendered layouts/_navbar.html.erb (13.1ms)
+  Rendered decks/_form.html.erb (9.5ms)
+  Rendered decks/new.html.erb within layouts/application (33.1ms)
+Completed 200 OK in 155ms (Views: 142.2ms | ActiveRecord: 2.9ms)
+
+
+Started GET "/decks/new" for ::1 at 2016-08-10 01:24:06 +0800
+Processing by DecksController#new as HTML
+  [1m[36mUser Load (1.4ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = $1 ORDER BY "users"."id" ASC LIMIT $2[0m  [["id", 2], ["LIMIT", 1]]
+  Rendering decks/new.html.erb within layouts/application
+  Rendered layouts/_navbar.html.erb (2.6ms)
+  Rendered decks/_form.html.erb (5.9ms)
+  Rendered decks/new.html.erb within layouts/application (11.8ms)
+Completed 200 OK in 2658ms (Views: 2650.6ms | ActiveRecord: 1.4ms)
+
+
+Started GET "/" for ::1 at 2016-08-10 01:27:22 +0800
+Processing by StaticController#index as HTML
+  Rendering static/index.html.erb within layouts/application
+  [1m[36mUser Load (1.6ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = $1 ORDER BY "users"."id" ASC LIMIT $2[0m  [["id", 2], ["LIMIT", 1]]
+  Rendered layouts/_navbar2.html.erb (9.8ms)
+  Rendered static/index.html.erb within layouts/application (20.6ms)
+Completed 200 OK in 137ms (Views: 131.8ms | ActiveRecord: 1.6ms)
+
+
+Started GET "/decks" for ::1 at 2016-08-10 01:27:40 +0800
+Processing by DecksController#index as HTML
+  [1m[36mUser Load (1.3ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = $1 ORDER BY "users"."id" ASC LIMIT $2[0m  [["id", 2], ["LIMIT", 1]]
+  Rendering decks/index.html.erb within layouts/application
+  Rendered layouts/_navbar.html.erb (11.3ms)
+  [1m[36mDeck Load (0.6ms)[0m  [1m[34mSELECT "decks".* FROM "decks" WHERE "decks"."user_id" = 2[0m
+  Rendered decks/index.html.erb within layouts/application (21.6ms)
+Completed 200 OK in 204ms (Views: 176.6ms | ActiveRecord: 1.9ms)
+
+
+Started GET "/decks" for ::1 at 2016-08-10 01:28:55 +0800
+Processing by DecksController#index as HTML
+  [1m[36mUser Load (0.8ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = $1 ORDER BY "users"."id" ASC LIMIT $2[0m  [["id", 2], ["LIMIT", 1]]
+  Rendering decks/index.html.erb within layouts/application
+  Rendered layouts/_navbar.html.erb (3.8ms)
+  [1m[36mDeck Load (0.8ms)[0m  [1m[34mSELECT "decks".* FROM "decks" WHERE "decks"."user_id" = 2[0m
+  Rendered decks/index.html.erb within layouts/application (12.9ms)
+Completed 200 OK in 2295ms (Views: 2289.0ms | ActiveRecord: 1.6ms)
+
+
+Started GET "/decks" for ::1 at 2016-08-10 01:29:28 +0800
+Processing by DecksController#index as HTML
+  [1m[36mUser Load (0.6ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = $1 ORDER BY "users"."id" ASC LIMIT $2[0m  [["id", 2], ["LIMIT", 1]]
+  Rendering decks/index.html.erb within layouts/application
+  Rendered layouts/_navbar.html.erb (3.0ms)
+  [1m[36mDeck Load (0.6ms)[0m  [1m[34mSELECT "decks".* FROM "decks" WHERE "decks"."user_id" = 2[0m
+  Rendered decks/index.html.erb within layouts/application (8.2ms)
+Completed 200 OK in 2700ms (Views: 2670.6ms | ActiveRecord: 1.2ms)
+
+
+Started GET "/" for ::1 at 2016-08-10 01:30:01 +0800
+Processing by StaticController#index as HTML
+  Rendering static/index.html.erb within layouts/application
+  [1m[36mUser Load (3.1ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = $1 ORDER BY "users"."id" ASC LIMIT $2[0m  [["id", 2], ["LIMIT", 1]]
+  Rendered layouts/_navbar2.html.erb (8.6ms)
+  Rendered static/index.html.erb within layouts/application (20.2ms)
+Completed 200 OK in 153ms (Views: 146.9ms | ActiveRecord: 3.1ms)
+
+
+Started GET "/" for ::1 at 2016-08-10 01:31:35 +0800
+Processing by StaticController#index as HTML
+  Rendering static/index.html.erb within layouts/application
+  [1m[36mUser Load (0.8ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = $1 ORDER BY "users"."id" ASC LIMIT $2[0m  [["id", 2], ["LIMIT", 1]]
+  Rendered layouts/_navbar2.html.erb (7.8ms)
+  Rendered static/index.html.erb within layouts/application (18.0ms)
+Completed 200 OK in 3145ms (Views: 3140.3ms | ActiveRecord: 0.8ms)
+
+
+Started GET "/decks" for ::1 at 2016-08-10 01:32:06 +0800
+Processing by DecksController#index as HTML
+  [1m[36mUser Load (1.9ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = $1 ORDER BY "users"."id" ASC LIMIT $2[0m  [["id", 2], ["LIMIT", 1]]
+  Rendering decks/index.html.erb within layouts/application
+  Rendered layouts/_navbar.html.erb (3.9ms)
+  [1m[36mDeck Load (1.9ms)[0m  [1m[34mSELECT "decks".* FROM "decks" WHERE "decks"."user_id" = 2[0m
+  Rendered decks/index.html.erb within layouts/application (12.8ms)
+Completed 200 OK in 139ms (Views: 129.2ms | ActiveRecord: 3.8ms)
+
+
+Started GET "/decks/14" for ::1 at 2016-08-10 01:35:28 +0800
+Processing by DecksController#show as HTML
+  Parameters: {"id"=>"14"}
+  [1m[36mDeck Load (1.2ms)[0m  [1m[34mSELECT  "decks".* FROM "decks" WHERE "decks"."id" = $1 LIMIT $2[0m  [["id", 14], ["LIMIT", 1]]
+  Rendering decks/show.html.erb within layouts/application
+  [1m[36mUser Load (1.0ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = $1 LIMIT $2[0m  [["id", 2], ["LIMIT", 1]]
+  [1m[36mCard Load (0.8ms)[0m  [1m[34mSELECT "cards".* FROM "cards" WHERE "cards"."deck_id" = $1[0m  [["deck_id", 14]]
+  Rendered decks/show.html.erb within layouts/application (16.0ms)
+Completed 200 OK in 248ms (Views: 228.9ms | ActiveRecord: 3.0ms)
+
+
+Started GET "/decks/14" for ::1 at 2016-08-10 01:37:13 +0800
+Processing by DecksController#show as HTML
+  Parameters: {"id"=>"14"}
+  [1m[36mDeck Load (1.5ms)[0m  [1m[34mSELECT  "decks".* FROM "decks" WHERE "decks"."id" = $1 LIMIT $2[0m  [["id", 14], ["LIMIT", 1]]
+  Rendering decks/show.html.erb within layouts/application
+  [1m[36mUser Load (1.7ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = $1 ORDER BY "users"."id" ASC LIMIT $2[0m  [["id", 2], ["LIMIT", 1]]
+  Rendered layouts/_navbar2.html.erb (9.0ms)
+  [1m[36mUser Load (0.7ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = $1 LIMIT $2[0m  [["id", 2], ["LIMIT", 1]]
+  [1m[36mCard Load (0.6ms)[0m  [1m[34mSELECT "cards".* FROM "cards" WHERE "cards"."deck_id" = $1[0m  [["deck_id", 14]]
+  Rendered decks/show.html.erb within layouts/application (21.5ms)
+Completed 200 OK in 204ms (Views: 190.8ms | ActiveRecord: 4.4ms)
+
+
+Started GET "/decks/14" for ::1 at 2016-08-10 01:38:50 +0800
+Processing by DecksController#show as HTML
+  Parameters: {"id"=>"14"}
+  [1m[36mDeck Load (1.2ms)[0m  [1m[34mSELECT  "decks".* FROM "decks" WHERE "decks"."id" = $1 LIMIT $2[0m  [["id", 14], ["LIMIT", 1]]
+  Rendering decks/show.html.erb within layouts/application
+  [1m[36mUser Load (2.2ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = $1 ORDER BY "users"."id" ASC LIMIT $2[0m  [["id", 2], ["LIMIT", 1]]
+  Rendered layouts/_navbar2.html.erb (9.8ms)
+  [1m[36mUser Load (1.9ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = $1 LIMIT $2[0m  [["id", 2], ["LIMIT", 1]]
+  [1m[36mCard Load (3.2ms)[0m  [1m[34mSELECT "cards".* FROM "cards" WHERE "cards"."deck_id" = $1[0m  [["deck_id", 14]]
+  Rendered decks/show.html.erb within layouts/application (39.1ms)
+Completed 200 OK in 3692ms (Views: 3672.5ms | ActiveRecord: 13.1ms)
+
+
+Started GET "/decks/14" for ::1 at 2016-08-10 01:39:15 +0800
+Processing by DecksController#show as HTML
+  Parameters: {"id"=>"14"}
+  [1m[36mDeck Load (0.7ms)[0m  [1m[34mSELECT  "decks".* FROM "decks" WHERE "decks"."id" = $1 LIMIT $2[0m  [["id", 14], ["LIMIT", 1]]
+  Rendering decks/show.html.erb within layouts/application
+  [1m[36mUser Load (0.9ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = $1 ORDER BY "users"."id" ASC LIMIT $2[0m  [["id", 2], ["LIMIT", 1]]
+  Rendered layouts/_navbar2.html.erb (7.3ms)
+  [1m[36mUser Load (1.8ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = $1 LIMIT $2[0m  [["id", 2], ["LIMIT", 1]]
+  [1m[36mCard Load (0.8ms)[0m  [1m[34mSELECT "cards".* FROM "cards" WHERE "cards"."deck_id" = $1[0m  [["deck_id", 14]]
+  Rendered decks/show.html.erb within layouts/application (19.3ms)
+Completed 200 OK in 2737ms (Views: 2727.6ms | ActiveRecord: 4.1ms)
+
+
+Started GET "/decks/14" for ::1 at 2016-08-10 01:39:53 +0800
+Processing by DecksController#show as HTML
+  Parameters: {"id"=>"14"}
+  [1m[36mDeck Load (0.6ms)[0m  [1m[34mSELECT  "decks".* FROM "decks" WHERE "decks"."id" = $1 LIMIT $2[0m  [["id", 14], ["LIMIT", 1]]
+  Rendering decks/show.html.erb within layouts/application
+  [1m[36mUser Load (2.2ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = $1 ORDER BY "users"."id" ASC LIMIT $2[0m  [["id", 2], ["LIMIT", 1]]
+  Rendered layouts/_navbar2.html.erb (7.7ms)
+  [1m[36mUser Load (0.6ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = $1 LIMIT $2[0m  [["id", 2], ["LIMIT", 1]]
+  [1m[36mCard Load (0.5ms)[0m  [1m[34mSELECT "cards".* FROM "cards" WHERE "cards"."deck_id" = $1[0m  [["deck_id", 14]]
+  Rendered decks/show.html.erb within layouts/application (18.8ms)
+Completed 200 OK in 151ms (Views: 143.2ms | ActiveRecord: 3.9ms)
+
+
+Started GET "/decks/14" for ::1 at 2016-08-10 01:41:23 +0800
+Processing by DecksController#show as HTML
+  Parameters: {"id"=>"14"}
+  [1m[36mDeck Load (2.6ms)[0m  [1m[34mSELECT  "decks".* FROM "decks" WHERE "decks"."id" = $1 LIMIT $2[0m  [["id", 14], ["LIMIT", 1]]
+  Rendering decks/show.html.erb within layouts/application
+  [1m[36mUser Load (2.2ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = $1 ORDER BY "users"."id" ASC LIMIT $2[0m  [["id", 2], ["LIMIT", 1]]
+  Rendered layouts/_navbar2.html.erb (7.5ms)
+  [1m[36mUser Load (1.8ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = $1 LIMIT $2[0m  [["id", 2], ["LIMIT", 1]]
+  [1m[36mCard Load (4.7ms)[0m  [1m[34mSELECT "cards".* FROM "cards" WHERE "cards"."deck_id" = $1[0m  [["deck_id", 14]]
+  Rendered decks/show.html.erb within layouts/application (28.9ms)
+Completed 200 OK in 2421ms (Views: 2403.0ms | ActiveRecord: 13.9ms)
+
+
+Started GET "/decks/14" for ::1 at 2016-08-10 01:43:48 +0800
+Processing by DecksController#show as HTML
+  Parameters: {"id"=>"14"}
+  [1m[36mDeck Load (0.7ms)[0m  [1m[34mSELECT  "decks".* FROM "decks" WHERE "decks"."id" = $1 LIMIT $2[0m  [["id", 14], ["LIMIT", 1]]
+  Rendering decks/show.html.erb within layouts/application
+  [1m[36mUser Load (5.1ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = $1 ORDER BY "users"."id" ASC LIMIT $2[0m  [["id", 2], ["LIMIT", 1]]
+  Rendered layouts/_navbar2.html.erb (10.5ms)
+  [1m[36mUser Load (3.7ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = $1 LIMIT $2[0m  [["id", 2], ["LIMIT", 1]]
+  [1m[36mCard Load (1.1ms)[0m  [1m[34mSELECT "cards".* FROM "cards" WHERE "cards"."deck_id" = $1[0m  [["deck_id", 14]]
+  Rendered decks/show.html.erb within layouts/application (24.9ms)
+Completed 200 OK in 2808ms (Views: 2792.5ms | ActiveRecord: 10.6ms)
+
+
+Started GET "/decks/14" for ::1 at 2016-08-10 01:44:52 +0800
+Processing by DecksController#show as HTML
+  Parameters: {"id"=>"14"}
+  [1m[36mDeck Load (0.5ms)[0m  [1m[34mSELECT  "decks".* FROM "decks" WHERE "decks"."id" = $1 LIMIT $2[0m  [["id", 14], ["LIMIT", 1]]
+  Rendering decks/show.html.erb within layouts/application
+  [1m[36mUser Load (2.0ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = $1 ORDER BY "users"."id" ASC LIMIT $2[0m  [["id", 2], ["LIMIT", 1]]
+  Rendered layouts/_navbar2.html.erb (19.5ms)
+  [1m[36mUser Load (0.4ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = $1 LIMIT $2[0m  [["id", 2], ["LIMIT", 1]]
+  [1m[36mCard Load (0.5ms)[0m  [1m[34mSELECT "cards".* FROM "cards" WHERE "cards"."deck_id" = $1[0m  [["deck_id", 14]]
+  Rendered decks/show.html.erb within layouts/application (33.4ms)
+Completed 200 OK in 3204ms (Views: 3183.7ms | ActiveRecord: 3.4ms)
+
+
+Started GET "/decks/14" for ::1 at 2016-08-10 01:45:38 +0800
+Processing by DecksController#show as HTML
+  Parameters: {"id"=>"14"}
+  [1m[36mDeck Load (0.6ms)[0m  [1m[34mSELECT  "decks".* FROM "decks" WHERE "decks"."id" = $1 LIMIT $2[0m  [["id", 14], ["LIMIT", 1]]
+  Rendering decks/show.html.erb within layouts/application
+  [1m[36mUser Load (2.2ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = $1 ORDER BY "users"."id" ASC LIMIT $2[0m  [["id", 2], ["LIMIT", 1]]
+  Rendered layouts/_navbar2.html.erb (7.5ms)
+  [1m[36mUser Load (0.5ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = $1 LIMIT $2[0m  [["id", 2], ["LIMIT", 1]]
+  [1m[36mCard Load (0.3ms)[0m  [1m[34mSELECT "cards".* FROM "cards" WHERE "cards"."deck_id" = $1[0m  [["deck_id", 14]]
+  Rendered decks/show.html.erb within layouts/application (18.1ms)
+Started GET "/decks/14" for ::1 at 2016-08-10 01:45:39 +0800
+Processing by DecksController#show as HTML
+  Parameters: {"id"=>"14"}
+  [1m[36mDeck Load (1.8ms)[0m  [1m[34mSELECT  "decks".* FROM "decks" WHERE "decks"."id" = $1 LIMIT $2[0m  [["id", 14], ["LIMIT", 1]]
+  Rendering decks/show.html.erb within layouts/application
+  [1m[36mUser Load (4.6ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = $1 ORDER BY "users"."id" ASC LIMIT $2[0m  [["id", 2], ["LIMIT", 1]]
+  Rendered layouts/_navbar2.html.erb (9.8ms)
+  [1m[36mUser Load (1.3ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = $1 LIMIT $2[0m  [["id", 2], ["LIMIT", 1]]
+  [1m[36mCard Load (1.8ms)[0m  [1m[34mSELECT "cards".* FROM "cards" WHERE "cards"."deck_id" = $1[0m  [["deck_id", 14]]
+  Rendered decks/show.html.erb within layouts/application (22.6ms)
+Completed 200 OK in 265ms (Views: 256.9ms | ActiveRecord: 3.6ms)
+
+
+Completed 200 OK in 150ms (Views: 137.0ms | ActiveRecord: 9.5ms)
+
+
+Started GET "/decks/14" for ::1 at 2016-08-10 01:46:14 +0800
+Processing by DecksController#show as HTML
+  Parameters: {"id"=>"14"}
+  [1m[36mDeck Load (0.5ms)[0m  [1m[34mSELECT  "decks".* FROM "decks" WHERE "decks"."id" = $1 LIMIT $2[0m  [["id", 14], ["LIMIT", 1]]
+  Rendering decks/show.html.erb within layouts/application
+  [1m[36mUser Load (2.3ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = $1 ORDER BY "users"."id" ASC LIMIT $2[0m  [["id", 2], ["LIMIT", 1]]
+  Rendered layouts/_navbar2.html.erb (8.9ms)
+  [1m[36mUser Load (0.6ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = $1 LIMIT $2[0m  [["id", 2], ["LIMIT", 1]]
+  [1m[36mCard Load (0.5ms)[0m  [1m[34mSELECT "cards".* FROM "cards" WHERE "cards"."deck_id" = $1[0m  [["deck_id", 14]]
+  Rendered decks/show.html.erb within layouts/application (473.2ms)
+Completed 500 Internal Server Error in 487ms (ActiveRecord: 4.0ms)
+
+
+  
+ActionView::Template::Error (undefined local variable or method `add_btn' for #<#<Class:0x007fed5394e358>:0x007fed56363148>):
+    18: 
+    19: 
+    20: 
+    21:     <%= link_to "Add a card", new_deck_card_path(@deck.id), class: add_btn %>
+    22:     <%= link_to "Edit Deck", edit_deck_path %>
+    23:     <%= link_to "Delete this deck", deck_path, method: :delete, data: {confirm: "Are you sure?"} %>
+    24:     <%= link_to "Back", decks_path %>
+  
+app/views/decks/show.html.erb:21:in `_app_views_decks_show_html_erb___3444625240578991833_70328665185680'
+  Rendering /Users/tayevon/.rvm/gems/ruby-2.3.0/gems/actionpack-5.0.0/lib/action_dispatch/middleware/templates/rescues/template_error.html.erb within rescues/layout
+  Rendering /Users/tayevon/.rvm/gems/ruby-2.3.0/gems/actionpack-5.0.0/lib/action_dispatch/middleware/templates/rescues/_source.html.erb
+  Rendered /Users/tayevon/.rvm/gems/ruby-2.3.0/gems/actionpack-5.0.0/lib/action_dispatch/middleware/templates/rescues/_source.html.erb (8.6ms)
+  Rendering /Users/tayevon/.rvm/gems/ruby-2.3.0/gems/actionpack-5.0.0/lib/action_dispatch/middleware/templates/rescues/_trace.html.erb
+  Rendered /Users/tayevon/.rvm/gems/ruby-2.3.0/gems/actionpack-5.0.0/lib/action_dispatch/middleware/templates/rescues/_trace.html.erb (3.4ms)
+  Rendering /Users/tayevon/.rvm/gems/ruby-2.3.0/gems/actionpack-5.0.0/lib/action_dispatch/middleware/templates/rescues/_request_and_response.html.erb
+  Rendered /Users/tayevon/.rvm/gems/ruby-2.3.0/gems/actionpack-5.0.0/lib/action_dispatch/middleware/templates/rescues/_request_and_response.html.erb (4.9ms)
+  Rendered /Users/tayevon/.rvm/gems/ruby-2.3.0/gems/actionpack-5.0.0/lib/action_dispatch/middleware/templates/rescues/template_error.html.erb within rescues/layout (113.8ms)
+Started GET "/decks/14" for ::1 at 2016-08-10 01:46:45 +0800
+Processing by DecksController#show as HTML
+  Parameters: {"id"=>"14"}
+  [1m[36mDeck Load (1.9ms)[0m  [1m[34mSELECT  "decks".* FROM "decks" WHERE "decks"."id" = $1 LIMIT $2[0m  [["id", 14], ["LIMIT", 1]]
+  Rendering decks/show.html.erb within layouts/application
+  [1m[36mUser Load (1.1ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = $1 ORDER BY "users"."id" ASC LIMIT $2[0m  [["id", 2], ["LIMIT", 1]]
+  Rendered layouts/_navbar2.html.erb (6.6ms)
+  [1m[36mUser Load (0.9ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = $1 LIMIT $2[0m  [["id", 2], ["LIMIT", 1]]
+  [1m[36mCard Load (1.6ms)[0m  [1m[34mSELECT "cards".* FROM "cards" WHERE "cards"."deck_id" = $1[0m  [["deck_id", 14]]
+  Rendered decks/show.html.erb within layouts/application (17.5ms)
+Completed 200 OK in 2481ms (Views: 2471.9ms | ActiveRecord: 5.5ms)
+
+
+Started GET "/decks/14" for ::1 at 2016-08-10 01:47:18 +0800
+Processing by DecksController#show as HTML
+  Parameters: {"id"=>"14"}
+  [1m[36mDeck Load (0.9ms)[0m  [1m[34mSELECT  "decks".* FROM "decks" WHERE "decks"."id" = $1 LIMIT $2[0m  [["id", 14], ["LIMIT", 1]]
+  Rendering decks/show.html.erb within layouts/application
+  [1m[36mUser Load (2.4ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = $1 ORDER BY "users"."id" ASC LIMIT $2[0m  [["id", 2], ["LIMIT", 1]]
+  Rendered layouts/_navbar2.html.erb (7.1ms)
+  [1m[36mUser Load (0.6ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = $1 LIMIT $2[0m  [["id", 2], ["LIMIT", 1]]
+  [1m[36mCard Load (0.5ms)[0m  [1m[34mSELECT "cards".* FROM "cards" WHERE "cards"."deck_id" = $1[0m  [["deck_id", 14]]
+  Rendered decks/show.html.erb within layouts/application (16.5ms)
+Completed 200 OK in 138ms (Views: 130.1ms | ActiveRecord: 4.5ms)
+
+
+Started GET "/decks/14" for ::1 at 2016-08-10 01:47:39 +0800
+Processing by DecksController#show as HTML
+  Parameters: {"id"=>"14"}
+  [1m[36mDeck Load (0.5ms)[0m  [1m[34mSELECT  "decks".* FROM "decks" WHERE "decks"."id" = $1 LIMIT $2[0m  [["id", 14], ["LIMIT", 1]]
+  Rendering decks/show.html.erb within layouts/application
+  [1m[36mUser Load (0.7ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = $1 ORDER BY "users"."id" ASC LIMIT $2[0m  [["id", 2], ["LIMIT", 1]]
+  Rendered layouts/_navbar2.html.erb (4.8ms)
+  [1m[36mUser Load (0.4ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = $1 LIMIT $2[0m  [["id", 2], ["LIMIT", 1]]
+  [1m[36mCard Load (0.4ms)[0m  [1m[34mSELECT "cards".* FROM "cards" WHERE "cards"."deck_id" = $1[0m  [["deck_id", 14]]
+  Rendered decks/show.html.erb within layouts/application (13.2ms)
+Completed 200 OK in 118ms (Views: 112.3ms | ActiveRecord: 2.0ms)
+
+
+Started GET "/decks/14" for ::1 at 2016-08-10 01:47:56 +0800
+Processing by DecksController#show as HTML
+  Parameters: {"id"=>"14"}
+  [1m[36mDeck Load (0.4ms)[0m  [1m[34mSELECT  "decks".* FROM "decks" WHERE "decks"."id" = $1 LIMIT $2[0m  [["id", 14], ["LIMIT", 1]]
+  Rendering decks/show.html.erb within layouts/application
+  [1m[36mUser Load (0.8ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = $1 ORDER BY "users"."id" ASC LIMIT $2[0m  [["id", 2], ["LIMIT", 1]]
+  Rendered layouts/_navbar2.html.erb (6.2ms)
+  [1m[36mUser Load (0.3ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = $1 LIMIT $2[0m  [["id", 2], ["LIMIT", 1]]
+  [1m[36mCard Load (0.2ms)[0m  [1m[34mSELECT "cards".* FROM "cards" WHERE "cards"."deck_id" = $1[0m  [["deck_id", 14]]
+  Rendered decks/show.html.erb within layouts/application (13.1ms)
+Completed 200 OK in 136ms (Views: 130.0ms | ActiveRecord: 1.7ms)
+
+
+Started GET "/decks" for ::1 at 2016-08-10 01:48:14 +0800
+Processing by DecksController#index as HTML
+  [1m[36mUser Load (1.6ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = $1 ORDER BY "users"."id" ASC LIMIT $2[0m  [["id", 2], ["LIMIT", 1]]
+  Rendering decks/index.html.erb within layouts/application
+  Rendered layouts/_navbar.html.erb (5.8ms)
+  [1m[36mDeck Load (2.1ms)[0m  [1m[34mSELECT "decks".* FROM "decks" WHERE "decks"."user_id" = 2[0m
+  Rendered decks/index.html.erb within layouts/application (15.5ms)
+Completed 200 OK in 165ms (Views: 155.7ms | ActiveRecord: 3.7ms)
+
+
+Started GET "/decks/new" for ::1 at 2016-08-10 01:48:16 +0800
+Processing by DecksController#new as HTML
+  [1m[36mUser Load (0.9ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = $1 ORDER BY "users"."id" ASC LIMIT $2[0m  [["id", 2], ["LIMIT", 1]]
+  Rendering decks/new.html.erb within layouts/application
+  Rendered layouts/_navbar.html.erb (8.3ms)
+  Rendered decks/_form.html.erb (24.5ms)
+  Rendered decks/new.html.erb within layouts/application (38.5ms)
+Completed 200 OK in 167ms (Views: 157.6ms | ActiveRecord: 0.9ms)
+
+
+Started GET "/decks" for ::1 at 2016-08-10 01:48:26 +0800
+Processing by DecksController#index as HTML
+  [1m[36mUser Load (0.9ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = $1 ORDER BY "users"."id" ASC LIMIT $2[0m  [["id", 2], ["LIMIT", 1]]
+  Rendering decks/index.html.erb within layouts/application
+  Rendered layouts/_navbar.html.erb (5.1ms)
+  [1m[36mDeck Load (0.7ms)[0m  [1m[34mSELECT "decks".* FROM "decks" WHERE "decks"."user_id" = 2[0m
+  Rendered decks/index.html.erb within layouts/application (12.0ms)
+Completed 200 OK in 181ms (Views: 173.0ms | ActiveRecord: 1.7ms)
+
+
+Started GET "/decks/14" for ::1 at 2016-08-10 01:48:47 +0800
+Processing by DecksController#show as HTML
+  Parameters: {"id"=>"14"}
+  [1m[36mDeck Load (2.6ms)[0m  [1m[34mSELECT  "decks".* FROM "decks" WHERE "decks"."id" = $1 LIMIT $2[0m  [["id", 14], ["LIMIT", 1]]
+  Rendering decks/show.html.erb within layouts/application
+  [1m[36mUser Load (18.7ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = $1 ORDER BY "users"."id" ASC LIMIT $2[0m  [["id", 2], ["LIMIT", 1]]
+  Rendered layouts/_navbar2.html.erb (75.9ms)
+  [1m[36mUser Load (28.2ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = $1 LIMIT $2[0m  [["id", 2], ["LIMIT", 1]]
+  [1m[36mCard Load (0.5ms)[0m  [1m[34mSELECT "cards".* FROM "cards" WHERE "cards"."deck_id" = $1[0m  [["deck_id", 14]]
+  Rendered decks/show.html.erb within layouts/application (135.5ms)
+Completed 200 OK in 323ms (Views: 265.9ms | ActiveRecord: 50.0ms)
+
+
+Started GET "/decks/14" for ::1 at 2016-08-10 01:49:13 +0800
+Processing by DecksController#show as HTML
+  Parameters: {"id"=>"14"}
+  [1m[36mDeck Load (0.5ms)[0m  [1m[34mSELECT  "decks".* FROM "decks" WHERE "decks"."id" = $1 LIMIT $2[0m  [["id", 14], ["LIMIT", 1]]
+  Rendering decks/show.html.erb within layouts/application
+  [1m[36mUser Load (11.7ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = $1 ORDER BY "users"."id" ASC LIMIT $2[0m  [["id", 2], ["LIMIT", 1]]
+  Rendered layouts/_navbar2.html.erb (17.4ms)
+  [1m[36mUser Load (0.8ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = $1 LIMIT $2[0m  [["id", 2], ["LIMIT", 1]]
+  [1m[36mCard Load (0.7ms)[0m  [1m[34mSELECT "cards".* FROM "cards" WHERE "cards"."deck_id" = $1[0m  [["deck_id", 14]]
+  Rendered decks/show.html.erb within layouts/application (27.8ms)
+Completed 200 OK in 299ms (Views: 281.3ms | ActiveRecord: 13.7ms)
+
+
+Started GET "/decks/14" for ::1 at 2016-08-10 01:51:30 +0800
+Processing by DecksController#show as HTML
+  Parameters: {"id"=>"14"}
+  [1m[36mDeck Load (0.5ms)[0m  [1m[34mSELECT  "decks".* FROM "decks" WHERE "decks"."id" = $1 LIMIT $2[0m  [["id", 14], ["LIMIT", 1]]
+  Rendering decks/show.html.erb within layouts/application
+  [1m[36mUser Load (2.1ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = $1 ORDER BY "users"."id" ASC LIMIT $2[0m  [["id", 2], ["LIMIT", 1]]
+  Rendered layouts/_navbar2.html.erb (6.7ms)
+  [1m[36mUser Load (0.4ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = $1 LIMIT $2[0m  [["id", 2], ["LIMIT", 1]]
+  [1m[36mCard Load (0.3ms)[0m  [1m[34mSELECT "cards".* FROM "cards" WHERE "cards"."deck_id" = $1[0m  [["deck_id", 14]]
+  Rendered decks/show.html.erb within layouts/application (15.3ms)
+Completed 200 OK in 2840ms (Views: 2834.0ms | ActiveRecord: 3.2ms)
+
+
+  
+ActionController::RoutingError (No route matches [GET] "/assets/noisePattern.jpeg"):
+  
+actionpack (5.0.0) lib/action_dispatch/middleware/debug_exceptions.rb:53:in `call'
+web-console (3.3.1) lib/web_console/middleware.rb:131:in `call_app'
+web-console (3.3.1) lib/web_console/middleware.rb:28:in `block in call'
+web-console (3.3.1) lib/web_console/middleware.rb:18:in `catch'
+web-console (3.3.1) lib/web_console/middleware.rb:18:in `call'
+actionpack (5.0.0) lib/action_dispatch/middleware/show_exceptions.rb:31:in `call'
+railties (5.0.0) lib/rails/rack/logger.rb:36:in `call_app'
+railties (5.0.0) lib/rails/rack/logger.rb:24:in `block in call'
+activesupport (5.0.0) lib/active_support/tagged_logging.rb:70:in `block in tagged'
+activesupport (5.0.0) lib/active_support/tagged_logging.rb:26:in `tagged'
+activesupport (5.0.0) lib/active_support/tagged_logging.rb:70:in `tagged'
+railties (5.0.0) lib/rails/rack/logger.rb:24:in `call'
+sprockets-rails (3.1.1) lib/sprockets/rails/quiet_assets.rb:11:in `block in call'
+activesupport (5.0.0) lib/active_support/logger_silence.rb:20:in `silence'
+activesupport (5.0.0) lib/active_support/logger.rb:63:in `block (3 levels) in broadcast'
+activesupport (5.0.0) lib/active_support/logger_silence.rb:20:in `silence'
+activesupport (5.0.0) lib/active_support/logger.rb:61:in `block (2 levels) in broadcast'
+sprockets-rails (3.1.1) lib/sprockets/rails/quiet_assets.rb:11:in `call'
+actionpack (5.0.0) lib/action_dispatch/middleware/request_id.rb:24:in `call'
+rack (2.0.1) lib/rack/method_override.rb:22:in `call'
+rack (2.0.1) lib/rack/runtime.rb:22:in `call'
+activesupport (5.0.0) lib/active_support/cache/strategy/local_cache_middleware.rb:28:in `call'
+actionpack (5.0.0) lib/action_dispatch/middleware/executor.rb:12:in `call'
+actionpack (5.0.0) lib/action_dispatch/middleware/static.rb:136:in `call'
+rack (2.0.1) lib/rack/sendfile.rb:111:in `call'
+railties (5.0.0) lib/rails/engine.rb:522:in `call'
+puma (3.6.0) lib/puma/configuration.rb:225:in `call'
+puma (3.6.0) lib/puma/server.rb:578:in `handle_request'
+puma (3.6.0) lib/puma/server.rb:415:in `process_client'
+puma (3.6.0) lib/puma/server.rb:275:in `block in run'
+puma (3.6.0) lib/puma/thread_pool.rb:116:in `block in spawn_thread'
+Started GET "/decks/14" for ::1 at 2016-08-10 01:52:06 +0800
+Processing by DecksController#show as HTML
+  Parameters: {"id"=>"14"}
+  [1m[36mDeck Load (0.9ms)[0m  [1m[34mSELECT  "decks".* FROM "decks" WHERE "decks"."id" = $1 LIMIT $2[0m  [["id", 14], ["LIMIT", 1]]
+  Rendering decks/show.html.erb within layouts/application
+  [1m[36mUser Load (1.0ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = $1 ORDER BY "users"."id" ASC LIMIT $2[0m  [["id", 2], ["LIMIT", 1]]
+  Rendered layouts/_navbar2.html.erb (5.9ms)
+  [1m[36mUser Load (0.8ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = $1 LIMIT $2[0m  [["id", 2], ["LIMIT", 1]]
+  [1m[36mCard Load (0.4ms)[0m  [1m[34mSELECT "cards".* FROM "cards" WHERE "cards"."deck_id" = $1[0m  [["deck_id", 14]]
+  Rendered decks/show.html.erb within layouts/application (14.5ms)
+Completed 200 OK in 2526ms (Views: 2519.2ms | ActiveRecord: 3.0ms)
+
+
+  
+ActionController::RoutingError (No route matches [GET] "/assets/noisePattern.jpeg"):
+  
+actionpack (5.0.0) lib/action_dispatch/middleware/debug_exceptions.rb:53:in `call'
+web-console (3.3.1) lib/web_console/middleware.rb:131:in `call_app'
+web-console (3.3.1) lib/web_console/middleware.rb:28:in `block in call'
+web-console (3.3.1) lib/web_console/middleware.rb:18:in `catch'
+web-console (3.3.1) lib/web_console/middleware.rb:18:in `call'
+actionpack (5.0.0) lib/action_dispatch/middleware/show_exceptions.rb:31:in `call'
+railties (5.0.0) lib/rails/rack/logger.rb:36:in `call_app'
+railties (5.0.0) lib/rails/rack/logger.rb:24:in `block in call'
+activesupport (5.0.0) lib/active_support/tagged_logging.rb:70:in `block in tagged'
+activesupport (5.0.0) lib/active_support/tagged_logging.rb:26:in `tagged'
+activesupport (5.0.0) lib/active_support/tagged_logging.rb:70:in `tagged'
+railties (5.0.0) lib/rails/rack/logger.rb:24:in `call'
+sprockets-rails (3.1.1) lib/sprockets/rails/quiet_assets.rb:11:in `block in call'
+activesupport (5.0.0) lib/active_support/logger_silence.rb:20:in `silence'
+activesupport (5.0.0) lib/active_support/logger.rb:63:in `block (3 levels) in broadcast'
+activesupport (5.0.0) lib/active_support/logger_silence.rb:20:in `silence'
+activesupport (5.0.0) lib/active_support/logger.rb:61:in `block (2 levels) in broadcast'
+sprockets-rails (3.1.1) lib/sprockets/rails/quiet_assets.rb:11:in `call'
+actionpack (5.0.0) lib/action_dispatch/middleware/request_id.rb:24:in `call'
+rack (2.0.1) lib/rack/method_override.rb:22:in `call'
+rack (2.0.1) lib/rack/runtime.rb:22:in `call'
+activesupport (5.0.0) lib/active_support/cache/strategy/local_cache_middleware.rb:28:in `call'
+actionpack (5.0.0) lib/action_dispatch/middleware/executor.rb:12:in `call'
+actionpack (5.0.0) lib/action_dispatch/middleware/static.rb:136:in `call'
+rack (2.0.1) lib/rack/sendfile.rb:111:in `call'
+railties (5.0.0) lib/rails/engine.rb:522:in `call'
+puma (3.6.0) lib/puma/configuration.rb:225:in `call'
+puma (3.6.0) lib/puma/server.rb:578:in `handle_request'
+puma (3.6.0) lib/puma/server.rb:415:in `process_client'
+puma (3.6.0) lib/puma/server.rb:275:in `block in run'
+puma (3.6.0) lib/puma/thread_pool.rb:116:in `block in spawn_thread'
+Started GET "/decks/14" for ::1 at 2016-08-10 01:52:39 +0800
+Processing by DecksController#show as HTML
+  Parameters: {"id"=>"14"}
+  [1m[36mDeck Load (0.4ms)[0m  [1m[34mSELECT  "decks".* FROM "decks" WHERE "decks"."id" = $1 LIMIT $2[0m  [["id", 14], ["LIMIT", 1]]
+  Rendering decks/show.html.erb within layouts/application
+  [1m[36mUser Load (0.7ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = $1 ORDER BY "users"."id" ASC LIMIT $2[0m  [["id", 2], ["LIMIT", 1]]
+  Rendered layouts/_navbar2.html.erb (5.1ms)
+  [1m[36mUser Load (0.3ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = $1 LIMIT $2[0m  [["id", 2], ["LIMIT", 1]]
+  [1m[36mCard Load (0.3ms)[0m  [1m[34mSELECT "cards".* FROM "cards" WHERE "cards"."deck_id" = $1[0m  [["deck_id", 14]]
+  Rendered decks/show.html.erb within layouts/application (14.1ms)
+Completed 200 OK in 2234ms (Views: 2228.9ms | ActiveRecord: 1.8ms)
+
+
+  
+ActionController::RoutingError (No route matches [GET] "/assets/noisePattern.jpeg"):
+  
+actionpack (5.0.0) lib/action_dispatch/middleware/debug_exceptions.rb:53:in `call'
+web-console (3.3.1) lib/web_console/middleware.rb:131:in `call_app'
+web-console (3.3.1) lib/web_console/middleware.rb:28:in `block in call'
+web-console (3.3.1) lib/web_console/middleware.rb:18:in `catch'
+web-console (3.3.1) lib/web_console/middleware.rb:18:in `call'
+actionpack (5.0.0) lib/action_dispatch/middleware/show_exceptions.rb:31:in `call'
+railties (5.0.0) lib/rails/rack/logger.rb:36:in `call_app'
+railties (5.0.0) lib/rails/rack/logger.rb:24:in `block in call'
+activesupport (5.0.0) lib/active_support/tagged_logging.rb:70:in `block in tagged'
+activesupport (5.0.0) lib/active_support/tagged_logging.rb:26:in `tagged'
+activesupport (5.0.0) lib/active_support/tagged_logging.rb:70:in `tagged'
+railties (5.0.0) lib/rails/rack/logger.rb:24:in `call'
+sprockets-rails (3.1.1) lib/sprockets/rails/quiet_assets.rb:11:in `block in call'
+activesupport (5.0.0) lib/active_support/logger_silence.rb:20:in `silence'
+activesupport (5.0.0) lib/active_support/logger.rb:63:in `block (3 levels) in broadcast'
+activesupport (5.0.0) lib/active_support/logger_silence.rb:20:in `silence'
+activesupport (5.0.0) lib/active_support/logger.rb:61:in `block (2 levels) in broadcast'
+sprockets-rails (3.1.1) lib/sprockets/rails/quiet_assets.rb:11:in `call'
+actionpack (5.0.0) lib/action_dispatch/middleware/request_id.rb:24:in `call'
+rack (2.0.1) lib/rack/method_override.rb:22:in `call'
+rack (2.0.1) lib/rack/runtime.rb:22:in `call'
+activesupport (5.0.0) lib/active_support/cache/strategy/local_cache_middleware.rb:28:in `call'
+actionpack (5.0.0) lib/action_dispatch/middleware/executor.rb:12:in `call'
+actionpack (5.0.0) lib/action_dispatch/middleware/static.rb:136:in `call'
+rack (2.0.1) lib/rack/sendfile.rb:111:in `call'
+railties (5.0.0) lib/rails/engine.rb:522:in `call'
+puma (3.6.0) lib/puma/configuration.rb:225:in `call'
+puma (3.6.0) lib/puma/server.rb:578:in `handle_request'
+puma (3.6.0) lib/puma/server.rb:415:in `process_client'
+puma (3.6.0) lib/puma/server.rb:275:in `block in run'
+puma (3.6.0) lib/puma/thread_pool.rb:116:in `block in spawn_thread'
+  
+ActionController::RoutingError (No route matches [GET] "/assets/noisePattern.jpeg"):
+  
+actionpack (5.0.0) lib/action_dispatch/middleware/debug_exceptions.rb:53:in `call'
+web-console (3.3.1) lib/web_console/middleware.rb:131:in `call_app'
+web-console (3.3.1) lib/web_console/middleware.rb:28:in `block in call'
+web-console (3.3.1) lib/web_console/middleware.rb:18:in `catch'
+web-console (3.3.1) lib/web_console/middleware.rb:18:in `call'
+actionpack (5.0.0) lib/action_dispatch/middleware/show_exceptions.rb:31:in `call'
+railties (5.0.0) lib/rails/rack/logger.rb:36:in `call_app'
+railties (5.0.0) lib/rails/rack/logger.rb:24:in `block in call'
+activesupport (5.0.0) lib/active_support/tagged_logging.rb:70:in `block in tagged'
+activesupport (5.0.0) lib/active_support/tagged_logging.rb:26:in `tagged'
+activesupport (5.0.0) lib/active_support/tagged_logging.rb:70:in `tagged'
+railties (5.0.0) lib/rails/rack/logger.rb:24:in `call'
+sprockets-rails (3.1.1) lib/sprockets/rails/quiet_assets.rb:11:in `block in call'
+activesupport (5.0.0) lib/active_support/logger_silence.rb:20:in `silence'
+activesupport (5.0.0) lib/active_support/logger.rb:63:in `block (3 levels) in broadcast'
+activesupport (5.0.0) lib/active_support/logger_silence.rb:20:in `silence'
+activesupport (5.0.0) lib/active_support/logger.rb:61:in `block (2 levels) in broadcast'
+sprockets-rails (3.1.1) lib/sprockets/rails/quiet_assets.rb:11:in `call'
+actionpack (5.0.0) lib/action_dispatch/middleware/request_id.rb:24:in `call'
+rack (2.0.1) lib/rack/method_override.rb:22:in `call'
+rack (2.0.1) lib/rack/runtime.rb:22:in `call'
+activesupport (5.0.0) lib/active_support/cache/strategy/local_cache_middleware.rb:28:in `call'
+actionpack (5.0.0) lib/action_dispatch/middleware/executor.rb:12:in `call'
+actionpack (5.0.0) lib/action_dispatch/middleware/static.rb:136:in `call'
+rack (2.0.1) lib/rack/sendfile.rb:111:in `call'
+railties (5.0.0) lib/rails/engine.rb:522:in `call'
+puma (3.6.0) lib/puma/configuration.rb:225:in `call'
+puma (3.6.0) lib/puma/server.rb:578:in `handle_request'
+puma (3.6.0) lib/puma/server.rb:415:in `process_client'
+puma (3.6.0) lib/puma/server.rb:275:in `block in run'
+puma (3.6.0) lib/puma/thread_pool.rb:116:in `block in spawn_thread'
+  
+ActionController::RoutingError (No route matches [GET] "/assets/noisePattern.jpeg"):
+  
+actionpack (5.0.0) lib/action_dispatch/middleware/debug_exceptions.rb:53:in `call'
+web-console (3.3.1) lib/web_console/middleware.rb:131:in `call_app'
+web-console (3.3.1) lib/web_console/middleware.rb:28:in `block in call'
+web-console (3.3.1) lib/web_console/middleware.rb:18:in `catch'
+web-console (3.3.1) lib/web_console/middleware.rb:18:in `call'
+actionpack (5.0.0) lib/action_dispatch/middleware/show_exceptions.rb:31:in `call'
+railties (5.0.0) lib/rails/rack/logger.rb:36:in `call_app'
+railties (5.0.0) lib/rails/rack/logger.rb:24:in `block in call'
+activesupport (5.0.0) lib/active_support/tagged_logging.rb:70:in `block in tagged'
+activesupport (5.0.0) lib/active_support/tagged_logging.rb:26:in `tagged'
+activesupport (5.0.0) lib/active_support/tagged_logging.rb:70:in `tagged'
+railties (5.0.0) lib/rails/rack/logger.rb:24:in `call'
+sprockets-rails (3.1.1) lib/sprockets/rails/quiet_assets.rb:11:in `block in call'
+activesupport (5.0.0) lib/active_support/logger_silence.rb:20:in `silence'
+activesupport (5.0.0) lib/active_support/logger.rb:63:in `block (3 levels) in broadcast'
+activesupport (5.0.0) lib/active_support/logger_silence.rb:20:in `silence'
+activesupport (5.0.0) lib/active_support/logger.rb:61:in `block (2 levels) in broadcast'
+sprockets-rails (3.1.1) lib/sprockets/rails/quiet_assets.rb:11:in `call'
+actionpack (5.0.0) lib/action_dispatch/middleware/request_id.rb:24:in `call'
+rack (2.0.1) lib/rack/method_override.rb:22:in `call'
+rack (2.0.1) lib/rack/runtime.rb:22:in `call'
+activesupport (5.0.0) lib/active_support/cache/strategy/local_cache_middleware.rb:28:in `call'
+actionpack (5.0.0) lib/action_dispatch/middleware/executor.rb:12:in `call'
+actionpack (5.0.0) lib/action_dispatch/middleware/static.rb:136:in `call'
+rack (2.0.1) lib/rack/sendfile.rb:111:in `call'
+railties (5.0.0) lib/rails/engine.rb:522:in `call'
+puma (3.6.0) lib/puma/configuration.rb:225:in `call'
+puma (3.6.0) lib/puma/server.rb:578:in `handle_request'
+puma (3.6.0) lib/puma/server.rb:415:in `process_client'
+puma (3.6.0) lib/puma/server.rb:275:in `block in run'
+puma (3.6.0) lib/puma/thread_pool.rb:116:in `block in spawn_thread'
+  
+ActionController::RoutingError (No route matches [GET] "/assets/noisePattern.jpeg"):
+  
+actionpack (5.0.0) lib/action_dispatch/middleware/debug_exceptions.rb:53:in `call'
+web-console (3.3.1) lib/web_console/middleware.rb:131:in `call_app'
+web-console (3.3.1) lib/web_console/middleware.rb:28:in `block in call'
+web-console (3.3.1) lib/web_console/middleware.rb:18:in `catch'
+web-console (3.3.1) lib/web_console/middleware.rb:18:in `call'
+actionpack (5.0.0) lib/action_dispatch/middleware/show_exceptions.rb:31:in `call'
+railties (5.0.0) lib/rails/rack/logger.rb:36:in `call_app'
+railties (5.0.0) lib/rails/rack/logger.rb:24:in `block in call'
+activesupport (5.0.0) lib/active_support/tagged_logging.rb:70:in `block in tagged'
+activesupport (5.0.0) lib/active_support/tagged_logging.rb:26:in `tagged'
+activesupport (5.0.0) lib/active_support/tagged_logging.rb:70:in `tagged'
+railties (5.0.0) lib/rails/rack/logger.rb:24:in `call'
+sprockets-rails (3.1.1) lib/sprockets/rails/quiet_assets.rb:11:in `block in call'
+activesupport (5.0.0) lib/active_support/logger_silence.rb:20:in `silence'
+activesupport (5.0.0) lib/active_support/logger.rb:63:in `block (3 levels) in broadcast'
+activesupport (5.0.0) lib/active_support/logger_silence.rb:20:in `silence'
+activesupport (5.0.0) lib/active_support/logger.rb:61:in `block (2 levels) in broadcast'
+sprockets-rails (3.1.1) lib/sprockets/rails/quiet_assets.rb:11:in `call'
+actionpack (5.0.0) lib/action_dispatch/middleware/request_id.rb:24:in `call'
+rack (2.0.1) lib/rack/method_override.rb:22:in `call'
+rack (2.0.1) lib/rack/runtime.rb:22:in `call'
+activesupport (5.0.0) lib/active_support/cache/strategy/local_cache_middleware.rb:28:in `call'
+actionpack (5.0.0) lib/action_dispatch/middleware/executor.rb:12:in `call'
+actionpack (5.0.0) lib/action_dispatch/middleware/static.rb:136:in `call'
+rack (2.0.1) lib/rack/sendfile.rb:111:in `call'
+railties (5.0.0) lib/rails/engine.rb:522:in `call'
+puma (3.6.0) lib/puma/configuration.rb:225:in `call'
+puma (3.6.0) lib/puma/server.rb:578:in `handle_request'
+puma (3.6.0) lib/puma/server.rb:415:in `process_client'
+puma (3.6.0) lib/puma/server.rb:275:in `block in run'
+puma (3.6.0) lib/puma/thread_pool.rb:116:in `block in spawn_thread'
+  
+ActionController::RoutingError (No route matches [GET] "/assets/noisePattern.jpeg"):
+  
+actionpack (5.0.0) lib/action_dispatch/middleware/debug_exceptions.rb:53:in `call'
+web-console (3.3.1) lib/web_console/middleware.rb:131:in `call_app'
+web-console (3.3.1) lib/web_console/middleware.rb:28:in `block in call'
+web-console (3.3.1) lib/web_console/middleware.rb:18:in `catch'
+web-console (3.3.1) lib/web_console/middleware.rb:18:in `call'
+actionpack (5.0.0) lib/action_dispatch/middleware/show_exceptions.rb:31:in `call'
+railties (5.0.0) lib/rails/rack/logger.rb:36:in `call_app'
+railties (5.0.0) lib/rails/rack/logger.rb:24:in `block in call'
+activesupport (5.0.0) lib/active_support/tagged_logging.rb:70:in `block in tagged'
+activesupport (5.0.0) lib/active_support/tagged_logging.rb:26:in `tagged'
+activesupport (5.0.0) lib/active_support/tagged_logging.rb:70:in `tagged'
+railties (5.0.0) lib/rails/rack/logger.rb:24:in `call'
+sprockets-rails (3.1.1) lib/sprockets/rails/quiet_assets.rb:11:in `block in call'
+activesupport (5.0.0) lib/active_support/logger_silence.rb:20:in `silence'
+activesupport (5.0.0) lib/active_support/logger.rb:63:in `block (3 levels) in broadcast'
+activesupport (5.0.0) lib/active_support/logger_silence.rb:20:in `silence'
+activesupport (5.0.0) lib/active_support/logger.rb:61:in `block (2 levels) in broadcast'
+sprockets-rails (3.1.1) lib/sprockets/rails/quiet_assets.rb:11:in `call'
+actionpack (5.0.0) lib/action_dispatch/middleware/request_id.rb:24:in `call'
+rack (2.0.1) lib/rack/method_override.rb:22:in `call'
+rack (2.0.1) lib/rack/runtime.rb:22:in `call'
+activesupport (5.0.0) lib/active_support/cache/strategy/local_cache_middleware.rb:28:in `call'
+actionpack (5.0.0) lib/action_dispatch/middleware/executor.rb:12:in `call'
+actionpack (5.0.0) lib/action_dispatch/middleware/static.rb:136:in `call'
+rack (2.0.1) lib/rack/sendfile.rb:111:in `call'
+railties (5.0.0) lib/rails/engine.rb:522:in `call'
+puma (3.6.0) lib/puma/configuration.rb:225:in `call'
+puma (3.6.0) lib/puma/server.rb:578:in `handle_request'
+puma (3.6.0) lib/puma/server.rb:415:in `process_client'
+puma (3.6.0) lib/puma/server.rb:275:in `block in run'
+puma (3.6.0) lib/puma/thread_pool.rb:116:in `block in spawn_thread'
+  
+ActionController::RoutingError (No route matches [GET] "/assets/noisePattern.jpeg"):
+  
+actionpack (5.0.0) lib/action_dispatch/middleware/debug_exceptions.rb:53:in `call'
+web-console (3.3.1) lib/web_console/middleware.rb:131:in `call_app'
+web-console (3.3.1) lib/web_console/middleware.rb:28:in `block in call'
+web-console (3.3.1) lib/web_console/middleware.rb:18:in `catch'
+web-console (3.3.1) lib/web_console/middleware.rb:18:in `call'
+actionpack (5.0.0) lib/action_dispatch/middleware/show_exceptions.rb:31:in `call'
+railties (5.0.0) lib/rails/rack/logger.rb:36:in `call_app'
+railties (5.0.0) lib/rails/rack/logger.rb:24:in `block in call'
+activesupport (5.0.0) lib/active_support/tagged_logging.rb:70:in `block in tagged'
+activesupport (5.0.0) lib/active_support/tagged_logging.rb:26:in `tagged'
+activesupport (5.0.0) lib/active_support/tagged_logging.rb:70:in `tagged'
+railties (5.0.0) lib/rails/rack/logger.rb:24:in `call'
+sprockets-rails (3.1.1) lib/sprockets/rails/quiet_assets.rb:11:in `block in call'
+activesupport (5.0.0) lib/active_support/logger_silence.rb:20:in `silence'
+activesupport (5.0.0) lib/active_support/logger.rb:63:in `block (3 levels) in broadcast'
+activesupport (5.0.0) lib/active_support/logger_silence.rb:20:in `silence'
+activesupport (5.0.0) lib/active_support/logger.rb:61:in `block (2 levels) in broadcast'
+sprockets-rails (3.1.1) lib/sprockets/rails/quiet_assets.rb:11:in `call'
+actionpack (5.0.0) lib/action_dispatch/middleware/request_id.rb:24:in `call'
+rack (2.0.1) lib/rack/method_override.rb:22:in `call'
+rack (2.0.1) lib/rack/runtime.rb:22:in `call'
+activesupport (5.0.0) lib/active_support/cache/strategy/local_cache_middleware.rb:28:in `call'
+actionpack (5.0.0) lib/action_dispatch/middleware/executor.rb:12:in `call'
+actionpack (5.0.0) lib/action_dispatch/middleware/static.rb:136:in `call'
+rack (2.0.1) lib/rack/sendfile.rb:111:in `call'
+railties (5.0.0) lib/rails/engine.rb:522:in `call'
+puma (3.6.0) lib/puma/configuration.rb:225:in `call'
+puma (3.6.0) lib/puma/server.rb:578:in `handle_request'
+puma (3.6.0) lib/puma/server.rb:415:in `process_client'
+puma (3.6.0) lib/puma/server.rb:275:in `block in run'
+puma (3.6.0) lib/puma/thread_pool.rb:116:in `block in spawn_thread'
+  
+ActionController::RoutingError (No route matches [GET] "/assets/noisePattern.jpeg"):
+  
+actionpack (5.0.0) lib/action_dispatch/middleware/debug_exceptions.rb:53:in `call'
+web-console (3.3.1) lib/web_console/middleware.rb:131:in `call_app'
+web-console (3.3.1) lib/web_console/middleware.rb:28:in `block in call'
+web-console (3.3.1) lib/web_console/middleware.rb:18:in `catch'
+web-console (3.3.1) lib/web_console/middleware.rb:18:in `call'
+actionpack (5.0.0) lib/action_dispatch/middleware/show_exceptions.rb:31:in `call'
+railties (5.0.0) lib/rails/rack/logger.rb:36:in `call_app'
+railties (5.0.0) lib/rails/rack/logger.rb:24:in `block in call'
+activesupport (5.0.0) lib/active_support/tagged_logging.rb:70:in `block in tagged'
+activesupport (5.0.0) lib/active_support/tagged_logging.rb:26:in `tagged'
+activesupport (5.0.0) lib/active_support/tagged_logging.rb:70:in `tagged'
+railties (5.0.0) lib/rails/rack/logger.rb:24:in `call'
+sprockets-rails (3.1.1) lib/sprockets/rails/quiet_assets.rb:11:in `block in call'
+activesupport (5.0.0) lib/active_support/logger_silence.rb:20:in `silence'
+activesupport (5.0.0) lib/active_support/logger.rb:63:in `block (3 levels) in broadcast'
+activesupport (5.0.0) lib/active_support/logger_silence.rb:20:in `silence'
+activesupport (5.0.0) lib/active_support/logger.rb:61:in `block (2 levels) in broadcast'
+sprockets-rails (3.1.1) lib/sprockets/rails/quiet_assets.rb:11:in `call'
+actionpack (5.0.0) lib/action_dispatch/middleware/request_id.rb:24:in `call'
+rack (2.0.1) lib/rack/method_override.rb:22:in `call'
+rack (2.0.1) lib/rack/runtime.rb:22:in `call'
+activesupport (5.0.0) lib/active_support/cache/strategy/local_cache_middleware.rb:28:in `call'
+actionpack (5.0.0) lib/action_dispatch/middleware/executor.rb:12:in `call'
+actionpack (5.0.0) lib/action_dispatch/middleware/static.rb:136:in `call'
+rack (2.0.1) lib/rack/sendfile.rb:111:in `call'
+railties (5.0.0) lib/rails/engine.rb:522:in `call'
+puma (3.6.0) lib/puma/configuration.rb:225:in `call'
+puma (3.6.0) lib/puma/server.rb:578:in `handle_request'
+puma (3.6.0) lib/puma/server.rb:415:in `process_client'
+puma (3.6.0) lib/puma/server.rb:275:in `block in run'
+puma (3.6.0) lib/puma/thread_pool.rb:116:in `block in spawn_thread'
+  
+ActionController::RoutingError (No route matches [GET] "/assets/noisePattern.jpeg"):
+  
+actionpack (5.0.0) lib/action_dispatch/middleware/debug_exceptions.rb:53:in `call'
+web-console (3.3.1) lib/web_console/middleware.rb:131:in `call_app'
+web-console (3.3.1) lib/web_console/middleware.rb:28:in `block in call'
+web-console (3.3.1) lib/web_console/middleware.rb:18:in `catch'
+web-console (3.3.1) lib/web_console/middleware.rb:18:in `call'
+actionpack (5.0.0) lib/action_dispatch/middleware/show_exceptions.rb:31:in `call'
+railties (5.0.0) lib/rails/rack/logger.rb:36:in `call_app'
+railties (5.0.0) lib/rails/rack/logger.rb:24:in `block in call'
+activesupport (5.0.0) lib/active_support/tagged_logging.rb:70:in `block in tagged'
+activesupport (5.0.0) lib/active_support/tagged_logging.rb:26:in `tagged'
+activesupport (5.0.0) lib/active_support/tagged_logging.rb:70:in `tagged'
+railties (5.0.0) lib/rails/rack/logger.rb:24:in `call'
+sprockets-rails (3.1.1) lib/sprockets/rails/quiet_assets.rb:11:in `block in call'
+activesupport (5.0.0) lib/active_support/logger_silence.rb:20:in `silence'
+activesupport (5.0.0) lib/active_support/logger.rb:63:in `block (3 levels) in broadcast'
+activesupport (5.0.0) lib/active_support/logger_silence.rb:20:in `silence'
+activesupport (5.0.0) lib/active_support/logger.rb:61:in `block (2 levels) in broadcast'
+sprockets-rails (3.1.1) lib/sprockets/rails/quiet_assets.rb:11:in `call'
+actionpack (5.0.0) lib/action_dispatch/middleware/request_id.rb:24:in `call'
+rack (2.0.1) lib/rack/method_override.rb:22:in `call'
+rack (2.0.1) lib/rack/runtime.rb:22:in `call'
+activesupport (5.0.0) lib/active_support/cache/strategy/local_cache_middleware.rb:28:in `call'
+actionpack (5.0.0) lib/action_dispatch/middleware/executor.rb:12:in `call'
+actionpack (5.0.0) lib/action_dispatch/middleware/static.rb:136:in `call'
+rack (2.0.1) lib/rack/sendfile.rb:111:in `call'
+railties (5.0.0) lib/rails/engine.rb:522:in `call'
+puma (3.6.0) lib/puma/configuration.rb:225:in `call'
+puma (3.6.0) lib/puma/server.rb:578:in `handle_request'
+puma (3.6.0) lib/puma/server.rb:415:in `process_client'
+puma (3.6.0) lib/puma/server.rb:275:in `block in run'
+puma (3.6.0) lib/puma/thread_pool.rb:116:in `block in spawn_thread'
+  
+ActionController::RoutingError (No route matches [GET] "/assets/noisePattern.jpeg"):
+  
+actionpack (5.0.0) lib/action_dispatch/middleware/debug_exceptions.rb:53:in `call'
+web-console (3.3.1) lib/web_console/middleware.rb:131:in `call_app'
+web-console (3.3.1) lib/web_console/middleware.rb:28:in `block in call'
+web-console (3.3.1) lib/web_console/middleware.rb:18:in `catch'
+web-console (3.3.1) lib/web_console/middleware.rb:18:in `call'
+actionpack (5.0.0) lib/action_dispatch/middleware/show_exceptions.rb:31:in `call'
+railties (5.0.0) lib/rails/rack/logger.rb:36:in `call_app'
+railties (5.0.0) lib/rails/rack/logger.rb:24:in `block in call'
+activesupport (5.0.0) lib/active_support/tagged_logging.rb:70:in `block in tagged'
+activesupport (5.0.0) lib/active_support/tagged_logging.rb:26:in `tagged'
+activesupport (5.0.0) lib/active_support/tagged_logging.rb:70:in `tagged'
+railties (5.0.0) lib/rails/rack/logger.rb:24:in `call'
+sprockets-rails (3.1.1) lib/sprockets/rails/quiet_assets.rb:11:in `block in call'
+activesupport (5.0.0) lib/active_support/logger_silence.rb:20:in `silence'
+activesupport (5.0.0) lib/active_support/logger.rb:63:in `block (3 levels) in broadcast'
+activesupport (5.0.0) lib/active_support/logger_silence.rb:20:in `silence'
+activesupport (5.0.0) lib/active_support/logger.rb:61:in `block (2 levels) in broadcast'
+sprockets-rails (3.1.1) lib/sprockets/rails/quiet_assets.rb:11:in `call'
+actionpack (5.0.0) lib/action_dispatch/middleware/request_id.rb:24:in `call'
+rack (2.0.1) lib/rack/method_override.rb:22:in `call'
+rack (2.0.1) lib/rack/runtime.rb:22:in `call'
+activesupport (5.0.0) lib/active_support/cache/strategy/local_cache_middleware.rb:28:in `call'
+actionpack (5.0.0) lib/action_dispatch/middleware/executor.rb:12:in `call'
+actionpack (5.0.0) lib/action_dispatch/middleware/static.rb:136:in `call'
+rack (2.0.1) lib/rack/sendfile.rb:111:in `call'
+railties (5.0.0) lib/rails/engine.rb:522:in `call'
+puma (3.6.0) lib/puma/configuration.rb:225:in `call'
+puma (3.6.0) lib/puma/server.rb:578:in `handle_request'
+puma (3.6.0) lib/puma/server.rb:415:in `process_client'
+puma (3.6.0) lib/puma/server.rb:275:in `block in run'
+puma (3.6.0) lib/puma/thread_pool.rb:116:in `block in spawn_thread'
+  
+ActionController::RoutingError (No route matches [GET] "/assets/noisePattern.jpeg"):
+  
+actionpack (5.0.0) lib/action_dispatch/middleware/debug_exceptions.rb:53:in `call'
+web-console (3.3.1) lib/web_console/middleware.rb:131:in `call_app'
+web-console (3.3.1) lib/web_console/middleware.rb:28:in `block in call'
+web-console (3.3.1) lib/web_console/middleware.rb:18:in `catch'
+web-console (3.3.1) lib/web_console/middleware.rb:18:in `call'
+actionpack (5.0.0) lib/action_dispatch/middleware/show_exceptions.rb:31:in `call'
+railties (5.0.0) lib/rails/rack/logger.rb:36:in `call_app'
+railties (5.0.0) lib/rails/rack/logger.rb:24:in `block in call'
+activesupport (5.0.0) lib/active_support/tagged_logging.rb:70:in `block in tagged'
+activesupport (5.0.0) lib/active_support/tagged_logging.rb:26:in `tagged'
+activesupport (5.0.0) lib/active_support/tagged_logging.rb:70:in `tagged'
+railties (5.0.0) lib/rails/rack/logger.rb:24:in `call'
+sprockets-rails (3.1.1) lib/sprockets/rails/quiet_assets.rb:11:in `block in call'
+activesupport (5.0.0) lib/active_support/logger_silence.rb:20:in `silence'
+activesupport (5.0.0) lib/active_support/logger.rb:63:in `block (3 levels) in broadcast'
+activesupport (5.0.0) lib/active_support/logger_silence.rb:20:in `silence'
+activesupport (5.0.0) lib/active_support/logger.rb:61:in `block (2 levels) in broadcast'
+sprockets-rails (3.1.1) lib/sprockets/rails/quiet_assets.rb:11:in `call'
+actionpack (5.0.0) lib/action_dispatch/middleware/request_id.rb:24:in `call'
+rack (2.0.1) lib/rack/method_override.rb:22:in `call'
+rack (2.0.1) lib/rack/runtime.rb:22:in `call'
+activesupport (5.0.0) lib/active_support/cache/strategy/local_cache_middleware.rb:28:in `call'
+actionpack (5.0.0) lib/action_dispatch/middleware/executor.rb:12:in `call'
+actionpack (5.0.0) lib/action_dispatch/middleware/static.rb:136:in `call'
+rack (2.0.1) lib/rack/sendfile.rb:111:in `call'
+railties (5.0.0) lib/rails/engine.rb:522:in `call'
+puma (3.6.0) lib/puma/configuration.rb:225:in `call'
+puma (3.6.0) lib/puma/server.rb:578:in `handle_request'
+puma (3.6.0) lib/puma/server.rb:415:in `process_client'
+puma (3.6.0) lib/puma/server.rb:275:in `block in run'
+puma (3.6.0) lib/puma/thread_pool.rb:116:in `block in spawn_thread'
+  
+ActionController::RoutingError (No route matches [GET] "/assets/noisePattern.jpeg"):
+  
+actionpack (5.0.0) lib/action_dispatch/middleware/debug_exceptions.rb:53:in `call'
+web-console (3.3.1) lib/web_console/middleware.rb:131:in `call_app'
+web-console (3.3.1) lib/web_console/middleware.rb:28:in `block in call'
+web-console (3.3.1) lib/web_console/middleware.rb:18:in `catch'
+web-console (3.3.1) lib/web_console/middleware.rb:18:in `call'
+actionpack (5.0.0) lib/action_dispatch/middleware/show_exceptions.rb:31:in `call'
+railties (5.0.0) lib/rails/rack/logger.rb:36:in `call_app'
+railties (5.0.0) lib/rails/rack/logger.rb:24:in `block in call'
+activesupport (5.0.0) lib/active_support/tagged_logging.rb:70:in `block in tagged'
+activesupport (5.0.0) lib/active_support/tagged_logging.rb:26:in `tagged'
+activesupport (5.0.0) lib/active_support/tagged_logging.rb:70:in `tagged'
+railties (5.0.0) lib/rails/rack/logger.rb:24:in `call'
+sprockets-rails (3.1.1) lib/sprockets/rails/quiet_assets.rb:11:in `block in call'
+activesupport (5.0.0) lib/active_support/logger_silence.rb:20:in `silence'
+activesupport (5.0.0) lib/active_support/logger.rb:63:in `block (3 levels) in broadcast'
+activesupport (5.0.0) lib/active_support/logger_silence.rb:20:in `silence'
+activesupport (5.0.0) lib/active_support/logger.rb:61:in `block (2 levels) in broadcast'
+sprockets-rails (3.1.1) lib/sprockets/rails/quiet_assets.rb:11:in `call'
+actionpack (5.0.0) lib/action_dispatch/middleware/request_id.rb:24:in `call'
+rack (2.0.1) lib/rack/method_override.rb:22:in `call'
+rack (2.0.1) lib/rack/runtime.rb:22:in `call'
+activesupport (5.0.0) lib/active_support/cache/strategy/local_cache_middleware.rb:28:in `call'
+actionpack (5.0.0) lib/action_dispatch/middleware/executor.rb:12:in `call'
+actionpack (5.0.0) lib/action_dispatch/middleware/static.rb:136:in `call'
+rack (2.0.1) lib/rack/sendfile.rb:111:in `call'
+railties (5.0.0) lib/rails/engine.rb:522:in `call'
+puma (3.6.0) lib/puma/configuration.rb:225:in `call'
+puma (3.6.0) lib/puma/server.rb:578:in `handle_request'
+puma (3.6.0) lib/puma/server.rb:415:in `process_client'
+puma (3.6.0) lib/puma/server.rb:275:in `block in run'
+puma (3.6.0) lib/puma/thread_pool.rb:116:in `block in spawn_thread'
+  
+ActionController::RoutingError (No route matches [GET] "/assets/noisePattern.jpeg"):
+  
+actionpack (5.0.0) lib/action_dispatch/middleware/debug_exceptions.rb:53:in `call'
+web-console (3.3.1) lib/web_console/middleware.rb:131:in `call_app'
+web-console (3.3.1) lib/web_console/middleware.rb:28:in `block in call'
+web-console (3.3.1) lib/web_console/middleware.rb:18:in `catch'
+web-console (3.3.1) lib/web_console/middleware.rb:18:in `call'
+actionpack (5.0.0) lib/action_dispatch/middleware/show_exceptions.rb:31:in `call'
+railties (5.0.0) lib/rails/rack/logger.rb:36:in `call_app'
+railties (5.0.0) lib/rails/rack/logger.rb:24:in `block in call'
+activesupport (5.0.0) lib/active_support/tagged_logging.rb:70:in `block in tagged'
+activesupport (5.0.0) lib/active_support/tagged_logging.rb:26:in `tagged'
+activesupport (5.0.0) lib/active_support/tagged_logging.rb:70:in `tagged'
+railties (5.0.0) lib/rails/rack/logger.rb:24:in `call'
+sprockets-rails (3.1.1) lib/sprockets/rails/quiet_assets.rb:11:in `block in call'
+activesupport (5.0.0) lib/active_support/logger_silence.rb:20:in `silence'
+activesupport (5.0.0) lib/active_support/logger.rb:63:in `block (3 levels) in broadcast'
+activesupport (5.0.0) lib/active_support/logger_silence.rb:20:in `silence'
+activesupport (5.0.0) lib/active_support/logger.rb:61:in `block (2 levels) in broadcast'
+sprockets-rails (3.1.1) lib/sprockets/rails/quiet_assets.rb:11:in `call'
+actionpack (5.0.0) lib/action_dispatch/middleware/request_id.rb:24:in `call'
+rack (2.0.1) lib/rack/method_override.rb:22:in `call'
+rack (2.0.1) lib/rack/runtime.rb:22:in `call'
+activesupport (5.0.0) lib/active_support/cache/strategy/local_cache_middleware.rb:28:in `call'
+actionpack (5.0.0) lib/action_dispatch/middleware/executor.rb:12:in `call'
+actionpack (5.0.0) lib/action_dispatch/middleware/static.rb:136:in `call'
+rack (2.0.1) lib/rack/sendfile.rb:111:in `call'
+railties (5.0.0) lib/rails/engine.rb:522:in `call'
+puma (3.6.0) lib/puma/configuration.rb:225:in `call'
+puma (3.6.0) lib/puma/server.rb:578:in `handle_request'
+puma (3.6.0) lib/puma/server.rb:415:in `process_client'
+puma (3.6.0) lib/puma/server.rb:275:in `block in run'
+puma (3.6.0) lib/puma/thread_pool.rb:116:in `block in spawn_thread'
+  
+ActionController::RoutingError (No route matches [GET] "/assets/noisePattern.jpeg"):
+  
+actionpack (5.0.0) lib/action_dispatch/middleware/debug_exceptions.rb:53:in `call'
+web-console (3.3.1) lib/web_console/middleware.rb:131:in `call_app'
+web-console (3.3.1) lib/web_console/middleware.rb:28:in `block in call'
+web-console (3.3.1) lib/web_console/middleware.rb:18:in `catch'
+web-console (3.3.1) lib/web_console/middleware.rb:18:in `call'
+actionpack (5.0.0) lib/action_dispatch/middleware/show_exceptions.rb:31:in `call'
+railties (5.0.0) lib/rails/rack/logger.rb:36:in `call_app'
+railties (5.0.0) lib/rails/rack/logger.rb:24:in `block in call'
+activesupport (5.0.0) lib/active_support/tagged_logging.rb:70:in `block in tagged'
+activesupport (5.0.0) lib/active_support/tagged_logging.rb:26:in `tagged'
+activesupport (5.0.0) lib/active_support/tagged_logging.rb:70:in `tagged'
+railties (5.0.0) lib/rails/rack/logger.rb:24:in `call'
+sprockets-rails (3.1.1) lib/sprockets/rails/quiet_assets.rb:11:in `block in call'
+activesupport (5.0.0) lib/active_support/logger_silence.rb:20:in `silence'
+activesupport (5.0.0) lib/active_support/logger.rb:63:in `block (3 levels) in broadcast'
+activesupport (5.0.0) lib/active_support/logger_silence.rb:20:in `silence'
+activesupport (5.0.0) lib/active_support/logger.rb:61:in `block (2 levels) in broadcast'
+sprockets-rails (3.1.1) lib/sprockets/rails/quiet_assets.rb:11:in `call'
+actionpack (5.0.0) lib/action_dispatch/middleware/request_id.rb:24:in `call'
+rack (2.0.1) lib/rack/method_override.rb:22:in `call'
+rack (2.0.1) lib/rack/runtime.rb:22:in `call'
+activesupport (5.0.0) lib/active_support/cache/strategy/local_cache_middleware.rb:28:in `call'
+actionpack (5.0.0) lib/action_dispatch/middleware/executor.rb:12:in `call'
+actionpack (5.0.0) lib/action_dispatch/middleware/static.rb:136:in `call'
+rack (2.0.1) lib/rack/sendfile.rb:111:in `call'
+railties (5.0.0) lib/rails/engine.rb:522:in `call'
+puma (3.6.0) lib/puma/configuration.rb:225:in `call'
+puma (3.6.0) lib/puma/server.rb:578:in `handle_request'
+puma (3.6.0) lib/puma/server.rb:415:in `process_client'
+puma (3.6.0) lib/puma/server.rb:275:in `block in run'
+puma (3.6.0) lib/puma/thread_pool.rb:116:in `block in spawn_thread'
+Started GET "/decks/14" for ::1 at 2016-08-10 01:54:04 +0800
+Processing by DecksController#show as HTML
+  Parameters: {"id"=>"14"}
+  [1m[36mDeck Load (1.0ms)[0m  [1m[34mSELECT  "decks".* FROM "decks" WHERE "decks"."id" = $1 LIMIT $2[0m  [["id", 14], ["LIMIT", 1]]
+  Rendering decks/show.html.erb within layouts/application
+  [1m[36mUser Load (1.1ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = $1 ORDER BY "users"."id" ASC LIMIT $2[0m  [["id", 2], ["LIMIT", 1]]
+  Rendered layouts/_navbar2.html.erb (9.1ms)
+  [1m[36mUser Load (0.6ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = $1 LIMIT $2[0m  [["id", 2], ["LIMIT", 1]]
+  [1m[36mCard Load (0.8ms)[0m  [1m[34mSELECT "cards".* FROM "cards" WHERE "cards"."deck_id" = $1[0m  [["deck_id", 14]]
+  Rendered decks/show.html.erb within layouts/application (22.5ms)
+Completed 200 OK in 2813ms (Views: 2804.4ms | ActiveRecord: 3.4ms)
+
+
+  
+ActionController::RoutingError (No route matches [GET] "/assets/noisePattern.jpeg"):
+  
+actionpack (5.0.0) lib/action_dispatch/middleware/debug_exceptions.rb:53:in `call'
+web-console (3.3.1) lib/web_console/middleware.rb:131:in `call_app'
+web-console (3.3.1) lib/web_console/middleware.rb:28:in `block in call'
+web-console (3.3.1) lib/web_console/middleware.rb:18:in `catch'
+web-console (3.3.1) lib/web_console/middleware.rb:18:in `call'
+actionpack (5.0.0) lib/action_dispatch/middleware/show_exceptions.rb:31:in `call'
+railties (5.0.0) lib/rails/rack/logger.rb:36:in `call_app'
+railties (5.0.0) lib/rails/rack/logger.rb:24:in `block in call'
+activesupport (5.0.0) lib/active_support/tagged_logging.rb:70:in `block in tagged'
+activesupport (5.0.0) lib/active_support/tagged_logging.rb:26:in `tagged'
+activesupport (5.0.0) lib/active_support/tagged_logging.rb:70:in `tagged'
+railties (5.0.0) lib/rails/rack/logger.rb:24:in `call'
+sprockets-rails (3.1.1) lib/sprockets/rails/quiet_assets.rb:11:in `block in call'
+activesupport (5.0.0) lib/active_support/logger_silence.rb:20:in `silence'
+activesupport (5.0.0) lib/active_support/logger.rb:63:in `block (3 levels) in broadcast'
+activesupport (5.0.0) lib/active_support/logger_silence.rb:20:in `silence'
+activesupport (5.0.0) lib/active_support/logger.rb:61:in `block (2 levels) in broadcast'
+sprockets-rails (3.1.1) lib/sprockets/rails/quiet_assets.rb:11:in `call'
+actionpack (5.0.0) lib/action_dispatch/middleware/request_id.rb:24:in `call'
+rack (2.0.1) lib/rack/method_override.rb:22:in `call'
+rack (2.0.1) lib/rack/runtime.rb:22:in `call'
+activesupport (5.0.0) lib/active_support/cache/strategy/local_cache_middleware.rb:28:in `call'
+actionpack (5.0.0) lib/action_dispatch/middleware/executor.rb:12:in `call'
+actionpack (5.0.0) lib/action_dispatch/middleware/static.rb:136:in `call'
+rack (2.0.1) lib/rack/sendfile.rb:111:in `call'
+railties (5.0.0) lib/rails/engine.rb:522:in `call'
+puma (3.6.0) lib/puma/configuration.rb:225:in `call'
+puma (3.6.0) lib/puma/server.rb:578:in `handle_request'
+puma (3.6.0) lib/puma/server.rb:415:in `process_client'
+puma (3.6.0) lib/puma/server.rb:275:in `block in run'
+puma (3.6.0) lib/puma/thread_pool.rb:116:in `block in spawn_thread'
+  
+ActionController::RoutingError (No route matches [GET] "/assets/noisePattern.jpeg"):
+  
+actionpack (5.0.0) lib/action_dispatch/middleware/debug_exceptions.rb:53:in `call'
+web-console (3.3.1) lib/web_console/middleware.rb:131:in `call_app'
+web-console (3.3.1) lib/web_console/middleware.rb:28:in `block in call'
+web-console (3.3.1) lib/web_console/middleware.rb:18:in `catch'
+web-console (3.3.1) lib/web_console/middleware.rb:18:in `call'
+actionpack (5.0.0) lib/action_dispatch/middleware/show_exceptions.rb:31:in `call'
+railties (5.0.0) lib/rails/rack/logger.rb:36:in `call_app'
+railties (5.0.0) lib/rails/rack/logger.rb:24:in `block in call'
+activesupport (5.0.0) lib/active_support/tagged_logging.rb:70:in `block in tagged'
+activesupport (5.0.0) lib/active_support/tagged_logging.rb:26:in `tagged'
+activesupport (5.0.0) lib/active_support/tagged_logging.rb:70:in `tagged'
+railties (5.0.0) lib/rails/rack/logger.rb:24:in `call'
+sprockets-rails (3.1.1) lib/sprockets/rails/quiet_assets.rb:11:in `block in call'
+activesupport (5.0.0) lib/active_support/logger_silence.rb:20:in `silence'
+activesupport (5.0.0) lib/active_support/logger.rb:63:in `block (3 levels) in broadcast'
+activesupport (5.0.0) lib/active_support/logger_silence.rb:20:in `silence'
+activesupport (5.0.0) lib/active_support/logger.rb:61:in `block (2 levels) in broadcast'
+sprockets-rails (3.1.1) lib/sprockets/rails/quiet_assets.rb:11:in `call'
+actionpack (5.0.0) lib/action_dispatch/middleware/request_id.rb:24:in `call'
+rack (2.0.1) lib/rack/method_override.rb:22:in `call'
+rack (2.0.1) lib/rack/runtime.rb:22:in `call'
+activesupport (5.0.0) lib/active_support/cache/strategy/local_cache_middleware.rb:28:in `call'
+actionpack (5.0.0) lib/action_dispatch/middleware/executor.rb:12:in `call'
+actionpack (5.0.0) lib/action_dispatch/middleware/static.rb:136:in `call'
+rack (2.0.1) lib/rack/sendfile.rb:111:in `call'
+railties (5.0.0) lib/rails/engine.rb:522:in `call'
+puma (3.6.0) lib/puma/configuration.rb:225:in `call'
+puma (3.6.0) lib/puma/server.rb:578:in `handle_request'
+puma (3.6.0) lib/puma/server.rb:415:in `process_client'
+puma (3.6.0) lib/puma/server.rb:275:in `block in run'
+puma (3.6.0) lib/puma/thread_pool.rb:116:in `block in spawn_thread'
+  
+ActionController::RoutingError (No route matches [GET] "/assets/noisePattern.jpeg"):
+  
+actionpack (5.0.0) lib/action_dispatch/middleware/debug_exceptions.rb:53:in `call'
+web-console (3.3.1) lib/web_console/middleware.rb:131:in `call_app'
+web-console (3.3.1) lib/web_console/middleware.rb:28:in `block in call'
+web-console (3.3.1) lib/web_console/middleware.rb:18:in `catch'
+web-console (3.3.1) lib/web_console/middleware.rb:18:in `call'
+actionpack (5.0.0) lib/action_dispatch/middleware/show_exceptions.rb:31:in `call'
+railties (5.0.0) lib/rails/rack/logger.rb:36:in `call_app'
+railties (5.0.0) lib/rails/rack/logger.rb:24:in `block in call'
+activesupport (5.0.0) lib/active_support/tagged_logging.rb:70:in `block in tagged'
+activesupport (5.0.0) lib/active_support/tagged_logging.rb:26:in `tagged'
+activesupport (5.0.0) lib/active_support/tagged_logging.rb:70:in `tagged'
+railties (5.0.0) lib/rails/rack/logger.rb:24:in `call'
+sprockets-rails (3.1.1) lib/sprockets/rails/quiet_assets.rb:11:in `block in call'
+activesupport (5.0.0) lib/active_support/logger_silence.rb:20:in `silence'
+activesupport (5.0.0) lib/active_support/logger.rb:63:in `block (3 levels) in broadcast'
+activesupport (5.0.0) lib/active_support/logger_silence.rb:20:in `silence'
+activesupport (5.0.0) lib/active_support/logger.rb:61:in `block (2 levels) in broadcast'
+sprockets-rails (3.1.1) lib/sprockets/rails/quiet_assets.rb:11:in `call'
+actionpack (5.0.0) lib/action_dispatch/middleware/request_id.rb:24:in `call'
+rack (2.0.1) lib/rack/method_override.rb:22:in `call'
+rack (2.0.1) lib/rack/runtime.rb:22:in `call'
+activesupport (5.0.0) lib/active_support/cache/strategy/local_cache_middleware.rb:28:in `call'
+actionpack (5.0.0) lib/action_dispatch/middleware/executor.rb:12:in `call'
+actionpack (5.0.0) lib/action_dispatch/middleware/static.rb:136:in `call'
+rack (2.0.1) lib/rack/sendfile.rb:111:in `call'
+railties (5.0.0) lib/rails/engine.rb:522:in `call'
+puma (3.6.0) lib/puma/configuration.rb:225:in `call'
+puma (3.6.0) lib/puma/server.rb:578:in `handle_request'
+puma (3.6.0) lib/puma/server.rb:415:in `process_client'
+puma (3.6.0) lib/puma/server.rb:275:in `block in run'
+puma (3.6.0) lib/puma/thread_pool.rb:116:in `block in spawn_thread'
+  
+ActionController::RoutingError (No route matches [GET] "/assets/noisePattern.jpeg"):
+  
+actionpack (5.0.0) lib/action_dispatch/middleware/debug_exceptions.rb:53:in `call'
+web-console (3.3.1) lib/web_console/middleware.rb:131:in `call_app'
+web-console (3.3.1) lib/web_console/middleware.rb:28:in `block in call'
+web-console (3.3.1) lib/web_console/middleware.rb:18:in `catch'
+web-console (3.3.1) lib/web_console/middleware.rb:18:in `call'
+actionpack (5.0.0) lib/action_dispatch/middleware/show_exceptions.rb:31:in `call'
+railties (5.0.0) lib/rails/rack/logger.rb:36:in `call_app'
+railties (5.0.0) lib/rails/rack/logger.rb:24:in `block in call'
+activesupport (5.0.0) lib/active_support/tagged_logging.rb:70:in `block in tagged'
+activesupport (5.0.0) lib/active_support/tagged_logging.rb:26:in `tagged'
+activesupport (5.0.0) lib/active_support/tagged_logging.rb:70:in `tagged'
+railties (5.0.0) lib/rails/rack/logger.rb:24:in `call'
+sprockets-rails (3.1.1) lib/sprockets/rails/quiet_assets.rb:11:in `block in call'
+activesupport (5.0.0) lib/active_support/logger_silence.rb:20:in `silence'
+activesupport (5.0.0) lib/active_support/logger.rb:63:in `block (3 levels) in broadcast'
+activesupport (5.0.0) lib/active_support/logger_silence.rb:20:in `silence'
+activesupport (5.0.0) lib/active_support/logger.rb:61:in `block (2 levels) in broadcast'
+sprockets-rails (3.1.1) lib/sprockets/rails/quiet_assets.rb:11:in `call'
+actionpack (5.0.0) lib/action_dispatch/middleware/request_id.rb:24:in `call'
+rack (2.0.1) lib/rack/method_override.rb:22:in `call'
+rack (2.0.1) lib/rack/runtime.rb:22:in `call'
+activesupport (5.0.0) lib/active_support/cache/strategy/local_cache_middleware.rb:28:in `call'
+actionpack (5.0.0) lib/action_dispatch/middleware/executor.rb:12:in `call'
+actionpack (5.0.0) lib/action_dispatch/middleware/static.rb:136:in `call'
+rack (2.0.1) lib/rack/sendfile.rb:111:in `call'
+railties (5.0.0) lib/rails/engine.rb:522:in `call'
+puma (3.6.0) lib/puma/configuration.rb:225:in `call'
+puma (3.6.0) lib/puma/server.rb:578:in `handle_request'
+puma (3.6.0) lib/puma/server.rb:415:in `process_client'
+puma (3.6.0) lib/puma/server.rb:275:in `block in run'
+puma (3.6.0) lib/puma/thread_pool.rb:116:in `block in spawn_thread'
+  
+ActionController::RoutingError (No route matches [GET] "/assets/noisePattern.jpeg"):
+  
+actionpack (5.0.0) lib/action_dispatch/middleware/debug_exceptions.rb:53:in `call'
+web-console (3.3.1) lib/web_console/middleware.rb:131:in `call_app'
+web-console (3.3.1) lib/web_console/middleware.rb:28:in `block in call'
+web-console (3.3.1) lib/web_console/middleware.rb:18:in `catch'
+web-console (3.3.1) lib/web_console/middleware.rb:18:in `call'
+actionpack (5.0.0) lib/action_dispatch/middleware/show_exceptions.rb:31:in `call'
+railties (5.0.0) lib/rails/rack/logger.rb:36:in `call_app'
+railties (5.0.0) lib/rails/rack/logger.rb:24:in `block in call'
+activesupport (5.0.0) lib/active_support/tagged_logging.rb:70:in `block in tagged'
+activesupport (5.0.0) lib/active_support/tagged_logging.rb:26:in `tagged'
+activesupport (5.0.0) lib/active_support/tagged_logging.rb:70:in `tagged'
+railties (5.0.0) lib/rails/rack/logger.rb:24:in `call'
+sprockets-rails (3.1.1) lib/sprockets/rails/quiet_assets.rb:11:in `block in call'
+activesupport (5.0.0) lib/active_support/logger_silence.rb:20:in `silence'
+activesupport (5.0.0) lib/active_support/logger.rb:63:in `block (3 levels) in broadcast'
+activesupport (5.0.0) lib/active_support/logger_silence.rb:20:in `silence'
+activesupport (5.0.0) lib/active_support/logger.rb:61:in `block (2 levels) in broadcast'
+sprockets-rails (3.1.1) lib/sprockets/rails/quiet_assets.rb:11:in `call'
+actionpack (5.0.0) lib/action_dispatch/middleware/request_id.rb:24:in `call'
+rack (2.0.1) lib/rack/method_override.rb:22:in `call'
+rack (2.0.1) lib/rack/runtime.rb:22:in `call'
+activesupport (5.0.0) lib/active_support/cache/strategy/local_cache_middleware.rb:28:in `call'
+actionpack (5.0.0) lib/action_dispatch/middleware/executor.rb:12:in `call'
+actionpack (5.0.0) lib/action_dispatch/middleware/static.rb:136:in `call'
+rack (2.0.1) lib/rack/sendfile.rb:111:in `call'
+railties (5.0.0) lib/rails/engine.rb:522:in `call'
+puma (3.6.0) lib/puma/configuration.rb:225:in `call'
+puma (3.6.0) lib/puma/server.rb:578:in `handle_request'
+puma (3.6.0) lib/puma/server.rb:415:in `process_client'
+puma (3.6.0) lib/puma/server.rb:275:in `block in run'
+puma (3.6.0) lib/puma/thread_pool.rb:116:in `block in spawn_thread'
+  
+ActionController::RoutingError (No route matches [GET] "/assets/noisePattern.jpeg"):
+  
+actionpack (5.0.0) lib/action_dispatch/middleware/debug_exceptions.rb:53:in `call'
+web-console (3.3.1) lib/web_console/middleware.rb:131:in `call_app'
+web-console (3.3.1) lib/web_console/middleware.rb:28:in `block in call'
+web-console (3.3.1) lib/web_console/middleware.rb:18:in `catch'
+web-console (3.3.1) lib/web_console/middleware.rb:18:in `call'
+actionpack (5.0.0) lib/action_dispatch/middleware/show_exceptions.rb:31:in `call'
+railties (5.0.0) lib/rails/rack/logger.rb:36:in `call_app'
+railties (5.0.0) lib/rails/rack/logger.rb:24:in `block in call'
+activesupport (5.0.0) lib/active_support/tagged_logging.rb:70:in `block in tagged'
+activesupport (5.0.0) lib/active_support/tagged_logging.rb:26:in `tagged'
+activesupport (5.0.0) lib/active_support/tagged_logging.rb:70:in `tagged'
+railties (5.0.0) lib/rails/rack/logger.rb:24:in `call'
+sprockets-rails (3.1.1) lib/sprockets/rails/quiet_assets.rb:11:in `block in call'
+activesupport (5.0.0) lib/active_support/logger_silence.rb:20:in `silence'
+activesupport (5.0.0) lib/active_support/logger.rb:63:in `block (3 levels) in broadcast'
+activesupport (5.0.0) lib/active_support/logger_silence.rb:20:in `silence'
+activesupport (5.0.0) lib/active_support/logger.rb:61:in `block (2 levels) in broadcast'
+sprockets-rails (3.1.1) lib/sprockets/rails/quiet_assets.rb:11:in `call'
+actionpack (5.0.0) lib/action_dispatch/middleware/request_id.rb:24:in `call'
+rack (2.0.1) lib/rack/method_override.rb:22:in `call'
+rack (2.0.1) lib/rack/runtime.rb:22:in `call'
+activesupport (5.0.0) lib/active_support/cache/strategy/local_cache_middleware.rb:28:in `call'
+actionpack (5.0.0) lib/action_dispatch/middleware/executor.rb:12:in `call'
+actionpack (5.0.0) lib/action_dispatch/middleware/static.rb:136:in `call'
+rack (2.0.1) lib/rack/sendfile.rb:111:in `call'
+railties (5.0.0) lib/rails/engine.rb:522:in `call'
+puma (3.6.0) lib/puma/configuration.rb:225:in `call'
+puma (3.6.0) lib/puma/server.rb:578:in `handle_request'
+puma (3.6.0) lib/puma/server.rb:415:in `process_client'
+puma (3.6.0) lib/puma/server.rb:275:in `block in run'
+puma (3.6.0) lib/puma/thread_pool.rb:116:in `block in spawn_thread'
+  
+ActionController::RoutingError (No route matches [GET] "/assets/noisePattern.jpeg"):
+  
+actionpack (5.0.0) lib/action_dispatch/middleware/debug_exceptions.rb:53:in `call'
+web-console (3.3.1) lib/web_console/middleware.rb:131:in `call_app'
+web-console (3.3.1) lib/web_console/middleware.rb:28:in `block in call'
+web-console (3.3.1) lib/web_console/middleware.rb:18:in `catch'
+web-console (3.3.1) lib/web_console/middleware.rb:18:in `call'
+actionpack (5.0.0) lib/action_dispatch/middleware/show_exceptions.rb:31:in `call'
+railties (5.0.0) lib/rails/rack/logger.rb:36:in `call_app'
+railties (5.0.0) lib/rails/rack/logger.rb:24:in `block in call'
+activesupport (5.0.0) lib/active_support/tagged_logging.rb:70:in `block in tagged'
+activesupport (5.0.0) lib/active_support/tagged_logging.rb:26:in `tagged'
+activesupport (5.0.0) lib/active_support/tagged_logging.rb:70:in `tagged'
+railties (5.0.0) lib/rails/rack/logger.rb:24:in `call'
+sprockets-rails (3.1.1) lib/sprockets/rails/quiet_assets.rb:11:in `block in call'
+activesupport (5.0.0) lib/active_support/logger_silence.rb:20:in `silence'
+activesupport (5.0.0) lib/active_support/logger.rb:63:in `block (3 levels) in broadcast'
+activesupport (5.0.0) lib/active_support/logger_silence.rb:20:in `silence'
+activesupport (5.0.0) lib/active_support/logger.rb:61:in `block (2 levels) in broadcast'
+sprockets-rails (3.1.1) lib/sprockets/rails/quiet_assets.rb:11:in `call'
+actionpack (5.0.0) lib/action_dispatch/middleware/request_id.rb:24:in `call'
+rack (2.0.1) lib/rack/method_override.rb:22:in `call'
+rack (2.0.1) lib/rack/runtime.rb:22:in `call'
+activesupport (5.0.0) lib/active_support/cache/strategy/local_cache_middleware.rb:28:in `call'
+actionpack (5.0.0) lib/action_dispatch/middleware/executor.rb:12:in `call'
+actionpack (5.0.0) lib/action_dispatch/middleware/static.rb:136:in `call'
+rack (2.0.1) lib/rack/sendfile.rb:111:in `call'
+railties (5.0.0) lib/rails/engine.rb:522:in `call'
+puma (3.6.0) lib/puma/configuration.rb:225:in `call'
+puma (3.6.0) lib/puma/server.rb:578:in `handle_request'
+puma (3.6.0) lib/puma/server.rb:415:in `process_client'
+puma (3.6.0) lib/puma/server.rb:275:in `block in run'
+puma (3.6.0) lib/puma/thread_pool.rb:116:in `block in spawn_thread'
+  
+ActionController::RoutingError (No route matches [GET] "/assets/noisePattern.jpeg"):
+  
+actionpack (5.0.0) lib/action_dispatch/middleware/debug_exceptions.rb:53:in `call'
+web-console (3.3.1) lib/web_console/middleware.rb:131:in `call_app'
+web-console (3.3.1) lib/web_console/middleware.rb:28:in `block in call'
+web-console (3.3.1) lib/web_console/middleware.rb:18:in `catch'
+web-console (3.3.1) lib/web_console/middleware.rb:18:in `call'
+actionpack (5.0.0) lib/action_dispatch/middleware/show_exceptions.rb:31:in `call'
+railties (5.0.0) lib/rails/rack/logger.rb:36:in `call_app'
+railties (5.0.0) lib/rails/rack/logger.rb:24:in `block in call'
+activesupport (5.0.0) lib/active_support/tagged_logging.rb:70:in `block in tagged'
+activesupport (5.0.0) lib/active_support/tagged_logging.rb:26:in `tagged'
+activesupport (5.0.0) lib/active_support/tagged_logging.rb:70:in `tagged'
+railties (5.0.0) lib/rails/rack/logger.rb:24:in `call'
+sprockets-rails (3.1.1) lib/sprockets/rails/quiet_assets.rb:11:in `block in call'
+activesupport (5.0.0) lib/active_support/logger_silence.rb:20:in `silence'
+activesupport (5.0.0) lib/active_support/logger.rb:63:in `block (3 levels) in broadcast'
+activesupport (5.0.0) lib/active_support/logger_silence.rb:20:in `silence'
+activesupport (5.0.0) lib/active_support/logger.rb:61:in `block (2 levels) in broadcast'
+sprockets-rails (3.1.1) lib/sprockets/rails/quiet_assets.rb:11:in `call'
+actionpack (5.0.0) lib/action_dispatch/middleware/request_id.rb:24:in `call'
+rack (2.0.1) lib/rack/method_override.rb:22:in `call'
+rack (2.0.1) lib/rack/runtime.rb:22:in `call'
+activesupport (5.0.0) lib/active_support/cache/strategy/local_cache_middleware.rb:28:in `call'
+actionpack (5.0.0) lib/action_dispatch/middleware/executor.rb:12:in `call'
+actionpack (5.0.0) lib/action_dispatch/middleware/static.rb:136:in `call'
+rack (2.0.1) lib/rack/sendfile.rb:111:in `call'
+railties (5.0.0) lib/rails/engine.rb:522:in `call'
+puma (3.6.0) lib/puma/configuration.rb:225:in `call'
+puma (3.6.0) lib/puma/server.rb:578:in `handle_request'
+puma (3.6.0) lib/puma/server.rb:415:in `process_client'
+puma (3.6.0) lib/puma/server.rb:275:in `block in run'
+puma (3.6.0) lib/puma/thread_pool.rb:116:in `block in spawn_thread'
+  
+ActionController::RoutingError (No route matches [GET] "/assets/noisePattern.jpeg"):
+  
+actionpack (5.0.0) lib/action_dispatch/middleware/debug_exceptions.rb:53:in `call'
+web-console (3.3.1) lib/web_console/middleware.rb:131:in `call_app'
+web-console (3.3.1) lib/web_console/middleware.rb:28:in `block in call'
+web-console (3.3.1) lib/web_console/middleware.rb:18:in `catch'
+web-console (3.3.1) lib/web_console/middleware.rb:18:in `call'
+actionpack (5.0.0) lib/action_dispatch/middleware/show_exceptions.rb:31:in `call'
+railties (5.0.0) lib/rails/rack/logger.rb:36:in `call_app'
+railties (5.0.0) lib/rails/rack/logger.rb:24:in `block in call'
+activesupport (5.0.0) lib/active_support/tagged_logging.rb:70:in `block in tagged'
+activesupport (5.0.0) lib/active_support/tagged_logging.rb:26:in `tagged'
+activesupport (5.0.0) lib/active_support/tagged_logging.rb:70:in `tagged'
+railties (5.0.0) lib/rails/rack/logger.rb:24:in `call'
+sprockets-rails (3.1.1) lib/sprockets/rails/quiet_assets.rb:11:in `block in call'
+activesupport (5.0.0) lib/active_support/logger_silence.rb:20:in `silence'
+activesupport (5.0.0) lib/active_support/logger.rb:63:in `block (3 levels) in broadcast'
+activesupport (5.0.0) lib/active_support/logger_silence.rb:20:in `silence'
+activesupport (5.0.0) lib/active_support/logger.rb:61:in `block (2 levels) in broadcast'
+sprockets-rails (3.1.1) lib/sprockets/rails/quiet_assets.rb:11:in `call'
+actionpack (5.0.0) lib/action_dispatch/middleware/request_id.rb:24:in `call'
+rack (2.0.1) lib/rack/method_override.rb:22:in `call'
+rack (2.0.1) lib/rack/runtime.rb:22:in `call'
+activesupport (5.0.0) lib/active_support/cache/strategy/local_cache_middleware.rb:28:in `call'
+actionpack (5.0.0) lib/action_dispatch/middleware/executor.rb:12:in `call'
+actionpack (5.0.0) lib/action_dispatch/middleware/static.rb:136:in `call'
+rack (2.0.1) lib/rack/sendfile.rb:111:in `call'
+railties (5.0.0) lib/rails/engine.rb:522:in `call'
+puma (3.6.0) lib/puma/configuration.rb:225:in `call'
+puma (3.6.0) lib/puma/server.rb:578:in `handle_request'
+puma (3.6.0) lib/puma/server.rb:415:in `process_client'
+puma (3.6.0) lib/puma/server.rb:275:in `block in run'
+puma (3.6.0) lib/puma/thread_pool.rb:116:in `block in spawn_thread'
+  
+ActionController::RoutingError (No route matches [GET] "/assets/noisePattern.jpeg"):
+  
+actionpack (5.0.0) lib/action_dispatch/middleware/debug_exceptions.rb:53:in `call'
+web-console (3.3.1) lib/web_console/middleware.rb:131:in `call_app'
+web-console (3.3.1) lib/web_console/middleware.rb:28:in `block in call'
+web-console (3.3.1) lib/web_console/middleware.rb:18:in `catch'
+web-console (3.3.1) lib/web_console/middleware.rb:18:in `call'
+actionpack (5.0.0) lib/action_dispatch/middleware/show_exceptions.rb:31:in `call'
+railties (5.0.0) lib/rails/rack/logger.rb:36:in `call_app'
+railties (5.0.0) lib/rails/rack/logger.rb:24:in `block in call'
+activesupport (5.0.0) lib/active_support/tagged_logging.rb:70:in `block in tagged'
+activesupport (5.0.0) lib/active_support/tagged_logging.rb:26:in `tagged'
+activesupport (5.0.0) lib/active_support/tagged_logging.rb:70:in `tagged'
+railties (5.0.0) lib/rails/rack/logger.rb:24:in `call'
+sprockets-rails (3.1.1) lib/sprockets/rails/quiet_assets.rb:11:in `block in call'
+activesupport (5.0.0) lib/active_support/logger_silence.rb:20:in `silence'
+activesupport (5.0.0) lib/active_support/logger.rb:63:in `block (3 levels) in broadcast'
+activesupport (5.0.0) lib/active_support/logger_silence.rb:20:in `silence'
+activesupport (5.0.0) lib/active_support/logger.rb:61:in `block (2 levels) in broadcast'
+sprockets-rails (3.1.1) lib/sprockets/rails/quiet_assets.rb:11:in `call'
+actionpack (5.0.0) lib/action_dispatch/middleware/request_id.rb:24:in `call'
+rack (2.0.1) lib/rack/method_override.rb:22:in `call'
+rack (2.0.1) lib/rack/runtime.rb:22:in `call'
+activesupport (5.0.0) lib/active_support/cache/strategy/local_cache_middleware.rb:28:in `call'
+actionpack (5.0.0) lib/action_dispatch/middleware/executor.rb:12:in `call'
+actionpack (5.0.0) lib/action_dispatch/middleware/static.rb:136:in `call'
+rack (2.0.1) lib/rack/sendfile.rb:111:in `call'
+railties (5.0.0) lib/rails/engine.rb:522:in `call'
+puma (3.6.0) lib/puma/configuration.rb:225:in `call'
+puma (3.6.0) lib/puma/server.rb:578:in `handle_request'
+puma (3.6.0) lib/puma/server.rb:415:in `process_client'
+puma (3.6.0) lib/puma/server.rb:275:in `block in run'
+puma (3.6.0) lib/puma/thread_pool.rb:116:in `block in spawn_thread'
+  
+ActionController::RoutingError (No route matches [GET] "/assets/noisePattern.jpeg"):
+  
+actionpack (5.0.0) lib/action_dispatch/middleware/debug_exceptions.rb:53:in `call'
+web-console (3.3.1) lib/web_console/middleware.rb:131:in `call_app'
+web-console (3.3.1) lib/web_console/middleware.rb:28:in `block in call'
+web-console (3.3.1) lib/web_console/middleware.rb:18:in `catch'
+web-console (3.3.1) lib/web_console/middleware.rb:18:in `call'
+actionpack (5.0.0) lib/action_dispatch/middleware/show_exceptions.rb:31:in `call'
+railties (5.0.0) lib/rails/rack/logger.rb:36:in `call_app'
+railties (5.0.0) lib/rails/rack/logger.rb:24:in `block in call'
+activesupport (5.0.0) lib/active_support/tagged_logging.rb:70:in `block in tagged'
+activesupport (5.0.0) lib/active_support/tagged_logging.rb:26:in `tagged'
+activesupport (5.0.0) lib/active_support/tagged_logging.rb:70:in `tagged'
+railties (5.0.0) lib/rails/rack/logger.rb:24:in `call'
+sprockets-rails (3.1.1) lib/sprockets/rails/quiet_assets.rb:11:in `block in call'
+activesupport (5.0.0) lib/active_support/logger_silence.rb:20:in `silence'
+activesupport (5.0.0) lib/active_support/logger.rb:63:in `block (3 levels) in broadcast'
+activesupport (5.0.0) lib/active_support/logger_silence.rb:20:in `silence'
+activesupport (5.0.0) lib/active_support/logger.rb:61:in `block (2 levels) in broadcast'
+sprockets-rails (3.1.1) lib/sprockets/rails/quiet_assets.rb:11:in `call'
+actionpack (5.0.0) lib/action_dispatch/middleware/request_id.rb:24:in `call'
+rack (2.0.1) lib/rack/method_override.rb:22:in `call'
+rack (2.0.1) lib/rack/runtime.rb:22:in `call'
+activesupport (5.0.0) lib/active_support/cache/strategy/local_cache_middleware.rb:28:in `call'
+actionpack (5.0.0) lib/action_dispatch/middleware/executor.rb:12:in `call'
+actionpack (5.0.0) lib/action_dispatch/middleware/static.rb:136:in `call'
+rack (2.0.1) lib/rack/sendfile.rb:111:in `call'
+railties (5.0.0) lib/rails/engine.rb:522:in `call'
+puma (3.6.0) lib/puma/configuration.rb:225:in `call'
+puma (3.6.0) lib/puma/server.rb:578:in `handle_request'
+puma (3.6.0) lib/puma/server.rb:415:in `process_client'
+puma (3.6.0) lib/puma/server.rb:275:in `block in run'
+puma (3.6.0) lib/puma/thread_pool.rb:116:in `block in spawn_thread'
+  
+ActionController::RoutingError (No route matches [GET] "/assets/noisePattern.jpeg"):
+  
+actionpack (5.0.0) lib/action_dispatch/middleware/debug_exceptions.rb:53:in `call'
+web-console (3.3.1) lib/web_console/middleware.rb:131:in `call_app'
+web-console (3.3.1) lib/web_console/middleware.rb:28:in `block in call'
+web-console (3.3.1) lib/web_console/middleware.rb:18:in `catch'
+web-console (3.3.1) lib/web_console/middleware.rb:18:in `call'
+actionpack (5.0.0) lib/action_dispatch/middleware/show_exceptions.rb:31:in `call'
+railties (5.0.0) lib/rails/rack/logger.rb:36:in `call_app'
+railties (5.0.0) lib/rails/rack/logger.rb:24:in `block in call'
+activesupport (5.0.0) lib/active_support/tagged_logging.rb:70:in `block in tagged'
+activesupport (5.0.0) lib/active_support/tagged_logging.rb:26:in `tagged'
+activesupport (5.0.0) lib/active_support/tagged_logging.rb:70:in `tagged'
+railties (5.0.0) lib/rails/rack/logger.rb:24:in `call'
+sprockets-rails (3.1.1) lib/sprockets/rails/quiet_assets.rb:11:in `block in call'
+activesupport (5.0.0) lib/active_support/logger_silence.rb:20:in `silence'
+activesupport (5.0.0) lib/active_support/logger.rb:63:in `block (3 levels) in broadcast'
+activesupport (5.0.0) lib/active_support/logger_silence.rb:20:in `silence'
+activesupport (5.0.0) lib/active_support/logger.rb:61:in `block (2 levels) in broadcast'
+sprockets-rails (3.1.1) lib/sprockets/rails/quiet_assets.rb:11:in `call'
+actionpack (5.0.0) lib/action_dispatch/middleware/request_id.rb:24:in `call'
+rack (2.0.1) lib/rack/method_override.rb:22:in `call'
+rack (2.0.1) lib/rack/runtime.rb:22:in `call'
+activesupport (5.0.0) lib/active_support/cache/strategy/local_cache_middleware.rb:28:in `call'
+actionpack (5.0.0) lib/action_dispatch/middleware/executor.rb:12:in `call'
+actionpack (5.0.0) lib/action_dispatch/middleware/static.rb:136:in `call'
+rack (2.0.1) lib/rack/sendfile.rb:111:in `call'
+railties (5.0.0) lib/rails/engine.rb:522:in `call'
+puma (3.6.0) lib/puma/configuration.rb:225:in `call'
+puma (3.6.0) lib/puma/server.rb:578:in `handle_request'
+puma (3.6.0) lib/puma/server.rb:415:in `process_client'
+puma (3.6.0) lib/puma/server.rb:275:in `block in run'
+puma (3.6.0) lib/puma/thread_pool.rb:116:in `block in spawn_thread'
+  
+ActionController::RoutingError (No route matches [GET] "/assets/noisePattern.jpeg"):
+  
+actionpack (5.0.0) lib/action_dispatch/middleware/debug_exceptions.rb:53:in `call'
+web-console (3.3.1) lib/web_console/middleware.rb:131:in `call_app'
+web-console (3.3.1) lib/web_console/middleware.rb:28:in `block in call'
+web-console (3.3.1) lib/web_console/middleware.rb:18:in `catch'
+web-console (3.3.1) lib/web_console/middleware.rb:18:in `call'
+actionpack (5.0.0) lib/action_dispatch/middleware/show_exceptions.rb:31:in `call'
+railties (5.0.0) lib/rails/rack/logger.rb:36:in `call_app'
+railties (5.0.0) lib/rails/rack/logger.rb:24:in `block in call'
+activesupport (5.0.0) lib/active_support/tagged_logging.rb:70:in `block in tagged'
+activesupport (5.0.0) lib/active_support/tagged_logging.rb:26:in `tagged'
+activesupport (5.0.0) lib/active_support/tagged_logging.rb:70:in `tagged'
+railties (5.0.0) lib/rails/rack/logger.rb:24:in `call'
+sprockets-rails (3.1.1) lib/sprockets/rails/quiet_assets.rb:11:in `block in call'
+activesupport (5.0.0) lib/active_support/logger_silence.rb:20:in `silence'
+activesupport (5.0.0) lib/active_support/logger.rb:63:in `block (3 levels) in broadcast'
+activesupport (5.0.0) lib/active_support/logger_silence.rb:20:in `silence'
+activesupport (5.0.0) lib/active_support/logger.rb:61:in `block (2 levels) in broadcast'
+sprockets-rails (3.1.1) lib/sprockets/rails/quiet_assets.rb:11:in `call'
+actionpack (5.0.0) lib/action_dispatch/middleware/request_id.rb:24:in `call'
+rack (2.0.1) lib/rack/method_override.rb:22:in `call'
+rack (2.0.1) lib/rack/runtime.rb:22:in `call'
+activesupport (5.0.0) lib/active_support/cache/strategy/local_cache_middleware.rb:28:in `call'
+actionpack (5.0.0) lib/action_dispatch/middleware/executor.rb:12:in `call'
+actionpack (5.0.0) lib/action_dispatch/middleware/static.rb:136:in `call'
+rack (2.0.1) lib/rack/sendfile.rb:111:in `call'
+railties (5.0.0) lib/rails/engine.rb:522:in `call'
+puma (3.6.0) lib/puma/configuration.rb:225:in `call'
+puma (3.6.0) lib/puma/server.rb:578:in `handle_request'
+puma (3.6.0) lib/puma/server.rb:415:in `process_client'
+puma (3.6.0) lib/puma/server.rb:275:in `block in run'
+puma (3.6.0) lib/puma/thread_pool.rb:116:in `block in spawn_thread'
+  
+ActionController::RoutingError (No route matches [GET] "/assets/noisePattern.jpeg"):
+  
+actionpack (5.0.0) lib/action_dispatch/middleware/debug_exceptions.rb:53:in `call'
+web-console (3.3.1) lib/web_console/middleware.rb:131:in `call_app'
+web-console (3.3.1) lib/web_console/middleware.rb:28:in `block in call'
+web-console (3.3.1) lib/web_console/middleware.rb:18:in `catch'
+web-console (3.3.1) lib/web_console/middleware.rb:18:in `call'
+actionpack (5.0.0) lib/action_dispatch/middleware/show_exceptions.rb:31:in `call'
+railties (5.0.0) lib/rails/rack/logger.rb:36:in `call_app'
+railties (5.0.0) lib/rails/rack/logger.rb:24:in `block in call'
+activesupport (5.0.0) lib/active_support/tagged_logging.rb:70:in `block in tagged'
+activesupport (5.0.0) lib/active_support/tagged_logging.rb:26:in `tagged'
+activesupport (5.0.0) lib/active_support/tagged_logging.rb:70:in `tagged'
+railties (5.0.0) lib/rails/rack/logger.rb:24:in `call'
+sprockets-rails (3.1.1) lib/sprockets/rails/quiet_assets.rb:11:in `block in call'
+activesupport (5.0.0) lib/active_support/logger_silence.rb:20:in `silence'
+activesupport (5.0.0) lib/active_support/logger.rb:63:in `block (3 levels) in broadcast'
+activesupport (5.0.0) lib/active_support/logger_silence.rb:20:in `silence'
+activesupport (5.0.0) lib/active_support/logger.rb:61:in `block (2 levels) in broadcast'
+sprockets-rails (3.1.1) lib/sprockets/rails/quiet_assets.rb:11:in `call'
+actionpack (5.0.0) lib/action_dispatch/middleware/request_id.rb:24:in `call'
+rack (2.0.1) lib/rack/method_override.rb:22:in `call'
+rack (2.0.1) lib/rack/runtime.rb:22:in `call'
+activesupport (5.0.0) lib/active_support/cache/strategy/local_cache_middleware.rb:28:in `call'
+actionpack (5.0.0) lib/action_dispatch/middleware/executor.rb:12:in `call'
+actionpack (5.0.0) lib/action_dispatch/middleware/static.rb:136:in `call'
+rack (2.0.1) lib/rack/sendfile.rb:111:in `call'
+railties (5.0.0) lib/rails/engine.rb:522:in `call'
+puma (3.6.0) lib/puma/configuration.rb:225:in `call'
+puma (3.6.0) lib/puma/server.rb:578:in `handle_request'
+puma (3.6.0) lib/puma/server.rb:415:in `process_client'
+puma (3.6.0) lib/puma/server.rb:275:in `block in run'
+puma (3.6.0) lib/puma/thread_pool.rb:116:in `block in spawn_thread'
+  
+ActionController::RoutingError (No route matches [GET] "/assets/noisePattern.jpeg"):
+  
+actionpack (5.0.0) lib/action_dispatch/middleware/debug_exceptions.rb:53:in `call'
+web-console (3.3.1) lib/web_console/middleware.rb:131:in `call_app'
+web-console (3.3.1) lib/web_console/middleware.rb:28:in `block in call'
+web-console (3.3.1) lib/web_console/middleware.rb:18:in `catch'
+web-console (3.3.1) lib/web_console/middleware.rb:18:in `call'
+actionpack (5.0.0) lib/action_dispatch/middleware/show_exceptions.rb:31:in `call'
+railties (5.0.0) lib/rails/rack/logger.rb:36:in `call_app'
+railties (5.0.0) lib/rails/rack/logger.rb:24:in `block in call'
+activesupport (5.0.0) lib/active_support/tagged_logging.rb:70:in `block in tagged'
+activesupport (5.0.0) lib/active_support/tagged_logging.rb:26:in `tagged'
+activesupport (5.0.0) lib/active_support/tagged_logging.rb:70:in `tagged'
+railties (5.0.0) lib/rails/rack/logger.rb:24:in `call'
+sprockets-rails (3.1.1) lib/sprockets/rails/quiet_assets.rb:11:in `block in call'
+activesupport (5.0.0) lib/active_support/logger_silence.rb:20:in `silence'
+activesupport (5.0.0) lib/active_support/logger.rb:63:in `block (3 levels) in broadcast'
+activesupport (5.0.0) lib/active_support/logger_silence.rb:20:in `silence'
+activesupport (5.0.0) lib/active_support/logger.rb:61:in `block (2 levels) in broadcast'
+sprockets-rails (3.1.1) lib/sprockets/rails/quiet_assets.rb:11:in `call'
+actionpack (5.0.0) lib/action_dispatch/middleware/request_id.rb:24:in `call'
+rack (2.0.1) lib/rack/method_override.rb:22:in `call'
+rack (2.0.1) lib/rack/runtime.rb:22:in `call'
+activesupport (5.0.0) lib/active_support/cache/strategy/local_cache_middleware.rb:28:in `call'
+actionpack (5.0.0) lib/action_dispatch/middleware/executor.rb:12:in `call'
+actionpack (5.0.0) lib/action_dispatch/middleware/static.rb:136:in `call'
+rack (2.0.1) lib/rack/sendfile.rb:111:in `call'
+railties (5.0.0) lib/rails/engine.rb:522:in `call'
+puma (3.6.0) lib/puma/configuration.rb:225:in `call'
+puma (3.6.0) lib/puma/server.rb:578:in `handle_request'
+puma (3.6.0) lib/puma/server.rb:415:in `process_client'
+puma (3.6.0) lib/puma/server.rb:275:in `block in run'
+puma (3.6.0) lib/puma/thread_pool.rb:116:in `block in spawn_thread'
+  
+ActionController::RoutingError (No route matches [GET] "/assets/noisePattern.jpeg"):
+  
+actionpack (5.0.0) lib/action_dispatch/middleware/debug_exceptions.rb:53:in `call'
+web-console (3.3.1) lib/web_console/middleware.rb:131:in `call_app'
+web-console (3.3.1) lib/web_console/middleware.rb:28:in `block in call'
+web-console (3.3.1) lib/web_console/middleware.rb:18:in `catch'
+web-console (3.3.1) lib/web_console/middleware.rb:18:in `call'
+actionpack (5.0.0) lib/action_dispatch/middleware/show_exceptions.rb:31:in `call'
+railties (5.0.0) lib/rails/rack/logger.rb:36:in `call_app'
+railties (5.0.0) lib/rails/rack/logger.rb:24:in `block in call'
+activesupport (5.0.0) lib/active_support/tagged_logging.rb:70:in `block in tagged'
+activesupport (5.0.0) lib/active_support/tagged_logging.rb:26:in `tagged'
+activesupport (5.0.0) lib/active_support/tagged_logging.rb:70:in `tagged'
+railties (5.0.0) lib/rails/rack/logger.rb:24:in `call'
+sprockets-rails (3.1.1) lib/sprockets/rails/quiet_assets.rb:11:in `block in call'
+activesupport (5.0.0) lib/active_support/logger_silence.rb:20:in `silence'
+activesupport (5.0.0) lib/active_support/logger.rb:63:in `block (3 levels) in broadcast'
+activesupport (5.0.0) lib/active_support/logger_silence.rb:20:in `silence'
+activesupport (5.0.0) lib/active_support/logger.rb:61:in `block (2 levels) in broadcast'
+sprockets-rails (3.1.1) lib/sprockets/rails/quiet_assets.rb:11:in `call'
+actionpack (5.0.0) lib/action_dispatch/middleware/request_id.rb:24:in `call'
+rack (2.0.1) lib/rack/method_override.rb:22:in `call'
+rack (2.0.1) lib/rack/runtime.rb:22:in `call'
+activesupport (5.0.0) lib/active_support/cache/strategy/local_cache_middleware.rb:28:in `call'
+actionpack (5.0.0) lib/action_dispatch/middleware/executor.rb:12:in `call'
+actionpack (5.0.0) lib/action_dispatch/middleware/static.rb:136:in `call'
+rack (2.0.1) lib/rack/sendfile.rb:111:in `call'
+railties (5.0.0) lib/rails/engine.rb:522:in `call'
+puma (3.6.0) lib/puma/configuration.rb:225:in `call'
+puma (3.6.0) lib/puma/server.rb:578:in `handle_request'
+puma (3.6.0) lib/puma/server.rb:415:in `process_client'
+puma (3.6.0) lib/puma/server.rb:275:in `block in run'
+puma (3.6.0) lib/puma/thread_pool.rb:116:in `block in spawn_thread'
+  
+ActionController::RoutingError (No route matches [GET] "/assets/noisePattern.jpeg"):
+  
+actionpack (5.0.0) lib/action_dispatch/middleware/debug_exceptions.rb:53:in `call'
+web-console (3.3.1) lib/web_console/middleware.rb:131:in `call_app'
+web-console (3.3.1) lib/web_console/middleware.rb:28:in `block in call'
+web-console (3.3.1) lib/web_console/middleware.rb:18:in `catch'
+web-console (3.3.1) lib/web_console/middleware.rb:18:in `call'
+actionpack (5.0.0) lib/action_dispatch/middleware/show_exceptions.rb:31:in `call'
+railties (5.0.0) lib/rails/rack/logger.rb:36:in `call_app'
+railties (5.0.0) lib/rails/rack/logger.rb:24:in `block in call'
+activesupport (5.0.0) lib/active_support/tagged_logging.rb:70:in `block in tagged'
+activesupport (5.0.0) lib/active_support/tagged_logging.rb:26:in `tagged'
+activesupport (5.0.0) lib/active_support/tagged_logging.rb:70:in `tagged'
+railties (5.0.0) lib/rails/rack/logger.rb:24:in `call'
+sprockets-rails (3.1.1) lib/sprockets/rails/quiet_assets.rb:11:in `block in call'
+activesupport (5.0.0) lib/active_support/logger_silence.rb:20:in `silence'
+activesupport (5.0.0) lib/active_support/logger.rb:63:in `block (3 levels) in broadcast'
+activesupport (5.0.0) lib/active_support/logger_silence.rb:20:in `silence'
+activesupport (5.0.0) lib/active_support/logger.rb:61:in `block (2 levels) in broadcast'
+sprockets-rails (3.1.1) lib/sprockets/rails/quiet_assets.rb:11:in `call'
+actionpack (5.0.0) lib/action_dispatch/middleware/request_id.rb:24:in `call'
+rack (2.0.1) lib/rack/method_override.rb:22:in `call'
+rack (2.0.1) lib/rack/runtime.rb:22:in `call'
+activesupport (5.0.0) lib/active_support/cache/strategy/local_cache_middleware.rb:28:in `call'
+actionpack (5.0.0) lib/action_dispatch/middleware/executor.rb:12:in `call'
+actionpack (5.0.0) lib/action_dispatch/middleware/static.rb:136:in `call'
+rack (2.0.1) lib/rack/sendfile.rb:111:in `call'
+railties (5.0.0) lib/rails/engine.rb:522:in `call'
+puma (3.6.0) lib/puma/configuration.rb:225:in `call'
+puma (3.6.0) lib/puma/server.rb:578:in `handle_request'
+puma (3.6.0) lib/puma/server.rb:415:in `process_client'
+puma (3.6.0) lib/puma/server.rb:275:in `block in run'
+puma (3.6.0) lib/puma/thread_pool.rb:116:in `block in spawn_thread'
+  
+ActionController::RoutingError (No route matches [GET] "/assets/noisePattern.jpeg"):
+  
+actionpack (5.0.0) lib/action_dispatch/middleware/debug_exceptions.rb:53:in `call'
+web-console (3.3.1) lib/web_console/middleware.rb:131:in `call_app'
+web-console (3.3.1) lib/web_console/middleware.rb:28:in `block in call'
+web-console (3.3.1) lib/web_console/middleware.rb:18:in `catch'
+web-console (3.3.1) lib/web_console/middleware.rb:18:in `call'
+actionpack (5.0.0) lib/action_dispatch/middleware/show_exceptions.rb:31:in `call'
+railties (5.0.0) lib/rails/rack/logger.rb:36:in `call_app'
+railties (5.0.0) lib/rails/rack/logger.rb:24:in `block in call'
+activesupport (5.0.0) lib/active_support/tagged_logging.rb:70:in `block in tagged'
+activesupport (5.0.0) lib/active_support/tagged_logging.rb:26:in `tagged'
+activesupport (5.0.0) lib/active_support/tagged_logging.rb:70:in `tagged'
+railties (5.0.0) lib/rails/rack/logger.rb:24:in `call'
+sprockets-rails (3.1.1) lib/sprockets/rails/quiet_assets.rb:11:in `block in call'
+activesupport (5.0.0) lib/active_support/logger_silence.rb:20:in `silence'
+activesupport (5.0.0) lib/active_support/logger.rb:63:in `block (3 levels) in broadcast'
+activesupport (5.0.0) lib/active_support/logger_silence.rb:20:in `silence'
+activesupport (5.0.0) lib/active_support/logger.rb:61:in `block (2 levels) in broadcast'
+sprockets-rails (3.1.1) lib/sprockets/rails/quiet_assets.rb:11:in `call'
+actionpack (5.0.0) lib/action_dispatch/middleware/request_id.rb:24:in `call'
+rack (2.0.1) lib/rack/method_override.rb:22:in `call'
+rack (2.0.1) lib/rack/runtime.rb:22:in `call'
+activesupport (5.0.0) lib/active_support/cache/strategy/local_cache_middleware.rb:28:in `call'
+actionpack (5.0.0) lib/action_dispatch/middleware/executor.rb:12:in `call'
+actionpack (5.0.0) lib/action_dispatch/middleware/static.rb:136:in `call'
+rack (2.0.1) lib/rack/sendfile.rb:111:in `call'
+railties (5.0.0) lib/rails/engine.rb:522:in `call'
+puma (3.6.0) lib/puma/configuration.rb:225:in `call'
+puma (3.6.0) lib/puma/server.rb:578:in `handle_request'
+puma (3.6.0) lib/puma/server.rb:415:in `process_client'
+puma (3.6.0) lib/puma/server.rb:275:in `block in run'
+puma (3.6.0) lib/puma/thread_pool.rb:116:in `block in spawn_thread'
+  
+ActionController::RoutingError (No route matches [GET] "/assets/noisePattern.jpeg"):
+  
+actionpack (5.0.0) lib/action_dispatch/middleware/debug_exceptions.rb:53:in `call'
+web-console (3.3.1) lib/web_console/middleware.rb:131:in `call_app'
+web-console (3.3.1) lib/web_console/middleware.rb:28:in `block in call'
+web-console (3.3.1) lib/web_console/middleware.rb:18:in `catch'
+web-console (3.3.1) lib/web_console/middleware.rb:18:in `call'
+actionpack (5.0.0) lib/action_dispatch/middleware/show_exceptions.rb:31:in `call'
+railties (5.0.0) lib/rails/rack/logger.rb:36:in `call_app'
+railties (5.0.0) lib/rails/rack/logger.rb:24:in `block in call'
+activesupport (5.0.0) lib/active_support/tagged_logging.rb:70:in `block in tagged'
+activesupport (5.0.0) lib/active_support/tagged_logging.rb:26:in `tagged'
+activesupport (5.0.0) lib/active_support/tagged_logging.rb:70:in `tagged'
+railties (5.0.0) lib/rails/rack/logger.rb:24:in `call'
+sprockets-rails (3.1.1) lib/sprockets/rails/quiet_assets.rb:11:in `block in call'
+activesupport (5.0.0) lib/active_support/logger_silence.rb:20:in `silence'
+activesupport (5.0.0) lib/active_support/logger.rb:63:in `block (3 levels) in broadcast'
+activesupport (5.0.0) lib/active_support/logger_silence.rb:20:in `silence'
+activesupport (5.0.0) lib/active_support/logger.rb:61:in `block (2 levels) in broadcast'
+sprockets-rails (3.1.1) lib/sprockets/rails/quiet_assets.rb:11:in `call'
+actionpack (5.0.0) lib/action_dispatch/middleware/request_id.rb:24:in `call'
+rack (2.0.1) lib/rack/method_override.rb:22:in `call'
+rack (2.0.1) lib/rack/runtime.rb:22:in `call'
+activesupport (5.0.0) lib/active_support/cache/strategy/local_cache_middleware.rb:28:in `call'
+actionpack (5.0.0) lib/action_dispatch/middleware/executor.rb:12:in `call'
+actionpack (5.0.0) lib/action_dispatch/middleware/static.rb:136:in `call'
+rack (2.0.1) lib/rack/sendfile.rb:111:in `call'
+railties (5.0.0) lib/rails/engine.rb:522:in `call'
+puma (3.6.0) lib/puma/configuration.rb:225:in `call'
+puma (3.6.0) lib/puma/server.rb:578:in `handle_request'
+puma (3.6.0) lib/puma/server.rb:415:in `process_client'
+puma (3.6.0) lib/puma/server.rb:275:in `block in run'
+puma (3.6.0) lib/puma/thread_pool.rb:116:in `block in spawn_thread'
+  
+ActionController::RoutingError (No route matches [GET] "/assets/noisePattern.jpeg"):
+  
+actionpack (5.0.0) lib/action_dispatch/middleware/debug_exceptions.rb:53:in `call'
+web-console (3.3.1) lib/web_console/middleware.rb:131:in `call_app'
+web-console (3.3.1) lib/web_console/middleware.rb:28:in `block in call'
+web-console (3.3.1) lib/web_console/middleware.rb:18:in `catch'
+web-console (3.3.1) lib/web_console/middleware.rb:18:in `call'
+actionpack (5.0.0) lib/action_dispatch/middleware/show_exceptions.rb:31:in `call'
+railties (5.0.0) lib/rails/rack/logger.rb:36:in `call_app'
+railties (5.0.0) lib/rails/rack/logger.rb:24:in `block in call'
+activesupport (5.0.0) lib/active_support/tagged_logging.rb:70:in `block in tagged'
+activesupport (5.0.0) lib/active_support/tagged_logging.rb:26:in `tagged'
+activesupport (5.0.0) lib/active_support/tagged_logging.rb:70:in `tagged'
+railties (5.0.0) lib/rails/rack/logger.rb:24:in `call'
+sprockets-rails (3.1.1) lib/sprockets/rails/quiet_assets.rb:11:in `block in call'
+activesupport (5.0.0) lib/active_support/logger_silence.rb:20:in `silence'
+activesupport (5.0.0) lib/active_support/logger.rb:63:in `block (3 levels) in broadcast'
+activesupport (5.0.0) lib/active_support/logger_silence.rb:20:in `silence'
+activesupport (5.0.0) lib/active_support/logger.rb:61:in `block (2 levels) in broadcast'
+sprockets-rails (3.1.1) lib/sprockets/rails/quiet_assets.rb:11:in `call'
+actionpack (5.0.0) lib/action_dispatch/middleware/request_id.rb:24:in `call'
+rack (2.0.1) lib/rack/method_override.rb:22:in `call'
+rack (2.0.1) lib/rack/runtime.rb:22:in `call'
+activesupport (5.0.0) lib/active_support/cache/strategy/local_cache_middleware.rb:28:in `call'
+actionpack (5.0.0) lib/action_dispatch/middleware/executor.rb:12:in `call'
+actionpack (5.0.0) lib/action_dispatch/middleware/static.rb:136:in `call'
+rack (2.0.1) lib/rack/sendfile.rb:111:in `call'
+railties (5.0.0) lib/rails/engine.rb:522:in `call'
+puma (3.6.0) lib/puma/configuration.rb:225:in `call'
+puma (3.6.0) lib/puma/server.rb:578:in `handle_request'
+puma (3.6.0) lib/puma/server.rb:415:in `process_client'
+puma (3.6.0) lib/puma/server.rb:275:in `block in run'
+puma (3.6.0) lib/puma/thread_pool.rb:116:in `block in spawn_thread'
+  
+ActionController::RoutingError (No route matches [GET] "/assets/noisePattern.jpeg"):
+  
+actionpack (5.0.0) lib/action_dispatch/middleware/debug_exceptions.rb:53:in `call'
+web-console (3.3.1) lib/web_console/middleware.rb:131:in `call_app'
+web-console (3.3.1) lib/web_console/middleware.rb:28:in `block in call'
+web-console (3.3.1) lib/web_console/middleware.rb:18:in `catch'
+web-console (3.3.1) lib/web_console/middleware.rb:18:in `call'
+actionpack (5.0.0) lib/action_dispatch/middleware/show_exceptions.rb:31:in `call'
+railties (5.0.0) lib/rails/rack/logger.rb:36:in `call_app'
+railties (5.0.0) lib/rails/rack/logger.rb:24:in `block in call'
+activesupport (5.0.0) lib/active_support/tagged_logging.rb:70:in `block in tagged'
+activesupport (5.0.0) lib/active_support/tagged_logging.rb:26:in `tagged'
+activesupport (5.0.0) lib/active_support/tagged_logging.rb:70:in `tagged'
+railties (5.0.0) lib/rails/rack/logger.rb:24:in `call'
+sprockets-rails (3.1.1) lib/sprockets/rails/quiet_assets.rb:11:in `block in call'
+activesupport (5.0.0) lib/active_support/logger_silence.rb:20:in `silence'
+activesupport (5.0.0) lib/active_support/logger.rb:63:in `block (3 levels) in broadcast'
+activesupport (5.0.0) lib/active_support/logger_silence.rb:20:in `silence'
+activesupport (5.0.0) lib/active_support/logger.rb:61:in `block (2 levels) in broadcast'
+sprockets-rails (3.1.1) lib/sprockets/rails/quiet_assets.rb:11:in `call'
+actionpack (5.0.0) lib/action_dispatch/middleware/request_id.rb:24:in `call'
+rack (2.0.1) lib/rack/method_override.rb:22:in `call'
+rack (2.0.1) lib/rack/runtime.rb:22:in `call'
+activesupport (5.0.0) lib/active_support/cache/strategy/local_cache_middleware.rb:28:in `call'
+actionpack (5.0.0) lib/action_dispatch/middleware/executor.rb:12:in `call'
+actionpack (5.0.0) lib/action_dispatch/middleware/static.rb:136:in `call'
+rack (2.0.1) lib/rack/sendfile.rb:111:in `call'
+railties (5.0.0) lib/rails/engine.rb:522:in `call'
+puma (3.6.0) lib/puma/configuration.rb:225:in `call'
+puma (3.6.0) lib/puma/server.rb:578:in `handle_request'
+puma (3.6.0) lib/puma/server.rb:415:in `process_client'
+puma (3.6.0) lib/puma/server.rb:275:in `block in run'
+puma (3.6.0) lib/puma/thread_pool.rb:116:in `block in spawn_thread'
+  
+ActionController::RoutingError (No route matches [GET] "/assets/noisePattern.jpeg"):
+  
+actionpack (5.0.0) lib/action_dispatch/middleware/debug_exceptions.rb:53:in `call'
+web-console (3.3.1) lib/web_console/middleware.rb:131:in `call_app'
+web-console (3.3.1) lib/web_console/middleware.rb:28:in `block in call'
+web-console (3.3.1) lib/web_console/middleware.rb:18:in `catch'
+web-console (3.3.1) lib/web_console/middleware.rb:18:in `call'
+actionpack (5.0.0) lib/action_dispatch/middleware/show_exceptions.rb:31:in `call'
+railties (5.0.0) lib/rails/rack/logger.rb:36:in `call_app'
+railties (5.0.0) lib/rails/rack/logger.rb:24:in `block in call'
+activesupport (5.0.0) lib/active_support/tagged_logging.rb:70:in `block in tagged'
+activesupport (5.0.0) lib/active_support/tagged_logging.rb:26:in `tagged'
+activesupport (5.0.0) lib/active_support/tagged_logging.rb:70:in `tagged'
+railties (5.0.0) lib/rails/rack/logger.rb:24:in `call'
+sprockets-rails (3.1.1) lib/sprockets/rails/quiet_assets.rb:11:in `block in call'
+activesupport (5.0.0) lib/active_support/logger_silence.rb:20:in `silence'
+activesupport (5.0.0) lib/active_support/logger.rb:63:in `block (3 levels) in broadcast'
+activesupport (5.0.0) lib/active_support/logger_silence.rb:20:in `silence'
+activesupport (5.0.0) lib/active_support/logger.rb:61:in `block (2 levels) in broadcast'
+sprockets-rails (3.1.1) lib/sprockets/rails/quiet_assets.rb:11:in `call'
+actionpack (5.0.0) lib/action_dispatch/middleware/request_id.rb:24:in `call'
+rack (2.0.1) lib/rack/method_override.rb:22:in `call'
+rack (2.0.1) lib/rack/runtime.rb:22:in `call'
+activesupport (5.0.0) lib/active_support/cache/strategy/local_cache_middleware.rb:28:in `call'
+actionpack (5.0.0) lib/action_dispatch/middleware/executor.rb:12:in `call'
+actionpack (5.0.0) lib/action_dispatch/middleware/static.rb:136:in `call'
+rack (2.0.1) lib/rack/sendfile.rb:111:in `call'
+railties (5.0.0) lib/rails/engine.rb:522:in `call'
+puma (3.6.0) lib/puma/configuration.rb:225:in `call'
+puma (3.6.0) lib/puma/server.rb:578:in `handle_request'
+puma (3.6.0) lib/puma/server.rb:415:in `process_client'
+puma (3.6.0) lib/puma/server.rb:275:in `block in run'
+puma (3.6.0) lib/puma/thread_pool.rb:116:in `block in spawn_thread'
+  
+ActionController::RoutingError (No route matches [GET] "/assets/noisePattern.jpeg"):
+  
+actionpack (5.0.0) lib/action_dispatch/middleware/debug_exceptions.rb:53:in `call'
+web-console (3.3.1) lib/web_console/middleware.rb:131:in `call_app'
+web-console (3.3.1) lib/web_console/middleware.rb:28:in `block in call'
+web-console (3.3.1) lib/web_console/middleware.rb:18:in `catch'
+web-console (3.3.1) lib/web_console/middleware.rb:18:in `call'
+actionpack (5.0.0) lib/action_dispatch/middleware/show_exceptions.rb:31:in `call'
+railties (5.0.0) lib/rails/rack/logger.rb:36:in `call_app'
+railties (5.0.0) lib/rails/rack/logger.rb:24:in `block in call'
+activesupport (5.0.0) lib/active_support/tagged_logging.rb:70:in `block in tagged'
+activesupport (5.0.0) lib/active_support/tagged_logging.rb:26:in `tagged'
+activesupport (5.0.0) lib/active_support/tagged_logging.rb:70:in `tagged'
+railties (5.0.0) lib/rails/rack/logger.rb:24:in `call'
+sprockets-rails (3.1.1) lib/sprockets/rails/quiet_assets.rb:11:in `block in call'
+activesupport (5.0.0) lib/active_support/logger_silence.rb:20:in `silence'
+activesupport (5.0.0) lib/active_support/logger.rb:63:in `block (3 levels) in broadcast'
+activesupport (5.0.0) lib/active_support/logger_silence.rb:20:in `silence'
+activesupport (5.0.0) lib/active_support/logger.rb:61:in `block (2 levels) in broadcast'
+sprockets-rails (3.1.1) lib/sprockets/rails/quiet_assets.rb:11:in `call'
+actionpack (5.0.0) lib/action_dispatch/middleware/request_id.rb:24:in `call'
+rack (2.0.1) lib/rack/method_override.rb:22:in `call'
+rack (2.0.1) lib/rack/runtime.rb:22:in `call'
+activesupport (5.0.0) lib/active_support/cache/strategy/local_cache_middleware.rb:28:in `call'
+actionpack (5.0.0) lib/action_dispatch/middleware/executor.rb:12:in `call'
+actionpack (5.0.0) lib/action_dispatch/middleware/static.rb:136:in `call'
+rack (2.0.1) lib/rack/sendfile.rb:111:in `call'
+railties (5.0.0) lib/rails/engine.rb:522:in `call'
+puma (3.6.0) lib/puma/configuration.rb:225:in `call'
+puma (3.6.0) lib/puma/server.rb:578:in `handle_request'
+puma (3.6.0) lib/puma/server.rb:415:in `process_client'
+puma (3.6.0) lib/puma/server.rb:275:in `block in run'
+puma (3.6.0) lib/puma/thread_pool.rb:116:in `block in spawn_thread'
+Started GET "/decks/14" for ::1 at 2016-08-10 01:55:28 +0800
+Processing by DecksController#show as HTML
+  Parameters: {"id"=>"14"}
+  [1m[36mDeck Load (0.5ms)[0m  [1m[34mSELECT  "decks".* FROM "decks" WHERE "decks"."id" = $1 LIMIT $2[0m  [["id", 14], ["LIMIT", 1]]
+  Rendering decks/show.html.erb within layouts/application
+  [1m[36mUser Load (1.9ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = $1 ORDER BY "users"."id" ASC LIMIT $2[0m  [["id", 2], ["LIMIT", 1]]
+  Rendered layouts/_navbar2.html.erb (6.4ms)
+  [1m[36mUser Load (0.6ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = $1 LIMIT $2[0m  [["id", 2], ["LIMIT", 1]]
+  [1m[36mCard Load (0.4ms)[0m  [1m[34mSELECT "cards".* FROM "cards" WHERE "cards"."deck_id" = $1[0m  [["deck_id", 14]]
+  Rendered decks/show.html.erb within layouts/application (16.3ms)
+Completed 200 OK in 2764ms (Views: 2756.2ms | ActiveRecord: 3.5ms)
+
+
+Started GET "/decks/14" for ::1 at 2016-08-10 01:56:19 +0800
+Processing by DecksController#show as HTML
+  Parameters: {"id"=>"14"}
+  [1m[36mDeck Load (0.4ms)[0m  [1m[34mSELECT  "decks".* FROM "decks" WHERE "decks"."id" = $1 LIMIT $2[0m  [["id", 14], ["LIMIT", 1]]
+  Rendering decks/show.html.erb within layouts/application
+  [1m[36mUser Load (1.9ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = $1 ORDER BY "users"."id" ASC LIMIT $2[0m  [["id", 2], ["LIMIT", 1]]
+  Rendered layouts/_navbar2.html.erb (12.5ms)
+  [1m[36mUser Load (0.4ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = $1 LIMIT $2[0m  [["id", 2], ["LIMIT", 1]]
+  [1m[36mCard Load (0.4ms)[0m  [1m[34mSELECT "cards".* FROM "cards" WHERE "cards"."deck_id" = $1[0m  [["deck_id", 14]]
+  Rendered decks/show.html.erb within layouts/application (26.3ms)
+Completed 200 OK in 2998ms (Views: 2987.2ms | ActiveRecord: 3.1ms)
+
+
+Started GET "/" for ::1 at 2016-08-10 01:57:06 +0800
+Processing by StaticController#index as HTML
+  Rendering static/index.html.erb within layouts/application
+  [1m[36mUser Load (2.2ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = $1 ORDER BY "users"."id" ASC LIMIT $2[0m  [["id", 2], ["LIMIT", 1]]
+  Rendered layouts/_navbar2.html.erb (10.2ms)
+  Rendered static/index.html.erb within layouts/application (20.8ms)
+Completed 200 OK in 124ms (Views: 119.2ms | ActiveRecord: 2.2ms)
+
+
+Started GET "/decks" for ::1 at 2016-08-10 01:57:16 +0800
+Processing by DecksController#index as HTML
+  [1m[36mUser Load (2.6ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = $1 ORDER BY "users"."id" ASC LIMIT $2[0m  [["id", 2], ["LIMIT", 1]]
+  Rendering decks/index.html.erb within layouts/application
+  Rendered layouts/_navbar.html.erb (13.4ms)
+  [1m[36mDeck Load (0.8ms)[0m  [1m[34mSELECT "decks".* FROM "decks" WHERE "decks"."user_id" = 2[0m
+  Rendered decks/index.html.erb within layouts/application (25.6ms)
+Completed 200 OK in 165ms (Views: 155.7ms | ActiveRecord: 3.4ms)
+
+
+Started GET "/decks/17" for ::1 at 2016-08-10 01:57:18 +0800
+Processing by DecksController#show as HTML
+  Parameters: {"id"=>"17"}
+  [1m[36mDeck Load (0.7ms)[0m  [1m[34mSELECT  "decks".* FROM "decks" WHERE "decks"."id" = $1 LIMIT $2[0m  [["id", 17], ["LIMIT", 1]]
+  Rendering decks/show.html.erb within layouts/application
+  [1m[36mUser Load (1.4ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = $1 ORDER BY "users"."id" ASC LIMIT $2[0m  [["id", 2], ["LIMIT", 1]]
+  Rendered layouts/_navbar2.html.erb (7.3ms)
+  [1m[36mUser Load (0.5ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = $1 LIMIT $2[0m  [["id", 2], ["LIMIT", 1]]
+  [1m[36mCard Load (0.5ms)[0m  [1m[34mSELECT "cards".* FROM "cards" WHERE "cards"."deck_id" = $1[0m  [["deck_id", 17]]
+  Rendered decks/show.html.erb within layouts/application (18.5ms)
+Completed 200 OK in 133ms (Views: 125.6ms | ActiveRecord: 3.0ms)
+
+
+Started GET "/decks/17" for ::1 at 2016-08-10 01:57:48 +0800
+Processing by DecksController#show as HTML
+  Parameters: {"id"=>"17"}
+  [1m[36mDeck Load (0.3ms)[0m  [1m[34mSELECT  "decks".* FROM "decks" WHERE "decks"."id" = $1 LIMIT $2[0m  [["id", 17], ["LIMIT", 1]]
+  Rendering decks/show.html.erb within layouts/application
+  [1m[36mUser Load (2.5ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = $1 ORDER BY "users"."id" ASC LIMIT $2[0m  [["id", 2], ["LIMIT", 1]]
+  Rendered layouts/_navbar2.html.erb (7.1ms)
+  [1m[36mUser Load (0.3ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = $1 LIMIT $2[0m  [["id", 2], ["LIMIT", 1]]
+  [1m[36mCard Load (0.2ms)[0m  [1m[34mSELECT "cards".* FROM "cards" WHERE "cards"."deck_id" = $1[0m  [["deck_id", 17]]
+  Rendered decks/show.html.erb within layouts/application (14.6ms)
+Completed 200 OK in 2753ms (Views: 2745.8ms | ActiveRecord: 3.4ms)
+
+
+Started GET "/decks/17" for ::1 at 2016-08-10 01:57:58 +0800
+Processing by DecksController#show as HTML
+  Parameters: {"id"=>"17"}
+  [1m[36mDeck Load (0.6ms)[0m  [1m[34mSELECT  "decks".* FROM "decks" WHERE "decks"."id" = $1 LIMIT $2[0m  [["id", 17], ["LIMIT", 1]]
+  Rendering decks/show.html.erb within layouts/application
+  [1m[36mUser Load (2.1ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = $1 ORDER BY "users"."id" ASC LIMIT $2[0m  [["id", 2], ["LIMIT", 1]]
+  Rendered layouts/_navbar2.html.erb (7.7ms)
+  [1m[36mUser Load (0.7ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = $1 LIMIT $2[0m  [["id", 2], ["LIMIT", 1]]
+  [1m[36mCard Load (0.6ms)[0m  [1m[34mSELECT "cards".* FROM "cards" WHERE "cards"."deck_id" = $1[0m  [["deck_id", 17]]
+  Rendered decks/show.html.erb within layouts/application (18.0ms)
+Completed 200 OK in 142ms (Views: 134.6ms | ActiveRecord: 4.0ms)
+
+
+Started GET "/decks/17" for ::1 at 2016-08-10 01:58:10 +0800
+Processing by DecksController#show as HTML
+  Parameters: {"id"=>"17"}
+  [1m[36mDeck Load (0.5ms)[0m  [1m[34mSELECT  "decks".* FROM "decks" WHERE "decks"."id" = $1 LIMIT $2[0m  [["id", 17], ["LIMIT", 1]]
+  Rendering decks/show.html.erb within layouts/application
+  [1m[36mUser Load (3.0ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = $1 ORDER BY "users"."id" ASC LIMIT $2[0m  [["id", 2], ["LIMIT", 1]]
+  Rendered layouts/_navbar2.html.erb (7.6ms)
+  [1m[36mUser Load (0.3ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = $1 LIMIT $2[0m  [["id", 2], ["LIMIT", 1]]
+  [1m[36mCard Load (0.2ms)[0m  [1m[34mSELECT "cards".* FROM "cards" WHERE "cards"."deck_id" = $1[0m  [["deck_id", 17]]
+  Rendered decks/show.html.erb within layouts/application (14.7ms)
+Completed 200 OK in 2456ms (Views: 2447.8ms | ActiveRecord: 4.0ms)
+
+
+Started GET "/decks/17" for ::1 at 2016-08-10 01:58:32 +0800
+Processing by DecksController#show as HTML
+  Parameters: {"id"=>"17"}
+  [1m[36mDeck Load (0.5ms)[0m  [1m[34mSELECT  "decks".* FROM "decks" WHERE "decks"."id" = $1 LIMIT $2[0m  [["id", 17], ["LIMIT", 1]]
+  Rendering decks/show.html.erb within layouts/application
+  [1m[36mUser Load (0.7ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = $1 ORDER BY "users"."id" ASC LIMIT $2[0m  [["id", 2], ["LIMIT", 1]]
+  Rendered layouts/_navbar2.html.erb (6.3ms)
+  [1m[36mUser Load (0.4ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = $1 LIMIT $2[0m  [["id", 2], ["LIMIT", 1]]
+  [1m[36mCard Load (0.3ms)[0m  [1m[34mSELECT "cards".* FROM "cards" WHERE "cards"."deck_id" = $1[0m  [["deck_id", 17]]
+  Rendered decks/show.html.erb within layouts/application (12.5ms)
+Completed 200 OK in 2006ms (Views: 1999.5ms | ActiveRecord: 2.0ms)
+
+
+Started GET "/decks/17" for ::1 at 2016-08-10 01:58:54 +0800
+Processing by DecksController#show as HTML
+  Parameters: {"id"=>"17"}
+  [1m[36mDeck Load (1.2ms)[0m  [1m[34mSELECT  "decks".* FROM "decks" WHERE "decks"."id" = $1 LIMIT $2[0m  [["id", 17], ["LIMIT", 1]]
+  Rendering decks/show.html.erb within layouts/application
+  [1m[36mUser Load (1.2ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = $1 ORDER BY "users"."id" ASC LIMIT $2[0m  [["id", 2], ["LIMIT", 1]]
+  Rendered layouts/_navbar2.html.erb (7.0ms)
+  [1m[36mUser Load (1.7ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = $1 LIMIT $2[0m  [["id", 2], ["LIMIT", 1]]
+  [1m[36mCard Load (0.5ms)[0m  [1m[34mSELECT "cards".* FROM "cards" WHERE "cards"."deck_id" = $1[0m  [["deck_id", 17]]
+  Rendered decks/show.html.erb within layouts/application (16.6ms)
+Completed 200 OK in 2477ms (Views: 2468.2ms | ActiveRecord: 4.6ms)
+
+
+Started GET "/decks" for ::1 at 2016-08-10 02:00:36 +0800
+Processing by DecksController#index as HTML
+  [1m[36mUser Load (5.5ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = $1 ORDER BY "users"."id" ASC LIMIT $2[0m  [["id", 2], ["LIMIT", 1]]
+  Rendering decks/index.html.erb within layouts/application
+  Rendered layouts/_navbar.html.erb (4.3ms)
+  [1m[36mDeck Load (0.6ms)[0m  [1m[34mSELECT "decks".* FROM "decks" WHERE "decks"."user_id" = 2[0m
+  Rendered decks/index.html.erb within layouts/application (10.0ms)
+Completed 200 OK in 166ms (Views: 152.7ms | ActiveRecord: 6.1ms)
+
+
+Started GET "/decks/new" for ::1 at 2016-08-10 02:00:41 +0800
+Processing by DecksController#new as HTML
+  [1m[36mUser Load (1.0ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = $1 ORDER BY "users"."id" ASC LIMIT $2[0m  [["id", 2], ["LIMIT", 1]]
+  Rendering decks/new.html.erb within layouts/application
+  Rendered layouts/_navbar.html.erb (4.4ms)
+  Rendered decks/_form.html.erb (10.0ms)
+  Rendered decks/new.html.erb within layouts/application (30.7ms)
+Completed 200 OK in 136ms (Views: 126.7ms | ActiveRecord: 1.0ms)
+
+
+Started GET "/" for ::1 at 2016-08-10 02:01:59 +0800
+Processing by StaticController#index as HTML
+  Rendering static/index.html.erb within layouts/application
+  [1m[36mUser Load (1.6ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = $1 ORDER BY "users"."id" ASC LIMIT $2[0m  [["id", 2], ["LIMIT", 1]]
+  Rendered layouts/_navbar2.html.erb (7.7ms)
+  Rendered static/index.html.erb within layouts/application (19.0ms)
+Completed 200 OK in 274ms (Views: 266.3ms | ActiveRecord: 1.6ms)
+
+
+Started GET "/decks" for ::1 at 2016-08-10 02:02:02 +0800
+Processing by DecksController#index as HTML
+  [1m[36mUser Load (1.8ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = $1 ORDER BY "users"."id" ASC LIMIT $2[0m  [["id", 2], ["LIMIT", 1]]
+  Rendering decks/index.html.erb within layouts/application
+  Rendered layouts/_navbar.html.erb (6.2ms)
+  [1m[36mDeck Load (1.3ms)[0m  [1m[34mSELECT "decks".* FROM "decks" WHERE "decks"."user_id" = 2[0m
+  Rendered decks/index.html.erb within layouts/application (15.7ms)
+Completed 200 OK in 198ms (Views: 187.8ms | ActiveRecord: 3.1ms)
+
+
+Started GET "/decks/16" for ::1 at 2016-08-10 02:02:03 +0800
+Processing by DecksController#show as HTML
+  Parameters: {"id"=>"16"}
+  [1m[36mDeck Load (2.1ms)[0m  [1m[34mSELECT  "decks".* FROM "decks" WHERE "decks"."id" = $1 LIMIT $2[0m  [["id", 16], ["LIMIT", 1]]
+  Rendering decks/show.html.erb within layouts/application
+  [1m[36mUser Load (0.6ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = $1 ORDER BY "users"."id" ASC LIMIT $2[0m  [["id", 2], ["LIMIT", 1]]
+  Rendered layouts/_navbar2.html.erb (8.6ms)
+  [1m[36mUser Load (0.4ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = $1 LIMIT $2[0m  [["id", 2], ["LIMIT", 1]]
+  [1m[36mCard Load (0.3ms)[0m  [1m[34mSELECT "cards".* FROM "cards" WHERE "cards"."deck_id" = $1[0m  [["deck_id", 16]]
+  Rendered decks/show.html.erb within layouts/application (18.4ms)
+Completed 200 OK in 148ms (Views: 140.1ms | ActiveRecord: 3.5ms)
+
+
+Started GET "/decks/16" for ::1 at 2016-08-10 02:10:02 +0800
+Processing by DecksController#show as HTML
+  Parameters: {"id"=>"16"}
+  [1m[36mDeck Load (0.9ms)[0m  [1m[34mSELECT  "decks".* FROM "decks" WHERE "decks"."id" = $1 LIMIT $2[0m  [["id", 16], ["LIMIT", 1]]
+  Rendering decks/show.html.erb within layouts/application
+  [1m[36mUser Load (2.7ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = $1 ORDER BY "users"."id" ASC LIMIT $2[0m  [["id", 2], ["LIMIT", 1]]
+  Rendered layouts/_navbar2.html.erb (44.7ms)
+  [1m[36mUser Load (0.6ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = $1 LIMIT $2[0m  [["id", 2], ["LIMIT", 1]]
+  [1m[36mCard Load (0.4ms)[0m  [1m[34mSELECT "cards".* FROM "cards" WHERE "cards"."deck_id" = $1[0m  [["deck_id", 16]]
+  Rendered decks/show.html.erb within layouts/application (106.8ms)
+Completed 200 OK in 3766ms (Views: 3726.0ms | ActiveRecord: 4.7ms)
+
+
+Started GET "/decks/16" for ::1 at 2016-08-10 02:10:31 +0800
+Processing by DecksController#show as HTML
+  Parameters: {"id"=>"16"}
+  [1m[36mDeck Load (0.7ms)[0m  [1m[34mSELECT  "decks".* FROM "decks" WHERE "decks"."id" = $1 LIMIT $2[0m  [["id", 16], ["LIMIT", 1]]
+  Rendering decks/show.html.erb within layouts/application
+  [1m[36mUser Load (2.6ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = $1 ORDER BY "users"."id" ASC LIMIT $2[0m  [["id", 2], ["LIMIT", 1]]
+  Rendered layouts/_navbar2.html.erb (8.1ms)
+  [1m[36mUser Load (0.5ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = $1 LIMIT $2[0m  [["id", 2], ["LIMIT", 1]]
+  [1m[36mCard Load (0.4ms)[0m  [1m[34mSELECT "cards".* FROM "cards" WHERE "cards"."deck_id" = $1[0m  [["deck_id", 16]]
+  Rendered decks/show.html.erb within layouts/application (16.8ms)
+Completed 200 OK in 2555ms (Views: 2546.5ms | ActiveRecord: 4.1ms)
+
+
+Started GET "/decks/16" for ::1 at 2016-08-10 02:10:55 +0800
+Processing by DecksController#show as HTML
+  Parameters: {"id"=>"16"}
+  [1m[36mDeck Load (0.3ms)[0m  [1m[34mSELECT  "decks".* FROM "decks" WHERE "decks"."id" = $1 LIMIT $2[0m  [["id", 16], ["LIMIT", 1]]
+  Rendering decks/show.html.erb within layouts/application
+  [1m[36mUser Load (0.8ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = $1 ORDER BY "users"."id" ASC LIMIT $2[0m  [["id", 2], ["LIMIT", 1]]
+  Rendered layouts/_navbar2.html.erb (5.9ms)
+  [1m[36mUser Load (0.5ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = $1 LIMIT $2[0m  [["id", 2], ["LIMIT", 1]]
+  [1m[36mCard Load (0.4ms)[0m  [1m[34mSELECT "cards".* FROM "cards" WHERE "cards"."deck_id" = $1[0m  [["deck_id", 16]]
+  Rendered decks/show.html.erb within layouts/application (13.6ms)
+Completed 200 OK in 2410ms (Views: 2404.3ms | ActiveRecord: 2.0ms)
+
+
+Started GET "/decks/16" for ::1 at 2016-08-10 02:11:16 +0800
+Processing by DecksController#show as HTML
+  Parameters: {"id"=>"16"}
+  [1m[36mDeck Load (0.7ms)[0m  [1m[34mSELECT  "decks".* FROM "decks" WHERE "decks"."id" = $1 LIMIT $2[0m  [["id", 16], ["LIMIT", 1]]
+  Rendering decks/show.html.erb within layouts/application
+  [1m[36mUser Load (1.3ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = $1 ORDER BY "users"."id" ASC LIMIT $2[0m  [["id", 2], ["LIMIT", 1]]
+  Rendered layouts/_navbar2.html.erb (7.1ms)
+  [1m[36mUser Load (0.5ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = $1 LIMIT $2[0m  [["id", 2], ["LIMIT", 1]]
+  [1m[36mCard Load (0.4ms)[0m  [1m[34mSELECT "cards".* FROM "cards" WHERE "cards"."deck_id" = $1[0m  [["deck_id", 16]]
+  Rendered decks/show.html.erb within layouts/application (14.9ms)
+Completed 200 OK in 2274ms (Views: 2267.2ms | ActiveRecord: 2.9ms)
+
+
+Started GET "/decks/16" for ::1 at 2016-08-10 02:11:55 +0800
+Processing by DecksController#show as HTML
+  Parameters: {"id"=>"16"}
+  [1m[36mDeck Load (1.1ms)[0m  [1m[34mSELECT  "decks".* FROM "decks" WHERE "decks"."id" = $1 LIMIT $2[0m  [["id", 16], ["LIMIT", 1]]
+  Rendering decks/show.html.erb within layouts/application
+  [1m[36mUser Load (2.2ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = $1 ORDER BY "users"."id" ASC LIMIT $2[0m  [["id", 2], ["LIMIT", 1]]
+  Rendered layouts/_navbar2.html.erb (8.2ms)
+  [1m[36mUser Load (0.8ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = $1 LIMIT $2[0m  [["id", 2], ["LIMIT", 1]]
+  [1m[36mCard Load (0.5ms)[0m  [1m[34mSELECT "cards".* FROM "cards" WHERE "cards"."deck_id" = $1[0m  [["deck_id", 16]]
+  Rendered decks/show.html.erb within layouts/application (20.6ms)
+Completed 200 OK in 152ms (Views: 142.7ms | ActiveRecord: 4.6ms)
+
+
+Started GET "/decks/16" for ::1 at 2016-08-10 02:13:14 +0800
+Processing by DecksController#show as HTML
+  Parameters: {"id"=>"16"}
+  [1m[36mDeck Load (1.5ms)[0m  [1m[34mSELECT  "decks".* FROM "decks" WHERE "decks"."id" = $1 LIMIT $2[0m  [["id", 16], ["LIMIT", 1]]
+  Rendering decks/show.html.erb within layouts/application
+  [1m[36mUser Load (3.1ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = $1 ORDER BY "users"."id" ASC LIMIT $2[0m  [["id", 2], ["LIMIT", 1]]
+  Rendered layouts/_navbar2.html.erb (31.7ms)
+  [1m[36mUser Load (0.4ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = $1 LIMIT $2[0m  [["id", 2], ["LIMIT", 1]]
+  [1m[36mCard Load (0.4ms)[0m  [1m[34mSELECT "cards".* FROM "cards" WHERE "cards"."deck_id" = $1[0m  [["deck_id", 16]]
+  Rendered decks/show.html.erb within layouts/application (69.0ms)
+Completed 200 OK in 3185ms (Views: 3155.5ms | ActiveRecord: 5.3ms)
+
+
+Started GET "/decks/16" for ::1 at 2016-08-10 02:14:03 +0800
+Processing by DecksController#show as HTML
+  Parameters: {"id"=>"16"}
+  [1m[36mDeck Load (0.7ms)[0m  [1m[34mSELECT  "decks".* FROM "decks" WHERE "decks"."id" = $1 LIMIT $2[0m  [["id", 16], ["LIMIT", 1]]
+  Rendering decks/show.html.erb within layouts/application
+  [1m[36mUser Load (1.0ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = $1 ORDER BY "users"."id" ASC LIMIT $2[0m  [["id", 2], ["LIMIT", 1]]
+  Rendered layouts/_navbar2.html.erb (4.4ms)
+  [1m[36mUser Load (0.5ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = $1 LIMIT $2[0m  [["id", 2], ["LIMIT", 1]]
+  [1m[36mCard Load (0.3ms)[0m  [1m[34mSELECT "cards".* FROM "cards" WHERE "cards"."deck_id" = $1[0m  [["deck_id", 16]]
+  Rendered decks/show.html.erb within layouts/application (12.9ms)
+Completed 200 OK in 112ms (Views: 105.8ms | ActiveRecord: 2.5ms)
+
+
+Started GET "/decks/16" for ::1 at 2016-08-10 02:14:23 +0800
+Processing by DecksController#show as HTML
+  Parameters: {"id"=>"16"}
+  [1m[36mDeck Load (0.7ms)[0m  [1m[34mSELECT  "decks".* FROM "decks" WHERE "decks"."id" = $1 LIMIT $2[0m  [["id", 16], ["LIMIT", 1]]
+  Rendering decks/show.html.erb within layouts/application
+  [1m[36mUser Load (4.6ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = $1 ORDER BY "users"."id" ASC LIMIT $2[0m  [["id", 2], ["LIMIT", 1]]
+  Rendered layouts/_navbar2.html.erb (10.0ms)
+  [1m[36mUser Load (0.5ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = $1 LIMIT $2[0m  [["id", 2], ["LIMIT", 1]]
+  [1m[36mCard Load (0.4ms)[0m  [1m[34mSELECT "cards".* FROM "cards" WHERE "cards"."deck_id" = $1[0m  [["deck_id", 16]]
+  Rendered decks/show.html.erb within layouts/application (19.2ms)
+Completed 200 OK in 151ms (Views: 141.6ms | ActiveRecord: 6.1ms)
+
+
+Started GET "/decks/16" for ::1 at 2016-08-10 02:14:51 +0800
+Processing by DecksController#show as HTML
+  Parameters: {"id"=>"16"}
+  [1m[36mDeck Load (0.7ms)[0m  [1m[34mSELECT  "decks".* FROM "decks" WHERE "decks"."id" = $1 LIMIT $2[0m  [["id", 16], ["LIMIT", 1]]
+  Rendering decks/show.html.erb within layouts/application
+  [1m[36mUser Load (2.2ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = $1 ORDER BY "users"."id" ASC LIMIT $2[0m  [["id", 2], ["LIMIT", 1]]
+  Rendered layouts/_navbar2.html.erb (8.6ms)
+  [1m[36mUser Load (0.5ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = $1 LIMIT $2[0m  [["id", 2], ["LIMIT", 1]]
+  [1m[36mCard Load (0.4ms)[0m  [1m[34mSELECT "cards".* FROM "cards" WHERE "cards"."deck_id" = $1[0m  [["deck_id", 16]]
+  Rendered decks/show.html.erb within layouts/application (23.1ms)
+Completed 200 OK in 173ms (Views: 165.5ms | ActiveRecord: 3.9ms)
+
+
+Started GET "/decks/16" for ::1 at 2016-08-10 02:15:07 +0800
+Processing by DecksController#show as HTML
+  Parameters: {"id"=>"16"}
+  [1m[36mDeck Load (0.5ms)[0m  [1m[34mSELECT  "decks".* FROM "decks" WHERE "decks"."id" = $1 LIMIT $2[0m  [["id", 16], ["LIMIT", 1]]
+  Rendering decks/show.html.erb within layouts/application
+  [1m[36mUser Load (2.1ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = $1 ORDER BY "users"."id" ASC LIMIT $2[0m  [["id", 2], ["LIMIT", 1]]
+  Rendered layouts/_navbar2.html.erb (9.1ms)
+  [1m[36mUser Load (1.6ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = $1 LIMIT $2[0m  [["id", 2], ["LIMIT", 1]]
+  [1m[36mCard Load (0.4ms)[0m  [1m[34mSELECT "cards".* FROM "cards" WHERE "cards"."deck_id" = $1[0m  [["deck_id", 16]]
+  Rendered decks/show.html.erb within layouts/application (23.3ms)
+Completed 200 OK in 170ms (Views: 161.0ms | ActiveRecord: 4.7ms)
+
+
+Started GET "/decks/16" for ::1 at 2016-08-10 02:15:44 +0800
+Processing by DecksController#show as HTML
+  Parameters: {"id"=>"16"}
+  [1m[36mDeck Load (0.7ms)[0m  [1m[34mSELECT  "decks".* FROM "decks" WHERE "decks"."id" = $1 LIMIT $2[0m  [["id", 16], ["LIMIT", 1]]
+  Rendering decks/show.html.erb within layouts/application
+  [1m[36mUser Load (1.4ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = $1 ORDER BY "users"."id" ASC LIMIT $2[0m  [["id", 2], ["LIMIT", 1]]
+  Rendered layouts/_navbar2.html.erb (8.7ms)
+  [1m[36mUser Load (0.5ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = $1 LIMIT $2[0m  [["id", 2], ["LIMIT", 1]]
+  [1m[36mCard Load (0.7ms)[0m  [1m[34mSELECT "cards".* FROM "cards" WHERE "cards"."deck_id" = $1[0m  [["deck_id", 16]]
+  Rendered decks/show.html.erb within layouts/application (19.0ms)
+Completed 200 OK in 199ms (Views: 191.1ms | ActiveRecord: 3.2ms)
+
+
+Started GET "/decks/16" for ::1 at 2016-08-10 02:16:13 +0800
+Processing by DecksController#show as HTML
+  Parameters: {"id"=>"16"}
+  [1m[36mDeck Load (0.4ms)[0m  [1m[34mSELECT  "decks".* FROM "decks" WHERE "decks"."id" = $1 LIMIT $2[0m  [["id", 16], ["LIMIT", 1]]
+  Rendering decks/show.html.erb within layouts/application
+  [1m[36mUser Load (2.0ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = $1 ORDER BY "users"."id" ASC LIMIT $2[0m  [["id", 2], ["LIMIT", 1]]
+  Rendered layouts/_navbar2.html.erb (10.8ms)
+  [1m[36mUser Load (0.4ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = $1 LIMIT $2[0m  [["id", 2], ["LIMIT", 1]]
+  [1m[36mCard Load (0.3ms)[0m  [1m[34mSELECT "cards".* FROM "cards" WHERE "cards"."deck_id" = $1[0m  [["deck_id", 16]]
+  Rendered decks/show.html.erb within layouts/application (21.8ms)
+Completed 200 OK in 3230ms (Views: 3222.4ms | ActiveRecord: 3.1ms)
+
+
+Started GET "/decks/16" for ::1 at 2016-08-10 02:17:06 +0800
+Processing by DecksController#show as HTML
+  Parameters: {"id"=>"16"}
+  [1m[36mDeck Load (0.3ms)[0m  [1m[34mSELECT  "decks".* FROM "decks" WHERE "decks"."id" = $1 LIMIT $2[0m  [["id", 16], ["LIMIT", 1]]
+  Rendering decks/show.html.erb within layouts/application
+  [1m[36mUser Load (3.7ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = $1 ORDER BY "users"."id" ASC LIMIT $2[0m  [["id", 2], ["LIMIT", 1]]
+  Rendered layouts/_navbar2.html.erb (9.8ms)
+  [1m[36mUser Load (0.6ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = $1 LIMIT $2[0m  [["id", 2], ["LIMIT", 1]]
+  [1m[36mCard Load (0.3ms)[0m  [1m[34mSELECT "cards".* FROM "cards" WHERE "cards"."deck_id" = $1[0m  [["deck_id", 16]]
+  Rendered decks/show.html.erb within layouts/application (17.8ms)
+Completed 200 OK in 126ms (Views: 118.4ms | ActiveRecord: 4.9ms)
+
+
+Started GET "/decks/16" for ::1 at 2016-08-10 02:17:51 +0800
+Processing by DecksController#show as HTML
+  Parameters: {"id"=>"16"}
+  [1m[36mDeck Load (0.3ms)[0m  [1m[34mSELECT  "decks".* FROM "decks" WHERE "decks"."id" = $1 LIMIT $2[0m  [["id", 16], ["LIMIT", 1]]
+  Rendering decks/show.html.erb within layouts/application
+  [1m[36mUser Load (1.0ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = $1 ORDER BY "users"."id" ASC LIMIT $2[0m  [["id", 2], ["LIMIT", 1]]
+  Rendered layouts/_navbar2.html.erb (6.1ms)
+  [1m[36mUser Load (0.4ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = $1 LIMIT $2[0m  [["id", 2], ["LIMIT", 1]]
+  [1m[36mCard Load (0.2ms)[0m  [1m[34mSELECT "cards".* FROM "cards" WHERE "cards"."deck_id" = $1[0m  [["deck_id", 16]]
+  Rendered decks/show.html.erb within layouts/application (15.1ms)
+Completed 200 OK in 2610ms (Views: 2604.3ms | ActiveRecord: 1.9ms)
+
+
+Started GET "/decks" for ::1 at 2016-08-10 02:18:38 +0800
+Processing by DecksController#index as HTML
+  [1m[36mUser Load (0.9ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = $1 ORDER BY "users"."id" ASC LIMIT $2[0m  [["id", 2], ["LIMIT", 1]]
+  Rendering decks/index.html.erb within layouts/application
+  Rendered layouts/_navbar.html.erb (9.1ms)
+  [1m[36mDeck Load (1.0ms)[0m  [1m[34mSELECT "decks".* FROM "decks" WHERE "decks"."user_id" = 2[0m
+  Rendered decks/index.html.erb within layouts/application (19.8ms)
+Completed 200 OK in 169ms (Views: 158.2ms | ActiveRecord: 1.9ms)
+
+

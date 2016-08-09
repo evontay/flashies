@@ -1,4 +1,18 @@
-<h1>Create A New Deck<h1>
+<%= render "layouts/navbar" %>
+<div class="wrapper">
+  <p class="darkblue right"><%= link_to "Cancel", decks_path %></p>
+  <h1 class="darkblue center">Create A New Deck</h1>
 
-<%= render 'form' %>
-<%= link_to "Back", root_path %>
+
+<div class="newdeck">
+  <div class="leftside">
+    <%= render 'form' %>
+  </div>
+
+  <div class="rightside">
+    <h5>Add Cards</h5>
+  </div>
+</div>
+
+
+</div>
