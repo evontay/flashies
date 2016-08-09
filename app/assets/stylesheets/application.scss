@@ -21,13 +21,6 @@
 // $primary-color: color("blue", "lighten-2") !default;
 @import 'materialize';
 
-
-body {
-  font-family: 'Raleway', sans-serif;
-  background-color: #eee;
-  background: url('noisePattern.png');
-  background-repeat: repeat;
-}
 // COLOR ================
 $blue: #0000ff;
 $darkblue: #2e3192;
@@ -41,6 +34,14 @@ $light: #f2f2f2;
 .slate {color: $slate;}
 .white {color: white;}
 .light {color: $light; }
+
+body {
+  font-family: 'Raleway', sans-serif;
+  background-color: $light;
+  background-image: url('noisePattern.png');
+  background-repeat: repeat;
+  background-blend-mode: multiply;
+}
 
 a {color: inherit;}
 a:hover {
@@ -78,7 +79,6 @@ h6 {font-size: 1.3em;}
 
 .center {
   text-align: center;
-  margin: 0 auto;
 }
 
 .toppad {
@@ -268,6 +268,42 @@ h6 {font-size: 1.3em;}
   transition: 0.2s ease-out;
 }
 // DECK INDEX ===================
+
+  .deck-wrap {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    max-width: 1000px;
+    margin: 0 auto;
+  }
+
+  .deck {
+    flex: 1;
+    background-image: url('deck.svg');
+    background-size: contain;
+    background-repeat: no-repeat;
+    background-position: center;
+    min-width: 180px;
+    max-width: 200px;
+    height: 300px;
+    text-align: center;
+    padding: 50px 25px 15px 25px;
+    overflow:hidden;
+    color: $darkblue;
+    p {font-size: 0.8em;}
+  }
+
+  .add_btn {
+    background-color: white;
+    padding: 10px;
+    max-width: 150px;
+    color: $blue;
+    margin: 0 auto;
+  }
+  .shift {
+    margin-bottom: -15px;
+  }
+
 
 // DECK NEW ===================
 

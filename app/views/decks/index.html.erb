@@ -1,9 +1,35 @@
-<h1>My Decks</h1>
-<%= current_user.username %>
+<%= render "layouts/navbar" %>
+<div class="wrapper">
+  <h1 class="darkblue center"><%= current_user.username %>'s Decks</h1>
 
-<% @decks.each do |deck| %>
-  <h2> <%= link_to deck.title, deck %> </h2>
-  <p><%= deck.description %></p>
-<% end %>
+  <div class="add_btn center">
+    <%= link_to new_deck_path do %>
+      <span class="shift"><i class="tiny material-icons">queue</i></span> New Deck
+    <% end %>
+  </div>
 
-<%= link_to "New Deck", new_deck_path %>
+  <div class="deck-wrap">
+    <% @decks.each do |deck| %>
+      <div class="deck">
+        <h5> <%= link_to deck.title, deck %> </h5>
+        <p><%= deck.description %></p>
+
+      </div>
+    <% end %>
+  </div>
+
+  <!-- Modal Trigger -->
+<a class="waves-effect waves-light btn modal-trigger" href="#modal1">Modal</a>
+
+<!-- Modal Structure -->
+<div id="modal1" class="modal">
+  <div class="modal-content">
+    <h4>Modal Header</h4>
+    <p>A bunch of text</p>
+  </div>
+  <div class="modal-footer">
+    <a href="#!" class=" modal-action modal-close waves-effect waves-green btn-flat">Agree</a>
+  </div>
+</div>
+
+</div>
