@@ -28,6 +28,12 @@ $(document).ready(function () {
     $('.deck-form').addClass('hidden')
   })
 
+  $('#flash').click(function () {
+    console.log('flash clicked')
+    $('#flash-mode').toggleClass('hidden')
+    $('#normal-mode').toggleClass('hidden')
+  })
+
   $('#js-flip-2').bind('click mouseleave', function () {
     console.log('flip click')
     $('#js-flip-2 .card').toggleClass('flipped')
