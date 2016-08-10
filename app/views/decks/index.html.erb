@@ -21,6 +21,7 @@
   <div class="deck-wrap">
     <% @decks.each do |deck| %>
       <div class="deck">
+        <h6><i class="fa fa-align-justify pink2" aria-hidden="true"></i></h6>
         <h6> <%= link_to deck.title, deck %> </h6>
         <p><%= deck.description %></p>
 

@@ -17,7 +17,6 @@
 // = require_tree .
 
 $(document).ready(function () {
-  // the "href" attribute of .modal-trigger must specify the modal ID that wants to be triggered
   console.log('hi')
   $('.deck-form').hide()
   $('.add_btn').click(function () {
