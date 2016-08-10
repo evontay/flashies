@@ -14,12 +14,12 @@
  *= require_self
  */
 
- // @import 'bootstrap-sprockets';
- // @import 'bootstrap';
+ @import 'bootstrap-sprockets';
+ @import 'bootstrap';
 
 // @import "materialize/components/color";
 // $primary-color: color("blue", "lighten-2") !default;
-@import 'materialize';
+// @import 'materialize';
 
 // COLOR ================
 $blue: #0000ff;
@@ -54,6 +54,7 @@ a:hover {
 // TYPOGRAPHY ===================
 h1, h2, h3, h4, h5, h6 {
   font-weight: 800;
+  margin: 0;
 }
 
 .em {
@@ -98,54 +99,28 @@ h6 {font-size: 1.3em;}
   color: $pink;
   text-align: center;
   max-width: 50%;
+  background-color: transparent;
+}
 
+.hidden {
+  display: none;
+}
+
+.show {
+  display: block;
 }
 
 // NAV ===================
-.nav, .nav1 {
-  background-color: none;
-  img {
-    height: 30px;
-    margin-top: 10px;
-  }
-
-  .nav-wrapper {
-    width: 90%;
-    margin: 0 auto;
-  }
-  ul li {
-    display: inline;
-    padding-left: 20px;
-    font-size: 0.9em;
-
-  }
-}
-
-.nav {
-  color: $pink;
-  li a {color: white;}
-  li a:hover {
-    padding-bottom: 5px;
-    border-bottom: 2px solid $pink;
-  }
-
-  a img:hover {
-    border: none;
-  }
-}
-
-.nav1 {
+.navigation {
   color: $darkblue;
-  li a {color: $blue;}
-  li a:hover {
-    padding-bottom: 5px;
-    border-bottom: 2px solid $pink;
-  }
-  a img:hover {
-    border: none;
-  }
-}
+  background-color: transparent;
 
+  .pad {padding: 15px 10px;}
+
+  a {color: $pink;}
+
+  a:hover {border-bottom: 2px solid $blue;}
+}
 
 // DEVISE FORMS ===================
 .paper-wrap {
@@ -176,34 +151,15 @@ h6 {font-size: 1.3em;}
     -moz-transition: 0.2s ease-out;
     transition: 0.2s ease-out;
   }
-
-  input:-webkit-autofill, textarea:-webkit-autofill, select:-webkit-autofill {
-    background-color: $light;
-    padding-left: 10px;
 }
-
-  input:not([type]):focus:not([readonly]), input[type=text]:focus:not([readonly]), input[type=password]:focus:not([readonly]), input[type=email]:focus:not([readonly]), input[type=url]:focus:not([readonly]), input[type=time]:focus:not([readonly]), input[type=date]:focus:not([readonly]), input[type=datetime]:focus:not([readonly]), input[type=datetime-local]:focus:not([readonly]), input[type=tel]:focus:not([readonly]), input[type=number]:focus:not([readonly]), input[type=search]:focus:not([readonly]), textarea.materialize-textarea:focus:not([readonly]) {
-    border-bottom: 1px solid $pink;
-    box-shadow: 0 1px 0 0 $pink;
-  }
-
-  input:not([type]), input[type=text], input[type=password], input[type=email], input[type=url], input[type=time], input[type=date], input[type=datetime], input[type=datetime-local], input[type=tel], input[type=number], input[type=search], textarea.materialize-textarea {
-    margin: 0 0 10px 0;
-  }
-}
-
 
 // APP INDEX ===================
 .home {
-  //background-image: url('background.jpeg');
-
-  //background-color: $blue;
-  //background-blend-mode: multiply;
-  background:
-    linear-gradient(to right, $blue 0%, $pink 90%),
-    url('background.jpeg');
-  background-size: cover;
-  background-blend-mode: multiply, difference;
+  // background:
+  //   linear-gradient(to right, $blue 0%, $pink 90%),
+  //   url('background.jpeg');
+  // background-size: cover;
+  // background-blend-mode: multiply, difference;
 
   h5 {
     font-weight: 600;
@@ -211,7 +167,7 @@ h6 {font-size: 1.3em;}
   }
 
   .wrapper {
-    padding: 100px 0;
+    padding: 70px 0;
     text-align: center;
   }
 
@@ -239,7 +195,7 @@ h6 {font-size: 1.3em;}
     max-width: 230px;
     height: 350px;
     border-radius: 4px;
-    padding: 50px 30px 20px 25px;
+    padding: 40px 30px 20px 25px;
     margin: 0 auto;
     color: $slate;
     h3 {
@@ -247,14 +203,15 @@ h6 {font-size: 1.3em;}
     }
     img {
       height: 60px;
+      padding-bottom: 15px;
     }
   }
 }
 
 .start {
   border-radius: 4px;
-  border: 2px solid white;
-  color: white;
+  border: 2px solid $blue;
+  color: $blue;
   padding: 10px;
   max-width: 150px;
   margin: 50px auto;
@@ -263,6 +220,7 @@ h6 {font-size: 1.3em;}
 .start:hover {
   color: $pink;
   border: 2px solid $pink;
+  text-decoration: none;
   -webkit-transition: 0.2s ease-out;
   -moz-transition: 0.2s ease-out;
   transition: 0.2s ease-out;
@@ -286,6 +244,7 @@ h6 {font-size: 1.3em;}
     min-width: 220px;
     max-width: 220px;
     height: 300px;
+    line-height: 220px;
     text-align: center;
     padding: 3%;
     margin: 0 auto;
@@ -293,11 +252,32 @@ h6 {font-size: 1.3em;}
     overflow:hidden;
     color: $darkblue;
 
-    p {font-size: 0.8em;}
+    .deck-content {
+      display: inline-block;
+      vertical-align: middle;
+      line-height: 1.5;
+
+      .edit-grp {
+        position: relative;
+        top: 50%;
+        border-top: 1px solid $light;
+        margin-top: 20px;
+        padding-top: 15px;
+
+        a {
+          padding: 0 10px;
+          color: #999;
+        }
+      }
+
+    }
+
+    p {font-size: 0.9em;}
 
     h6 {
       color: $blue;
       text-decoration: underline;
+      margin-bottom: 20px;
     }
     h6:hover {
       color: $pink;
@@ -312,8 +292,9 @@ h6 {font-size: 1.3em;}
     padding: 10px;
     max-width: 150px;
     color: $blue;
-    margin: 0 auto;
+    margin: 20px auto;
     cursor: pointer;
+    border: 2px solid white;
   }
 
   .add_btn:hover {
@@ -334,6 +315,18 @@ h6 {font-size: 1.3em;}
   max-width: 600px;
   margin: 20px auto;
   padding: 30px;
+
+  #cancel {
+    text-align: right;
+    cursor: pointer;
+  }
+
+  .btn {
+    background-color: transparent;
+    border: 2px solid $blue;
+    border-radius: none;
+    color: $blue;
+  }
 }
 
 .newdeck {
@@ -355,9 +348,28 @@ h6 {font-size: 1.3em;}
   padding: 30px;
 }
 
-// CARD NEW ===================
+// NORMAL MODE ===================
+
 
 // FLASH MODE ===================
+.back {
+  margin: 0;
+  margin-top: 30px;
+
+  a{
+    color: #999;
+    padding: 10px;
+    border: 2px solid #999;
+    border-radius: 3px;
+    text-decoration: none;
+  }
+
+  a:hover {
+    color: $darkblue;
+    border: 2px solid $darkblue;
+  }
+
+}
 .flash {
   //background-image: url('background.jpeg');
   //background-size: cover;
@@ -383,6 +395,7 @@ h6 {font-size: 1.3em;}
 }
 
 // CARD FLIP ========
+
 
 .flip {
     -webkit-perspective: 800;

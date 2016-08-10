@@ -55,7 +55,7 @@ class DecksController < ApplicationController
 
   def update
     if @deck.update(deck_params)
-      redirect_to @deck, notice: "Deck was Successfully updated!"
+      redirect_to decks_path, notice: "Deck was Successfully updated!"
     else
       render 'edit'
     end
@@ -63,7 +63,7 @@ class DecksController < ApplicationController
 
   def destroy
     @deck.destroy
-    redirect_to root_path
+    redirect_to decks_path
   end
 
   private

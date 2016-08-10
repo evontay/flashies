@@ -4,13 +4,13 @@
   <h1 class="darkblue center"><%= @user.username %>'s Decks</h1>
 
   <% if @can_edit %>
-  <div class="add_btn center">
+  <div class="add_btn center toppad">
     <!-- "<%= link_to new_deck_path do %>" -->
-      <span class="shift"><i class="fa fa-plus-square" aria-hidden="true"></i> New Deck
+      <span class="shift"><i class="fa fa-plus-square" aria-hidden="true"></i>  New Deck
     <% end %>
   </div>
 
-    <div class="deck-form">
+    <div class="deck-form hidden">
       <%= render 'form' %>
     </div>
 
@@ -21,10 +21,20 @@
   <div class="deck-wrap">
     <% @decks.each do |deck| %>
       <div class="deck">
-        <h6><i class="fa fa-align-justify pink2" aria-hidden="true"></i></h6>
-        <h6> <%= link_to deck.title, deck %> </h6>
-        <p><%= deck.description %></p>
+        <div class="deck-content">
+          <!-- <h6><i class="fa fa-align-justify pink2" aria-hidden="true"></i></h6> -->
+          <h6> <%= link_to deck.title, deck %> </h6>
+          <p><%= deck.description %></p>
 
+          <div class="edit-grp">
+            <%= link_to edit_deck_path(deck.id) do %>
+              <span class="glyphicon glyphicon-edit" aria-hidden="true"></span>
+            <% end %>
+            <%= link_to deck_path(deck.id), method: :delete, data: {confirm: "Are you sure?"} do %>
+              <span class="glyphicon glyphicon-trash" aria-hidden="true"></span>
+            <% end %>
+          </div>
+        </div>
       </div>
     <% end %>
   </div>

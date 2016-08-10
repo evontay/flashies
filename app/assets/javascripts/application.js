@@ -12,19 +12,24 @@
 //
 // = require jquery
 // = require jquery_ujs
-// = require materialize-sprockets
+// = require bootstrap-sprockets
 // = require turbolinks
 // = require_tree .
 
 $(document).ready(function () {
   console.log('hi')
-  $('.deck-form').hide()
   $('.add_btn').click(function () {
     console.log('add_btn clicked')
-    $('.deck-form').show()
+    $('.deck-form').removeClass('hidden')
+  })
+
+  $('#cancel').click(function () {
+    console.log('cancel clicked')
+    $('.deck-form').addClass('hidden')
   })
 
   $('#js-flip-2').bind('click mouseleave', function () {
+    console.log('flip click')
     $('#js-flip-2 .card').toggleClass('flipped')
   })
 })

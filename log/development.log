@@ -19829,3 +19829,2754 @@ Processing by StaticController#index as HTML
 Completed 200 OK in 144ms (Views: 139.0ms | ActiveRecord: 1.5ms)
 
 
+Started GET "/" for ::1 at 2016-08-10 20:26:37 +0800
+Processing by StaticController#index as HTML
+  Rendering static/index.html.erb within layouts/application
+  [1m[36mUser Load (1.5ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = $1 ORDER BY "users"."id" ASC LIMIT $2[0m  [["id", 2], ["LIMIT", 1]]
+  Rendered layouts/_navbar2.html.erb (32.0ms)
+  Rendered static/index.html.erb within layouts/application (53.0ms)
+Completed 500 Internal Server Error in 406ms (ActiveRecord: 1.5ms)
+
+
+  
+ActionView::Template::Error (File to import not found or unreadable: bootstrap-sprockets.
+Load paths:
+  /Users/tayevon/flashies/app/assets/config
+  /Users/tayevon/flashies/app/assets/images
+  /Users/tayevon/flashies/app/assets/javascripts
+  /Users/tayevon/flashies/app/assets/stylesheets
+  /Users/tayevon/flashies/vendor/assets/javascripts
+  /Users/tayevon/flashies/vendor/assets/stylesheets
+  /Users/tayevon/.rvm/gems/ruby-2.3.0/gems/materialize-sass-0.97.7/app/assets/fonts
+  /Users/tayevon/.rvm/gems/ruby-2.3.0/gems/materialize-sass-0.97.7/app/assets/javascripts
+  /Users/tayevon/.rvm/gems/ruby-2.3.0/gems/materialize-sass-0.97.7/app/assets/stylesheets
+  /Users/tayevon/.rvm/gems/ruby-2.3.0/gems/jquery-rails-4.1.1/vendor/assets/javascripts
+  /Users/tayevon/.rvm/gems/ruby-2.3.0/gems/coffee-rails-4.2.1/lib/assets/javascripts
+  /Users/tayevon/.rvm/gems/ruby-2.3.0/gems/actioncable-5.0.0/lib/assets/compiled
+  /Users/tayevon/.rvm/gems/ruby-2.3.0/gems/turbolinks-source-5.0.0/lib/assets/javascripts
+  /Users/tayevon/.rvm/gems/ruby-2.3.0/gems/materialize-sass-0.97.7/app/assets/stylesheets
+  /Users/tayevon/.rvm/gems/ruby-2.3.0/gems/materialize-sass-0.97.7/app/assets/javascripts
+  /Users/tayevon/.rvm/gems/ruby-2.3.0/gems/materialize-sass-0.97.7/app/assets/fonts
+  /Users/tayevon/.rvm/gems/ruby-2.3.0/gems/materialize-sass-0.97.7/app/assets/images
+  /Users/tayevon/.rvm/gems/ruby-2.3.0/gems/materialize-sass-0.97.7/app/assets/stylesheets):
+    4:   <title>Flashies</title>
+    5:   <%= csrf_meta_tags %>
+    6: 
+    7:   <%= stylesheet_link_tag    'application', media: 'all', 'data-turbolinks-track': 'reload' %>
+    8:   <%= javascript_include_tag 'application', 'data-turbolinks-track': 'reload' %>
+    9: 
+   10:   <link href="https://fonts.googleapis.com/css?family=Raleway:600,600i,800,800i" rel="stylesheet">
+  
+app/assets/stylesheets/application.scss:18
+app/views/layouts/application.html.erb:7:in `_app_views_layouts_application_html_erb___4152350800668978333_70216233436420'
+  Rendering /Users/tayevon/.rvm/gems/ruby-2.3.0/gems/actionpack-5.0.0/lib/action_dispatch/middleware/templates/rescues/template_error.html.erb within rescues/layout
+  Rendering /Users/tayevon/.rvm/gems/ruby-2.3.0/gems/actionpack-5.0.0/lib/action_dispatch/middleware/templates/rescues/_source.html.erb
+  Rendered /Users/tayevon/.rvm/gems/ruby-2.3.0/gems/actionpack-5.0.0/lib/action_dispatch/middleware/templates/rescues/_source.html.erb (13.4ms)
+  Rendering /Users/tayevon/.rvm/gems/ruby-2.3.0/gems/actionpack-5.0.0/lib/action_dispatch/middleware/templates/rescues/_trace.html.erb
+  Rendered /Users/tayevon/.rvm/gems/ruby-2.3.0/gems/actionpack-5.0.0/lib/action_dispatch/middleware/templates/rescues/_trace.html.erb (4.1ms)
+  Rendering /Users/tayevon/.rvm/gems/ruby-2.3.0/gems/actionpack-5.0.0/lib/action_dispatch/middleware/templates/rescues/_request_and_response.html.erb
+  Rendered /Users/tayevon/.rvm/gems/ruby-2.3.0/gems/actionpack-5.0.0/lib/action_dispatch/middleware/templates/rescues/_request_and_response.html.erb (1.3ms)
+  Rendered /Users/tayevon/.rvm/gems/ruby-2.3.0/gems/actionpack-5.0.0/lib/action_dispatch/middleware/templates/rescues/template_error.html.erb within rescues/layout (99.5ms)
+Started GET "/" for ::1 at 2016-08-10 20:27:13 +0800
+  [1m[36mActiveRecord::SchemaMigration Load (0.7ms)[0m  [1m[34mSELECT "schema_migrations".* FROM "schema_migrations"[0m
+Processing by StaticController#index as HTML
+  Rendering static/index.html.erb within layouts/application
+  [1m[36mUser Load (1.7ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = $1 ORDER BY "users"."id" ASC LIMIT $2[0m  [["id", 2], ["LIMIT", 1]]
+  Rendered layouts/_navbar2.html.erb (3347.9ms)
+  Rendered static/index.html.erb within layouts/application (3361.8ms)
+Completed 200 OK in 3620ms (Views: 3584.1ms | ActiveRecord: 13.8ms)
+
+
+Started DELETE "/users/sign_out" for ::1 at 2016-08-10 20:27:35 +0800
+Processing by Devise::SessionsController#destroy as HTML
+  Parameters: {"authenticity_token"=>"E8nyzwexOU//GKx1CVqxJP7N134wlOOe2zQxO0V3PgY6D4cpgPnMrWaThSvZAoeZGtze+UwZdS3qjk/b/Of5HQ=="}
+  [1m[36mUser Load (2.4ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = $1 ORDER BY "users"."id" ASC LIMIT $2[0m  [["id", 2], ["LIMIT", 1]]
+  [1m[35m (0.2ms)[0m  [1m[35mBEGIN[0m
+  [1m[35m (0.3ms)[0m  [1m[35mCOMMIT[0m
+Redirected to http://localhost:3000/
+Completed 302 Found in 39ms (ActiveRecord: 2.9ms)
+
+
+Started GET "/" for ::1 at 2016-08-10 20:27:35 +0800
+Processing by StaticController#index as HTML
+  Rendering static/index.html.erb within layouts/application
+  Rendered layouts/_navbar2.html.erb (10.5ms)
+  Rendered static/index.html.erb within layouts/application (20.1ms)
+Completed 200 OK in 133ms (Views: 129.3ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/users/sign_in" for ::1 at 2016-08-10 20:27:50 +0800
+Processing by Devise::SessionsController#new as HTML
+  Rendering devise/sessions/new.html.erb within layouts/application
+  Rendered layouts/_navbar.html.erb (6.5ms)
+  Rendered devise/shared/_links.html.erb (1.6ms)
+  Rendered devise/sessions/new.html.erb within layouts/application (122.9ms)
+Completed 200 OK in 254ms (Views: 251.1ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/users/sign_in" for ::1 at 2016-08-10 20:29:15 +0800
+Processing by Devise::SessionsController#new as HTML
+  Rendering devise/sessions/new.html.erb within layouts/application
+  Rendered layouts/_navbar.html.erb (6.8ms)
+  Rendered devise/shared/_links.html.erb (2.2ms)
+  Rendered devise/sessions/new.html.erb within layouts/application (31.6ms)
+Completed 500 Internal Server Error in 109ms (ActiveRecord: 0.0ms)
+
+
+  
+ActionView::Template::Error (Invalid CSS after "...===============": expected "}", was ""):
+    4:   <title>Flashies</title>
+    5:   <%= csrf_meta_tags %>
+    6: 
+    7:   <%= stylesheet_link_tag    'application', media: 'all', 'data-turbolinks-track': 'reload' %>
+    8:   <%= javascript_include_tag 'application', 'data-turbolinks-track': 'reload' %>
+    9: 
+   10:   <link href="https://fonts.googleapis.com/css?family=Raleway:600,600i,800,800i" rel="stylesheet">
+  
+app/assets/stylesheets/application.scss:416
+app/views/layouts/application.html.erb:7:in `_app_views_layouts_application_html_erb__285282633854251158_70308035958040'
+  Rendering /Users/tayevon/.rvm/gems/ruby-2.3.0/gems/actionpack-5.0.0/lib/action_dispatch/middleware/templates/rescues/template_error.html.erb within rescues/layout
+  Rendering /Users/tayevon/.rvm/gems/ruby-2.3.0/gems/actionpack-5.0.0/lib/action_dispatch/middleware/templates/rescues/_source.html.erb
+  Rendered /Users/tayevon/.rvm/gems/ruby-2.3.0/gems/actionpack-5.0.0/lib/action_dispatch/middleware/templates/rescues/_source.html.erb (10.4ms)
+  Rendering /Users/tayevon/.rvm/gems/ruby-2.3.0/gems/actionpack-5.0.0/lib/action_dispatch/middleware/templates/rescues/_trace.html.erb
+  Rendered /Users/tayevon/.rvm/gems/ruby-2.3.0/gems/actionpack-5.0.0/lib/action_dispatch/middleware/templates/rescues/_trace.html.erb (3.7ms)
+  Rendering /Users/tayevon/.rvm/gems/ruby-2.3.0/gems/actionpack-5.0.0/lib/action_dispatch/middleware/templates/rescues/_request_and_response.html.erb
+  Rendered /Users/tayevon/.rvm/gems/ruby-2.3.0/gems/actionpack-5.0.0/lib/action_dispatch/middleware/templates/rescues/_request_and_response.html.erb (1.3ms)
+  Rendered /Users/tayevon/.rvm/gems/ruby-2.3.0/gems/actionpack-5.0.0/lib/action_dispatch/middleware/templates/rescues/template_error.html.erb within rescues/layout (89.3ms)
+Started GET "/users/sign_in" for ::1 at 2016-08-10 20:29:58 +0800
+Processing by Devise::SessionsController#new as HTML
+  Rendering devise/sessions/new.html.erb within layouts/application
+  Rendered layouts/_navbar.html.erb (4.0ms)
+  Rendered devise/shared/_links.html.erb (1.2ms)
+  Rendered devise/sessions/new.html.erb within layouts/application (16.8ms)
+Completed 200 OK in 2271ms (Views: 2269.6ms | ActiveRecord: 0.0ms)
+
+
+Started POST "/users/sign_in" for ::1 at 2016-08-10 20:30:29 +0800
+Processing by Devise::SessionsController#create as HTML
+  Parameters: {"utf8"=>"✓", "authenticity_token"=>"6Z8jrxdZgif1KHQNzPdDy0nsIZ6riPoIFcT9047DJQUF1iQ2HxcnGFCsIFebm12wSXX0VPAjPdx1Pp2XngrVwg==", "user"=>{"email"=>"root@tm.com", "password"=>"[FILTERED]", "remember_me"=>"0"}, "commit"=>"Log in"}
+  [1m[36mUser Load (2.7ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."email" = $1 ORDER BY "users"."id" ASC LIMIT $2[0m  [["email", "root@tm.com"], ["LIMIT", 1]]
+  [1m[35m (0.2ms)[0m  [1m[35mBEGIN[0m
+  [1m[35mSQL (2.8ms)[0m  [1m[33mUPDATE "users" SET "current_sign_in_at" = $1, "last_sign_in_at" = $2, "sign_in_count" = $3, "updated_at" = $4 WHERE "users"."id" = $5[0m  [["current_sign_in_at", 2016-08-10 12:30:29 UTC], ["last_sign_in_at", 2016-08-10 04:51:43 UTC], ["sign_in_count", 4], ["updated_at", 2016-08-10 12:30:29 UTC], ["id", 2]]
+  [1m[35m (1.2ms)[0m  [1m[35mCOMMIT[0m
+Redirected to http://localhost:3000/
+Completed 302 Found in 260ms (ActiveRecord: 7.0ms)
+
+
+Started GET "/" for ::1 at 2016-08-10 20:30:29 +0800
+Processing by StaticController#index as HTML
+  Rendering static/index.html.erb within layouts/application
+  [1m[36mUser Load (3.3ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = $1 ORDER BY "users"."id" ASC LIMIT $2[0m  [["id", 2], ["LIMIT", 1]]
+  Rendered layouts/_navbar2.html.erb (13.4ms)
+  Rendered static/index.html.erb within layouts/application (21.6ms)
+Completed 200 OK in 144ms (Views: 137.0ms | ActiveRecord: 3.3ms)
+
+
+Started GET "/decks" for ::1 at 2016-08-10 20:30:34 +0800
+Processing by DecksController#index as HTML
+  [1m[36mUser Load (2.0ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = $1 ORDER BY "users"."id" ASC LIMIT $2[0m  [["id", 2], ["LIMIT", 1]]
+  Rendering decks/index.html.erb within layouts/application
+  Rendered layouts/_navbar.html.erb (4.1ms)
+  Rendered decks/_form.html.erb (16.4ms)
+  [1m[36mDeck Load (1.3ms)[0m  [1m[34mSELECT "decks".* FROM "decks" WHERE "decks"."user_id" = 2[0m
+  Rendered decks/index.html.erb within layouts/application (30.7ms)
+Completed 200 OK in 190ms (Views: 133.7ms | ActiveRecord: 14.7ms)
+
+
+Started GET "/decks" for ::1 at 2016-08-10 20:30:39 +0800
+Processing by DecksController#index as HTML
+  [1m[36mUser Load (0.7ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = $1 ORDER BY "users"."id" ASC LIMIT $2[0m  [["id", 2], ["LIMIT", 1]]
+  Rendering decks/index.html.erb within layouts/application
+  Rendered layouts/_navbar.html.erb (2.6ms)
+  Rendered decks/_form.html.erb (8.4ms)
+  [1m[36mDeck Load (1.1ms)[0m  [1m[34mSELECT "decks".* FROM "decks" WHERE "decks"."user_id" = 2[0m
+  Rendered decks/index.html.erb within layouts/application (19.1ms)
+Completed 200 OK in 104ms (Views: 97.4ms | ActiveRecord: 1.8ms)
+
+
+Started GET "/decks/6" for ::1 at 2016-08-10 20:30:46 +0800
+Processing by DecksController#show as HTML
+  Parameters: {"id"=>"6"}
+  [1m[36mDeck Load (1.2ms)[0m  [1m[34mSELECT  "decks".* FROM "decks" WHERE "decks"."id" = $1 LIMIT $2[0m  [["id", 6], ["LIMIT", 1]]
+  [1m[36mUser Load (4.1ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = $1 ORDER BY "users"."id" ASC LIMIT $2[0m  [["id", 2], ["LIMIT", 1]]
+  Rendering decks/show.html.erb within layouts/application
+  Rendered layouts/_navbar.html.erb (3.3ms)
+  [1m[36mUser Load (0.4ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = $1 LIMIT $2[0m  [["id", 2], ["LIMIT", 1]]
+  Rendered decks/_form.html.erb (17.8ms)
+  [1m[36mCard Load (0.5ms)[0m  [1m[34mSELECT "cards".* FROM "cards" WHERE "cards"."deck_id" = $1[0m  [["deck_id", 6]]
+  Rendered decks/show.html.erb within layouts/application (58.1ms)
+Completed 200 OK in 189ms (Views: 134.4ms | ActiveRecord: 22.0ms)
+
+
+Started GET "/decks/6" for ::1 at 2016-08-10 20:31:22 +0800
+Processing by DecksController#show as HTML
+  Parameters: {"id"=>"6"}
+  [1m[36mDeck Load (0.3ms)[0m  [1m[34mSELECT  "decks".* FROM "decks" WHERE "decks"."id" = $1 LIMIT $2[0m  [["id", 6], ["LIMIT", 1]]
+  [1m[36mUser Load (0.8ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = $1 ORDER BY "users"."id" ASC LIMIT $2[0m  [["id", 2], ["LIMIT", 1]]
+  Rendering decks/show.html.erb within layouts/application
+  Rendered layouts/_navbar.html.erb (4.1ms)
+  [1m[36mUser Load (0.6ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = $1 LIMIT $2[0m  [["id", 2], ["LIMIT", 1]]
+  Rendered decks/_form.html.erb (12.5ms)
+  [1m[36mCard Load (0.8ms)[0m  [1m[34mSELECT "cards".* FROM "cards" WHERE "cards"."deck_id" = $1[0m  [["deck_id", 6]]
+  Rendered decks/show.html.erb within layouts/application (31.2ms)
+Completed 200 OK in 236ms (Views: 226.3ms | ActiveRecord: 3.2ms)
+
+
+Started GET "/decks/6" for ::1 at 2016-08-10 20:32:08 +0800
+Processing by DecksController#show as HTML
+  Parameters: {"id"=>"6"}
+  [1m[36mDeck Load (0.7ms)[0m  [1m[34mSELECT  "decks".* FROM "decks" WHERE "decks"."id" = $1 LIMIT $2[0m  [["id", 6], ["LIMIT", 1]]
+  [1m[36mUser Load (0.9ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = $1 ORDER BY "users"."id" ASC LIMIT $2[0m  [["id", 2], ["LIMIT", 1]]
+  Rendering decks/show.html.erb within layouts/application
+  Rendered layouts/_navbar.html.erb (5.1ms)
+  [1m[36mUser Load (0.6ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = $1 LIMIT $2[0m  [["id", 2], ["LIMIT", 1]]
+  Rendered decks/_form.html.erb (12.0ms)
+  [1m[36mCard Load (1.0ms)[0m  [1m[34mSELECT "cards".* FROM "cards" WHERE "cards"."deck_id" = $1[0m  [["deck_id", 6]]
+  Rendered decks/show.html.erb within layouts/application (30.6ms)
+Completed 200 OK in 132ms (Views: 122.0ms | ActiveRecord: 3.5ms)
+
+
+Started GET "/decks/6" for ::1 at 2016-08-10 20:33:46 +0800
+Processing by DecksController#show as HTML
+  Parameters: {"id"=>"6"}
+  [1m[36mDeck Load (0.6ms)[0m  [1m[34mSELECT  "decks".* FROM "decks" WHERE "decks"."id" = $1 LIMIT $2[0m  [["id", 6], ["LIMIT", 1]]
+  [1m[36mUser Load (0.7ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = $1 ORDER BY "users"."id" ASC LIMIT $2[0m  [["id", 2], ["LIMIT", 1]]
+  Rendering decks/show.html.erb within layouts/application
+  Rendered layouts/_navbar2.html.erb (3.0ms)
+  [1m[36mUser Load (0.7ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = $1 LIMIT $2[0m  [["id", 2], ["LIMIT", 1]]
+  Rendered cards/_form.html.erb (15.0ms)
+  [1m[36mCard Load (1.1ms)[0m  [1m[34mSELECT "cards".* FROM "cards" WHERE "cards"."deck_id" = $1[0m  [["deck_id", 6]]
+  Rendered decks/show.html.erb within layouts/application (29.6ms)
+Completed 200 OK in 116ms (Views: 107.0ms | ActiveRecord: 3.0ms)
+
+
+Started GET "/decks/6/cards/new" for ::1 at 2016-08-10 20:33:52 +0800
+Processing by CardsController#new as HTML
+  Parameters: {"deck_id"=>"6"}
+  [1m[36mDeck Load (1.6ms)[0m  [1m[34mSELECT  "decks".* FROM "decks" WHERE "decks"."id" = $1 LIMIT $2[0m  [["id", 6], ["LIMIT", 1]]
+  Rendering cards/new.html.erb within layouts/application
+  Rendered cards/_form.html.erb (12.8ms)
+  Rendered cards/new.html.erb within layouts/application (17.6ms)
+Completed 200 OK in 128ms (Views: 106.6ms | ActiveRecord: 3.9ms)
+
+
+Started GET "/decks/6" for ::1 at 2016-08-10 20:34:21 +0800
+Processing by DecksController#show as HTML
+  Parameters: {"id"=>"6"}
+  [1m[36mDeck Load (2.6ms)[0m  [1m[34mSELECT  "decks".* FROM "decks" WHERE "decks"."id" = $1 LIMIT $2[0m  [["id", 6], ["LIMIT", 1]]
+  [1m[36mUser Load (1.7ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = $1 ORDER BY "users"."id" ASC LIMIT $2[0m  [["id", 2], ["LIMIT", 1]]
+  Rendering decks/show.html.erb within layouts/application
+  Rendered layouts/_navbar2.html.erb (3.6ms)
+  [1m[36mUser Load (0.6ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = $1 LIMIT $2[0m  [["id", 2], ["LIMIT", 1]]
+  Rendered cards/_form.html.erb (10.6ms)
+  [1m[36mCard Load (0.9ms)[0m  [1m[34mSELECT "cards".* FROM "cards" WHERE "cards"."deck_id" = $1[0m  [["deck_id", 6]]
+  Rendered decks/show.html.erb within layouts/application (26.4ms)
+Completed 200 OK in 193ms (Views: 179.6ms | ActiveRecord: 6.1ms)
+
+
+Started GET "/decks/6/cards/new" for ::1 at 2016-08-10 20:34:29 +0800
+Processing by CardsController#new as HTML
+  Parameters: {"deck_id"=>"6"}
+  [1m[36mDeck Load (5.6ms)[0m  [1m[34mSELECT  "decks".* FROM "decks" WHERE "decks"."id" = $1 LIMIT $2[0m  [["id", 6], ["LIMIT", 1]]
+  Rendering cards/new.html.erb within layouts/application
+  Rendered cards/_form.html.erb (27.5ms)
+  Rendered cards/new.html.erb within layouts/application (31.4ms)
+Completed 200 OK in 150ms (Views: 135.7ms | ActiveRecord: 5.6ms)
+
+
+Started GET "/decks/6" for ::1 at 2016-08-10 20:35:25 +0800
+Processing by DecksController#show as HTML
+  Parameters: {"id"=>"6"}
+  [1m[36mDeck Load (0.4ms)[0m  [1m[34mSELECT  "decks".* FROM "decks" WHERE "decks"."id" = $1 LIMIT $2[0m  [["id", 6], ["LIMIT", 1]]
+  [1m[36mUser Load (0.8ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = $1 ORDER BY "users"."id" ASC LIMIT $2[0m  [["id", 2], ["LIMIT", 1]]
+  Rendering decks/show.html.erb within layouts/application
+  Rendered layouts/_navbar2.html.erb (3.9ms)
+  [1m[36mUser Load (0.5ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = $1 LIMIT $2[0m  [["id", 2], ["LIMIT", 1]]
+  Rendered cards/_form.html.erb (10.9ms)
+  [1m[36mCard Load (0.5ms)[0m  [1m[34mSELECT "cards".* FROM "cards" WHERE "cards"."deck_id" = $1[0m  [["deck_id", 6]]
+  Rendered decks/show.html.erb within layouts/application (24.0ms)
+Completed 200 OK in 109ms (Views: 101.3ms | ActiveRecord: 2.1ms)
+
+
+Started GET "/decks/6" for ::1 at 2016-08-10 20:36:52 +0800
+Processing by DecksController#show as HTML
+  Parameters: {"id"=>"6"}
+  [1m[36mDeck Load (0.9ms)[0m  [1m[34mSELECT  "decks".* FROM "decks" WHERE "decks"."id" = $1 LIMIT $2[0m  [["id", 6], ["LIMIT", 1]]
+  [1m[36mUser Load (0.7ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = $1 ORDER BY "users"."id" ASC LIMIT $2[0m  [["id", 2], ["LIMIT", 1]]
+  Rendering decks/show.html.erb within layouts/application
+  Rendered layouts/_navbar2.html.erb (4.0ms)
+  [1m[36mUser Load (0.6ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = $1 LIMIT $2[0m  [["id", 2], ["LIMIT", 1]]
+  Rendered cards/_form.html.erb (12.2ms)
+  [1m[36mCard Load (0.6ms)[0m  [1m[34mSELECT "cards".* FROM "cards" WHERE "cards"."deck_id" = $1[0m  [["deck_id", 6]]
+  Rendered decks/show.html.erb within layouts/application (27.1ms)
+Completed 200 OK in 126ms (Views: 115.4ms | ActiveRecord: 2.9ms)
+
+
+Started POST "/decks/6/cards" for ::1 at 2016-08-10 20:37:27 +0800
+Processing by CardsController#create as HTML
+  Parameters: {"utf8"=>"✓", "authenticity_token"=>"qmf5WBCxbUTozLzVmGJsoHPkFC9TPIRVlN1hXJdI0fLZ+ZvuhvUlmSFaI9WG/ET9w5XqkEeaPRRTA5zB9uDfEg==", "card"=>{"prompt_text"=>"Hello John", "prompt_image"=>"", "prompt_audio"=>"", "answer"=>"It's been a long time"}, "commit"=>"Create Card", "deck_id"=>"6"}
+  [1m[36mDeck Load (0.7ms)[0m  [1m[34mSELECT  "decks".* FROM "decks" WHERE "decks"."id" = $1 LIMIT $2[0m  [["id", 6], ["LIMIT", 1]]
+  [1m[35m (0.2ms)[0m  [1m[35mBEGIN[0m
+  [1m[35mSQL (1.8ms)[0m  [1m[32mINSERT INTO "cards" ("prompt_text", "prompt_image", "prompt_audio", "answer", "created_at", "updated_at", "deck_id") VALUES ($1, $2, $3, $4, $5, $6, $7) RETURNING "id"[0m  [["prompt_text", "Hello John"], ["prompt_image", ""], ["prompt_audio", ""], ["answer", "It's been a long time"], ["created_at", 2016-08-10 12:37:27 UTC], ["updated_at", 2016-08-10 12:37:27 UTC], ["deck_id", 6]]
+  [1m[35m (1.2ms)[0m  [1m[35mCOMMIT[0m
+Redirected to http://localhost:3000/decks/6
+Completed 302 Found in 21ms (ActiveRecord: 3.9ms)
+
+
+Started GET "/decks/6" for ::1 at 2016-08-10 20:37:27 +0800
+Processing by DecksController#show as HTML
+  Parameters: {"id"=>"6"}
+  [1m[36mDeck Load (0.8ms)[0m  [1m[34mSELECT  "decks".* FROM "decks" WHERE "decks"."id" = $1 LIMIT $2[0m  [["id", 6], ["LIMIT", 1]]
+  [1m[36mUser Load (0.9ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = $1 ORDER BY "users"."id" ASC LIMIT $2[0m  [["id", 2], ["LIMIT", 1]]
+  Rendering decks/show.html.erb within layouts/application
+  Rendered layouts/_navbar2.html.erb (3.6ms)
+  [1m[36mUser Load (0.6ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = $1 LIMIT $2[0m  [["id", 2], ["LIMIT", 1]]
+  Rendered cards/_form.html.erb (13.3ms)
+  [1m[36mCard Load (0.6ms)[0m  [1m[34mSELECT "cards".* FROM "cards" WHERE "cards"."deck_id" = $1[0m  [["deck_id", 6]]
+  Rendered decks/show.html.erb within layouts/application (28.9ms)
+Completed 200 OK in 117ms (Views: 108.7ms | ActiveRecord: 2.8ms)
+
+
+Started GET "/decks/6" for ::1 at 2016-08-10 20:40:33 +0800
+Processing by DecksController#show as HTML
+  Parameters: {"id"=>"6"}
+  [1m[36mDeck Load (0.6ms)[0m  [1m[34mSELECT  "decks".* FROM "decks" WHERE "decks"."id" = $1 LIMIT $2[0m  [["id", 6], ["LIMIT", 1]]
+  [1m[36mUser Load (0.9ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = $1 ORDER BY "users"."id" ASC LIMIT $2[0m  [["id", 2], ["LIMIT", 1]]
+  Rendering decks/show.html.erb within layouts/application
+  Rendered layouts/_navbar2.html.erb (3.7ms)
+  [1m[36mUser Load (0.4ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = $1 LIMIT $2[0m  [["id", 2], ["LIMIT", 1]]
+  Rendered cards/_form.html.erb (10.6ms)
+  [1m[36mCard Load (0.4ms)[0m  [1m[34mSELECT "cards".* FROM "cards" WHERE "cards"."deck_id" = $1[0m  [["deck_id", 6]]
+  Rendered decks/show.html.erb within layouts/application (27.0ms)
+Completed 200 OK in 107ms (Views: 98.9ms | ActiveRecord: 2.4ms)
+
+
+Started GET "/decks/6" for ::1 at 2016-08-10 20:41:02 +0800
+Processing by DecksController#show as HTML
+  Parameters: {"id"=>"6"}
+  [1m[36mDeck Load (0.6ms)[0m  [1m[34mSELECT  "decks".* FROM "decks" WHERE "decks"."id" = $1 LIMIT $2[0m  [["id", 6], ["LIMIT", 1]]
+  [1m[36mUser Load (0.9ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = $1 ORDER BY "users"."id" ASC LIMIT $2[0m  [["id", 2], ["LIMIT", 1]]
+  Rendering decks/show.html.erb within layouts/application
+  Rendered layouts/_navbar2.html.erb (3.7ms)
+  [1m[36mUser Load (0.7ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = $1 LIMIT $2[0m  [["id", 2], ["LIMIT", 1]]
+  Rendered cards/_form.html.erb (18.9ms)
+  [1m[36mCard Load (0.5ms)[0m  [1m[34mSELECT "cards".* FROM "cards" WHERE "cards"."deck_id" = $1[0m  [["deck_id", 6]]
+  Rendered decks/show.html.erb within layouts/application (35.0ms)
+Completed 200 OK in 155ms (Views: 145.6ms | ActiveRecord: 2.7ms)
+
+
+Started GET "/decks/6" for ::1 at 2016-08-10 20:41:32 +0800
+Processing by DecksController#show as HTML
+  Parameters: {"id"=>"6"}
+  [1m[36mDeck Load (4.1ms)[0m  [1m[34mSELECT  "decks".* FROM "decks" WHERE "decks"."id" = $1 LIMIT $2[0m  [["id", 6], ["LIMIT", 1]]
+  [1m[36mUser Load (2.1ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = $1 ORDER BY "users"."id" ASC LIMIT $2[0m  [["id", 2], ["LIMIT", 1]]
+  Rendering decks/show.html.erb within layouts/application
+  Rendered layouts/_navbar2.html.erb (5.7ms)
+  [1m[36mUser Load (3.7ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = $1 LIMIT $2[0m  [["id", 2], ["LIMIT", 1]]
+  Rendered cards/_form.html.erb (13.0ms)
+  [1m[36mCard Load (0.4ms)[0m  [1m[34mSELECT "cards".* FROM "cards" WHERE "cards"."deck_id" = $1[0m  [["deck_id", 6]]
+  Rendered decks/show.html.erb within layouts/application (35.3ms)
+Completed 200 OK in 143ms (Views: 122.3ms | ActiveRecord: 10.3ms)
+
+
+Started GET "/decks/6" for ::1 at 2016-08-10 20:42:13 +0800
+Processing by DecksController#show as HTML
+  Parameters: {"id"=>"6"}
+  [1m[36mDeck Load (0.5ms)[0m  [1m[34mSELECT  "decks".* FROM "decks" WHERE "decks"."id" = $1 LIMIT $2[0m  [["id", 6], ["LIMIT", 1]]
+  [1m[36mUser Load (0.9ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = $1 ORDER BY "users"."id" ASC LIMIT $2[0m  [["id", 2], ["LIMIT", 1]]
+  Rendering decks/show.html.erb within layouts/application
+  Rendered layouts/_navbar2.html.erb (3.1ms)
+  [1m[36mUser Load (0.4ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = $1 LIMIT $2[0m  [["id", 2], ["LIMIT", 1]]
+  Rendered cards/_form.html.erb (14.5ms)
+  [1m[36mCard Load (0.6ms)[0m  [1m[34mSELECT "cards".* FROM "cards" WHERE "cards"."deck_id" = $1[0m  [["deck_id", 6]]
+  Rendered decks/show.html.erb within layouts/application (29.6ms)
+Completed 200 OK in 129ms (Views: 120.2ms | ActiveRecord: 2.4ms)
+
+
+Started GET "/decks/6" for ::1 at 2016-08-10 20:42:23 +0800
+Processing by DecksController#show as HTML
+  Parameters: {"id"=>"6"}
+  [1m[36mDeck Load (0.6ms)[0m  [1m[34mSELECT  "decks".* FROM "decks" WHERE "decks"."id" = $1 LIMIT $2[0m  [["id", 6], ["LIMIT", 1]]
+  [1m[36mUser Load (0.6ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = $1 ORDER BY "users"."id" ASC LIMIT $2[0m  [["id", 2], ["LIMIT", 1]]
+  Rendering decks/show.html.erb within layouts/application
+  Rendered layouts/_navbar2.html.erb (2.9ms)
+  [1m[36mUser Load (0.6ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = $1 LIMIT $2[0m  [["id", 2], ["LIMIT", 1]]
+  Rendered cards/_form.html.erb (10.0ms)
+  [1m[36mCard Load (0.4ms)[0m  [1m[34mSELECT "cards".* FROM "cards" WHERE "cards"."deck_id" = $1[0m  [["deck_id", 6]]
+  Rendered decks/show.html.erb within layouts/application (23.3ms)
+Completed 200 OK in 98ms (Views: 90.3ms | ActiveRecord: 2.3ms)
+
+
+Started GET "/decks/6" for ::1 at 2016-08-10 20:44:45 +0800
+Processing by DecksController#show as HTML
+  Parameters: {"id"=>"6"}
+  [1m[36mDeck Load (0.4ms)[0m  [1m[34mSELECT  "decks".* FROM "decks" WHERE "decks"."id" = $1 LIMIT $2[0m  [["id", 6], ["LIMIT", 1]]
+  [1m[36mUser Load (0.6ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = $1 ORDER BY "users"."id" ASC LIMIT $2[0m  [["id", 2], ["LIMIT", 1]]
+  Rendering decks/show.html.erb within layouts/application
+  Rendered layouts/_navbar2.html.erb (3.1ms)
+  [1m[36mUser Load (0.5ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = $1 LIMIT $2[0m  [["id", 2], ["LIMIT", 1]]
+  Rendered cards/_form.html.erb (12.7ms)
+  [1m[36mCard Load (0.5ms)[0m  [1m[34mSELECT "cards".* FROM "cards" WHERE "cards"."deck_id" = $1[0m  [["deck_id", 6]]
+  Rendered decks/show.html.erb within layouts/application (26.5ms)
+Completed 200 OK in 120ms (Views: 113.0ms | ActiveRecord: 2.1ms)
+
+
+Started GET "/decks/6" for ::1 at 2016-08-10 20:46:29 +0800
+Processing by DecksController#show as HTML
+  Parameters: {"id"=>"6"}
+  [1m[36mDeck Load (0.5ms)[0m  [1m[34mSELECT  "decks".* FROM "decks" WHERE "decks"."id" = $1 LIMIT $2[0m  [["id", 6], ["LIMIT", 1]]
+  [1m[36mUser Load (1.8ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = $1 ORDER BY "users"."id" ASC LIMIT $2[0m  [["id", 2], ["LIMIT", 1]]
+  Rendering decks/show.html.erb within layouts/application
+  Rendered layouts/_navbar2.html.erb (3.4ms)
+  [1m[36mUser Load (0.6ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = $1 LIMIT $2[0m  [["id", 2], ["LIMIT", 1]]
+  Rendered cards/_form.html.erb (13.4ms)
+  [1m[36mCard Load (0.7ms)[0m  [1m[34mSELECT "cards".* FROM "cards" WHERE "cards"."deck_id" = $1[0m  [["deck_id", 6]]
+  Rendered decks/show.html.erb within layouts/application (28.6ms)
+Completed 200 OK in 127ms (Views: 116.4ms | ActiveRecord: 3.5ms)
+
+
+Started GET "/" for ::1 at 2016-08-10 20:46:39 +0800
+Processing by StaticController#index as HTML
+  Rendering static/index.html.erb within layouts/application
+  [1m[36mUser Load (2.1ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = $1 ORDER BY "users"."id" ASC LIMIT $2[0m  [["id", 2], ["LIMIT", 1]]
+  Rendered layouts/_navbar2.html.erb (13.5ms)
+  Rendered static/index.html.erb within layouts/application (34.9ms)
+Completed 200 OK in 114ms (Views: 108.5ms | ActiveRecord: 2.1ms)
+
+
+Started GET "/" for ::1 at 2016-08-10 20:46:42 +0800
+Processing by StaticController#index as HTML
+  Rendering static/index.html.erb within layouts/application
+  [1m[36mUser Load (0.8ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = $1 ORDER BY "users"."id" ASC LIMIT $2[0m  [["id", 2], ["LIMIT", 1]]
+  Rendered layouts/_navbar2.html.erb (4.9ms)
+  Rendered static/index.html.erb within layouts/application (11.7ms)
+Completed 200 OK in 87ms (Views: 83.1ms | ActiveRecord: 0.8ms)
+
+
+Started GET "/decks" for ::1 at 2016-08-10 20:46:46 +0800
+Processing by DecksController#index as HTML
+  [1m[36mUser Load (1.7ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = $1 ORDER BY "users"."id" ASC LIMIT $2[0m  [["id", 2], ["LIMIT", 1]]
+  Rendering decks/index.html.erb within layouts/application
+  Rendered layouts/_navbar.html.erb (6.1ms)
+  Rendered decks/index.html.erb within layouts/application (19.4ms)
+Completed 500 Internal Server Error in 38ms (ActiveRecord: 1.7ms)
+
+
+  
+ActionView::Template::Error (Missing partial card/_form with {:locale=>[:en], :formats=>[:html], :variants=>[], :handlers=>[:raw, :erb, :html, :builder, :ruby, :coffee, :jbuilder]}. Searched in:
+  * "/Users/tayevon/flashies/app/views"
+  * "/Users/tayevon/.rvm/gems/ruby-2.3.0/gems/devise-4.2.0/app/views"
+):
+    11:   </div>
+    12: 
+    13:     <div class="deck-form">
+    14:       <%= render 'card/form' %>
+    15:     </div>
+    16: 
+    17:   <% end %>
+  
+app/views/decks/index.html.erb:14:in `_app_views_decks_index_html_erb__778503406548533453_70307997456840'
+  Rendering /Users/tayevon/.rvm/gems/ruby-2.3.0/gems/actionpack-5.0.0/lib/action_dispatch/middleware/templates/rescues/template_error.html.erb within rescues/layout
+  Rendering /Users/tayevon/.rvm/gems/ruby-2.3.0/gems/actionpack-5.0.0/lib/action_dispatch/middleware/templates/rescues/_source.html.erb
+  Rendered /Users/tayevon/.rvm/gems/ruby-2.3.0/gems/actionpack-5.0.0/lib/action_dispatch/middleware/templates/rescues/_source.html.erb (10.2ms)
+  Rendering /Users/tayevon/.rvm/gems/ruby-2.3.0/gems/actionpack-5.0.0/lib/action_dispatch/middleware/templates/rescues/_trace.html.erb
+  Rendered /Users/tayevon/.rvm/gems/ruby-2.3.0/gems/actionpack-5.0.0/lib/action_dispatch/middleware/templates/rescues/_trace.html.erb (2.9ms)
+  Rendering /Users/tayevon/.rvm/gems/ruby-2.3.0/gems/actionpack-5.0.0/lib/action_dispatch/middleware/templates/rescues/_request_and_response.html.erb
+  Rendered /Users/tayevon/.rvm/gems/ruby-2.3.0/gems/actionpack-5.0.0/lib/action_dispatch/middleware/templates/rescues/_request_and_response.html.erb (1.9ms)
+  Rendered /Users/tayevon/.rvm/gems/ruby-2.3.0/gems/actionpack-5.0.0/lib/action_dispatch/middleware/templates/rescues/template_error.html.erb within rescues/layout (125.1ms)
+Started GET "/decks" for ::1 at 2016-08-10 20:48:38 +0800
+  [1m[36mActiveRecord::SchemaMigration Load (1.0ms)[0m  [1m[34mSELECT "schema_migrations".* FROM "schema_migrations"[0m
+Processing by DecksController#index as HTML
+  [1m[36mUser Load (1.6ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = $1 ORDER BY "users"."id" ASC LIMIT $2[0m  [["id", 2], ["LIMIT", 1]]
+  Rendering decks/index.html.erb within layouts/application
+  Rendered layouts/_navbar.html.erb (824.0ms)
+  Rendered decks/index.html.erb within layouts/application (836.2ms)
+Completed 500 Internal Server Error in 946ms (ActiveRecord: 17.9ms)
+
+
+  
+ActionView::Template::Error (Missing partial card/_form with {:locale=>[:en], :formats=>[:html], :variants=>[], :handlers=>[:raw, :erb, :html, :builder, :ruby, :coffee, :jbuilder]}. Searched in:
+  * "/Users/tayevon/flashies/app/views"
+  * "/Users/tayevon/.rvm/gems/ruby-2.3.0/gems/devise-4.2.0/app/views"
+):
+    11:   </div>
+    12: 
+    13:     <div class="deck-form">
+    14:       <%= render 'card/form' %>
+    15:     </div>
+    16: 
+    17:   <% end %>
+  
+app/views/decks/index.html.erb:14:in `_app_views_decks_index_html_erb___993768615420540819_70156221734400'
+  Rendering /Users/tayevon/.rvm/gems/ruby-2.3.0/gems/actionpack-5.0.0/lib/action_dispatch/middleware/templates/rescues/template_error.html.erb within rescues/layout
+  Rendering /Users/tayevon/.rvm/gems/ruby-2.3.0/gems/actionpack-5.0.0/lib/action_dispatch/middleware/templates/rescues/_source.html.erb
+  Rendered /Users/tayevon/.rvm/gems/ruby-2.3.0/gems/actionpack-5.0.0/lib/action_dispatch/middleware/templates/rescues/_source.html.erb (9.9ms)
+  Rendering /Users/tayevon/.rvm/gems/ruby-2.3.0/gems/actionpack-5.0.0/lib/action_dispatch/middleware/templates/rescues/_trace.html.erb
+  Rendered /Users/tayevon/.rvm/gems/ruby-2.3.0/gems/actionpack-5.0.0/lib/action_dispatch/middleware/templates/rescues/_trace.html.erb (3.9ms)
+  Rendering /Users/tayevon/.rvm/gems/ruby-2.3.0/gems/actionpack-5.0.0/lib/action_dispatch/middleware/templates/rescues/_request_and_response.html.erb
+  Rendered /Users/tayevon/.rvm/gems/ruby-2.3.0/gems/actionpack-5.0.0/lib/action_dispatch/middleware/templates/rescues/_request_and_response.html.erb (1.4ms)
+  Rendered /Users/tayevon/.rvm/gems/ruby-2.3.0/gems/actionpack-5.0.0/lib/action_dispatch/middleware/templates/rescues/template_error.html.erb within rescues/layout (133.7ms)
+Started GET "/decks" for ::1 at 2016-08-10 20:49:09 +0800
+Processing by DecksController#index as HTML
+  [1m[36mUser Load (0.7ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = $1 ORDER BY "users"."id" ASC LIMIT $2[0m  [["id", 2], ["LIMIT", 1]]
+  Rendering decks/index.html.erb within layouts/application
+  Rendered layouts/_navbar.html.erb (3.8ms)
+  Rendered decks/_form.html.erb (107.7ms)
+  [1m[36mDeck Load (1.4ms)[0m  [1m[34mSELECT "decks".* FROM "decks" WHERE "decks"."user_id" = 2[0m
+  Rendered decks/index.html.erb within layouts/application (120.5ms)
+Completed 200 OK in 236ms (Views: 227.4ms | ActiveRecord: 2.2ms)
+
+
+Started GET "/decks" for ::1 at 2016-08-10 20:50:41 +0800
+Processing by DecksController#index as HTML
+  [1m[36mUser Load (3.1ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = $1 ORDER BY "users"."id" ASC LIMIT $2[0m  [["id", 2], ["LIMIT", 1]]
+  Rendering decks/index.html.erb within layouts/application
+  Rendered layouts/_navbar.html.erb (12.1ms)
+  Rendered decks/_form.html.erb (23.6ms)
+  [1m[36mDeck Load (1.0ms)[0m  [1m[34mSELECT "decks".* FROM "decks" WHERE "decks"."user_id" = 2[0m
+  Rendered decks/index.html.erb within layouts/application (48.4ms)
+Completed 200 OK in 176ms (Views: 141.3ms | ActiveRecord: 4.1ms)
+
+
+Started GET "/decks" for ::1 at 2016-08-10 20:52:19 +0800
+Processing by DecksController#index as HTML
+  [1m[36mUser Load (3.0ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = $1 ORDER BY "users"."id" ASC LIMIT $2[0m  [["id", 2], ["LIMIT", 1]]
+  Rendering decks/index.html.erb within layouts/application
+  Rendered layouts/_navbar.html.erb (5.9ms)
+  Rendered decks/_form.html.erb (12.5ms)
+  [1m[36mDeck Load (1.3ms)[0m  [1m[34mSELECT "decks".* FROM "decks" WHERE "decks"."user_id" = 2[0m
+  Rendered decks/index.html.erb within layouts/application (27.7ms)
+Completed 200 OK in 137ms (Views: 126.4ms | ActiveRecord: 4.3ms)
+
+
+Started GET "/decks" for ::1 at 2016-08-10 20:53:26 +0800
+Processing by DecksController#index as HTML
+  [1m[36mUser Load (0.7ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = $1 ORDER BY "users"."id" ASC LIMIT $2[0m  [["id", 2], ["LIMIT", 1]]
+  Rendering decks/index.html.erb within layouts/application
+  Rendered layouts/_navbar.html.erb (2.9ms)
+  Rendered decks/_form.html.erb (7.9ms)
+  [1m[36mDeck Load (0.7ms)[0m  [1m[34mSELECT "decks".* FROM "decks" WHERE "decks"."user_id" = 2[0m
+  Rendered decks/index.html.erb within layouts/application (18.5ms)
+Completed 200 OK in 106ms (Views: 99.8ms | ActiveRecord: 1.4ms)
+
+
+Started GET "/decks" for ::1 at 2016-08-10 20:54:17 +0800
+Processing by DecksController#index as HTML
+  [1m[36mUser Load (1.5ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = $1 ORDER BY "users"."id" ASC LIMIT $2[0m  [["id", 2], ["LIMIT", 1]]
+  Rendering decks/index.html.erb within layouts/application
+  Rendered layouts/_navbar.html.erb (5.6ms)
+  Rendered decks/_form.html.erb (11.8ms)
+  [1m[36mDeck Load (2.9ms)[0m  [1m[34mSELECT "decks".* FROM "decks" WHERE "decks"."user_id" = 2[0m
+  Rendered decks/index.html.erb within layouts/application (29.4ms)
+Completed 200 OK in 132ms (Views: 120.8ms | ActiveRecord: 4.4ms)
+
+
+Started GET "/decks" for ::1 at 2016-08-10 20:56:24 +0800
+Processing by DecksController#index as HTML
+  [1m[36mUser Load (2.5ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = $1 ORDER BY "users"."id" ASC LIMIT $2[0m  [["id", 2], ["LIMIT", 1]]
+  Rendering decks/index.html.erb within layouts/application
+  Rendered layouts/_navbar.html.erb (4.4ms)
+  Rendered decks/_form.html.erb (8.7ms)
+  [1m[36mDeck Load (1.0ms)[0m  [1m[34mSELECT "decks".* FROM "decks" WHERE "decks"."user_id" = 2[0m
+  Rendered decks/index.html.erb within layouts/application (20.9ms)
+Completed 200 OK in 121ms (Views: 112.3ms | ActiveRecord: 3.5ms)
+
+
+Started GET "/decks" for ::1 at 2016-08-10 20:57:11 +0800
+Processing by DecksController#index as HTML
+  [1m[36mUser Load (0.9ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = $1 ORDER BY "users"."id" ASC LIMIT $2[0m  [["id", 2], ["LIMIT", 1]]
+  Rendering decks/index.html.erb within layouts/application
+  Rendered layouts/_navbar.html.erb (4.3ms)
+  Rendered decks/_form.html.erb (11.9ms)
+  [1m[36mDeck Load (0.7ms)[0m  [1m[34mSELECT "decks".* FROM "decks" WHERE "decks"."user_id" = 2[0m
+  Rendered decks/index.html.erb within layouts/application (24.7ms)
+Completed 200 OK in 120ms (Views: 112.2ms | ActiveRecord: 1.6ms)
+
+
+Started GET "/decks" for ::1 at 2016-08-10 20:59:39 +0800
+Processing by DecksController#index as HTML
+  [1m[36mUser Load (0.8ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = $1 ORDER BY "users"."id" ASC LIMIT $2[0m  [["id", 2], ["LIMIT", 1]]
+  Rendering decks/index.html.erb within layouts/application
+  Rendered layouts/_navbar.html.erb (14.7ms)
+  Rendered decks/_form.html.erb (10.4ms)
+  [1m[36mDeck Load (0.7ms)[0m  [1m[34mSELECT "decks".* FROM "decks" WHERE "decks"."user_id" = 2[0m
+  Rendered decks/index.html.erb within layouts/application (32.3ms)
+Completed 200 OK in 3041ms (Views: 3036.0ms | ActiveRecord: 1.5ms)
+
+
+Started GET "/decks" for ::1 at 2016-08-10 21:03:31 +0800
+Processing by DecksController#index as HTML
+  [1m[36mUser Load (3.3ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = $1 ORDER BY "users"."id" ASC LIMIT $2[0m  [["id", 2], ["LIMIT", 1]]
+  Rendering decks/index.html.erb within layouts/application
+  Rendered layouts/_navbar.html.erb (5.3ms)
+  Rendered decks/_form.html.erb (11.7ms)
+  [1m[36mDeck Load (1.1ms)[0m  [1m[34mSELECT "decks".* FROM "decks" WHERE "decks"."user_id" = 2[0m
+  Rendered decks/index.html.erb within layouts/application (25.8ms)
+Completed 200 OK in 2899ms (Views: 2888.4ms | ActiveRecord: 4.4ms)
+
+
+Started GET "/" for ::1 at 2016-08-10 21:04:27 +0800
+Processing by StaticController#index as HTML
+  Rendering static/index.html.erb within layouts/application
+  [1m[36mUser Load (1.0ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = $1 ORDER BY "users"."id" ASC LIMIT $2[0m  [["id", 2], ["LIMIT", 1]]
+  Rendered layouts/_navbar2.html.erb (8.0ms)
+  Rendered static/index.html.erb within layouts/application (17.8ms)
+Completed 200 OK in 136ms (Views: 130.1ms | ActiveRecord: 1.0ms)
+
+
+Started GET "/" for ::1 at 2016-08-10 21:05:02 +0800
+Processing by StaticController#index as HTML
+  Rendering static/index.html.erb within layouts/application
+  [1m[36mUser Load (0.8ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = $1 ORDER BY "users"."id" ASC LIMIT $2[0m  [["id", 2], ["LIMIT", 1]]
+  Rendered layouts/_navbar.html.erb (6.2ms)
+  Rendered static/index.html.erb within layouts/application (15.1ms)
+Completed 200 OK in 109ms (Views: 105.7ms | ActiveRecord: 0.8ms)
+
+
+Started GET "/" for ::1 at 2016-08-10 21:05:44 +0800
+Processing by StaticController#index as HTML
+  Rendering static/index.html.erb within layouts/application
+  [1m[36mUser Load (1.0ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = $1 ORDER BY "users"."id" ASC LIMIT $2[0m  [["id", 2], ["LIMIT", 1]]
+  Rendered layouts/_navbar.html.erb (12.3ms)
+  Rendered static/index.html.erb within layouts/application (23.6ms)
+Completed 200 OK in 3136ms (Views: 3118.9ms | ActiveRecord: 1.0ms)
+
+
+Started GET "/" for ::1 at 2016-08-10 21:09:48 +0800
+Processing by StaticController#index as HTML
+  Rendering static/index.html.erb within layouts/application
+  [1m[36mUser Load (1.2ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = $1 ORDER BY "users"."id" ASC LIMIT $2[0m  [["id", 2], ["LIMIT", 1]]
+  Rendered layouts/_navbar.html.erb (7.4ms)
+  Rendered static/index.html.erb within layouts/application (15.1ms)
+Completed 200 OK in 114ms (Views: 109.9ms | ActiveRecord: 1.2ms)
+
+
+Started GET "/" for ::1 at 2016-08-10 21:10:06 +0800
+Processing by StaticController#index as HTML
+  Rendering static/index.html.erb within layouts/application
+  [1m[36mUser Load (1.8ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = $1 ORDER BY "users"."id" ASC LIMIT $2[0m  [["id", 2], ["LIMIT", 1]]
+  Rendered layouts/_navbar.html.erb (7.6ms)
+  Rendered static/index.html.erb within layouts/application (16.3ms)
+Completed 200 OK in 123ms (Views: 118.1ms | ActiveRecord: 1.8ms)
+
+
+Started GET "/" for ::1 at 2016-08-10 21:10:25 +0800
+Processing by StaticController#index as HTML
+  Rendering static/index.html.erb within layouts/application
+  [1m[36mUser Load (1.1ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = $1 ORDER BY "users"."id" ASC LIMIT $2[0m  [["id", 2], ["LIMIT", 1]]
+  Rendered layouts/_navbar.html.erb (6.5ms)
+  Rendered static/index.html.erb within layouts/application (15.6ms)
+Completed 200 OK in 113ms (Views: 108.9ms | ActiveRecord: 1.1ms)
+
+
+Started GET "/" for ::1 at 2016-08-10 21:10:43 +0800
+Processing by StaticController#index as HTML
+  Rendering static/index.html.erb within layouts/application
+  [1m[36mUser Load (1.2ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = $1 ORDER BY "users"."id" ASC LIMIT $2[0m  [["id", 2], ["LIMIT", 1]]
+  Rendered layouts/_navbar.html.erb (6.4ms)
+  Rendered static/index.html.erb within layouts/application (13.5ms)
+Completed 200 OK in 87ms (Views: 82.6ms | ActiveRecord: 1.2ms)
+
+
+Started GET "/" for ::1 at 2016-08-10 21:11:33 +0800
+Processing by StaticController#index as HTML
+  Rendering static/index.html.erb within layouts/application
+  [1m[36mUser Load (0.9ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = $1 ORDER BY "users"."id" ASC LIMIT $2[0m  [["id", 2], ["LIMIT", 1]]
+  Rendered layouts/_navbar.html.erb (4.6ms)
+  Rendered static/index.html.erb within layouts/application (11.2ms)
+Completed 200 OK in 100ms (Views: 95.9ms | ActiveRecord: 0.9ms)
+
+
+Started GET "/" for ::1 at 2016-08-10 21:12:06 +0800
+Processing by StaticController#index as HTML
+  Rendering static/index.html.erb within layouts/application
+  [1m[36mUser Load (1.4ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = $1 ORDER BY "users"."id" ASC LIMIT $2[0m  [["id", 2], ["LIMIT", 1]]
+  Rendered layouts/_navbar.html.erb (8.6ms)
+  Rendered static/index.html.erb within layouts/application (14.9ms)
+Completed 200 OK in 2871ms (Views: 2866.0ms | ActiveRecord: 1.4ms)
+
+
+Started GET "/" for ::1 at 2016-08-10 21:13:18 +0800
+Processing by StaticController#index as HTML
+  Rendering static/index.html.erb within layouts/application
+  [1m[36mUser Load (0.9ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = $1 ORDER BY "users"."id" ASC LIMIT $2[0m  [["id", 2], ["LIMIT", 1]]
+  Rendered layouts/_navbar.html.erb (6.1ms)
+  Rendered static/index.html.erb within layouts/application (15.4ms)
+Completed 200 OK in 3049ms (Views: 3045.4ms | ActiveRecord: 0.9ms)
+
+
+Started GET "/" for ::1 at 2016-08-10 21:14:50 +0800
+Processing by StaticController#index as HTML
+  Rendering static/index.html.erb within layouts/application
+  [1m[36mUser Load (0.8ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = $1 ORDER BY "users"."id" ASC LIMIT $2[0m  [["id", 2], ["LIMIT", 1]]
+  Rendered layouts/_navbar.html.erb (8.3ms)
+  Rendered static/index.html.erb within layouts/application (18.7ms)
+Completed 200 OK in 2980ms (Views: 2975.6ms | ActiveRecord: 0.8ms)
+
+
+Started GET "/" for ::1 at 2016-08-10 21:15:25 +0800
+Processing by StaticController#index as HTML
+  Rendering static/index.html.erb within layouts/application
+  [1m[36mUser Load (0.7ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = $1 ORDER BY "users"."id" ASC LIMIT $2[0m  [["id", 2], ["LIMIT", 1]]
+  Rendered layouts/_navbar.html.erb (6.5ms)
+  Rendered static/index.html.erb within layouts/application (15.4ms)
+Completed 200 OK in 2728ms (Views: 2724.8ms | ActiveRecord: 0.7ms)
+
+
+Started GET "/" for ::1 at 2016-08-10 21:16:04 +0800
+Processing by StaticController#index as HTML
+  Rendering static/index.html.erb within layouts/application
+  [1m[36mUser Load (1.2ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = $1 ORDER BY "users"."id" ASC LIMIT $2[0m  [["id", 2], ["LIMIT", 1]]
+  Rendered layouts/_navbar.html.erb (5.8ms)
+  Rendered static/index.html.erb within layouts/application (13.2ms)
+Completed 200 OK in 3036ms (Views: 3031.6ms | ActiveRecord: 1.2ms)
+
+
+Started GET "/" for ::1 at 2016-08-10 21:17:00 +0800
+Processing by StaticController#index as HTML
+  Rendering static/index.html.erb within layouts/application
+  [1m[36mUser Load (1.3ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = $1 ORDER BY "users"."id" ASC LIMIT $2[0m  [["id", 2], ["LIMIT", 1]]
+  Rendered layouts/_navbar.html.erb (6.3ms)
+  Rendered static/index.html.erb within layouts/application (13.2ms)
+Completed 200 OK in 2542ms (Views: 2538.2ms | ActiveRecord: 1.3ms)
+
+
+Started GET "/" for ::1 at 2016-08-10 21:18:20 +0800
+Processing by StaticController#index as HTML
+  Rendering static/index.html.erb within layouts/application
+  [1m[36mUser Load (0.8ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = $1 ORDER BY "users"."id" ASC LIMIT $2[0m  [["id", 2], ["LIMIT", 1]]
+  Rendered layouts/_navbar.html.erb (5.5ms)
+  Rendered static/index.html.erb within layouts/application (14.8ms)
+Completed 200 OK in 2699ms (Views: 2695.7ms | ActiveRecord: 0.8ms)
+
+
+Started GET "/" for ::1 at 2016-08-10 21:18:47 +0800
+Processing by StaticController#index as HTML
+  Rendering static/index.html.erb within layouts/application
+  [1m[36mUser Load (1.6ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = $1 ORDER BY "users"."id" ASC LIMIT $2[0m  [["id", 2], ["LIMIT", 1]]
+  Rendered layouts/_navbar.html.erb (8.1ms)
+  Rendered static/index.html.erb within layouts/application (17.8ms)
+Completed 200 OK in 2878ms (Views: 2874.0ms | ActiveRecord: 1.6ms)
+
+
+Started GET "/decks" for ::1 at 2016-08-10 21:18:57 +0800
+Processing by DecksController#index as HTML
+  [1m[36mUser Load (4.8ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = $1 ORDER BY "users"."id" ASC LIMIT $2[0m  [["id", 2], ["LIMIT", 1]]
+  Rendering decks/index.html.erb within layouts/application
+  Rendered layouts/_navbar.html.erb (3.8ms)
+  Rendered decks/_form.html.erb (14.3ms)
+  [1m[36mDeck Load (1.0ms)[0m  [1m[34mSELECT "decks".* FROM "decks" WHERE "decks"."user_id" = 2[0m
+  Rendered decks/index.html.erb within layouts/application (27.6ms)
+Completed 200 OK in 111ms (Views: 99.2ms | ActiveRecord: 5.7ms)
+
+
+Started GET "/" for ::1 at 2016-08-10 21:23:40 +0800
+Processing by StaticController#index as HTML
+  Rendering static/index.html.erb within layouts/application
+  [1m[36mUser Load (0.9ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = $1 ORDER BY "users"."id" ASC LIMIT $2[0m  [["id", 2], ["LIMIT", 1]]
+  Rendered layouts/_navbar.html.erb (8.2ms)
+  Rendered static/index.html.erb within layouts/application (19.2ms)
+Completed 200 OK in 3041ms (Views: 3037.0ms | ActiveRecord: 0.9ms)
+
+
+Started GET "/" for ::1 at 2016-08-10 21:24:06 +0800
+Processing by StaticController#index as HTML
+  Rendering static/index.html.erb within layouts/application
+  [1m[36mUser Load (1.6ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = $1 ORDER BY "users"."id" ASC LIMIT $2[0m  [["id", 2], ["LIMIT", 1]]
+  Rendered layouts/_navbar.html.erb (8.6ms)
+  Rendered static/index.html.erb within layouts/application (23.8ms)
+Completed 200 OK in 139ms (Views: 132.9ms | ActiveRecord: 1.6ms)
+
+
+Started GET "/" for ::1 at 2016-08-10 21:24:45 +0800
+Processing by StaticController#index as HTML
+  Rendering static/index.html.erb within layouts/application
+  [1m[36mUser Load (1.6ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = $1 ORDER BY "users"."id" ASC LIMIT $2[0m  [["id", 2], ["LIMIT", 1]]
+  Rendered layouts/_navbar.html.erb (8.7ms)
+  Rendered static/index.html.erb within layouts/application (21.9ms)
+Completed 200 OK in 125ms (Views: 120.6ms | ActiveRecord: 1.6ms)
+
+
+Started GET "/" for ::1 at 2016-08-10 21:25:11 +0800
+Processing by StaticController#index as HTML
+  Rendering static/index.html.erb within layouts/application
+  [1m[36mUser Load (1.0ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = $1 ORDER BY "users"."id" ASC LIMIT $2[0m  [["id", 2], ["LIMIT", 1]]
+  Rendered layouts/_navbar.html.erb (6.3ms)
+  Rendered static/index.html.erb within layouts/application (15.7ms)
+Completed 200 OK in 93ms (Views: 89.3ms | ActiveRecord: 1.0ms)
+
+
+Started GET "/" for ::1 at 2016-08-10 21:25:55 +0800
+Processing by StaticController#index as HTML
+  Rendering static/index.html.erb within layouts/application
+  [1m[36mUser Load (0.8ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = $1 ORDER BY "users"."id" ASC LIMIT $2[0m  [["id", 2], ["LIMIT", 1]]
+  Rendered layouts/_navbar.html.erb (4.9ms)
+  Rendered static/index.html.erb within layouts/application (12.3ms)
+Completed 200 OK in 2845ms (Views: 2841.1ms | ActiveRecord: 0.8ms)
+
+
+Started GET "/" for ::1 at 2016-08-10 21:27:51 +0800
+Processing by StaticController#index as HTML
+  Rendering static/index.html.erb within layouts/application
+  [1m[36mUser Load (1.4ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = $1 ORDER BY "users"."id" ASC LIMIT $2[0m  [["id", 2], ["LIMIT", 1]]
+  Rendered layouts/_navbar.html.erb (7.4ms)
+  Rendered static/index.html.erb within layouts/application (17.0ms)
+Completed 200 OK in 2652ms (Views: 2647.5ms | ActiveRecord: 1.4ms)
+
+
+Started GET "/" for ::1 at 2016-08-10 21:28:06 +0800
+Processing by StaticController#index as HTML
+  Rendering static/index.html.erb within layouts/application
+  [1m[36mUser Load (1.2ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = $1 ORDER BY "users"."id" ASC LIMIT $2[0m  [["id", 2], ["LIMIT", 1]]
+  Rendered layouts/_navbar.html.erb (7.4ms)
+  Rendered static/index.html.erb within layouts/application (17.0ms)
+Completed 200 OK in 3142ms (Views: 3137.4ms | ActiveRecord: 1.2ms)
+
+
+Started GET "/" for ::1 at 2016-08-10 21:28:31 +0800
+Processing by StaticController#index as HTML
+  Rendering static/index.html.erb within layouts/application
+  [1m[36mUser Load (1.0ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = $1 ORDER BY "users"."id" ASC LIMIT $2[0m  [["id", 2], ["LIMIT", 1]]
+  Rendered layouts/_navbar.html.erb (7.2ms)
+  Rendered static/index.html.erb within layouts/application (16.9ms)
+Completed 200 OK in 116ms (Views: 111.9ms | ActiveRecord: 1.0ms)
+
+
+Started GET "/" for ::1 at 2016-08-10 21:28:43 +0800
+Processing by StaticController#index as HTML
+  Rendering static/index.html.erb within layouts/application
+  [1m[36mUser Load (1.5ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = $1 ORDER BY "users"."id" ASC LIMIT $2[0m  [["id", 2], ["LIMIT", 1]]
+  Rendered layouts/_navbar.html.erb (6.9ms)
+  Rendered static/index.html.erb within layouts/application (14.4ms)
+Completed 200 OK in 92ms (Views: 87.9ms | ActiveRecord: 1.5ms)
+
+
+Started GET "/" for ::1 at 2016-08-10 21:29:39 +0800
+Processing by StaticController#index as HTML
+  Rendering static/index.html.erb within layouts/application
+  [1m[36mUser Load (1.0ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = $1 ORDER BY "users"."id" ASC LIMIT $2[0m  [["id", 2], ["LIMIT", 1]]
+  Rendered layouts/_navbar.html.erb (7.0ms)
+  Rendered static/index.html.erb within layouts/application (16.7ms)
+Completed 200 OK in 2600ms (Views: 2596.4ms | ActiveRecord: 1.0ms)
+
+
+Started GET "/" for ::1 at 2016-08-10 21:31:32 +0800
+Processing by StaticController#index as HTML
+  Rendering static/index.html.erb within layouts/application
+  [1m[36mUser Load (1.0ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = $1 ORDER BY "users"."id" ASC LIMIT $2[0m  [["id", 2], ["LIMIT", 1]]
+  Rendered layouts/_navbar.html.erb (7.1ms)
+  Rendered static/index.html.erb within layouts/application (15.6ms)
+Completed 200 OK in 119ms (Views: 115.0ms | ActiveRecord: 1.0ms)
+
+
+Started GET "/" for ::1 at 2016-08-10 21:31:49 +0800
+Processing by StaticController#index as HTML
+  Rendering static/index.html.erb within layouts/application
+  [1m[36mUser Load (0.9ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = $1 ORDER BY "users"."id" ASC LIMIT $2[0m  [["id", 2], ["LIMIT", 1]]
+  Rendered layouts/_navbar.html.erb (5.3ms)
+  Rendered static/index.html.erb within layouts/application (12.5ms)
+Completed 200 OK in 86ms (Views: 81.4ms | ActiveRecord: 0.9ms)
+
+
+Started GET "/" for ::1 at 2016-08-10 21:32:04 +0800
+Processing by StaticController#index as HTML
+  Rendering static/index.html.erb within layouts/application
+  [1m[36mUser Load (1.5ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = $1 ORDER BY "users"."id" ASC LIMIT $2[0m  [["id", 2], ["LIMIT", 1]]
+  Rendered layouts/_navbar.html.erb (8.4ms)
+  Rendered static/index.html.erb within layouts/application (18.8ms)
+Completed 200 OK in 196ms (Views: 191.3ms | ActiveRecord: 1.5ms)
+
+
+Started GET "/" for ::1 at 2016-08-10 21:33:37 +0800
+Processing by StaticController#index as HTML
+  Rendering static/index.html.erb within layouts/application
+  [1m[36mUser Load (1.5ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = $1 ORDER BY "users"."id" ASC LIMIT $2[0m  [["id", 2], ["LIMIT", 1]]
+  Rendered layouts/_navbar.html.erb (7.6ms)
+  Rendered static/index.html.erb within layouts/application (16.6ms)
+Completed 200 OK in 124ms (Views: 119.0ms | ActiveRecord: 1.5ms)
+
+
+Started GET "/" for ::1 at 2016-08-10 21:34:52 +0800
+Processing by StaticController#index as HTML
+  Rendering static/index.html.erb within layouts/application
+  [1m[36mUser Load (1.5ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = $1 ORDER BY "users"."id" ASC LIMIT $2[0m  [["id", 2], ["LIMIT", 1]]
+  Rendered layouts/_navbar.html.erb (7.7ms)
+  Rendered static/index.html.erb within layouts/application (17.2ms)
+Completed 200 OK in 106ms (Views: 102.3ms | ActiveRecord: 1.5ms)
+
+
+Started GET "/" for ::1 at 2016-08-10 21:35:48 +0800
+Processing by StaticController#index as HTML
+  Rendering static/index.html.erb within layouts/application
+  [1m[36mUser Load (3.7ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = $1 ORDER BY "users"."id" ASC LIMIT $2[0m  [["id", 2], ["LIMIT", 1]]
+  Rendered layouts/_navbar.html.erb (9.7ms)
+  Rendered static/index.html.erb within layouts/application (18.4ms)
+Completed 200 OK in 124ms (Views: 117.3ms | ActiveRecord: 3.7ms)
+
+
+Started GET "/" for ::1 at 2016-08-10 21:36:14 +0800
+Processing by StaticController#index as HTML
+  Rendering static/index.html.erb within layouts/application
+  [1m[36mUser Load (0.8ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = $1 ORDER BY "users"."id" ASC LIMIT $2[0m  [["id", 2], ["LIMIT", 1]]
+  Rendered layouts/_navbar.html.erb (4.5ms)
+  Rendered static/index.html.erb within layouts/application (10.4ms)
+Completed 200 OK in 80ms (Views: 76.7ms | ActiveRecord: 0.8ms)
+
+
+Started GET "/" for ::1 at 2016-08-10 21:36:41 +0800
+Processing by StaticController#index as HTML
+  Rendering static/index.html.erb within layouts/application
+  [1m[36mUser Load (1.1ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = $1 ORDER BY "users"."id" ASC LIMIT $2[0m  [["id", 2], ["LIMIT", 1]]
+  Rendered layouts/_navbar.html.erb (8.5ms)
+  Rendered static/index.html.erb within layouts/application (19.7ms)
+Completed 200 OK in 145ms (Views: 140.5ms | ActiveRecord: 1.1ms)
+
+
+Started GET "/" for ::1 at 2016-08-10 21:36:51 +0800
+Processing by StaticController#index as HTML
+  Rendering static/index.html.erb within layouts/application
+  [1m[36mUser Load (1.4ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = $1 ORDER BY "users"."id" ASC LIMIT $2[0m  [["id", 2], ["LIMIT", 1]]
+  Rendered layouts/_navbar.html.erb (9.1ms)
+  Rendered static/index.html.erb within layouts/application (18.9ms)
+Completed 200 OK in 170ms (Views: 164.2ms | ActiveRecord: 1.4ms)
+
+
+Started GET "/" for ::1 at 2016-08-10 21:37:23 +0800
+Processing by StaticController#index as HTML
+  Rendering static/index.html.erb within layouts/application
+  [1m[36mUser Load (0.8ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = $1 ORDER BY "users"."id" ASC LIMIT $2[0m  [["id", 2], ["LIMIT", 1]]
+  Rendered layouts/_navbar.html.erb (6.1ms)
+  Rendered static/index.html.erb within layouts/application (12.8ms)
+Completed 200 OK in 3048ms (Views: 3044.1ms | ActiveRecord: 0.8ms)
+
+
+Started GET "/" for ::1 at 2016-08-10 21:37:41 +0800
+Processing by StaticController#index as HTML
+  Rendering static/index.html.erb within layouts/application
+  [1m[36mUser Load (1.0ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = $1 ORDER BY "users"."id" ASC LIMIT $2[0m  [["id", 2], ["LIMIT", 1]]
+  Rendered layouts/_navbar.html.erb (7.2ms)
+  Rendered static/index.html.erb within layouts/application (15.1ms)
+Completed 200 OK in 2536ms (Views: 2532.1ms | ActiveRecord: 1.0ms)
+
+
+Started GET "/" for ::1 at 2016-08-10 21:38:52 +0800
+Processing by StaticController#index as HTML
+  Rendering static/index.html.erb within layouts/application
+  [1m[36mUser Load (0.9ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = $1 ORDER BY "users"."id" ASC LIMIT $2[0m  [["id", 2], ["LIMIT", 1]]
+  Rendered layouts/_navbar.html.erb (6.2ms)
+  Rendered static/index.html.erb within layouts/application (13.2ms)
+Completed 200 OK in 2701ms (Views: 2697.5ms | ActiveRecord: 0.9ms)
+
+
+Started GET "/" for ::1 at 2016-08-10 21:39:20 +0800
+Processing by StaticController#index as HTML
+  Rendering static/index.html.erb within layouts/application
+  [1m[36mUser Load (0.9ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = $1 ORDER BY "users"."id" ASC LIMIT $2[0m  [["id", 2], ["LIMIT", 1]]
+  Rendered layouts/_navbar.html.erb (5.8ms)
+  Rendered static/index.html.erb within layouts/application (11.8ms)
+Completed 200 OK in 2361ms (Views: 2356.6ms | ActiveRecord: 0.9ms)
+
+
+Started GET "/" for ::1 at 2016-08-10 21:40:03 +0800
+Processing by StaticController#index as HTML
+  Rendering static/index.html.erb within layouts/application
+  [1m[36mUser Load (0.6ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = $1 ORDER BY "users"."id" ASC LIMIT $2[0m  [["id", 2], ["LIMIT", 1]]
+  Rendered layouts/_navbar.html.erb (5.4ms)
+  Rendered static/index.html.erb within layouts/application (10.5ms)
+Completed 200 OK in 2697ms (Views: 2694.2ms | ActiveRecord: 0.6ms)
+
+
+Started GET "/" for ::1 at 2016-08-10 21:40:27 +0800
+Processing by StaticController#index as HTML
+  Rendering static/index.html.erb within layouts/application
+  [1m[36mUser Load (0.7ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = $1 ORDER BY "users"."id" ASC LIMIT $2[0m  [["id", 2], ["LIMIT", 1]]
+  Rendered layouts/_navbar.html.erb (6.5ms)
+  Rendered static/index.html.erb within layouts/application (15.7ms)
+Completed 200 OK in 2689ms (Views: 2685.0ms | ActiveRecord: 0.7ms)
+
+
+Started GET "/" for ::1 at 2016-08-10 21:41:21 +0800
+Processing by StaticController#index as HTML
+  Rendering static/index.html.erb within layouts/application
+  [1m[36mUser Load (0.8ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = $1 ORDER BY "users"."id" ASC LIMIT $2[0m  [["id", 2], ["LIMIT", 1]]
+  Rendered layouts/_navbar.html.erb (5.2ms)
+  Rendered static/index.html.erb within layouts/application (11.0ms)
+Completed 200 OK in 2734ms (Views: 2730.8ms | ActiveRecord: 0.8ms)
+
+
+Started GET "/decks" for ::1 at 2016-08-10 21:41:29 +0800
+Processing by DecksController#index as HTML
+  [1m[36mUser Load (1.5ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = $1 ORDER BY "users"."id" ASC LIMIT $2[0m  [["id", 2], ["LIMIT", 1]]
+  Rendering decks/index.html.erb within layouts/application
+  Rendered layouts/_navbar.html.erb (3.9ms)
+  Rendered decks/_form.html.erb (12.2ms)
+  [1m[36mDeck Load (0.7ms)[0m  [1m[34mSELECT "decks".* FROM "decks" WHERE "decks"."user_id" = 2[0m
+  Rendered decks/index.html.erb within layouts/application (34.3ms)
+Completed 200 OK in 124ms (Views: 115.3ms | ActiveRecord: 2.3ms)
+
+
+Started GET "/decks" for ::1 at 2016-08-10 21:43:53 +0800
+Processing by DecksController#index as HTML
+  [1m[36mUser Load (0.9ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = $1 ORDER BY "users"."id" ASC LIMIT $2[0m  [["id", 2], ["LIMIT", 1]]
+  Rendering decks/index.html.erb within layouts/application
+  Rendered layouts/_navbar.html.erb (4.4ms)
+  Rendered decks/_form.html.erb (14.5ms)
+  [1m[36mDeck Load (0.8ms)[0m  [1m[34mSELECT "decks".* FROM "decks" WHERE "decks"."user_id" = 2[0m
+  Rendered decks/index.html.erb within layouts/application (27.9ms)
+Completed 200 OK in 121ms (Views: 113.7ms | ActiveRecord: 1.7ms)
+
+
+Started GET "/decks" for ::1 at 2016-08-10 21:44:09 +0800
+Processing by DecksController#index as HTML
+  [1m[36mUser Load (0.8ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = $1 ORDER BY "users"."id" ASC LIMIT $2[0m  [["id", 2], ["LIMIT", 1]]
+  Rendering decks/index.html.erb within layouts/application
+  Rendered layouts/_navbar.html.erb (3.8ms)
+  Rendered decks/_form.html.erb (10.8ms)
+  [1m[36mDeck Load (0.9ms)[0m  [1m[34mSELECT "decks".* FROM "decks" WHERE "decks"."user_id" = 2[0m
+  Rendered decks/index.html.erb within layouts/application (23.3ms)
+Completed 200 OK in 112ms (Views: 105.3ms | ActiveRecord: 1.7ms)
+
+
+Started GET "/decks" for ::1 at 2016-08-10 21:45:08 +0800
+Processing by DecksController#index as HTML
+  [1m[36mUser Load (1.3ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = $1 ORDER BY "users"."id" ASC LIMIT $2[0m  [["id", 2], ["LIMIT", 1]]
+  Rendering decks/index.html.erb within layouts/application
+  Rendered layouts/_navbar.html.erb (4.4ms)
+  Rendered decks/_form.html.erb (9.1ms)
+  [1m[36mDeck Load (0.9ms)[0m  [1m[34mSELECT "decks".* FROM "decks" WHERE "decks"."user_id" = 2[0m
+  Rendered decks/index.html.erb within layouts/application (22.0ms)
+Completed 200 OK in 3577ms (Views: 3568.9ms | ActiveRecord: 2.2ms)
+
+
+Started GET "/decks" for ::1 at 2016-08-10 21:46:10 +0800
+Processing by DecksController#index as HTML
+  [1m[36mUser Load (0.8ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = $1 ORDER BY "users"."id" ASC LIMIT $2[0m  [["id", 2], ["LIMIT", 1]]
+  Rendering decks/index.html.erb within layouts/application
+  Rendered layouts/_navbar.html.erb (3.8ms)
+  Rendered decks/_form.html.erb (10.3ms)
+  [1m[36mDeck Load (0.7ms)[0m  [1m[34mSELECT "decks".* FROM "decks" WHERE "decks"."user_id" = 2[0m
+  Rendered decks/index.html.erb within layouts/application (23.2ms)
+Completed 200 OK in 2723ms (Views: 2716.0ms | ActiveRecord: 1.5ms)
+
+
+Started GET "/decks" for ::1 at 2016-08-10 21:47:10 +0800
+Processing by DecksController#index as HTML
+  [1m[36mUser Load (1.3ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = $1 ORDER BY "users"."id" ASC LIMIT $2[0m  [["id", 2], ["LIMIT", 1]]
+  Rendering decks/index.html.erb within layouts/application
+  Rendered layouts/_navbar.html.erb (2.8ms)
+  Rendered decks/_form.html.erb (7.3ms)
+  [1m[36mDeck Load (0.6ms)[0m  [1m[34mSELECT "decks".* FROM "decks" WHERE "decks"."user_id" = 2[0m
+  Rendered decks/index.html.erb within layouts/application (17.0ms)
+Completed 200 OK in 91ms (Views: 84.3ms | ActiveRecord: 1.9ms)
+
+
+Started GET "/decks" for ::1 at 2016-08-10 21:47:49 +0800
+Processing by DecksController#index as HTML
+  [1m[36mUser Load (1.2ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = $1 ORDER BY "users"."id" ASC LIMIT $2[0m  [["id", 2], ["LIMIT", 1]]
+  Rendering decks/index.html.erb within layouts/application
+  Rendered layouts/_navbar.html.erb (3.7ms)
+  Rendered decks/_form.html.erb (8.1ms)
+  [1m[36mDeck Load (0.8ms)[0m  [1m[34mSELECT "decks".* FROM "decks" WHERE "decks"."user_id" = 2[0m
+  Rendered decks/index.html.erb within layouts/application (22.0ms)
+Completed 200 OK in 2708ms (Views: 2700.0ms | ActiveRecord: 2.0ms)
+
+
+Started GET "/decks" for ::1 at 2016-08-10 21:48:15 +0800
+Processing by DecksController#index as HTML
+  [1m[36mUser Load (0.8ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = $1 ORDER BY "users"."id" ASC LIMIT $2[0m  [["id", 2], ["LIMIT", 1]]
+  Rendering decks/index.html.erb within layouts/application
+  Rendered layouts/_navbar.html.erb (3.8ms)
+  Rendered decks/_form.html.erb (9.9ms)
+  [1m[36mDeck Load (0.6ms)[0m  [1m[34mSELECT "decks".* FROM "decks" WHERE "decks"."user_id" = 2[0m
+  Rendered decks/index.html.erb within layouts/application (22.8ms)
+Completed 200 OK in 2650ms (Views: 2642.8ms | ActiveRecord: 1.4ms)
+
+
+Started GET "/decks" for ::1 at 2016-08-10 21:48:39 +0800
+Processing by DecksController#index as HTML
+  [1m[36mUser Load (0.6ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = $1 ORDER BY "users"."id" ASC LIMIT $2[0m  [["id", 2], ["LIMIT", 1]]
+  Rendering decks/index.html.erb within layouts/application
+  Rendered layouts/_navbar.html.erb (2.4ms)
+  Rendered decks/_form.html.erb (9.0ms)
+  [1m[36mDeck Load (0.7ms)[0m  [1m[34mSELECT "decks".* FROM "decks" WHERE "decks"."user_id" = 2[0m
+  Rendered decks/index.html.erb within layouts/application (18.9ms)
+Completed 200 OK in 117ms (Views: 110.3ms | ActiveRecord: 1.2ms)
+
+
+Started GET "/decks" for ::1 at 2016-08-10 21:51:53 +0800
+Processing by DecksController#index as HTML
+  [1m[36mUser Load (1.9ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = $1 ORDER BY "users"."id" ASC LIMIT $2[0m  [["id", 2], ["LIMIT", 1]]
+  Rendering decks/index.html.erb within layouts/application
+  Rendered layouts/_navbar.html.erb (14.8ms)
+  Rendered decks/_form.html.erb (30.3ms)
+  [1m[36mDeck Load (0.9ms)[0m  [1m[34mSELECT "decks".* FROM "decks" WHERE "decks"."user_id" = 2[0m
+  Rendered decks/index.html.erb within layouts/application (62.5ms)
+Completed 200 OK in 3054ms (Views: 3012.3ms | ActiveRecord: 2.7ms)
+
+
+Started GET "/decks" for ::1 at 2016-08-10 21:52:42 +0800
+Processing by DecksController#index as HTML
+  [1m[36mUser Load (0.8ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = $1 ORDER BY "users"."id" ASC LIMIT $2[0m  [["id", 2], ["LIMIT", 1]]
+  Rendering decks/index.html.erb within layouts/application
+  Rendered layouts/_navbar.html.erb (3.6ms)
+  Rendered decks/_form.html.erb (9.3ms)
+  [1m[36mDeck Load (0.9ms)[0m  [1m[34mSELECT "decks".* FROM "decks" WHERE "decks"."user_id" = 2[0m
+  Rendered decks/index.html.erb within layouts/application (23.2ms)
+Completed 200 OK in 2802ms (Views: 2794.1ms | ActiveRecord: 1.7ms)
+
+
+Started GET "/decks" for ::1 at 2016-08-10 21:53:20 +0800
+Processing by DecksController#index as HTML
+  [1m[36mUser Load (0.8ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = $1 ORDER BY "users"."id" ASC LIMIT $2[0m  [["id", 2], ["LIMIT", 1]]
+  Rendering decks/index.html.erb within layouts/application
+  Rendered layouts/_navbar.html.erb (3.6ms)
+  Rendered decks/_form.html.erb (8.6ms)
+  [1m[36mDeck Load (0.6ms)[0m  [1m[34mSELECT "decks".* FROM "decks" WHERE "decks"."user_id" = 2[0m
+  Rendered decks/index.html.erb within layouts/application (22.4ms)
+Completed 200 OK in 2395ms (Views: 2389.1ms | ActiveRecord: 1.4ms)
+
+
+Started GET "/decks" for ::1 at 2016-08-10 21:55:55 +0800
+Processing by DecksController#index as HTML
+  [1m[36mUser Load (1.2ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = $1 ORDER BY "users"."id" ASC LIMIT $2[0m  [["id", 2], ["LIMIT", 1]]
+  Rendering decks/index.html.erb within layouts/application
+  Rendered layouts/_navbar.html.erb (3.4ms)
+  Rendered decks/_form.html.erb (10.9ms)
+  [1m[36mDeck Load (0.8ms)[0m  [1m[34mSELECT "decks".* FROM "decks" WHERE "decks"."user_id" = 2[0m
+  Rendered decks/index.html.erb within layouts/application (23.1ms)
+Completed 200 OK in 2893ms (Views: 2885.8ms | ActiveRecord: 2.0ms)
+
+
+Started GET "/decks" for ::1 at 2016-08-10 21:56:26 +0800
+Processing by DecksController#index as HTML
+  [1m[36mUser Load (2.7ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = $1 ORDER BY "users"."id" ASC LIMIT $2[0m  [["id", 2], ["LIMIT", 1]]
+  Rendering decks/index.html.erb within layouts/application
+  Rendered layouts/_navbar.html.erb (4.1ms)
+  Rendered decks/_form.html.erb (8.4ms)
+  [1m[36mDeck Load (0.9ms)[0m  [1m[34mSELECT "decks".* FROM "decks" WHERE "decks"."user_id" = 2[0m
+  Rendered decks/index.html.erb within layouts/application (21.1ms)
+Completed 200 OK in 2828ms (Views: 2816.2ms | ActiveRecord: 3.6ms)
+
+
+Started GET "/decks" for ::1 at 2016-08-10 21:57:20 +0800
+Processing by DecksController#index as HTML
+  [1m[36mUser Load (0.8ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = $1 ORDER BY "users"."id" ASC LIMIT $2[0m  [["id", 2], ["LIMIT", 1]]
+  Rendering decks/index.html.erb within layouts/application
+  Rendered layouts/_navbar.html.erb (2.5ms)
+  Rendered decks/_form.html.erb (5.7ms)
+  [1m[36mDeck Load (0.7ms)[0m  [1m[34mSELECT "decks".* FROM "decks" WHERE "decks"."user_id" = 2[0m
+  Rendered decks/index.html.erb within layouts/application (14.4ms)
+Completed 200 OK in 82ms (Views: 76.7ms | ActiveRecord: 1.5ms)
+
+
+Started GET "/decks" for ::1 at 2016-08-10 22:00:52 +0800
+Processing by DecksController#index as HTML
+  [1m[36mUser Load (1.4ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = $1 ORDER BY "users"."id" ASC LIMIT $2[0m  [["id", 2], ["LIMIT", 1]]
+  Rendering decks/index.html.erb within layouts/application
+  Rendered layouts/_navbar.html.erb (5.0ms)
+  Rendered decks/_form.html.erb (7.8ms)
+  [1m[36mDeck Load (0.6ms)[0m  [1m[34mSELECT "decks".* FROM "decks" WHERE "decks"."user_id" = 2[0m
+  Rendered decks/index.html.erb within layouts/application (20.7ms)
+Completed 200 OK in 2258ms (Views: 2249.9ms | ActiveRecord: 2.1ms)
+
+
+Started GET "/decks" for ::1 at 2016-08-10 22:03:46 +0800
+Processing by DecksController#index as HTML
+  [1m[36mUser Load (1.1ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = $1 ORDER BY "users"."id" ASC LIMIT $2[0m  [["id", 2], ["LIMIT", 1]]
+  Rendering decks/index.html.erb within layouts/application
+  Rendered layouts/_navbar.html.erb (4.1ms)
+  Rendered decks/_form.html.erb (13.0ms)
+  [1m[36mDeck Load (1.8ms)[0m  [1m[34mSELECT "decks".* FROM "decks" WHERE "decks"."user_id" = 2[0m
+  Rendered decks/index.html.erb within layouts/application (27.4ms)
+Completed 200 OK in 2754ms (Views: 2746.1ms | ActiveRecord: 2.9ms)
+
+
+Started GET "/decks" for ::1 at 2016-08-10 22:05:48 +0800
+Processing by DecksController#index as HTML
+  [1m[36mUser Load (1.0ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = $1 ORDER BY "users"."id" ASC LIMIT $2[0m  [["id", 2], ["LIMIT", 1]]
+  Rendering decks/index.html.erb within layouts/application
+  Rendered layouts/_navbar.html.erb (4.9ms)
+  Rendered decks/_form.html.erb (6.7ms)
+  [1m[36mDeck Load (0.7ms)[0m  [1m[34mSELECT "decks".* FROM "decks" WHERE "decks"."user_id" = 2[0m
+  Rendered decks/index.html.erb within layouts/application (23.9ms)
+Completed 200 OK in 2635ms (Views: 2628.7ms | ActiveRecord: 1.7ms)
+
+
+Started GET "/decks" for ::1 at 2016-08-10 22:06:54 +0800
+Processing by DecksController#index as HTML
+  [1m[36mUser Load (0.9ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = $1 ORDER BY "users"."id" ASC LIMIT $2[0m  [["id", 2], ["LIMIT", 1]]
+  Rendering decks/index.html.erb within layouts/application
+  Rendered layouts/_navbar.html.erb (4.4ms)
+  Rendered decks/_form.html.erb (11.2ms)
+  [1m[36mDeck Load (0.7ms)[0m  [1m[34mSELECT "decks".* FROM "decks" WHERE "decks"."user_id" = 2[0m
+  Rendered decks/index.html.erb within layouts/application (33.5ms)
+Completed 200 OK in 3163ms (Views: 3155.6ms | ActiveRecord: 1.6ms)
+
+
+Started GET "/decks" for ::1 at 2016-08-10 22:07:08 +0800
+Processing by DecksController#index as HTML
+  [1m[36mUser Load (1.3ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = $1 ORDER BY "users"."id" ASC LIMIT $2[0m  [["id", 2], ["LIMIT", 1]]
+  Rendering decks/index.html.erb within layouts/application
+  Rendered layouts/_navbar.html.erb (3.8ms)
+  Rendered decks/_form.html.erb (10.4ms)
+  [1m[36mDeck Load (0.9ms)[0m  [1m[34mSELECT "decks".* FROM "decks" WHERE "decks"."user_id" = 2[0m
+  Rendered decks/index.html.erb within layouts/application (23.7ms)
+Completed 200 OK in 3065ms (Views: 3057.9ms | ActiveRecord: 2.2ms)
+
+
+Started POST "/decks" for ::1 at 2016-08-10 22:07:19 +0800
+Processing by DecksController#create as HTML
+  Parameters: {"utf8"=>"✓", "authenticity_token"=>"9OnQoYaalq5YvQXFJ/Vvf+DTj9Np6A/OiOdHqOlvIlKHd7IXEN7ec5ErmsU5a0ciUKJxbH1Oto9PObo1iMcssg==", "deck"=>{"title"=>"", "description"=>""}, "commit"=>"Create Deck"}
+  [1m[36mUser Load (0.6ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = $1 ORDER BY "users"."id" ASC LIMIT $2[0m  [["id", 2], ["LIMIT", 1]]
+  [1m[35m (0.2ms)[0m  [1m[35mBEGIN[0m
+  [1m[35mSQL (4.6ms)[0m  [1m[32mINSERT INTO "decks" ("title", "description", "created_at", "updated_at", "user_id") VALUES ($1, $2, $3, $4, $5) RETURNING "id"[0m  [["title", ""], ["description", ""], ["created_at", 2016-08-10 14:07:19 UTC], ["updated_at", 2016-08-10 14:07:19 UTC], ["user_id", 2]]
+  [1m[35m (1.6ms)[0m  [1m[35mCOMMIT[0m
+Redirected to http://localhost:3000/decks/25
+Completed 302 Found in 43ms (ActiveRecord: 7.0ms)
+
+
+Started GET "/decks/25" for ::1 at 2016-08-10 22:07:19 +0800
+Processing by DecksController#show as HTML
+  Parameters: {"id"=>"25"}
+  [1m[36mDeck Load (0.5ms)[0m  [1m[34mSELECT  "decks".* FROM "decks" WHERE "decks"."id" = $1 LIMIT $2[0m  [["id", 25], ["LIMIT", 1]]
+  [1m[36mUser Load (1.0ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = $1 ORDER BY "users"."id" ASC LIMIT $2[0m  [["id", 2], ["LIMIT", 1]]
+  Rendering decks/show.html.erb within layouts/application
+  Rendered layouts/_navbar2.html.erb (3.3ms)
+  [1m[36mUser Load (0.5ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = $1 LIMIT $2[0m  [["id", 2], ["LIMIT", 1]]
+  Rendered cards/_form.html.erb (25.4ms)
+  [1m[36mCard Load (1.0ms)[0m  [1m[34mSELECT "cards".* FROM "cards" WHERE "cards"."deck_id" = $1[0m  [["deck_id", 25]]
+  Rendered decks/show.html.erb within layouts/application (44.2ms)
+Completed 200 OK in 149ms (Views: 108.8ms | ActiveRecord: 18.9ms)
+
+
+Started GET "/decks" for ::1 at 2016-08-10 22:07:32 +0800
+Processing by DecksController#index as HTML
+  [1m[36mUser Load (0.8ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = $1 ORDER BY "users"."id" ASC LIMIT $2[0m  [["id", 2], ["LIMIT", 1]]
+  Rendering decks/index.html.erb within layouts/application
+  Rendered layouts/_navbar.html.erb (2.9ms)
+  Rendered decks/_form.html.erb (8.6ms)
+  [1m[36mDeck Load (0.5ms)[0m  [1m[34mSELECT "decks".* FROM "decks" WHERE "decks"."user_id" = 2[0m
+  Rendered decks/index.html.erb within layouts/application (18.6ms)
+Completed 200 OK in 102ms (Views: 95.5ms | ActiveRecord: 1.2ms)
+
+
+Started GET "/decks" for ::1 at 2016-08-10 22:08:26 +0800
+Processing by DecksController#index as HTML
+  [1m[36mUser Load (1.2ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = $1 ORDER BY "users"."id" ASC LIMIT $2[0m  [["id", 2], ["LIMIT", 1]]
+  Rendering decks/index.html.erb within layouts/application
+  Rendered layouts/_navbar.html.erb (5.1ms)
+  Rendered decks/_form.html.erb (17.3ms)
+  [1m[36mDeck Load (1.1ms)[0m  [1m[34mSELECT "decks".* FROM "decks" WHERE "decks"."user_id" = 2[0m
+  Rendered decks/index.html.erb within layouts/application (34.1ms)
+Completed 200 OK in 3004ms (Views: 2993.6ms | ActiveRecord: 2.3ms)
+
+
+Started GET "/decks" for ::1 at 2016-08-10 22:08:39 +0800
+Processing by DecksController#index as HTML
+  [1m[36mUser Load (1.8ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = $1 ORDER BY "users"."id" ASC LIMIT $2[0m  [["id", 2], ["LIMIT", 1]]
+  Rendering decks/index.html.erb within layouts/application
+  Rendered layouts/_navbar.html.erb (2.8ms)
+  Rendered decks/_form.html.erb (7.8ms)
+  [1m[36mDeck Load (0.6ms)[0m  [1m[34mSELECT "decks".* FROM "decks" WHERE "decks"."user_id" = 2[0m
+  Rendered decks/index.html.erb within layouts/application (17.3ms)
+Completed 200 OK in 2315ms (Views: 2308.6ms | ActiveRecord: 2.5ms)
+
+
+Started GET "/decks" for ::1 at 2016-08-10 22:09:08 +0800
+Processing by DecksController#index as HTML
+  [1m[36mUser Load (0.8ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = $1 ORDER BY "users"."id" ASC LIMIT $2[0m  [["id", 2], ["LIMIT", 1]]
+  Rendering decks/index.html.erb within layouts/application
+  Rendered layouts/_navbar.html.erb (3.2ms)
+  Rendered decks/_form.html.erb (12.0ms)
+  [1m[36mDeck Load (1.2ms)[0m  [1m[34mSELECT "decks".* FROM "decks" WHERE "decks"."user_id" = 2[0m
+  Rendered decks/index.html.erb within layouts/application (23.2ms)
+Completed 200 OK in 2913ms (Views: 2904.8ms | ActiveRecord: 2.0ms)
+
+
+Started GET "/decks/18" for ::1 at 2016-08-10 22:09:17 +0800
+Processing by DecksController#show as HTML
+  Parameters: {"id"=>"18"}
+  [1m[36mDeck Load (0.5ms)[0m  [1m[34mSELECT  "decks".* FROM "decks" WHERE "decks"."id" = $1 LIMIT $2[0m  [["id", 18], ["LIMIT", 1]]
+  [1m[36mUser Load (0.9ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = $1 ORDER BY "users"."id" ASC LIMIT $2[0m  [["id", 2], ["LIMIT", 1]]
+  Rendering decks/show.html.erb within layouts/application
+  Rendered layouts/_navbar2.html.erb (3.9ms)
+  [1m[36mUser Load (2.1ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = $1 LIMIT $2[0m  [["id", 2], ["LIMIT", 1]]
+  Rendered cards/_form.html.erb (11.6ms)
+  [1m[36mCard Load (0.7ms)[0m  [1m[34mSELECT "cards".* FROM "cards" WHERE "cards"."deck_id" = $1[0m  [["deck_id", 18]]
+  Rendered decks/show.html.erb within layouts/application (35.4ms)
+Completed 200 OK in 121ms (Views: 106.1ms | ActiveRecord: 7.0ms)
+
+
+Started GET "/decks" for ::1 at 2016-08-10 22:10:07 +0800
+Processing by DecksController#index as HTML
+  [1m[36mUser Load (0.6ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = $1 ORDER BY "users"."id" ASC LIMIT $2[0m  [["id", 2], ["LIMIT", 1]]
+  Rendering decks/index.html.erb within layouts/application
+  Rendered layouts/_navbar.html.erb (3.8ms)
+  Rendered decks/_form.html.erb (6.9ms)
+  [1m[36mDeck Load (1.0ms)[0m  [1m[34mSELECT "decks".* FROM "decks" WHERE "decks"."user_id" = 2[0m
+  Rendered decks/index.html.erb within layouts/application (233.9ms)
+Completed 500 Internal Server Error in 244ms (ActiveRecord: 1.6ms)
+
+
+  
+ActionView::Template::Error (undefined local variable or method `card' for #<#<Class:0x007f9d0959a878>:0x007f9d15dc0be0>):
+    25:           <!-- <h6><i class="fa fa-align-justify pink2" aria-hidden="true"></i></h6> -->
+    26:           <h6> <%= link_to deck.title, deck %> </h6>
+    27:           <p><%= deck.description %></p>
+    28:           <%= link_to "Edit this card", edit_deck_card_path(@deck.id, card.id) %>
+    29:           <%= link_to "Delete this card", deck_card_path(@deck.id, card.id), method: :delete, data: {confirm: "Are you sure?"} %>
+    30:         </div>
+    31:       </div>
+  
+app/views/decks/index.html.erb:28:in `block in _app_views_decks_index_html_erb___993768615420540819_70156326669180'
+app/views/decks/index.html.erb:22:in `_app_views_decks_index_html_erb___993768615420540819_70156326669180'
+  Rendering /Users/tayevon/.rvm/gems/ruby-2.3.0/gems/actionpack-5.0.0/lib/action_dispatch/middleware/templates/rescues/template_error.html.erb within rescues/layout
+  Rendering /Users/tayevon/.rvm/gems/ruby-2.3.0/gems/actionpack-5.0.0/lib/action_dispatch/middleware/templates/rescues/_source.html.erb
+  Rendered /Users/tayevon/.rvm/gems/ruby-2.3.0/gems/actionpack-5.0.0/lib/action_dispatch/middleware/templates/rescues/_source.html.erb (4.6ms)
+  Rendering /Users/tayevon/.rvm/gems/ruby-2.3.0/gems/actionpack-5.0.0/lib/action_dispatch/middleware/templates/rescues/_trace.html.erb
+  Rendered /Users/tayevon/.rvm/gems/ruby-2.3.0/gems/actionpack-5.0.0/lib/action_dispatch/middleware/templates/rescues/_trace.html.erb (2.3ms)
+  Rendering /Users/tayevon/.rvm/gems/ruby-2.3.0/gems/actionpack-5.0.0/lib/action_dispatch/middleware/templates/rescues/_request_and_response.html.erb
+  Rendered /Users/tayevon/.rvm/gems/ruby-2.3.0/gems/actionpack-5.0.0/lib/action_dispatch/middleware/templates/rescues/_request_and_response.html.erb (1.3ms)
+  Rendered /Users/tayevon/.rvm/gems/ruby-2.3.0/gems/actionpack-5.0.0/lib/action_dispatch/middleware/templates/rescues/template_error.html.erb within rescues/layout (98.6ms)
+Started GET "/decks" for ::1 at 2016-08-10 22:10:40 +0800
+Processing by DecksController#index as HTML
+  [1m[36mUser Load (0.8ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = $1 ORDER BY "users"."id" ASC LIMIT $2[0m  [["id", 2], ["LIMIT", 1]]
+  Rendering decks/index.html.erb within layouts/application
+  Rendered layouts/_navbar.html.erb (3.1ms)
+  Rendered decks/_form.html.erb (8.6ms)
+  [1m[36mDeck Load (0.8ms)[0m  [1m[34mSELECT "decks".* FROM "decks" WHERE "decks"."user_id" = 2[0m
+  Rendered decks/index.html.erb within layouts/application (24.3ms)
+Completed 500 Internal Server Error in 37ms (ActiveRecord: 1.6ms)
+
+
+  
+ActionView::Template::Error (No route matches {:action=>"edit", :controller=>"cards"} missing required keys: [:deck_id, :id]):
+    25:           <!-- <h6><i class="fa fa-align-justify pink2" aria-hidden="true"></i></h6> -->
+    26:           <h6> <%= link_to deck.title, deck %> </h6>
+    27:           <p><%= deck.description %></p>
+    28:           <%= link_to "Edit this card", edit_deck_card_path %>
+    29:           <%= link_to "Delete this card", deck_card_path, method: :delete, data: {confirm: "Are you sure?"} %>
+    30:         </div>
+    31:       </div>
+  
+app/views/decks/index.html.erb:28:in `block in _app_views_decks_index_html_erb___993768615420540819_70156326553860'
+app/views/decks/index.html.erb:22:in `_app_views_decks_index_html_erb___993768615420540819_70156326553860'
+  Rendering /Users/tayevon/.rvm/gems/ruby-2.3.0/gems/actionpack-5.0.0/lib/action_dispatch/middleware/templates/rescues/template_error.html.erb within rescues/layout
+  Rendering /Users/tayevon/.rvm/gems/ruby-2.3.0/gems/actionpack-5.0.0/lib/action_dispatch/middleware/templates/rescues/_source.html.erb
+  Rendered /Users/tayevon/.rvm/gems/ruby-2.3.0/gems/actionpack-5.0.0/lib/action_dispatch/middleware/templates/rescues/_source.html.erb (8.9ms)
+  Rendering /Users/tayevon/.rvm/gems/ruby-2.3.0/gems/actionpack-5.0.0/lib/action_dispatch/middleware/templates/rescues/_trace.html.erb
+  Rendered /Users/tayevon/.rvm/gems/ruby-2.3.0/gems/actionpack-5.0.0/lib/action_dispatch/middleware/templates/rescues/_trace.html.erb (3.0ms)
+  Rendering /Users/tayevon/.rvm/gems/ruby-2.3.0/gems/actionpack-5.0.0/lib/action_dispatch/middleware/templates/rescues/_request_and_response.html.erb
+  Rendered /Users/tayevon/.rvm/gems/ruby-2.3.0/gems/actionpack-5.0.0/lib/action_dispatch/middleware/templates/rescues/_request_and_response.html.erb (1.2ms)
+  Rendered /Users/tayevon/.rvm/gems/ruby-2.3.0/gems/actionpack-5.0.0/lib/action_dispatch/middleware/templates/rescues/template_error.html.erb within rescues/layout (101.4ms)
+Started GET "/decks" for ::1 at 2016-08-10 22:10:56 +0800
+Processing by DecksController#index as HTML
+  [1m[36mUser Load (0.7ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = $1 ORDER BY "users"."id" ASC LIMIT $2[0m  [["id", 2], ["LIMIT", 1]]
+  Rendering decks/index.html.erb within layouts/application
+  Rendered layouts/_navbar.html.erb (4.2ms)
+  Rendered decks/_form.html.erb (7.0ms)
+  [1m[36mDeck Load (2.0ms)[0m  [1m[34mSELECT "decks".* FROM "decks" WHERE "decks"."user_id" = 2[0m
+  Rendered decks/index.html.erb within layouts/application (24.4ms)
+Completed 500 Internal Server Error in 38ms (ActiveRecord: 2.7ms)
+
+
+  
+ActionView::Template::Error (No route matches {:action=>"edit", :controller=>"decks"} missing required keys: [:id]):
+    25:           <!-- <h6><i class="fa fa-align-justify pink2" aria-hidden="true"></i></h6> -->
+    26:           <h6> <%= link_to deck.title, deck %> </h6>
+    27:           <p><%= deck.description %></p>
+    28:           <%= link_to "Edit this card", edit_deck_path %>
+    29:           <%= link_to "Delete this card", deck_path, method: :delete, data: {confirm: "Are you sure?"} %>
+    30:         </div>
+    31:       </div>
+  
+app/views/decks/index.html.erb:28:in `block in _app_views_decks_index_html_erb___993768615420540819_70156081202040'
+app/views/decks/index.html.erb:22:in `_app_views_decks_index_html_erb___993768615420540819_70156081202040'
+  Rendering /Users/tayevon/.rvm/gems/ruby-2.3.0/gems/actionpack-5.0.0/lib/action_dispatch/middleware/templates/rescues/template_error.html.erb within rescues/layout
+  Rendering /Users/tayevon/.rvm/gems/ruby-2.3.0/gems/actionpack-5.0.0/lib/action_dispatch/middleware/templates/rescues/_source.html.erb
+  Rendered /Users/tayevon/.rvm/gems/ruby-2.3.0/gems/actionpack-5.0.0/lib/action_dispatch/middleware/templates/rescues/_source.html.erb (5.6ms)
+  Rendering /Users/tayevon/.rvm/gems/ruby-2.3.0/gems/actionpack-5.0.0/lib/action_dispatch/middleware/templates/rescues/_trace.html.erb
+  Rendered /Users/tayevon/.rvm/gems/ruby-2.3.0/gems/actionpack-5.0.0/lib/action_dispatch/middleware/templates/rescues/_trace.html.erb (2.8ms)
+  Rendering /Users/tayevon/.rvm/gems/ruby-2.3.0/gems/actionpack-5.0.0/lib/action_dispatch/middleware/templates/rescues/_request_and_response.html.erb
+  Rendered /Users/tayevon/.rvm/gems/ruby-2.3.0/gems/actionpack-5.0.0/lib/action_dispatch/middleware/templates/rescues/_request_and_response.html.erb (1.3ms)
+  Rendered /Users/tayevon/.rvm/gems/ruby-2.3.0/gems/actionpack-5.0.0/lib/action_dispatch/middleware/templates/rescues/template_error.html.erb within rescues/layout (92.5ms)
+Started GET "/decks" for ::1 at 2016-08-10 22:11:47 +0800
+Processing by DecksController#index as HTML
+  [1m[36mUser Load (0.8ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = $1 ORDER BY "users"."id" ASC LIMIT $2[0m  [["id", 2], ["LIMIT", 1]]
+  Rendering decks/index.html.erb within layouts/application
+  Rendered layouts/_navbar.html.erb (3.9ms)
+  Rendered decks/_form.html.erb (7.1ms)
+  [1m[36mDeck Load (0.6ms)[0m  [1m[34mSELECT "decks".* FROM "decks" WHERE "decks"."user_id" = 2[0m
+  Rendered decks/index.html.erb within layouts/application (20.0ms)
+Completed 500 Internal Server Error in 31ms (ActiveRecord: 1.4ms)
+
+
+  
+ActionView::Template::Error (No route matches {:action=>"edit", :controller=>"decks"} missing required keys: [:id]):
+    25:           <!-- <h6><i class="fa fa-align-justify pink2" aria-hidden="true"></i></h6> -->
+    26:           <h6> <%= link_to deck.title, deck %> </h6>
+    27:           <p><%= deck.description %></p>
+    28:           <%= link_to "Edit Deck", edit_deck_path %>
+    29:           <%= link_to "Delete this deck", deck_path, method: :delete, data: {confirm: "Are you sure?"} %>
+    30:         </div>
+    31:       </div>
+  
+app/views/decks/index.html.erb:28:in `block in _app_views_decks_index_html_erb___993768615420540819_70156305407220'
+app/views/decks/index.html.erb:22:in `_app_views_decks_index_html_erb___993768615420540819_70156305407220'
+  Rendering /Users/tayevon/.rvm/gems/ruby-2.3.0/gems/actionpack-5.0.0/lib/action_dispatch/middleware/templates/rescues/template_error.html.erb within rescues/layout
+  Rendering /Users/tayevon/.rvm/gems/ruby-2.3.0/gems/actionpack-5.0.0/lib/action_dispatch/middleware/templates/rescues/_source.html.erb
+  Rendered /Users/tayevon/.rvm/gems/ruby-2.3.0/gems/actionpack-5.0.0/lib/action_dispatch/middleware/templates/rescues/_source.html.erb (7.9ms)
+  Rendering /Users/tayevon/.rvm/gems/ruby-2.3.0/gems/actionpack-5.0.0/lib/action_dispatch/middleware/templates/rescues/_trace.html.erb
+  Rendered /Users/tayevon/.rvm/gems/ruby-2.3.0/gems/actionpack-5.0.0/lib/action_dispatch/middleware/templates/rescues/_trace.html.erb (3.3ms)
+  Rendering /Users/tayevon/.rvm/gems/ruby-2.3.0/gems/actionpack-5.0.0/lib/action_dispatch/middleware/templates/rescues/_request_and_response.html.erb
+  Rendered /Users/tayevon/.rvm/gems/ruby-2.3.0/gems/actionpack-5.0.0/lib/action_dispatch/middleware/templates/rescues/_request_and_response.html.erb (1.1ms)
+  Rendered /Users/tayevon/.rvm/gems/ruby-2.3.0/gems/actionpack-5.0.0/lib/action_dispatch/middleware/templates/rescues/template_error.html.erb within rescues/layout (98.3ms)
+Started GET "/decks" for ::1 at 2016-08-10 22:12:24 +0800
+Processing by DecksController#index as HTML
+  [1m[36mUser Load (0.9ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = $1 ORDER BY "users"."id" ASC LIMIT $2[0m  [["id", 2], ["LIMIT", 1]]
+  Rendering decks/index.html.erb within layouts/application
+  Rendered layouts/_navbar.html.erb (3.6ms)
+  Rendered decks/_form.html.erb (10.0ms)
+  [1m[36mDeck Load (0.9ms)[0m  [1m[34mSELECT "decks".* FROM "decks" WHERE "decks"."user_id" = 2[0m
+  Rendered decks/index.html.erb within layouts/application (24.6ms)
+Completed 500 Internal Server Error in 38ms (ActiveRecord: 1.9ms)
+
+
+  
+ActionView::Template::Error (No route matches {:action=>"edit", :controller=>"decks", :id=>nil} missing required keys: [:id]):
+    25:           <!-- <h6><i class="fa fa-align-justify pink2" aria-hidden="true"></i></h6> -->
+    26:           <h6> <%= link_to deck.title, deck %> </h6>
+    27:           <p><%= deck.description %></p>
+    28:           <%= link_to "Edit Deck", edit_deck_path(@deck.id) %>
+    29:           <%= link_to "Delete this deck", deck_path(@deck.id), method: :delete, data: {confirm: "Are you sure?"} %>
+    30:         </div>
+    31:       </div>
+  
+app/views/decks/index.html.erb:28:in `block in _app_views_decks_index_html_erb___993768615420540819_70156306568160'
+app/views/decks/index.html.erb:22:in `_app_views_decks_index_html_erb___993768615420540819_70156306568160'
+  Rendering /Users/tayevon/.rvm/gems/ruby-2.3.0/gems/actionpack-5.0.0/lib/action_dispatch/middleware/templates/rescues/template_error.html.erb within rescues/layout
+  Rendering /Users/tayevon/.rvm/gems/ruby-2.3.0/gems/actionpack-5.0.0/lib/action_dispatch/middleware/templates/rescues/_source.html.erb
+  Rendered /Users/tayevon/.rvm/gems/ruby-2.3.0/gems/actionpack-5.0.0/lib/action_dispatch/middleware/templates/rescues/_source.html.erb (11.3ms)
+  Rendering /Users/tayevon/.rvm/gems/ruby-2.3.0/gems/actionpack-5.0.0/lib/action_dispatch/middleware/templates/rescues/_trace.html.erb
+  Rendered /Users/tayevon/.rvm/gems/ruby-2.3.0/gems/actionpack-5.0.0/lib/action_dispatch/middleware/templates/rescues/_trace.html.erb (4.3ms)
+  Rendering /Users/tayevon/.rvm/gems/ruby-2.3.0/gems/actionpack-5.0.0/lib/action_dispatch/middleware/templates/rescues/_request_and_response.html.erb
+  Rendered /Users/tayevon/.rvm/gems/ruby-2.3.0/gems/actionpack-5.0.0/lib/action_dispatch/middleware/templates/rescues/_request_and_response.html.erb (1.3ms)
+  Rendered /Users/tayevon/.rvm/gems/ruby-2.3.0/gems/actionpack-5.0.0/lib/action_dispatch/middleware/templates/rescues/template_error.html.erb within rescues/layout (112.0ms)
+Started GET "/decks" for ::1 at 2016-08-10 22:12:57 +0800
+Processing by DecksController#index as HTML
+  [1m[36mUser Load (0.7ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = $1 ORDER BY "users"."id" ASC LIMIT $2[0m  [["id", 2], ["LIMIT", 1]]
+  Rendering decks/index.html.erb within layouts/application
+  Rendered layouts/_navbar.html.erb (3.1ms)
+  Rendered decks/_form.html.erb (7.2ms)
+  [1m[36mDeck Load (0.8ms)[0m  [1m[34mSELECT "decks".* FROM "decks" WHERE "decks"."user_id" = 2[0m
+  Rendered decks/index.html.erb within layouts/application (293.0ms)
+Completed 500 Internal Server Error in 306ms (ActiveRecord: 1.5ms)
+
+
+  
+ActionView::Template::Error (undefined local variable or method `deck_id' for #<#<Class:0x007f9d0959a878>:0x007f9d14a431a8>
+Did you mean?  deck):
+    25:           <!-- <h6><i class="fa fa-align-justify pink2" aria-hidden="true"></i></h6> -->
+    26:           <h6> <%= link_to deck.title, deck %> </h6>
+    27:           <p><%= deck.description %></p>
+    28:           <%= link_to "Edit Deck", edit_deck_path(deck_id) %>
+    29:           <%= link_to "Delete this deck", deck_path(deck_id), method: :delete, data: {confirm: "Are you sure?"} %>
+    30:         </div>
+    31:       </div>
+  
+app/views/decks/index.html.erb:28:in `block in _app_views_decks_index_html_erb___993768615420540819_70156316450560'
+app/views/decks/index.html.erb:22:in `_app_views_decks_index_html_erb___993768615420540819_70156316450560'
+  Rendering /Users/tayevon/.rvm/gems/ruby-2.3.0/gems/actionpack-5.0.0/lib/action_dispatch/middleware/templates/rescues/template_error.html.erb within rescues/layout
+  Rendering /Users/tayevon/.rvm/gems/ruby-2.3.0/gems/actionpack-5.0.0/lib/action_dispatch/middleware/templates/rescues/_source.html.erb
+  Rendered /Users/tayevon/.rvm/gems/ruby-2.3.0/gems/actionpack-5.0.0/lib/action_dispatch/middleware/templates/rescues/_source.html.erb (6.0ms)
+  Rendering /Users/tayevon/.rvm/gems/ruby-2.3.0/gems/actionpack-5.0.0/lib/action_dispatch/middleware/templates/rescues/_trace.html.erb
+  Rendered /Users/tayevon/.rvm/gems/ruby-2.3.0/gems/actionpack-5.0.0/lib/action_dispatch/middleware/templates/rescues/_trace.html.erb (2.7ms)
+  Rendering /Users/tayevon/.rvm/gems/ruby-2.3.0/gems/actionpack-5.0.0/lib/action_dispatch/middleware/templates/rescues/_request_and_response.html.erb
+  Rendered /Users/tayevon/.rvm/gems/ruby-2.3.0/gems/actionpack-5.0.0/lib/action_dispatch/middleware/templates/rescues/_request_and_response.html.erb (1.0ms)
+  Rendered /Users/tayevon/.rvm/gems/ruby-2.3.0/gems/actionpack-5.0.0/lib/action_dispatch/middleware/templates/rescues/template_error.html.erb within rescues/layout (92.2ms)
+Started GET "/decks" for ::1 at 2016-08-10 22:13:11 +0800
+Processing by DecksController#index as HTML
+  [1m[36mUser Load (0.7ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = $1 ORDER BY "users"."id" ASC LIMIT $2[0m  [["id", 2], ["LIMIT", 1]]
+  Rendering decks/index.html.erb within layouts/application
+  Rendered layouts/_navbar.html.erb (3.7ms)
+  Rendered decks/_form.html.erb (9.3ms)
+  [1m[36mDeck Load (0.6ms)[0m  [1m[34mSELECT "decks".* FROM "decks" WHERE "decks"."user_id" = 2[0m
+  Rendered decks/index.html.erb within layouts/application (23.0ms)
+Completed 200 OK in 110ms (Views: 104.0ms | ActiveRecord: 1.3ms)
+
+
+Started DELETE "/decks/25" for ::1 at 2016-08-10 22:13:19 +0800
+Processing by DecksController#destroy as HTML
+  Parameters: {"authenticity_token"=>"MYp1rJ/pV49yF3jYslSWgnX1gTsA/m3I8VOfgEjF2C9CFBcaCa0fUruB59isyr7fxYR/hBRY1Ik2jWIdKW3Wzw==", "id"=>"25"}
+  [1m[36mDeck Load (0.3ms)[0m  [1m[34mSELECT  "decks".* FROM "decks" WHERE "decks"."id" = $1 LIMIT $2[0m  [["id", 25], ["LIMIT", 1]]
+  [1m[35m (0.1ms)[0m  [1m[35mBEGIN[0m
+  [1m[36mCard Load (0.9ms)[0m  [1m[34mSELECT "cards".* FROM "cards" WHERE "cards"."deck_id" = $1[0m  [["deck_id", 25]]
+  [1m[35mSQL (1.2ms)[0m  [1m[31mDELETE FROM "decks" WHERE "decks"."id" = $1[0m  [["id", 25]]
+  [1m[35m (3.0ms)[0m  [1m[35mCOMMIT[0m
+Redirected to http://localhost:3000/
+Completed 302 Found in 14ms (ActiveRecord: 6.0ms)
+
+
+Started GET "/" for ::1 at 2016-08-10 22:13:19 +0800
+Processing by StaticController#index as HTML
+  Rendering static/index.html.erb within layouts/application
+  [1m[36mUser Load (0.7ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = $1 ORDER BY "users"."id" ASC LIMIT $2[0m  [["id", 2], ["LIMIT", 1]]
+  Rendered layouts/_navbar.html.erb (7.5ms)
+  Rendered static/index.html.erb within layouts/application (14.3ms)
+Completed 200 OK in 93ms (Views: 88.7ms | ActiveRecord: 0.7ms)
+
+
+Started GET "/decks" for ::1 at 2016-08-10 22:13:23 +0800
+Processing by DecksController#index as HTML
+  [1m[36mUser Load (4.9ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = $1 ORDER BY "users"."id" ASC LIMIT $2[0m  [["id", 2], ["LIMIT", 1]]
+  Rendering decks/index.html.erb within layouts/application
+  Rendered layouts/_navbar.html.erb (3.9ms)
+  Rendered decks/_form.html.erb (25.1ms)
+  [1m[36mDeck Load (1.1ms)[0m  [1m[34mSELECT "decks".* FROM "decks" WHERE "decks"."user_id" = 2[0m
+  Rendered decks/index.html.erb within layouts/application (40.2ms)
+Completed 200 OK in 126ms (Views: 113.9ms | ActiveRecord: 6.0ms)
+
+
+Started GET "/decks" for ::1 at 2016-08-10 22:14:11 +0800
+Processing by DecksController#index as HTML
+  [1m[36mUser Load (0.5ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = $1 ORDER BY "users"."id" ASC LIMIT $2[0m  [["id", 2], ["LIMIT", 1]]
+  Rendering decks/index.html.erb within layouts/application
+  Rendered layouts/_navbar.html.erb (3.3ms)
+  Rendered decks/_form.html.erb (10.4ms)
+  [1m[36mDeck Load (0.5ms)[0m  [1m[34mSELECT "decks".* FROM "decks" WHERE "decks"."user_id" = 2[0m
+  Rendered decks/index.html.erb within layouts/application (25.2ms)
+Completed 200 OK in 124ms (Views: 94.9ms | ActiveRecord: 1.3ms)
+
+
+Started DELETE "/decks/21" for ::1 at 2016-08-10 22:14:16 +0800
+Processing by DecksController#destroy as HTML
+  Parameters: {"authenticity_token"=>"Q3ru2DBxNKIaWPYPTF+cPt9S68U3Bxd9x0/zyGmUl6Yw5IxupjV8f9POaQ9SwbRjbyMVeiOhrjwAkQ5VCDyZRg==", "id"=>"21"}
+  [1m[36mDeck Load (0.4ms)[0m  [1m[34mSELECT  "decks".* FROM "decks" WHERE "decks"."id" = $1 LIMIT $2[0m  [["id", 21], ["LIMIT", 1]]
+  [1m[35m (0.2ms)[0m  [1m[35mBEGIN[0m
+  [1m[36mCard Load (0.6ms)[0m  [1m[34mSELECT "cards".* FROM "cards" WHERE "cards"."deck_id" = $1[0m  [["deck_id", 21]]
+  [1m[35mSQL (0.6ms)[0m  [1m[31mDELETE FROM "decks" WHERE "decks"."id" = $1[0m  [["id", 21]]
+  [1m[35m (0.4ms)[0m  [1m[35mCOMMIT[0m
+Redirected to http://localhost:3000/decks
+Completed 302 Found in 24ms (ActiveRecord: 11.2ms)
+
+
+Started GET "/decks" for ::1 at 2016-08-10 22:14:16 +0800
+Processing by DecksController#index as HTML
+  [1m[36mUser Load (0.8ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = $1 ORDER BY "users"."id" ASC LIMIT $2[0m  [["id", 2], ["LIMIT", 1]]
+  Rendering decks/index.html.erb within layouts/application
+  Rendered layouts/_navbar.html.erb (2.8ms)
+  Rendered decks/_form.html.erb (9.2ms)
+  [1m[36mDeck Load (0.8ms)[0m  [1m[34mSELECT "decks".* FROM "decks" WHERE "decks"."user_id" = 2[0m
+  Rendered decks/index.html.erb within layouts/application (22.4ms)
+Completed 200 OK in 98ms (Views: 90.6ms | ActiveRecord: 1.5ms)
+
+
+Started GET "/" for ::1 at 2016-08-10 22:14:26 +0800
+Processing by StaticController#index as HTML
+  Rendering static/index.html.erb within layouts/application
+  [1m[36mUser Load (2.0ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = $1 ORDER BY "users"."id" ASC LIMIT $2[0m  [["id", 2], ["LIMIT", 1]]
+  Rendered layouts/_navbar.html.erb (7.7ms)
+  Rendered static/index.html.erb within layouts/application (17.5ms)
+Completed 200 OK in 113ms (Views: 107.5ms | ActiveRecord: 2.0ms)
+
+
+Started GET "/decks" for ::1 at 2016-08-10 22:14:31 +0800
+Processing by DecksController#index as HTML
+  [1m[36mUser Load (2.7ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = $1 ORDER BY "users"."id" ASC LIMIT $2[0m  [["id", 2], ["LIMIT", 1]]
+  Rendering decks/index.html.erb within layouts/application
+  Rendered layouts/_navbar.html.erb (4.8ms)
+  Rendered decks/_form.html.erb (12.7ms)
+  [1m[36mDeck Load (0.7ms)[0m  [1m[34mSELECT "decks".* FROM "decks" WHERE "decks"."user_id" = 2[0m
+  Rendered decks/index.html.erb within layouts/application (29.6ms)
+Completed 200 OK in 124ms (Views: 112.6ms | ActiveRecord: 3.4ms)
+
+
+Started GET "/decks" for ::1 at 2016-08-10 22:14:58 +0800
+Processing by DecksController#index as HTML
+  [1m[36mUser Load (0.9ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = $1 ORDER BY "users"."id" ASC LIMIT $2[0m  [["id", 2], ["LIMIT", 1]]
+  Rendering decks/index.html.erb within layouts/application
+  Rendered layouts/_navbar.html.erb (3.8ms)
+  Rendered decks/_form.html.erb (13.0ms)
+  [1m[36mDeck Load (0.8ms)[0m  [1m[34mSELECT "decks".* FROM "decks" WHERE "decks"."user_id" = 2[0m
+  Rendered decks/_form.html.erb (7.8ms)
+  Rendered decks/index.html.erb within layouts/application (38.2ms)
+Completed 200 OK in 131ms (Views: 124.4ms | ActiveRecord: 1.7ms)
+
+
+Started GET "/decks/15/edit" for ::1 at 2016-08-10 22:16:15 +0800
+Processing by DecksController#edit as HTML
+  Parameters: {"id"=>"15"}
+  [1m[36mDeck Load (3.4ms)[0m  [1m[34mSELECT  "decks".* FROM "decks" WHERE "decks"."id" = $1 LIMIT $2[0m  [["id", 15], ["LIMIT", 1]]
+  Rendering decks/edit.html.erb within layouts/application
+  Rendered decks/_form.html.erb (15.9ms)
+  Rendered decks/edit.html.erb within layouts/application (20.5ms)
+Completed 200 OK in 175ms (Views: 165.9ms | ActiveRecord: 3.4ms)
+
+
+Started GET "/decks" for ::1 at 2016-08-10 22:18:13 +0800
+Processing by DecksController#index as HTML
+  [1m[36mUser Load (0.7ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = $1 ORDER BY "users"."id" ASC LIMIT $2[0m  [["id", 2], ["LIMIT", 1]]
+  Rendering decks/index.html.erb within layouts/application
+  Rendered layouts/_navbar.html.erb (3.7ms)
+  Rendered decks/_form.html.erb (10.7ms)
+  [1m[36mDeck Load (0.5ms)[0m  [1m[34mSELECT "decks".* FROM "decks" WHERE "decks"."user_id" = 2[0m
+  Rendered decks/index.html.erb within layouts/application (25.9ms)
+Completed 200 OK in 109ms (Views: 102.1ms | ActiveRecord: 1.3ms)
+
+
+Started GET "/decks" for ::1 at 2016-08-10 22:21:12 +0800
+Processing by DecksController#index as HTML
+  [1m[36mUser Load (0.9ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = $1 ORDER BY "users"."id" ASC LIMIT $2[0m  [["id", 2], ["LIMIT", 1]]
+  Rendering decks/index.html.erb within layouts/application
+  Rendered layouts/_navbar.html.erb (6.1ms)
+  Rendered decks/_form.html.erb (10.8ms)
+  [1m[36mDeck Load (0.8ms)[0m  [1m[34mSELECT "decks".* FROM "decks" WHERE "decks"."user_id" = 2[0m
+  Rendered decks/index.html.erb within layouts/application (29.8ms)
+Completed 200 OK in 2917ms (Views: 2909.6ms | ActiveRecord: 1.6ms)
+
+
+Started GET "/decks" for ::1 at 2016-08-10 22:21:22 +0800
+Processing by DecksController#index as HTML
+  [1m[36mUser Load (0.6ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = $1 ORDER BY "users"."id" ASC LIMIT $2[0m  [["id", 2], ["LIMIT", 1]]
+  Rendering decks/index.html.erb within layouts/application
+  Rendered layouts/_navbar.html.erb (3.3ms)
+  Rendered decks/_form.html.erb (8.3ms)
+  [1m[36mDeck Load (0.6ms)[0m  [1m[34mSELECT "decks".* FROM "decks" WHERE "decks"."user_id" = 2[0m
+  Rendered decks/index.html.erb within layouts/application (22.2ms)
+Completed 200 OK in 99ms (Views: 92.0ms | ActiveRecord: 1.2ms)
+
+
+Started GET "/decks" for ::1 at 2016-08-10 22:21:34 +0800
+Processing by DecksController#index as HTML
+  [1m[36mUser Load (1.0ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = $1 ORDER BY "users"."id" ASC LIMIT $2[0m  [["id", 2], ["LIMIT", 1]]
+  Rendering decks/index.html.erb within layouts/application
+  Rendered layouts/_navbar.html.erb (3.4ms)
+  Rendered decks/_form.html.erb (9.6ms)
+  [1m[36mDeck Load (0.8ms)[0m  [1m[34mSELECT "decks".* FROM "decks" WHERE "decks"."user_id" = 2[0m
+  Rendered decks/index.html.erb within layouts/application (24.7ms)
+Completed 200 OK in 2664ms (Views: 2656.3ms | ActiveRecord: 1.9ms)
+
+
+Started GET "/decks" for ::1 at 2016-08-10 22:22:09 +0800
+Processing by DecksController#index as HTML
+  [1m[36mUser Load (2.8ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = $1 ORDER BY "users"."id" ASC LIMIT $2[0m  [["id", 2], ["LIMIT", 1]]
+  Rendering decks/index.html.erb within layouts/application
+  Rendered layouts/_navbar.html.erb (2.4ms)
+  Rendered decks/_form.html.erb (8.5ms)
+  [1m[36mDeck Load (0.7ms)[0m  [1m[34mSELECT "decks".* FROM "decks" WHERE "decks"."user_id" = 2[0m
+  Rendered decks/index.html.erb within layouts/application (21.0ms)
+Completed 200 OK in 2595ms (Views: 2586.1ms | ActiveRecord: 3.5ms)
+
+
+Started GET "/decks" for ::1 at 2016-08-10 22:22:26 +0800
+Processing by DecksController#index as HTML
+  [1m[36mUser Load (0.7ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = $1 ORDER BY "users"."id" ASC LIMIT $2[0m  [["id", 2], ["LIMIT", 1]]
+  Rendering decks/index.html.erb within layouts/application
+  Rendered layouts/_navbar.html.erb (2.8ms)
+  Rendered decks/_form.html.erb (7.3ms)
+  [1m[36mDeck Load (0.5ms)[0m  [1m[34mSELECT "decks".* FROM "decks" WHERE "decks"."user_id" = 2[0m
+  Rendered decks/index.html.erb within layouts/application (18.7ms)
+Completed 500 Internal Server Error in 998ms (ActiveRecord: 1.2ms)
+
+
+  
+ActionView::Template::Error (Undefined variable: "$eee".):
+    4:   <title>Flashies</title>
+    5:   <%= csrf_meta_tags %>
+    6: 
+    7:   <%= stylesheet_link_tag    'application', media: 'all', 'data-turbolinks-track': 'reload' %>
+    8:   <%= javascript_include_tag 'application', 'data-turbolinks-track': 'reload' %>
+    9: 
+   10:   <link href="https://fonts.googleapis.com/css?family=Raleway:600,600i,800,800i" rel="stylesheet">
+  
+app/assets/stylesheets/application.scss:268
+app/views/layouts/application.html.erb:7:in `_app_views_layouts_application_html_erb___2083779231922334894_70156318995440'
+  Rendering /Users/tayevon/.rvm/gems/ruby-2.3.0/gems/actionpack-5.0.0/lib/action_dispatch/middleware/templates/rescues/template_error.html.erb within rescues/layout
+  Rendering /Users/tayevon/.rvm/gems/ruby-2.3.0/gems/actionpack-5.0.0/lib/action_dispatch/middleware/templates/rescues/_source.html.erb
+  Rendered /Users/tayevon/.rvm/gems/ruby-2.3.0/gems/actionpack-5.0.0/lib/action_dispatch/middleware/templates/rescues/_source.html.erb (8.5ms)
+  Rendering /Users/tayevon/.rvm/gems/ruby-2.3.0/gems/actionpack-5.0.0/lib/action_dispatch/middleware/templates/rescues/_trace.html.erb
+  Rendered /Users/tayevon/.rvm/gems/ruby-2.3.0/gems/actionpack-5.0.0/lib/action_dispatch/middleware/templates/rescues/_trace.html.erb (3.5ms)
+  Rendering /Users/tayevon/.rvm/gems/ruby-2.3.0/gems/actionpack-5.0.0/lib/action_dispatch/middleware/templates/rescues/_request_and_response.html.erb
+  Rendered /Users/tayevon/.rvm/gems/ruby-2.3.0/gems/actionpack-5.0.0/lib/action_dispatch/middleware/templates/rescues/_request_and_response.html.erb (1.1ms)
+  Rendered /Users/tayevon/.rvm/gems/ruby-2.3.0/gems/actionpack-5.0.0/lib/action_dispatch/middleware/templates/rescues/template_error.html.erb within rescues/layout (94.1ms)
+Started GET "/decks" for ::1 at 2016-08-10 22:22:50 +0800
+Processing by DecksController#index as HTML
+  [1m[36mUser Load (0.6ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = $1 ORDER BY "users"."id" ASC LIMIT $2[0m  [["id", 2], ["LIMIT", 1]]
+  Rendering decks/index.html.erb within layouts/application
+  Rendered layouts/_navbar.html.erb (2.9ms)
+  Rendered decks/_form.html.erb (6.2ms)
+  [1m[36mDeck Load (0.6ms)[0m  [1m[34mSELECT "decks".* FROM "decks" WHERE "decks"."user_id" = 2[0m
+  Rendered decks/index.html.erb within layouts/application (19.3ms)
+Completed 200 OK in 2542ms (Views: 2535.4ms | ActiveRecord: 1.3ms)
+
+
+Started GET "/decks" for ::1 at 2016-08-10 22:23:05 +0800
+Processing by DecksController#index as HTML
+  [1m[36mUser Load (0.7ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = $1 ORDER BY "users"."id" ASC LIMIT $2[0m  [["id", 2], ["LIMIT", 1]]
+  Rendering decks/index.html.erb within layouts/application
+  Rendered layouts/_navbar.html.erb (3.2ms)
+  Rendered decks/_form.html.erb (8.5ms)
+  [1m[36mDeck Load (3.6ms)[0m  [1m[34mSELECT "decks".* FROM "decks" WHERE "decks"."user_id" = 2[0m
+  Rendered decks/index.html.erb within layouts/application (26.3ms)
+Completed 200 OK in 2548ms (Views: 2538.2ms | ActiveRecord: 4.4ms)
+
+
+Started GET "/decks" for ::1 at 2016-08-10 22:23:47 +0800
+Processing by DecksController#index as HTML
+  [1m[36mUser Load (2.9ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = $1 ORDER BY "users"."id" ASC LIMIT $2[0m  [["id", 2], ["LIMIT", 1]]
+  Rendering decks/index.html.erb within layouts/application
+  Rendered layouts/_navbar.html.erb (4.6ms)
+  Rendered decks/_form.html.erb (12.5ms)
+  [1m[36mDeck Load (1.6ms)[0m  [1m[34mSELECT "decks".* FROM "decks" WHERE "decks"."user_id" = 2[0m
+  Rendered decks/index.html.erb within layouts/application (29.8ms)
+Completed 200 OK in 2777ms (Views: 2766.7ms | ActiveRecord: 4.6ms)
+
+
+Started GET "/decks" for ::1 at 2016-08-10 22:24:02 +0800
+Processing by DecksController#index as HTML
+  [1m[36mUser Load (1.8ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = $1 ORDER BY "users"."id" ASC LIMIT $2[0m  [["id", 2], ["LIMIT", 1]]
+  Rendering decks/index.html.erb within layouts/application
+  Rendered layouts/_navbar.html.erb (3.9ms)
+  Rendered decks/_form.html.erb (9.2ms)
+  [1m[36mDeck Load (1.9ms)[0m  [1m[34mSELECT "decks".* FROM "decks" WHERE "decks"."user_id" = 2[0m
+  Rendered decks/index.html.erb within layouts/application (25.5ms)
+Completed 200 OK in 2650ms (Views: 2640.7ms | ActiveRecord: 3.7ms)
+
+
+Started GET "/decks" for ::1 at 2016-08-10 22:24:34 +0800
+Processing by DecksController#index as HTML
+  [1m[36mUser Load (0.8ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = $1 ORDER BY "users"."id" ASC LIMIT $2[0m  [["id", 2], ["LIMIT", 1]]
+  Rendering decks/index.html.erb within layouts/application
+  Rendered layouts/_navbar.html.erb (2.4ms)
+  Rendered decks/_form.html.erb (5.9ms)
+  [1m[36mDeck Load (0.5ms)[0m  [1m[34mSELECT "decks".* FROM "decks" WHERE "decks"."user_id" = 2[0m
+  Rendered decks/index.html.erb within layouts/application (16.7ms)
+Completed 200 OK in 2125ms (Views: 2120.2ms | ActiveRecord: 1.3ms)
+
+
+Started GET "/decks/6/edit" for ::1 at 2016-08-10 22:25:13 +0800
+Processing by DecksController#edit as HTML
+  Parameters: {"id"=>"6"}
+  [1m[36mDeck Load (1.5ms)[0m  [1m[34mSELECT  "decks".* FROM "decks" WHERE "decks"."id" = $1 LIMIT $2[0m  [["id", 6], ["LIMIT", 1]]
+  Rendering decks/edit.html.erb within layouts/application
+  Rendered decks/_form.html.erb (11.9ms)
+  Rendered decks/edit.html.erb within layouts/application (15.5ms)
+Completed 200 OK in 147ms (Views: 136.5ms | ActiveRecord: 1.5ms)
+
+
+Started PATCH "/decks/6" for ::1 at 2016-08-10 22:25:28 +0800
+Processing by DecksController#update as HTML
+  Parameters: {"utf8"=>"✓", "authenticity_token"=>"Hh8PRUIe8FUlOsslxi/mbTbjZKOnJeEkIcwzoJrWZdCjIsCY6BftMk4k5ZXBrSr0r79QDgBXcOmr9zvlLf2thw==", "deck"=>{"title"=>"testing my user", "description"=>"This is an updated description"}, "commit"=>"Update Deck", "id"=>"6"}
+  [1m[36mDeck Load (0.5ms)[0m  [1m[34mSELECT  "decks".* FROM "decks" WHERE "decks"."id" = $1 LIMIT $2[0m  [["id", 6], ["LIMIT", 1]]
+  [1m[35m (0.4ms)[0m  [1m[35mBEGIN[0m
+  [1m[36mUser Load (0.6ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = $1 LIMIT $2[0m  [["id", 2], ["LIMIT", 1]]
+  [1m[35mSQL (1.6ms)[0m  [1m[33mUPDATE "decks" SET "description" = $1, "updated_at" = $2 WHERE "decks"."id" = $3[0m  [["description", "This is an updated description"], ["updated_at", 2016-08-10 14:25:28 UTC], ["id", 6]]
+  [1m[35m (1.3ms)[0m  [1m[35mCOMMIT[0m
+Redirected to http://localhost:3000/decks/6
+Completed 302 Found in 27ms (ActiveRecord: 4.5ms)
+
+
+Started GET "/decks/6" for ::1 at 2016-08-10 22:25:28 +0800
+Processing by DecksController#show as HTML
+  Parameters: {"id"=>"6"}
+  [1m[36mDeck Load (0.6ms)[0m  [1m[34mSELECT  "decks".* FROM "decks" WHERE "decks"."id" = $1 LIMIT $2[0m  [["id", 6], ["LIMIT", 1]]
+  [1m[36mUser Load (0.9ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = $1 ORDER BY "users"."id" ASC LIMIT $2[0m  [["id", 2], ["LIMIT", 1]]
+  Rendering decks/show.html.erb within layouts/application
+  Rendered layouts/_navbar2.html.erb (3.6ms)
+  [1m[36mUser Load (0.7ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = $1 LIMIT $2[0m  [["id", 2], ["LIMIT", 1]]
+  Rendered cards/_form.html.erb (14.6ms)
+  [1m[36mCard Load (0.4ms)[0m  [1m[34mSELECT "cards".* FROM "cards" WHERE "cards"."deck_id" = $1[0m  [["deck_id", 6]]
+  Rendered decks/show.html.erb within layouts/application (32.0ms)
+Completed 200 OK in 126ms (Views: 101.6ms | ActiveRecord: 12.6ms)
+
+
+Started GET "/decks/6" for ::1 at 2016-08-10 22:26:12 +0800
+Processing by DecksController#show as HTML
+  Parameters: {"id"=>"6"}
+  [1m[36mDeck Load (0.6ms)[0m  [1m[34mSELECT  "decks".* FROM "decks" WHERE "decks"."id" = $1 LIMIT $2[0m  [["id", 6], ["LIMIT", 1]]
+  [1m[36mUser Load (1.0ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = $1 ORDER BY "users"."id" ASC LIMIT $2[0m  [["id", 2], ["LIMIT", 1]]
+  Rendering decks/show.html.erb within layouts/application
+  Rendered layouts/_navbar2.html.erb (4.5ms)
+  [1m[36mUser Load (0.6ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = $1 LIMIT $2[0m  [["id", 2], ["LIMIT", 1]]
+  Rendered cards/_form.html.erb (10.3ms)
+  [1m[36mCard Load (1.2ms)[0m  [1m[34mSELECT "cards".* FROM "cards" WHERE "cards"."deck_id" = $1[0m  [["deck_id", 6]]
+  Rendered decks/show.html.erb within layouts/application (33.5ms)
+Completed 200 OK in 186ms (Views: 111.0ms | ActiveRecord: 26.7ms)
+
+
+Started GET "/decks" for ::1 at 2016-08-10 22:26:18 +0800
+Processing by DecksController#index as HTML
+  [1m[36mUser Load (3.6ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = $1 ORDER BY "users"."id" ASC LIMIT $2[0m  [["id", 2], ["LIMIT", 1]]
+  Rendering decks/index.html.erb within layouts/application
+  Rendered layouts/_navbar.html.erb (5.4ms)
+  Rendered decks/_form.html.erb (12.7ms)
+  [1m[36mDeck Load (2.6ms)[0m  [1m[34mSELECT "decks".* FROM "decks" WHERE "decks"."user_id" = 2[0m
+  Rendered decks/index.html.erb within layouts/application (33.2ms)
+Completed 200 OK in 125ms (Views: 112.7ms | ActiveRecord: 6.2ms)
+
+
+Started GET "/decks/19/edit" for ::1 at 2016-08-10 22:26:24 +0800
+Processing by DecksController#edit as HTML
+  Parameters: {"id"=>"19"}
+  [1m[36mDeck Load (0.5ms)[0m  [1m[34mSELECT  "decks".* FROM "decks" WHERE "decks"."id" = $1 LIMIT $2[0m  [["id", 19], ["LIMIT", 1]]
+  Rendering decks/edit.html.erb within layouts/application
+  Rendered decks/_form.html.erb (10.8ms)
+  Rendered decks/edit.html.erb within layouts/application (13.7ms)
+Completed 200 OK in 94ms (Views: 89.3ms | ActiveRecord: 0.5ms)
+
+
+Started PATCH "/decks/19" for ::1 at 2016-08-10 22:26:31 +0800
+Processing by DecksController#update as HTML
+  Parameters: {"utf8"=>"✓", "authenticity_token"=>"osGwgUdzBe7y/oKPEUDk4wrTf1HG4aRUGyzqnB/pnYqLgTPXMs2TdvuHN2+evwGUKyPVllXLyoFTMfnairZfSg==", "deck"=>{"title"=>"i am a deck", "description"=>"Adding a line here"}, "commit"=>"Update Deck", "id"=>"19"}
+  [1m[36mDeck Load (0.9ms)[0m  [1m[34mSELECT  "decks".* FROM "decks" WHERE "decks"."id" = $1 LIMIT $2[0m  [["id", 19], ["LIMIT", 1]]
+  [1m[35m (0.1ms)[0m  [1m[35mBEGIN[0m
+  [1m[36mUser Load (0.6ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = $1 LIMIT $2[0m  [["id", 2], ["LIMIT", 1]]
+  [1m[35mSQL (0.9ms)[0m  [1m[33mUPDATE "decks" SET "description" = $1, "updated_at" = $2 WHERE "decks"."id" = $3[0m  [["description", "Adding a line here"], ["updated_at", 2016-08-10 14:26:31 UTC], ["id", 19]]
+  [1m[35m (0.4ms)[0m  [1m[35mCOMMIT[0m
+Redirected to http://localhost:3000/decks
+Completed 302 Found in 12ms (ActiveRecord: 2.9ms)
+
+
+Started GET "/decks" for ::1 at 2016-08-10 22:26:31 +0800
+Processing by DecksController#index as HTML
+  [1m[36mUser Load (0.9ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = $1 ORDER BY "users"."id" ASC LIMIT $2[0m  [["id", 2], ["LIMIT", 1]]
+  Rendering decks/index.html.erb within layouts/application
+  Rendered layouts/_navbar.html.erb (4.6ms)
+  Rendered decks/_form.html.erb (6.5ms)
+  [1m[36mDeck Load (0.5ms)[0m  [1m[34mSELECT "decks".* FROM "decks" WHERE "decks"."user_id" = 2[0m
+  Rendered decks/index.html.erb within layouts/application (19.4ms)
+Completed 200 OK in 98ms (Views: 91.1ms | ActiveRecord: 1.4ms)
+
+
+Started GET "/decks/20/edit" for ::1 at 2016-08-10 22:26:41 +0800
+Processing by DecksController#edit as HTML
+  Parameters: {"id"=>"20"}
+  [1m[36mDeck Load (1.5ms)[0m  [1m[34mSELECT  "decks".* FROM "decks" WHERE "decks"."id" = $1 LIMIT $2[0m  [["id", 20], ["LIMIT", 1]]
+  Rendering decks/edit.html.erb within layouts/application
+  Rendered decks/_form.html.erb (14.0ms)
+  Rendered decks/edit.html.erb within layouts/application (19.1ms)
+Completed 200 OK in 104ms (Views: 98.4ms | ActiveRecord: 1.5ms)
+
+
+Started PATCH "/decks/20" for ::1 at 2016-08-10 22:26:49 +0800
+Processing by DecksController#update as HTML
+  Parameters: {"utf8"=>"✓", "authenticity_token"=>"OLViUyunS8jOrDgbcct2yTQ9PvxjkrviNMOX0N61rMJ6kw8gJ4Y1g0jaWWncFxrWgBZoMwrK12cHy/guGV0JMg==", "deck"=>{"title"=>"a new deck", "description"=>"Cool beans, dude"}, "commit"=>"Update Deck", "id"=>"20"}
+  [1m[36mDeck Load (1.1ms)[0m  [1m[34mSELECT  "decks".* FROM "decks" WHERE "decks"."id" = $1 LIMIT $2[0m  [["id", 20], ["LIMIT", 1]]
+  [1m[35m (0.5ms)[0m  [1m[35mBEGIN[0m
+  [1m[36mUser Load (0.6ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = $1 LIMIT $2[0m  [["id", 2], ["LIMIT", 1]]
+  [1m[35mSQL (0.7ms)[0m  [1m[33mUPDATE "decks" SET "description" = $1, "updated_at" = $2 WHERE "decks"."id" = $3[0m  [["description", "Cool beans, dude"], ["updated_at", 2016-08-10 14:26:49 UTC], ["id", 20]]
+  [1m[35m (0.6ms)[0m  [1m[35mCOMMIT[0m
+Redirected to http://localhost:3000/decks
+Completed 302 Found in 13ms (ActiveRecord: 3.5ms)
+
+
+Started GET "/decks" for ::1 at 2016-08-10 22:26:49 +0800
+Processing by DecksController#index as HTML
+  [1m[36mUser Load (1.4ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = $1 ORDER BY "users"."id" ASC LIMIT $2[0m  [["id", 2], ["LIMIT", 1]]
+  Rendering decks/index.html.erb within layouts/application
+  Rendered layouts/_navbar.html.erb (4.7ms)
+  Rendered decks/_form.html.erb (7.0ms)
+  [1m[36mDeck Load (0.6ms)[0m  [1m[34mSELECT "decks".* FROM "decks" WHERE "decks"."user_id" = 2[0m
+  Rendered decks/index.html.erb within layouts/application (22.7ms)
+Completed 200 OK in 112ms (Views: 103.6ms | ActiveRecord: 2.0ms)
+
+
+Started GET "/decks/14" for ::1 at 2016-08-10 22:29:05 +0800
+Processing by DecksController#show as HTML
+  Parameters: {"id"=>"14"}
+  [1m[36mDeck Load (0.6ms)[0m  [1m[34mSELECT  "decks".* FROM "decks" WHERE "decks"."id" = $1 LIMIT $2[0m  [["id", 14], ["LIMIT", 1]]
+  [1m[36mUser Load (2.0ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = $1 ORDER BY "users"."id" ASC LIMIT $2[0m  [["id", 2], ["LIMIT", 1]]
+  Rendering decks/show.html.erb within layouts/application
+  Rendered layouts/_navbar2.html.erb (5.5ms)
+  [1m[36mUser Load (2.1ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = $1 LIMIT $2[0m  [["id", 2], ["LIMIT", 1]]
+  Rendered cards/_form.html.erb (13.1ms)
+  [1m[36mCard Load (0.5ms)[0m  [1m[34mSELECT "cards".* FROM "cards" WHERE "cards"."deck_id" = $1[0m  [["deck_id", 14]]
+  Rendered decks/show.html.erb within layouts/application (36.5ms)
+Completed 200 OK in 127ms (Views: 115.3ms | ActiveRecord: 5.1ms)
+
+
+Started GET "/decks/14" for ::1 at 2016-08-10 22:52:29 +0800
+Processing by DecksController#show as HTML
+  Parameters: {"id"=>"14"}
+  [1m[36mDeck Load (0.6ms)[0m  [1m[34mSELECT  "decks".* FROM "decks" WHERE "decks"."id" = $1 LIMIT $2[0m  [["id", 14], ["LIMIT", 1]]
+  [1m[36mUser Load (0.9ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = $1 ORDER BY "users"."id" ASC LIMIT $2[0m  [["id", 2], ["LIMIT", 1]]
+  Rendering decks/show.html.erb within layouts/application
+  Rendered layouts/_navbar.html.erb (6.1ms)
+  [1m[36mUser Load (0.7ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = $1 LIMIT $2[0m  [["id", 2], ["LIMIT", 1]]
+  Rendered cards/_form.html.erb (19.0ms)
+  [1m[36mCard Load (0.6ms)[0m  [1m[34mSELECT "cards".* FROM "cards" WHERE "cards"."deck_id" = $1[0m  [["deck_id", 14]]
+  Rendered decks/show.html.erb within layouts/application (45.9ms)
+Completed 200 OK in 190ms (Views: 177.5ms | ActiveRecord: 2.8ms)
+
+
+Started GET "/decks/" for ::1 at 2016-08-10 22:52:43 +0800
+Processing by DecksController#index as HTML
+  [1m[36mUser Load (0.9ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = $1 ORDER BY "users"."id" ASC LIMIT $2[0m  [["id", 2], ["LIMIT", 1]]
+  Rendering decks/index.html.erb within layouts/application
+  Rendered layouts/_navbar.html.erb (3.1ms)
+  Rendered decks/_form.html.erb (8.7ms)
+  [1m[36mDeck Load (0.8ms)[0m  [1m[34mSELECT "decks".* FROM "decks" WHERE "decks"."user_id" = 2[0m
+  Rendered decks/index.html.erb within layouts/application (24.4ms)
+Completed 200 OK in 188ms (Views: 181.1ms | ActiveRecord: 1.7ms)
+
+
+Started GET "/decks/14" for ::1 at 2016-08-10 22:52:50 +0800
+Processing by DecksController#show as HTML
+  Parameters: {"id"=>"14"}
+  [1m[36mDeck Load (1.3ms)[0m  [1m[34mSELECT  "decks".* FROM "decks" WHERE "decks"."id" = $1 LIMIT $2[0m  [["id", 14], ["LIMIT", 1]]
+  [1m[36mUser Load (2.1ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = $1 ORDER BY "users"."id" ASC LIMIT $2[0m  [["id", 2], ["LIMIT", 1]]
+  Rendering decks/show.html.erb within layouts/application
+  Rendered layouts/_navbar.html.erb (4.2ms)
+  [1m[36mUser Load (0.8ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = $1 LIMIT $2[0m  [["id", 2], ["LIMIT", 1]]
+  Rendered cards/_form.html.erb (16.2ms)
+  [1m[36mCard Load (0.5ms)[0m  [1m[34mSELECT "cards".* FROM "cards" WHERE "cards"."deck_id" = $1[0m  [["deck_id", 14]]
+  Rendered decks/show.html.erb within layouts/application (33.4ms)
+Completed 200 OK in 185ms (Views: 173.3ms | ActiveRecord: 4.7ms)
+
+
+Started GET "/decks/14/edit" for ::1 at 2016-08-10 22:52:57 +0800
+Processing by DecksController#edit as HTML
+  Parameters: {"id"=>"14"}
+  [1m[36mDeck Load (0.6ms)[0m  [1m[34mSELECT  "decks".* FROM "decks" WHERE "decks"."id" = $1 LIMIT $2[0m  [["id", 14], ["LIMIT", 1]]
+  Rendering decks/edit.html.erb within layouts/application
+  Rendered decks/_form.html.erb (16.3ms)
+  Rendered decks/edit.html.erb within layouts/application (26.1ms)
+Completed 200 OK in 163ms (Views: 154.9ms | ActiveRecord: 0.6ms)
+
+
+Started PATCH "/decks/14" for ::1 at 2016-08-10 22:53:14 +0800
+Processing by DecksController#update as HTML
+  Parameters: {"utf8"=>"✓", "authenticity_token"=>"1A5koU+CCDklpGW2kEIGldTlWoVEldnVf5RfA1uNoUHazWTsQTRLJkRgfOn8yAr0e2xQ3m1mPoNxdYXEfSxnvQ==", "deck"=>{"title"=>"A deck for you", "description"=>"My love"}, "commit"=>"Update Deck", "id"=>"14"}
+  [1m[36mDeck Load (1.7ms)[0m  [1m[34mSELECT  "decks".* FROM "decks" WHERE "decks"."id" = $1 LIMIT $2[0m  [["id", 14], ["LIMIT", 1]]
+  [1m[35m (1.9ms)[0m  [1m[35mBEGIN[0m
+  [1m[36mUser Load (1.2ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = $1 LIMIT $2[0m  [["id", 2], ["LIMIT", 1]]
+  [1m[35mSQL (0.8ms)[0m  [1m[33mUPDATE "decks" SET "title" = $1, "description" = $2, "updated_at" = $3 WHERE "decks"."id" = $4[0m  [["title", "A deck for you"], ["description", "My love"], ["updated_at", 2016-08-10 14:53:14 UTC], ["id", 14]]
+  [1m[35m (1.8ms)[0m  [1m[35mCOMMIT[0m
+Redirected to http://localhost:3000/decks
+Completed 302 Found in 20ms (ActiveRecord: 7.4ms)
+
+
+Started GET "/decks" for ::1 at 2016-08-10 22:53:14 +0800
+Processing by DecksController#index as HTML
+  [1m[36mUser Load (1.5ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = $1 ORDER BY "users"."id" ASC LIMIT $2[0m  [["id", 2], ["LIMIT", 1]]
+  Rendering decks/index.html.erb within layouts/application
+  Rendered layouts/_navbar.html.erb (5.2ms)
+  Rendered decks/_form.html.erb (12.6ms)
+  [1m[36mDeck Load (0.6ms)[0m  [1m[34mSELECT "decks".* FROM "decks" WHERE "decks"."user_id" = 2[0m
+  Rendered decks/index.html.erb within layouts/application (27.9ms)
+Completed 200 OK in 145ms (Views: 136.2ms | ActiveRecord: 2.1ms)
+
+
+Started GET "/decks" for ::1 at 2016-08-10 23:15:22 +0800
+Processing by DecksController#index as HTML
+  [1m[36mUser Load (2.0ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = $1 ORDER BY "users"."id" ASC LIMIT $2[0m  [["id", 2], ["LIMIT", 1]]
+  Rendering decks/index.html.erb within layouts/application
+  Rendered layouts/_navbar.html.erb (24.2ms)
+  Rendered decks/_form.html.erb (58.3ms)
+  [1m[36mDeck Load (0.9ms)[0m  [1m[34mSELECT "decks".* FROM "decks" WHERE "decks"."user_id" = 2[0m
+  Rendered decks/index.html.erb within layouts/application (114.6ms)
+Completed 200 OK in 400ms (Views: 337.1ms | ActiveRecord: 2.9ms)
+
+
+Started GET "/" for ::1 at 2016-08-10 23:15:29 +0800
+Processing by StaticController#index as HTML
+  Rendering static/index.html.erb within layouts/application
+  [1m[36mUser Load (1.5ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = $1 ORDER BY "users"."id" ASC LIMIT $2[0m  [["id", 2], ["LIMIT", 1]]
+  Rendered layouts/_navbar.html.erb (12.7ms)
+  Rendered static/index.html.erb within layouts/application (27.7ms)
+Completed 200 OK in 157ms (Views: 147.5ms | ActiveRecord: 1.5ms)
+
+
+Started GET "/decks" for ::1 at 2016-08-10 23:15:32 +0800
+Processing by DecksController#index as HTML
+  [1m[36mUser Load (12.8ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = $1 ORDER BY "users"."id" ASC LIMIT $2[0m  [["id", 2], ["LIMIT", 1]]
+  Rendering decks/index.html.erb within layouts/application
+  Rendered layouts/_navbar.html.erb (4.1ms)
+  Rendered decks/_form.html.erb (30.7ms)
+  [1m[36mDeck Load (1.0ms)[0m  [1m[34mSELECT "decks".* FROM "decks" WHERE "decks"."user_id" = 2[0m
+  Rendered decks/index.html.erb within layouts/application (73.9ms)
+Completed 200 OK in 206ms (Views: 185.1ms | ActiveRecord: 13.8ms)
+
+
+Started GET "/decks" for ::1 at 2016-08-10 23:17:01 +0800
+  [1m[36mActiveRecord::SchemaMigration Load (0.7ms)[0m  [1m[34mSELECT "schema_migrations".* FROM "schema_migrations"[0m
+Processing by DecksController#index as HTML
+  [1m[36mUser Load (1.4ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = $1 ORDER BY "users"."id" ASC LIMIT $2[0m  [["id", 2], ["LIMIT", 1]]
+  Rendering decks/index.html.erb within layouts/application
+  Rendered layouts/_navbar.html.erb (811.7ms)
+  Rendered decks/_form.html.erb (86.9ms)
+  [1m[36mDeck Load (0.8ms)[0m  [1m[34mSELECT "decks".* FROM "decks" WHERE "decks"."user_id" = 2[0m
+  Rendered decks/index.html.erb within layouts/application (910.5ms)
+Completed 200 OK in 1099ms (Views: 1020.0ms | ActiveRecord: 16.2ms)
+
+
+Started GET "/decks/15" for ::1 at 2016-08-10 23:17:16 +0800
+Processing by DecksController#show as HTML
+  Parameters: {"id"=>"15"}
+  [1m[36mDeck Load (1.1ms)[0m  [1m[34mSELECT  "decks".* FROM "decks" WHERE "decks"."id" = $1 LIMIT $2[0m  [["id", 15], ["LIMIT", 1]]
+  [1m[36mUser Load (3.7ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = $1 ORDER BY "users"."id" ASC LIMIT $2[0m  [["id", 2], ["LIMIT", 1]]
+  Rendering decks/show.html.erb within layouts/application
+  Rendered layouts/_navbar.html.erb (4.6ms)
+  [1m[36mUser Load (0.4ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = $1 LIMIT $2[0m  [["id", 2], ["LIMIT", 1]]
+  Rendered cards/_form.html.erb (24.5ms)
+  [1m[36mCard Load (1.2ms)[0m  [1m[34mSELECT "cards".* FROM "cards" WHERE "cards"."deck_id" = $1[0m  [["deck_id", 15]]
+  Rendered decks/show.html.erb within layouts/application (80.4ms)
+Completed 200 OK in 242ms (Views: 172.8ms | ActiveRecord: 26.2ms)
+
+
+Started GET "/decks/15" for ::1 at 2016-08-10 23:17:52 +0800
+Processing by DecksController#show as HTML
+  Parameters: {"id"=>"15"}
+  [1m[36mDeck Load (1.0ms)[0m  [1m[34mSELECT  "decks".* FROM "decks" WHERE "decks"."id" = $1 LIMIT $2[0m  [["id", 15], ["LIMIT", 1]]
+  [1m[36mUser Load (0.9ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = $1 ORDER BY "users"."id" ASC LIMIT $2[0m  [["id", 2], ["LIMIT", 1]]
+  Rendering decks/show.html.erb within layouts/application
+  Rendered layouts/_navbar.html.erb (3.7ms)
+  [1m[36mUser Load (0.4ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = $1 LIMIT $2[0m  [["id", 2], ["LIMIT", 1]]
+  Rendered cards/_form.html.erb (21.5ms)
+  [1m[36mCard Load (0.7ms)[0m  [1m[34mSELECT "cards".* FROM "cards" WHERE "cards"."deck_id" = $1[0m  [["deck_id", 15]]
+  Rendered decks/show.html.erb within layouts/application (36.4ms)
+Completed 200 OK in 126ms (Views: 115.6ms | ActiveRecord: 3.4ms)
+
+
+Started GET "/decks/15" for ::1 at 2016-08-10 23:21:15 +0800
+Processing by DecksController#show as HTML
+  Parameters: {"id"=>"15"}
+  [1m[36mDeck Load (2.3ms)[0m  [1m[34mSELECT  "decks".* FROM "decks" WHERE "decks"."id" = $1 LIMIT $2[0m  [["id", 15], ["LIMIT", 1]]
+  [1m[36mUser Load (2.0ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = $1 ORDER BY "users"."id" ASC LIMIT $2[0m  [["id", 2], ["LIMIT", 1]]
+  Rendering decks/show.html.erb within layouts/application
+  Rendered layouts/_navbar.html.erb (3.7ms)
+  [1m[36mUser Load (0.4ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = $1 LIMIT $2[0m  [["id", 2], ["LIMIT", 1]]
+  Rendered cards/_form.html.erb (8.6ms)
+  [1m[36mCard Load (0.4ms)[0m  [1m[34mSELECT "cards".* FROM "cards" WHERE "cards"."deck_id" = $1[0m  [["deck_id", 15]]
+  Rendered decks/show.html.erb within layouts/application (22.9ms)
+Completed 200 OK in 113ms (Views: 100.9ms | ActiveRecord: 5.5ms)
+
+
+Started GET "/decks/15" for ::1 at 2016-08-10 23:21:44 +0800
+Processing by DecksController#show as HTML
+  Parameters: {"id"=>"15"}
+  [1m[36mDeck Load (2.3ms)[0m  [1m[34mSELECT  "decks".* FROM "decks" WHERE "decks"."id" = $1 LIMIT $2[0m  [["id", 15], ["LIMIT", 1]]
+  [1m[36mUser Load (2.1ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = $1 ORDER BY "users"."id" ASC LIMIT $2[0m  [["id", 2], ["LIMIT", 1]]
+  Rendering decks/show.html.erb within layouts/application
+  Rendered layouts/_navbar.html.erb (3.8ms)
+  [1m[36mUser Load (0.4ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = $1 LIMIT $2[0m  [["id", 2], ["LIMIT", 1]]
+  Rendered cards/_form.html.erb (16.5ms)
+  [1m[36mCard Load (0.5ms)[0m  [1m[34mSELECT "cards".* FROM "cards" WHERE "cards"."deck_id" = $1[0m  [["deck_id", 15]]
+  Rendered decks/show.html.erb within layouts/application (30.8ms)
+Completed 200 OK in 109ms (Views: 97.0ms | ActiveRecord: 5.7ms)
+
+
+Started GET "/decks/15" for ::1 at 2016-08-10 23:22:24 +0800
+Processing by DecksController#show as HTML
+  Parameters: {"id"=>"15"}
+  [1m[36mDeck Load (0.6ms)[0m  [1m[34mSELECT  "decks".* FROM "decks" WHERE "decks"."id" = $1 LIMIT $2[0m  [["id", 15], ["LIMIT", 1]]
+  [1m[36mUser Load (0.9ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = $1 ORDER BY "users"."id" ASC LIMIT $2[0m  [["id", 2], ["LIMIT", 1]]
+  Rendering decks/show.html.erb within layouts/application
+  Rendered layouts/_navbar.html.erb (3.9ms)
+  [1m[36mUser Load (0.7ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = $1 LIMIT $2[0m  [["id", 2], ["LIMIT", 1]]
+  Rendered cards/_form.html.erb (20.3ms)
+  [1m[36mCard Load (0.5ms)[0m  [1m[34mSELECT "cards".* FROM "cards" WHERE "cards"."deck_id" = $1[0m  [["deck_id", 15]]
+  Rendered decks/show.html.erb within layouts/application (37.3ms)
+Completed 200 OK in 2617ms (Views: 2607.8ms | ActiveRecord: 2.7ms)
+
+
+Started GET "/decks/15" for ::1 at 2016-08-10 23:22:44 +0800
+Processing by DecksController#show as HTML
+  Parameters: {"id"=>"15"}
+  [1m[36mDeck Load (3.5ms)[0m  [1m[34mSELECT  "decks".* FROM "decks" WHERE "decks"."id" = $1 LIMIT $2[0m  [["id", 15], ["LIMIT", 1]]
+  [1m[36mUser Load (2.2ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = $1 ORDER BY "users"."id" ASC LIMIT $2[0m  [["id", 2], ["LIMIT", 1]]
+  Rendering decks/show.html.erb within layouts/application
+  Rendered layouts/_navbar.html.erb (2.4ms)
+  [1m[36mUser Load (0.4ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = $1 LIMIT $2[0m  [["id", 2], ["LIMIT", 1]]
+  Rendered cards/_form.html.erb (15.6ms)
+  [1m[36mCard Load (1.0ms)[0m  [1m[34mSELECT "cards".* FROM "cards" WHERE "cards"."deck_id" = $1[0m  [["deck_id", 15]]
+  Rendered decks/show.html.erb within layouts/application (29.5ms)
+Completed 200 OK in 2608ms (Views: 2594.3ms | ActiveRecord: 7.3ms)
+
+
+Started GET "/decks/15" for ::1 at 2016-08-10 23:22:59 +0800
+Processing by DecksController#show as HTML
+  Parameters: {"id"=>"15"}
+  [1m[36mDeck Load (0.5ms)[0m  [1m[34mSELECT  "decks".* FROM "decks" WHERE "decks"."id" = $1 LIMIT $2[0m  [["id", 15], ["LIMIT", 1]]
+  [1m[36mUser Load (0.9ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = $1 ORDER BY "users"."id" ASC LIMIT $2[0m  [["id", 2], ["LIMIT", 1]]
+  Rendering decks/show.html.erb within layouts/application
+  Rendered layouts/_navbar.html.erb (4.2ms)
+  [1m[36mUser Load (0.5ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = $1 LIMIT $2[0m  [["id", 2], ["LIMIT", 1]]
+  Rendered cards/_form.html.erb (8.9ms)
+  [1m[36mCard Load (0.3ms)[0m  [1m[34mSELECT "cards".* FROM "cards" WHERE "cards"."deck_id" = $1[0m  [["deck_id", 15]]
+  Rendered decks/show.html.erb within layouts/application (21.8ms)
+Completed 200 OK in 81ms (Views: 72.8ms | ActiveRecord: 2.2ms)
+
+
+Started GET "/decks/15" for ::1 at 2016-08-10 23:23:52 +0800
+Processing by DecksController#show as HTML
+  Parameters: {"id"=>"15"}
+  [1m[36mDeck Load (0.4ms)[0m  [1m[34mSELECT  "decks".* FROM "decks" WHERE "decks"."id" = $1 LIMIT $2[0m  [["id", 15], ["LIMIT", 1]]
+  [1m[36mUser Load (0.8ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = $1 ORDER BY "users"."id" ASC LIMIT $2[0m  [["id", 2], ["LIMIT", 1]]
+  Rendering decks/show.html.erb within layouts/application
+  Rendered layouts/_navbar.html.erb (2.7ms)
+  [1m[36mUser Load (0.5ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = $1 LIMIT $2[0m  [["id", 2], ["LIMIT", 1]]
+  Rendered cards/_form.html.erb (8.3ms)
+  [1m[36mCard Load (0.4ms)[0m  [1m[34mSELECT "cards".* FROM "cards" WHERE "cards"."deck_id" = $1[0m  [["deck_id", 15]]
+  Rendered decks/show.html.erb within layouts/application (18.7ms)
+Completed 200 OK in 2474ms (Views: 2465.5ms | ActiveRecord: 2.1ms)
+
+
+Started GET "/decks/15" for ::1 at 2016-08-10 23:24:18 +0800
+Processing by DecksController#show as HTML
+  Parameters: {"id"=>"15"}
+  [1m[36mDeck Load (0.6ms)[0m  [1m[34mSELECT  "decks".* FROM "decks" WHERE "decks"."id" = $1 LIMIT $2[0m  [["id", 15], ["LIMIT", 1]]
+  [1m[36mUser Load (0.8ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = $1 ORDER BY "users"."id" ASC LIMIT $2[0m  [["id", 2], ["LIMIT", 1]]
+  Rendering decks/show.html.erb within layouts/application
+  Rendered layouts/_navbar.html.erb (3.3ms)
+  [1m[36mUser Load (0.9ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = $1 LIMIT $2[0m  [["id", 2], ["LIMIT", 1]]
+  Rendered cards/_form.html.erb (14.1ms)
+  [1m[36mCard Load (1.3ms)[0m  [1m[34mSELECT "cards".* FROM "cards" WHERE "cards"."deck_id" = $1[0m  [["deck_id", 15]]
+  Rendered decks/show.html.erb within layouts/application (28.7ms)
+Completed 200 OK in 2390ms (Views: 2379.4ms | ActiveRecord: 3.7ms)
+
+
+Started GET "/decks/15" for ::1 at 2016-08-10 23:24:55 +0800
+Processing by DecksController#show as HTML
+  Parameters: {"id"=>"15"}
+  [1m[36mDeck Load (3.0ms)[0m  [1m[34mSELECT  "decks".* FROM "decks" WHERE "decks"."id" = $1 LIMIT $2[0m  [["id", 15], ["LIMIT", 1]]
+  [1m[36mUser Load (1.3ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = $1 ORDER BY "users"."id" ASC LIMIT $2[0m  [["id", 2], ["LIMIT", 1]]
+  Rendering decks/show.html.erb within layouts/application
+  Rendered layouts/_navbar.html.erb (4.0ms)
+  [1m[36mUser Load (0.5ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = $1 LIMIT $2[0m  [["id", 2], ["LIMIT", 1]]
+  Rendered cards/_form.html.erb (17.6ms)
+  [1m[36mCard Load (0.5ms)[0m  [1m[34mSELECT "cards".* FROM "cards" WHERE "cards"."deck_id" = $1[0m  [["deck_id", 15]]
+  Rendered decks/show.html.erb within layouts/application (33.3ms)
+Completed 200 OK in 137ms (Views: 124.9ms | ActiveRecord: 5.3ms)
+
+
+Started GET "/decks/15" for ::1 at 2016-08-10 23:25:18 +0800
+Processing by DecksController#show as HTML
+  Parameters: {"id"=>"15"}
+  [1m[36mDeck Load (0.5ms)[0m  [1m[34mSELECT  "decks".* FROM "decks" WHERE "decks"."id" = $1 LIMIT $2[0m  [["id", 15], ["LIMIT", 1]]
+  [1m[36mUser Load (0.8ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = $1 ORDER BY "users"."id" ASC LIMIT $2[0m  [["id", 2], ["LIMIT", 1]]
+  Rendering decks/show.html.erb within layouts/application
+  Rendered layouts/_navbar.html.erb (2.9ms)
+  [1m[36mUser Load (0.5ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = $1 LIMIT $2[0m  [["id", 2], ["LIMIT", 1]]
+  Rendered cards/_form.html.erb (17.2ms)
+  [1m[36mCard Load (0.5ms)[0m  [1m[34mSELECT "cards".* FROM "cards" WHERE "cards"."deck_id" = $1[0m  [["deck_id", 15]]
+  Rendered decks/show.html.erb within layouts/application (32.5ms)
+Completed 200 OK in 2613ms (Views: 2605.6ms | ActiveRecord: 2.3ms)
+
+
+Started GET "/decks/15" for ::1 at 2016-08-10 23:25:40 +0800
+Processing by DecksController#show as HTML
+  Parameters: {"id"=>"15"}
+  [1m[36mDeck Load (0.6ms)[0m  [1m[34mSELECT  "decks".* FROM "decks" WHERE "decks"."id" = $1 LIMIT $2[0m  [["id", 15], ["LIMIT", 1]]
+  [1m[36mUser Load (0.8ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = $1 ORDER BY "users"."id" ASC LIMIT $2[0m  [["id", 2], ["LIMIT", 1]]
+  Rendering decks/show.html.erb within layouts/application
+  Rendered layouts/_navbar.html.erb (3.6ms)
+  [1m[36mUser Load (0.6ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = $1 LIMIT $2[0m  [["id", 2], ["LIMIT", 1]]
+  Rendered cards/_form.html.erb (13.0ms)
+  [1m[36mCard Load (0.5ms)[0m  [1m[34mSELECT "cards".* FROM "cards" WHERE "cards"."deck_id" = $1[0m  [["deck_id", 15]]
+  Rendered decks/show.html.erb within layouts/application (31.7ms)
+Completed 200 OK in 2658ms (Views: 2649.5ms | ActiveRecord: 2.5ms)
+
+
+Started GET "/decks/15" for ::1 at 2016-08-10 23:26:02 +0800
+Processing by DecksController#show as HTML
+  Parameters: {"id"=>"15"}
+  [1m[36mDeck Load (0.6ms)[0m  [1m[34mSELECT  "decks".* FROM "decks" WHERE "decks"."id" = $1 LIMIT $2[0m  [["id", 15], ["LIMIT", 1]]
+  [1m[36mUser Load (1.1ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = $1 ORDER BY "users"."id" ASC LIMIT $2[0m  [["id", 2], ["LIMIT", 1]]
+  Rendering decks/show.html.erb within layouts/application
+  Rendered layouts/_navbar.html.erb (4.0ms)
+  [1m[36mUser Load (0.6ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = $1 LIMIT $2[0m  [["id", 2], ["LIMIT", 1]]
+  Rendered cards/_form.html.erb (18.1ms)
+  [1m[36mCard Load (0.5ms)[0m  [1m[34mSELECT "cards".* FROM "cards" WHERE "cards"."deck_id" = $1[0m  [["deck_id", 15]]
+  Rendered decks/show.html.erb within layouts/application (34.2ms)
+Completed 200 OK in 3984ms (Views: 3974.4ms | ActiveRecord: 2.8ms)
+
+
+Started GET "/decks/15" for ::1 at 2016-08-10 23:26:22 +0800
+Processing by DecksController#show as HTML
+  Parameters: {"id"=>"15"}
+  [1m[36mDeck Load (0.5ms)[0m  [1m[34mSELECT  "decks".* FROM "decks" WHERE "decks"."id" = $1 LIMIT $2[0m  [["id", 15], ["LIMIT", 1]]
+  [1m[36mUser Load (9.5ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = $1 ORDER BY "users"."id" ASC LIMIT $2[0m  [["id", 2], ["LIMIT", 1]]
+  Rendering decks/show.html.erb within layouts/application
+  Rendered layouts/_navbar.html.erb (3.9ms)
+  [1m[36mUser Load (1.1ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = $1 LIMIT $2[0m  [["id", 2], ["LIMIT", 1]]
+  Rendered cards/_form.html.erb (13.9ms)
+  [1m[36mCard Load (0.5ms)[0m  [1m[34mSELECT "cards".* FROM "cards" WHERE "cards"."deck_id" = $1[0m  [["deck_id", 15]]
+  Rendered decks/show.html.erb within layouts/application (30.0ms)
+Completed 200 OK in 2327ms (Views: 2309.2ms | ActiveRecord: 11.7ms)
+
+
+Started GET "/decks/15" for ::1 at 2016-08-10 23:27:39 +0800
+Processing by DecksController#show as HTML
+  Parameters: {"id"=>"15"}
+  [1m[36mDeck Load (0.6ms)[0m  [1m[34mSELECT  "decks".* FROM "decks" WHERE "decks"."id" = $1 LIMIT $2[0m  [["id", 15], ["LIMIT", 1]]
+  [1m[36mUser Load (0.9ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = $1 ORDER BY "users"."id" ASC LIMIT $2[0m  [["id", 2], ["LIMIT", 1]]
+  Rendering decks/show.html.erb within layouts/application
+  Rendered layouts/_navbar.html.erb (3.1ms)
+  [1m[36mUser Load (0.5ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = $1 LIMIT $2[0m  [["id", 2], ["LIMIT", 1]]
+  Rendered cards/_form.html.erb (9.7ms)
+  [1m[36mCard Load (0.6ms)[0m  [1m[34mSELECT "cards".* FROM "cards" WHERE "cards"."deck_id" = $1[0m  [["deck_id", 15]]
+  Rendered decks/show.html.erb within layouts/application (23.5ms)
+Completed 200 OK in 108ms (Views: 99.4ms | ActiveRecord: 2.5ms)
+
+
+Started GET "/decks" for ::1 at 2016-08-10 23:28:13 +0800
+Processing by DecksController#index as HTML
+  [1m[36mUser Load (4.8ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = $1 ORDER BY "users"."id" ASC LIMIT $2[0m  [["id", 2], ["LIMIT", 1]]
+  Rendering decks/index.html.erb within layouts/application
+  Rendered layouts/_navbar.html.erb (5.3ms)
+  Rendered decks/_form.html.erb (10.9ms)
+  [1m[36mDeck Load (1.1ms)[0m  [1m[34mSELECT "decks".* FROM "decks" WHERE "decks"."user_id" = 2[0m
+  Rendered decks/index.html.erb within layouts/application (27.7ms)
+Completed 200 OK in 112ms (Views: 100.1ms | ActiveRecord: 5.9ms)
+
+
+Started GET "/decks/16" for ::1 at 2016-08-10 23:28:31 +0800
+Processing by DecksController#show as HTML
+  Parameters: {"id"=>"16"}
+  [1m[36mDeck Load (0.5ms)[0m  [1m[34mSELECT  "decks".* FROM "decks" WHERE "decks"."id" = $1 LIMIT $2[0m  [["id", 16], ["LIMIT", 1]]
+  [1m[36mUser Load (0.9ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = $1 ORDER BY "users"."id" ASC LIMIT $2[0m  [["id", 2], ["LIMIT", 1]]
+  Rendering decks/show.html.erb within layouts/application
+  Rendered layouts/_navbar.html.erb (4.4ms)
+  [1m[36mUser Load (1.2ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = $1 LIMIT $2[0m  [["id", 2], ["LIMIT", 1]]
+  Rendered cards/_form.html.erb (13.4ms)
+  [1m[36mCard Load (0.4ms)[0m  [1m[34mSELECT "cards".* FROM "cards" WHERE "cards"."deck_id" = $1[0m  [["deck_id", 16]]
+  Rendered decks/show.html.erb within layouts/application (29.5ms)
+Completed 200 OK in 110ms (Views: 102.1ms | ActiveRecord: 3.0ms)
+
+
+Started GET "/decks/16" for ::1 at 2016-08-10 23:29:07 +0800
+Processing by DecksController#show as HTML
+  Parameters: {"id"=>"16"}
+  [1m[36mDeck Load (0.5ms)[0m  [1m[34mSELECT  "decks".* FROM "decks" WHERE "decks"."id" = $1 LIMIT $2[0m  [["id", 16], ["LIMIT", 1]]
+  [1m[36mUser Load (0.8ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = $1 ORDER BY "users"."id" ASC LIMIT $2[0m  [["id", 2], ["LIMIT", 1]]
+  Rendering decks/show.html.erb within layouts/application
+  Rendered layouts/_navbar.html.erb (2.3ms)
+  [1m[36mUser Load (0.5ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = $1 LIMIT $2[0m  [["id", 2], ["LIMIT", 1]]
+  Rendered cards/_form.html.erb (8.2ms)
+  [1m[36mCard Load (0.4ms)[0m  [1m[34mSELECT "cards".* FROM "cards" WHERE "cards"."deck_id" = $1[0m  [["deck_id", 16]]
+  Rendered decks/show.html.erb within layouts/application (18.0ms)
+Completed 200 OK in 82ms (Views: 73.8ms | ActiveRecord: 2.2ms)
+
+
+Started GET "/decks" for ::1 at 2016-08-10 23:29:27 +0800
+Processing by DecksController#index as HTML
+  [1m[36mUser Load (1.3ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = $1 ORDER BY "users"."id" ASC LIMIT $2[0m  [["id", 2], ["LIMIT", 1]]
+  Rendering decks/index.html.erb within layouts/application
+  Rendered layouts/_navbar.html.erb (4.3ms)
+  Rendered decks/_form.html.erb (12.9ms)
+  [1m[36mDeck Load (0.5ms)[0m  [1m[34mSELECT "decks".* FROM "decks" WHERE "decks"."user_id" = 2[0m
+  Rendered decks/index.html.erb within layouts/application (27.5ms)
+Completed 200 OK in 116ms (Views: 107.2ms | ActiveRecord: 1.8ms)
+
+
+Started GET "/decks" for ::1 at 2016-08-10 23:29:35 +0800
+Processing by DecksController#index as HTML
+  [1m[36mUser Load (1.6ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = $1 ORDER BY "users"."id" ASC LIMIT $2[0m  [["id", 2], ["LIMIT", 1]]
+  Rendering decks/index.html.erb within layouts/application
+  Rendered layouts/_navbar.html.erb (3.1ms)
+  Rendered decks/_form.html.erb (7.4ms)
+  [1m[36mDeck Load (0.6ms)[0m  [1m[34mSELECT "decks".* FROM "decks" WHERE "decks"."user_id" = 2[0m
+  Rendered decks/index.html.erb within layouts/application (19.2ms)
+Completed 200 OK in 98ms (Views: 90.7ms | ActiveRecord: 2.2ms)
+
+
+Started POST "/decks" for ::1 at 2016-08-10 23:30:06 +0800
+Processing by DecksController#create as HTML
+  Parameters: {"utf8"=>"✓", "authenticity_token"=>"vx49hFeltAgpkbLLMy7/LGYvyeQJ9LIoOUdeJF6641fMgF8yweH81eAHLcstsNdx1l43Wx1SC2n+maO5PxLttw==", "deck"=>{"title"=>"This is the Shit", "description"=>"Yahoooo yes yes yes"}, "commit"=>"Create Deck"}
+  [1m[36mUser Load (1.2ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = $1 ORDER BY "users"."id" ASC LIMIT $2[0m  [["id", 2], ["LIMIT", 1]]
+  [1m[35m (0.2ms)[0m  [1m[35mBEGIN[0m
+  [1m[35mSQL (1.9ms)[0m  [1m[32mINSERT INTO "decks" ("title", "description", "created_at", "updated_at", "user_id") VALUES ($1, $2, $3, $4, $5) RETURNING "id"[0m  [["title", "This is the Shit"], ["description", "Yahoooo yes yes yes"], ["created_at", 2016-08-10 15:30:06 UTC], ["updated_at", 2016-08-10 15:30:06 UTC], ["user_id", 2]]
+  [1m[35m (0.4ms)[0m  [1m[35mCOMMIT[0m
+Redirected to http://localhost:3000/decks/26
+Completed 302 Found in 15ms (ActiveRecord: 3.7ms)
+
+
+Started GET "/decks/26" for ::1 at 2016-08-10 23:30:06 +0800
+Processing by DecksController#show as HTML
+  Parameters: {"id"=>"26"}
+  [1m[36mDeck Load (0.4ms)[0m  [1m[34mSELECT  "decks".* FROM "decks" WHERE "decks"."id" = $1 LIMIT $2[0m  [["id", 26], ["LIMIT", 1]]
+  [1m[36mUser Load (0.8ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = $1 ORDER BY "users"."id" ASC LIMIT $2[0m  [["id", 2], ["LIMIT", 1]]
+  Rendering decks/show.html.erb within layouts/application
+  Rendered layouts/_navbar.html.erb (2.4ms)
+  [1m[36mUser Load (0.5ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = $1 LIMIT $2[0m  [["id", 2], ["LIMIT", 1]]
+  Rendered cards/_form.html.erb (12.7ms)
+  [1m[36mCard Load (0.4ms)[0m  [1m[34mSELECT "cards".* FROM "cards" WHERE "cards"."deck_id" = $1[0m  [["deck_id", 26]]
+  Rendered decks/show.html.erb within layouts/application (22.8ms)
+Completed 200 OK in 96ms (Views: 88.8ms | ActiveRecord: 2.1ms)
+
+
+Started GET "/decks/26" for ::1 at 2016-08-10 23:30:33 +0800
+Processing by DecksController#show as HTML
+  Parameters: {"id"=>"26"}
+  [1m[36mDeck Load (0.5ms)[0m  [1m[34mSELECT  "decks".* FROM "decks" WHERE "decks"."id" = $1 LIMIT $2[0m  [["id", 26], ["LIMIT", 1]]
+  [1m[36mUser Load (0.9ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = $1 ORDER BY "users"."id" ASC LIMIT $2[0m  [["id", 2], ["LIMIT", 1]]
+  Rendering decks/show.html.erb within layouts/application
+  Rendered layouts/_navbar.html.erb (3.2ms)
+  [1m[36mUser Load (0.4ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = $1 LIMIT $2[0m  [["id", 2], ["LIMIT", 1]]
+  Rendered cards/_form.html.erb (7.7ms)
+  [1m[36mCard Load (0.5ms)[0m  [1m[34mSELECT "cards".* FROM "cards" WHERE "cards"."deck_id" = $1[0m  [["deck_id", 26]]
+  Rendered decks/show.html.erb within layouts/application (20.2ms)
+Completed 200 OK in 2281ms (Views: 2271.4ms | ActiveRecord: 2.3ms)
+
+
+Started GET "/decks/26" for ::1 at 2016-08-10 23:30:43 +0800
+Processing by DecksController#show as HTML
+  Parameters: {"id"=>"26"}
+  [1m[36mDeck Load (0.5ms)[0m  [1m[34mSELECT  "decks".* FROM "decks" WHERE "decks"."id" = $1 LIMIT $2[0m  [["id", 26], ["LIMIT", 1]]
+  [1m[36mUser Load (0.7ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = $1 ORDER BY "users"."id" ASC LIMIT $2[0m  [["id", 2], ["LIMIT", 1]]
+  Rendering decks/show.html.erb within layouts/application
+  Rendered layouts/_navbar.html.erb (2.9ms)
+  [1m[36mUser Load (0.5ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = $1 LIMIT $2[0m  [["id", 2], ["LIMIT", 1]]
+  Rendered cards/_form.html.erb (12.7ms)
+  [1m[36mCard Load (0.6ms)[0m  [1m[34mSELECT "cards".* FROM "cards" WHERE "cards"."deck_id" = $1[0m  [["deck_id", 26]]
+  Rendered decks/show.html.erb within layouts/application (25.9ms)
+Completed 200 OK in 2275ms (Views: 2268.4ms | ActiveRecord: 2.3ms)
+
+
+Started GET "/decks/26" for ::1 at 2016-08-10 23:31:13 +0800
+Processing by DecksController#show as HTML
+  Parameters: {"id"=>"26"}
+  [1m[36mDeck Load (0.6ms)[0m  [1m[34mSELECT  "decks".* FROM "decks" WHERE "decks"."id" = $1 LIMIT $2[0m  [["id", 26], ["LIMIT", 1]]
+  [1m[36mUser Load (1.1ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = $1 ORDER BY "users"."id" ASC LIMIT $2[0m  [["id", 2], ["LIMIT", 1]]
+  Rendering decks/show.html.erb within layouts/application
+  Rendered layouts/_navbar.html.erb (2.4ms)
+  [1m[36mUser Load (0.6ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = $1 LIMIT $2[0m  [["id", 2], ["LIMIT", 1]]
+  Rendered cards/_form.html.erb (13.2ms)
+  [1m[36mCard Load (0.4ms)[0m  [1m[34mSELECT "cards".* FROM "cards" WHERE "cards"."deck_id" = $1[0m  [["deck_id", 26]]
+  Rendered decks/show.html.erb within layouts/application (25.9ms)
+Completed 200 OK in 118ms (Views: 109.0ms | ActiveRecord: 2.7ms)
+
+
+Started GET "/decks/26" for ::1 at 2016-08-10 23:32:31 +0800
+Processing by DecksController#show as HTML
+  Parameters: {"id"=>"26"}
+  [1m[36mDeck Load (0.6ms)[0m  [1m[34mSELECT  "decks".* FROM "decks" WHERE "decks"."id" = $1 LIMIT $2[0m  [["id", 26], ["LIMIT", 1]]
+  [1m[36mUser Load (1.1ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = $1 ORDER BY "users"."id" ASC LIMIT $2[0m  [["id", 2], ["LIMIT", 1]]
+  Rendering decks/show.html.erb within layouts/application
+  Rendered layouts/_navbar.html.erb (3.0ms)
+  [1m[36mUser Load (0.4ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = $1 LIMIT $2[0m  [["id", 2], ["LIMIT", 1]]
+  Rendered cards/_form.html.erb (13.4ms)
+  [1m[36mCard Load (0.4ms)[0m  [1m[34mSELECT "cards".* FROM "cards" WHERE "cards"."deck_id" = $1[0m  [["deck_id", 26]]
+  Rendered decks/show.html.erb within layouts/application (27.3ms)
+Completed 200 OK in 115ms (Views: 106.6ms | ActiveRecord: 2.6ms)
+
+
+Started GET "/decks/26" for ::1 at 2016-08-10 23:33:35 +0800
+Processing by DecksController#show as HTML
+  Parameters: {"id"=>"26"}
+  [1m[36mDeck Load (0.8ms)[0m  [1m[34mSELECT  "decks".* FROM "decks" WHERE "decks"."id" = $1 LIMIT $2[0m  [["id", 26], ["LIMIT", 1]]
+  [1m[36mUser Load (0.8ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = $1 ORDER BY "users"."id" ASC LIMIT $2[0m  [["id", 2], ["LIMIT", 1]]
+  Rendering decks/show.html.erb within layouts/application
+  Rendered layouts/_navbar.html.erb (3.5ms)
+  [1m[36mUser Load (0.5ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = $1 LIMIT $2[0m  [["id", 2], ["LIMIT", 1]]
+  Rendered cards/_form.html.erb (13.9ms)
+  [1m[36mCard Load (0.8ms)[0m  [1m[34mSELECT "cards".* FROM "cards" WHERE "cards"."deck_id" = $1[0m  [["deck_id", 26]]
+  Rendered decks/show.html.erb within layouts/application (27.7ms)
+Completed 200 OK in 120ms (Views: 110.4ms | ActiveRecord: 2.9ms)
+
+
+Started GET "/decks" for ::1 at 2016-08-10 23:34:19 +0800
+Processing by DecksController#index as HTML
+  [1m[36mUser Load (1.2ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = $1 ORDER BY "users"."id" ASC LIMIT $2[0m  [["id", 2], ["LIMIT", 1]]
+  Rendering decks/index.html.erb within layouts/application
+  Rendered layouts/_navbar.html.erb (9.6ms)
+  Rendered decks/_form.html.erb (11.5ms)
+  [1m[36mDeck Load (0.6ms)[0m  [1m[34mSELECT "decks".* FROM "decks" WHERE "decks"."user_id" = 2[0m
+  Rendered decks/index.html.erb within layouts/application (35.0ms)
+Completed 200 OK in 118ms (Views: 110.0ms | ActiveRecord: 1.8ms)
+
+
+Started GET "/decks/15" for ::1 at 2016-08-10 23:34:25 +0800
+Processing by DecksController#show as HTML
+  Parameters: {"id"=>"15"}
+  [1m[36mDeck Load (0.5ms)[0m  [1m[34mSELECT  "decks".* FROM "decks" WHERE "decks"."id" = $1 LIMIT $2[0m  [["id", 15], ["LIMIT", 1]]
+  [1m[36mUser Load (1.1ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = $1 ORDER BY "users"."id" ASC LIMIT $2[0m  [["id", 2], ["LIMIT", 1]]
+  Rendering decks/show.html.erb within layouts/application
+  Rendered layouts/_navbar.html.erb (3.9ms)
+  [1m[36mUser Load (0.5ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = $1 LIMIT $2[0m  [["id", 2], ["LIMIT", 1]]
+  Rendered cards/_form.html.erb (10.3ms)
+  [1m[36mCard Load (0.4ms)[0m  [1m[34mSELECT "cards".* FROM "cards" WHERE "cards"."deck_id" = $1[0m  [["deck_id", 15]]
+  Rendered decks/show.html.erb within layouts/application (26.7ms)
+Completed 200 OK in 104ms (Views: 95.3ms | ActiveRecord: 2.5ms)
+
+
+Started GET "/decks/15" for ::1 at 2016-08-10 23:36:33 +0800
+Processing by DecksController#show as HTML
+  Parameters: {"id"=>"15"}
+  [1m[36mDeck Load (0.4ms)[0m  [1m[34mSELECT  "decks".* FROM "decks" WHERE "decks"."id" = $1 LIMIT $2[0m  [["id", 15], ["LIMIT", 1]]
+  [1m[36mUser Load (0.5ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = $1 ORDER BY "users"."id" ASC LIMIT $2[0m  [["id", 2], ["LIMIT", 1]]
+  Rendering decks/show.html.erb within layouts/application
+  Rendered layouts/_navbar.html.erb (2.9ms)
+  [1m[36mUser Load (0.4ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = $1 LIMIT $2[0m  [["id", 2], ["LIMIT", 1]]
+  Rendered cards/_form.html.erb (12.4ms)
+  [1m[36mCard Load (0.3ms)[0m  [1m[34mSELECT "cards".* FROM "cards" WHERE "cards"."deck_id" = $1[0m  [["deck_id", 15]]
+  Rendered decks/show.html.erb within layouts/application (24.9ms)
+Completed 200 OK in 107ms (Views: 101.7ms | ActiveRecord: 1.6ms)
+
+
+Started GET "/decks/15" for ::1 at 2016-08-10 23:37:30 +0800
+Processing by DecksController#show as HTML
+  Parameters: {"id"=>"15"}
+  [1m[36mDeck Load (1.0ms)[0m  [1m[34mSELECT  "decks".* FROM "decks" WHERE "decks"."id" = $1 LIMIT $2[0m  [["id", 15], ["LIMIT", 1]]
+  [1m[36mUser Load (1.4ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = $1 ORDER BY "users"."id" ASC LIMIT $2[0m  [["id", 2], ["LIMIT", 1]]
+  Rendering decks/show.html.erb within layouts/application
+  Rendered layouts/_navbar.html.erb (3.3ms)
+  [1m[36mUser Load (0.9ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = $1 LIMIT $2[0m  [["id", 2], ["LIMIT", 1]]
+  Rendered cards/_form.html.erb (10.2ms)
+  [1m[36mCard Load (0.5ms)[0m  [1m[34mSELECT "cards".* FROM "cards" WHERE "cards"."deck_id" = $1[0m  [["deck_id", 15]]
+  Rendered decks/show.html.erb within layouts/application (23.1ms)
+Completed 200 OK in 96ms (Views: 86.3ms | ActiveRecord: 3.7ms)
+
+
+Started GET "/decks/15" for ::1 at 2016-08-10 23:39:29 +0800
+Processing by DecksController#show as HTML
+  Parameters: {"id"=>"15"}
+  [1m[36mDeck Load (0.4ms)[0m  [1m[34mSELECT  "decks".* FROM "decks" WHERE "decks"."id" = $1 LIMIT $2[0m  [["id", 15], ["LIMIT", 1]]
+  [1m[36mUser Load (0.7ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = $1 ORDER BY "users"."id" ASC LIMIT $2[0m  [["id", 2], ["LIMIT", 1]]
+  Rendering decks/show.html.erb within layouts/application
+  Rendered layouts/_navbar.html.erb (4.8ms)
+  [1m[36mUser Load (0.4ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = $1 LIMIT $2[0m  [["id", 2], ["LIMIT", 1]]
+  Rendered cards/_form.html.erb (12.4ms)
+  [1m[36mCard Load (0.8ms)[0m  [1m[34mSELECT "cards".* FROM "cards" WHERE "cards"."deck_id" = $1[0m  [["deck_id", 15]]
+  Rendered decks/show.html.erb within layouts/application (27.8ms)
+Completed 200 OK in 2846ms (Views: 2838.6ms | ActiveRecord: 2.2ms)
+
+
+Started GET "/decks/15" for ::1 at 2016-08-10 23:39:51 +0800
+Processing by DecksController#show as HTML
+  Parameters: {"id"=>"15"}
+  [1m[36mDeck Load (0.4ms)[0m  [1m[34mSELECT  "decks".* FROM "decks" WHERE "decks"."id" = $1 LIMIT $2[0m  [["id", 15], ["LIMIT", 1]]
+  [1m[36mUser Load (0.6ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = $1 ORDER BY "users"."id" ASC LIMIT $2[0m  [["id", 2], ["LIMIT", 1]]
+  Rendering decks/show.html.erb within layouts/application
+  Rendered layouts/_navbar.html.erb (2.7ms)
+  [1m[36mUser Load (0.5ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = $1 LIMIT $2[0m  [["id", 2], ["LIMIT", 1]]
+  Rendered cards/_form.html.erb (8.2ms)
+  [1m[36mCard Load (0.4ms)[0m  [1m[34mSELECT "cards".* FROM "cards" WHERE "cards"."deck_id" = $1[0m  [["deck_id", 15]]
+  Rendered decks/show.html.erb within layouts/application (18.4ms)
+Completed 200 OK in 2319ms (Views: 2312.2ms | ActiveRecord: 1.9ms)
+
+
+Started GET "/decks/15" for ::1 at 2016-08-10 23:40:15 +0800
+Processing by DecksController#show as HTML
+  Parameters: {"id"=>"15"}
+  [1m[36mDeck Load (0.4ms)[0m  [1m[34mSELECT  "decks".* FROM "decks" WHERE "decks"."id" = $1 LIMIT $2[0m  [["id", 15], ["LIMIT", 1]]
+  [1m[36mUser Load (0.6ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = $1 ORDER BY "users"."id" ASC LIMIT $2[0m  [["id", 2], ["LIMIT", 1]]
+  Rendering decks/show.html.erb within layouts/application
+  Rendered layouts/_navbar.html.erb (3.1ms)
+  [1m[36mUser Load (0.5ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = $1 LIMIT $2[0m  [["id", 2], ["LIMIT", 1]]
+  Rendered cards/_form.html.erb (8.3ms)
+  [1m[36mCard Load (0.3ms)[0m  [1m[34mSELECT "cards".* FROM "cards" WHERE "cards"."deck_id" = $1[0m  [["deck_id", 15]]
+  Rendered decks/show.html.erb within layouts/application (22.0ms)
+Completed 200 OK in 2635ms (Views: 2627.1ms | ActiveRecord: 1.8ms)
+
+
+Started GET "/decks/15" for ::1 at 2016-08-10 23:41:04 +0800
+Processing by DecksController#show as HTML
+  Parameters: {"id"=>"15"}
+  [1m[36mDeck Load (0.3ms)[0m  [1m[34mSELECT  "decks".* FROM "decks" WHERE "decks"."id" = $1 LIMIT $2[0m  [["id", 15], ["LIMIT", 1]]
+  [1m[36mUser Load (0.6ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = $1 ORDER BY "users"."id" ASC LIMIT $2[0m  [["id", 2], ["LIMIT", 1]]
+  Rendering decks/show.html.erb within layouts/application
+  Rendered layouts/_navbar.html.erb (2.3ms)
+  [1m[36mUser Load (0.3ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = $1 LIMIT $2[0m  [["id", 2], ["LIMIT", 1]]
+  Rendered cards/_form.html.erb (6.7ms)
+  [1m[36mCard Load (0.2ms)[0m  [1m[34mSELECT "cards".* FROM "cards" WHERE "cards"."deck_id" = $1[0m  [["deck_id", 15]]
+  Rendered decks/show.html.erb within layouts/application (16.9ms)
+Completed 200 OK in 2358ms (Views: 2351.6ms | ActiveRecord: 1.4ms)
+
+
+Started GET "/decks/15/edit" for ::1 at 2016-08-10 23:41:36 +0800
+Processing by DecksController#edit as HTML
+  Parameters: {"id"=>"15"}
+  [1m[36mDeck Load (1.3ms)[0m  [1m[34mSELECT  "decks".* FROM "decks" WHERE "decks"."id" = $1 LIMIT $2[0m  [["id", 15], ["LIMIT", 1]]
+  Rendering decks/edit.html.erb within layouts/application
+  Rendered decks/_form.html.erb (12.5ms)
+  Rendered decks/edit.html.erb within layouts/application (19.3ms)
+Completed 200 OK in 105ms (Views: 97.9ms | ActiveRecord: 1.3ms)
+
+
+Started GET "/decks/15" for ::1 at 2016-08-10 23:41:40 +0800
+Processing by DecksController#show as HTML
+  Parameters: {"id"=>"15"}
+  [1m[36mDeck Load (0.5ms)[0m  [1m[34mSELECT  "decks".* FROM "decks" WHERE "decks"."id" = $1 LIMIT $2[0m  [["id", 15], ["LIMIT", 1]]
+  [1m[36mUser Load (1.0ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = $1 ORDER BY "users"."id" ASC LIMIT $2[0m  [["id", 2], ["LIMIT", 1]]
+  Rendering decks/show.html.erb within layouts/application
+  Rendered layouts/_navbar.html.erb (8.5ms)
+  [1m[36mUser Load (0.5ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = $1 LIMIT $2[0m  [["id", 2], ["LIMIT", 1]]
+  Rendered cards/_form.html.erb (13.2ms)
+  [1m[36mCard Load (0.2ms)[0m  [1m[34mSELECT "cards".* FROM "cards" WHERE "cards"."deck_id" = $1[0m  [["deck_id", 15]]
+  Rendered decks/show.html.erb within layouts/application (34.6ms)
+Completed 200 OK in 101ms (Views: 92.0ms | ActiveRecord: 2.2ms)
+
+
+Started GET "/" for ::1 at 2016-08-10 23:42:01 +0800
+Processing by StaticController#index as HTML
+  Rendering static/index.html.erb within layouts/application
+  [1m[36mUser Load (1.1ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = $1 ORDER BY "users"."id" ASC LIMIT $2[0m  [["id", 2], ["LIMIT", 1]]
+  Rendered layouts/_navbar.html.erb (21.3ms)
+  Rendered static/index.html.erb within layouts/application (39.1ms)
+Completed 200 OK in 156ms (Views: 151.1ms | ActiveRecord: 1.1ms)
+
+
+Started GET "/decks" for ::1 at 2016-08-10 23:42:13 +0800
+Processing by DecksController#index as HTML
+  [1m[36mUser Load (1.3ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = $1 ORDER BY "users"."id" ASC LIMIT $2[0m  [["id", 2], ["LIMIT", 1]]
+  Rendering decks/index.html.erb within layouts/application
+  Rendered layouts/_navbar.html.erb (6.4ms)
+  Rendered decks/_form.html.erb (13.9ms)
+  [1m[36mDeck Load (0.7ms)[0m  [1m[34mSELECT "decks".* FROM "decks" WHERE "decks"."user_id" = 2[0m
+  Rendered decks/index.html.erb within layouts/application (34.4ms)
+Completed 200 OK in 128ms (Views: 118.1ms | ActiveRecord: 2.0ms)
+
+
+Started GET "/decks/24" for ::1 at 2016-08-10 23:42:33 +0800
+Processing by DecksController#show as HTML
+  Parameters: {"id"=>"24"}
+  [1m[36mDeck Load (1.7ms)[0m  [1m[34mSELECT  "decks".* FROM "decks" WHERE "decks"."id" = $1 LIMIT $2[0m  [["id", 24], ["LIMIT", 1]]
+  [1m[36mUser Load (0.8ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = $1 ORDER BY "users"."id" ASC LIMIT $2[0m  [["id", 2], ["LIMIT", 1]]
+  Rendering decks/show.html.erb within layouts/application
+  Rendered layouts/_navbar.html.erb (6.6ms)
+  [1m[36mUser Load (1.0ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = $1 LIMIT $2[0m  [["id", 2], ["LIMIT", 1]]
+  Rendered cards/_form.html.erb (16.1ms)
+  [1m[36mCard Load (0.7ms)[0m  [1m[34mSELECT "cards".* FROM "cards" WHERE "cards"."deck_id" = $1[0m  [["deck_id", 24]]
+  Rendered decks/show.html.erb within layouts/application (40.0ms)
+Completed 200 OK in 166ms (Views: 150.4ms | ActiveRecord: 4.2ms)
+
+
+Started GET "/decks/24" for ::1 at 2016-08-10 23:43:13 +0800
+Processing by DecksController#show as HTML
+  Parameters: {"id"=>"24"}
+  [1m[36mDeck Load (0.4ms)[0m  [1m[34mSELECT  "decks".* FROM "decks" WHERE "decks"."id" = $1 LIMIT $2[0m  [["id", 24], ["LIMIT", 1]]
+  [1m[36mUser Load (0.8ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = $1 ORDER BY "users"."id" ASC LIMIT $2[0m  [["id", 2], ["LIMIT", 1]]
+  Rendering decks/show.html.erb within layouts/application
+  Rendered layouts/_navbar.html.erb (2.9ms)
+  [1m[36mUser Load (0.3ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = $1 LIMIT $2[0m  [["id", 2], ["LIMIT", 1]]
+  Rendered cards/_form.html.erb (8.1ms)
+  [1m[36mCard Load (0.3ms)[0m  [1m[34mSELECT "cards".* FROM "cards" WHERE "cards"."deck_id" = $1[0m  [["deck_id", 24]]
+  Rendered decks/show.html.erb within layouts/application (20.0ms)
+Completed 200 OK in 85ms (Views: 76.6ms | ActiveRecord: 1.8ms)
+
+
+Started POST "/decks/24/cards" for ::1 at 2016-08-10 23:51:06 +0800
+Processing by CardsController#create as HTML
+  Parameters: {"utf8"=>"✓", "authenticity_token"=>"ruWYys6APyR1DlgKp370tVmTwNeDoxiwI9T1jKkEasTde/p8WMR3+byYxwq54Nzo6eI+aJcFofHkCggRyKxkJA==", "card"=>{"prompt_text"=>"Hello, its me", "answer"=>"Hello from the outside..."}, "commit"=>"Create Card", "deck_id"=>"24"}
+  [1m[36mDeck Load (0.4ms)[0m  [1m[34mSELECT  "decks".* FROM "decks" WHERE "decks"."id" = $1 LIMIT $2[0m  [["id", 24], ["LIMIT", 1]]
+  [1m[35m (0.3ms)[0m  [1m[35mBEGIN[0m
+  [1m[35mSQL (2.2ms)[0m  [1m[32mINSERT INTO "cards" ("prompt_text", "answer", "created_at", "updated_at", "deck_id") VALUES ($1, $2, $3, $4, $5) RETURNING "id"[0m  [["prompt_text", "Hello, its me"], ["answer", "Hello from the outside..."], ["created_at", 2016-08-10 15:51:06 UTC], ["updated_at", 2016-08-10 15:51:06 UTC], ["deck_id", 24]]
+  [1m[35m (1.2ms)[0m  [1m[35mCOMMIT[0m
+Redirected to http://localhost:3000/decks/24
+Completed 302 Found in 16ms (ActiveRecord: 4.0ms)
+
+
+Started GET "/decks/24" for ::1 at 2016-08-10 23:51:06 +0800
+Processing by DecksController#show as HTML
+  Parameters: {"id"=>"24"}
+  [1m[36mDeck Load (0.5ms)[0m  [1m[34mSELECT  "decks".* FROM "decks" WHERE "decks"."id" = $1 LIMIT $2[0m  [["id", 24], ["LIMIT", 1]]
+  [1m[36mUser Load (1.1ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = $1 ORDER BY "users"."id" ASC LIMIT $2[0m  [["id", 2], ["LIMIT", 1]]
+  Rendering decks/show.html.erb within layouts/application
+  Rendered layouts/_navbar.html.erb (5.1ms)
+  [1m[36mUser Load (0.4ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = $1 LIMIT $2[0m  [["id", 2], ["LIMIT", 1]]
+  Rendered cards/_form.html.erb (13.6ms)
+  [1m[36mCard Load (0.3ms)[0m  [1m[34mSELECT "cards".* FROM "cards" WHERE "cards"."deck_id" = $1[0m  [["deck_id", 24]]
+  Rendered decks/show.html.erb within layouts/application (29.0ms)
+Completed 200 OK in 139ms (Views: 131.7ms | ActiveRecord: 2.3ms)
+
+
+Started GET "/" for ::1 at 2016-08-10 23:58:04 +0800
+Processing by StaticController#index as HTML
+  Rendering static/index.html.erb within layouts/application
+  [1m[36mUser Load (2.1ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = $1 ORDER BY "users"."id" ASC LIMIT $2[0m  [["id", 2], ["LIMIT", 1]]
+  Rendered layouts/_navbar.html.erb (10.3ms)
+  Rendered static/index.html.erb within layouts/application (22.6ms)
+Completed 200 OK in 150ms (Views: 143.2ms | ActiveRecord: 2.1ms)
+
+
+Started GET "/decks" for ::1 at 2016-08-11 00:02:13 +0800
+Processing by DecksController#index as HTML
+  [1m[36mUser Load (1.3ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = $1 ORDER BY "users"."id" ASC LIMIT $2[0m  [["id", 2], ["LIMIT", 1]]
+  Rendering decks/index.html.erb within layouts/application
+  Rendered layouts/_navbar.html.erb (9.6ms)
+  Rendered decks/_form.html.erb (18.9ms)
+  [1m[36mDeck Load (0.6ms)[0m  [1m[34mSELECT "decks".* FROM "decks" WHERE "decks"."user_id" = 2[0m
+  Rendered decks/index.html.erb within layouts/application (43.0ms)
+Completed 200 OK in 181ms (Views: 167.2ms | ActiveRecord: 1.9ms)
+
+
+Started GET "/decks/15" for ::1 at 2016-08-11 00:02:38 +0800
+Processing by DecksController#show as HTML
+  Parameters: {"id"=>"15"}
+  [1m[36mDeck Load (4.4ms)[0m  [1m[34mSELECT  "decks".* FROM "decks" WHERE "decks"."id" = $1 LIMIT $2[0m  [["id", 15], ["LIMIT", 1]]
+  [1m[36mUser Load (5.5ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = $1 ORDER BY "users"."id" ASC LIMIT $2[0m  [["id", 2], ["LIMIT", 1]]
+  Rendering decks/show.html.erb within layouts/application
+  Rendered layouts/_navbar.html.erb (15.3ms)
+  [1m[36mUser Load (0.3ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = $1 LIMIT $2[0m  [["id", 2], ["LIMIT", 1]]
+  Rendered cards/_form.html.erb (22.0ms)
+  [1m[36mCard Load (0.3ms)[0m  [1m[34mSELECT "cards".* FROM "cards" WHERE "cards"."deck_id" = $1[0m  [["deck_id", 15]]
+  Rendered decks/show.html.erb within layouts/application (47.9ms)
+Completed 200 OK in 198ms (Views: 175.6ms | ActiveRecord: 10.5ms)
+
+
+Started GET "/decks/15" for ::1 at 2016-08-11 00:07:27 +0800
+Processing by DecksController#show as HTML
+  Parameters: {"id"=>"15"}
+  [1m[36mDeck Load (0.9ms)[0m  [1m[34mSELECT  "decks".* FROM "decks" WHERE "decks"."id" = $1 LIMIT $2[0m  [["id", 15], ["LIMIT", 1]]
+  [1m[36mUser Load (1.1ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = $1 ORDER BY "users"."id" ASC LIMIT $2[0m  [["id", 2], ["LIMIT", 1]]
+  Rendering decks/show.html.erb within layouts/application
+  Rendered layouts/_navbar.html.erb (6.2ms)
+  [1m[36mUser Load (1.1ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = $1 LIMIT $2[0m  [["id", 2], ["LIMIT", 1]]
+  Rendered cards/_form.html.erb (12.5ms)
+  [1m[36mCard Load (0.5ms)[0m  [1m[34mSELECT "cards".* FROM "cards" WHERE "cards"."deck_id" = $1[0m  [["deck_id", 15]]
+  Rendered decks/show.html.erb within layouts/application (31.5ms)
+Completed 200 OK in 132ms (Views: 121.1ms | ActiveRecord: 3.7ms)
+
+
+Started POST "/decks/15/cards" for ::1 at 2016-08-11 00:08:41 +0800
+Processing by CardsController#create as HTML
+  Parameters: {"utf8"=>"✓", "authenticity_token"=>"thLycQ66Ctte7A4XrZd9BWrp5Tr3SbtBC9fT96ehe7nFjJDHmP5CBpd6kRezCVVY2pgbhePvAgDMCS5qxgl1WQ==", "card"=>{"prompt_text"=>"This shit is bananas", "answer"=>"B-A-N-A-N-A-S"}, "commit"=>"Create Card", "deck_id"=>"15"}
+  [1m[36mDeck Load (0.5ms)[0m  [1m[34mSELECT  "decks".* FROM "decks" WHERE "decks"."id" = $1 LIMIT $2[0m  [["id", 15], ["LIMIT", 1]]
+  [1m[35m (0.2ms)[0m  [1m[35mBEGIN[0m
+  [1m[35mSQL (1.9ms)[0m  [1m[32mINSERT INTO "cards" ("prompt_text", "answer", "created_at", "updated_at", "deck_id") VALUES ($1, $2, $3, $4, $5) RETURNING "id"[0m  [["prompt_text", "This shit is bananas"], ["answer", "B-A-N-A-N-A-S"], ["created_at", 2016-08-10 16:08:41 UTC], ["updated_at", 2016-08-10 16:08:41 UTC], ["deck_id", 15]]
+  [1m[35m (1.2ms)[0m  [1m[35mCOMMIT[0m
+Redirected to http://localhost:3000/decks/15
+Completed 302 Found in 17ms (ActiveRecord: 3.8ms)
+
+
+Started GET "/decks/15" for ::1 at 2016-08-11 00:08:41 +0800
+Processing by DecksController#show as HTML
+  Parameters: {"id"=>"15"}
+  [1m[36mDeck Load (0.7ms)[0m  [1m[34mSELECT  "decks".* FROM "decks" WHERE "decks"."id" = $1 LIMIT $2[0m  [["id", 15], ["LIMIT", 1]]
+  [1m[36mUser Load (0.7ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = $1 ORDER BY "users"."id" ASC LIMIT $2[0m  [["id", 2], ["LIMIT", 1]]
+  Rendering decks/show.html.erb within layouts/application
+  Rendered layouts/_navbar.html.erb (5.0ms)
+  [1m[36mUser Load (0.4ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = $1 LIMIT $2[0m  [["id", 2], ["LIMIT", 1]]
+  Rendered cards/_form.html.erb (16.6ms)
+  [1m[36mCard Load (0.4ms)[0m  [1m[34mSELECT "cards".* FROM "cards" WHERE "cards"."deck_id" = $1[0m  [["deck_id", 15]]
+  Rendered decks/show.html.erb within layouts/application (33.3ms)
+Completed 200 OK in 116ms (Views: 107.6ms | ActiveRecord: 2.2ms)
+
+
+Started GET "/decks/15" for ::1 at 2016-08-11 00:08:58 +0800
+Processing by DecksController#show as HTML
+  Parameters: {"id"=>"15"}
+  [1m[36mDeck Load (0.7ms)[0m  [1m[34mSELECT  "decks".* FROM "decks" WHERE "decks"."id" = $1 LIMIT $2[0m  [["id", 15], ["LIMIT", 1]]
+  [1m[36mUser Load (1.3ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = $1 ORDER BY "users"."id" ASC LIMIT $2[0m  [["id", 2], ["LIMIT", 1]]
+  Rendering decks/show.html.erb within layouts/application
+  Rendered layouts/_navbar.html.erb (3.6ms)
+  [1m[36mUser Load (0.4ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = $1 LIMIT $2[0m  [["id", 2], ["LIMIT", 1]]
+  Rendered cards/_form.html.erb (13.6ms)
+  [1m[36mCard Load (0.4ms)[0m  [1m[34mSELECT "cards".* FROM "cards" WHERE "cards"."deck_id" = $1[0m  [["deck_id", 15]]
+  Rendered decks/show.html.erb within layouts/application (29.0ms)
+Completed 200 OK in 178ms (Views: 168.8ms | ActiveRecord: 2.8ms)
+
+
+Started GET "/decks/15" for ::1 at 2016-08-11 00:09:32 +0800
+Processing by DecksController#show as HTML
+  Parameters: {"id"=>"15"}
+  [1m[36mDeck Load (0.7ms)[0m  [1m[34mSELECT  "decks".* FROM "decks" WHERE "decks"."id" = $1 LIMIT $2[0m  [["id", 15], ["LIMIT", 1]]
+  [1m[36mUser Load (1.1ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = $1 ORDER BY "users"."id" ASC LIMIT $2[0m  [["id", 2], ["LIMIT", 1]]
+  Rendering decks/show.html.erb within layouts/application
+  Rendered layouts/_navbar.html.erb (7.0ms)
+  [1m[36mUser Load (0.4ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = $1 LIMIT $2[0m  [["id", 2], ["LIMIT", 1]]
+  Rendered cards/_form.html.erb (19.1ms)
+  [1m[36mCard Load (0.4ms)[0m  [1m[34mSELECT "cards".* FROM "cards" WHERE "cards"."deck_id" = $1[0m  [["deck_id", 15]]
+  Rendered decks/show.html.erb within layouts/application (43.1ms)
+Completed 200 OK in 179ms (Views: 170.4ms | ActiveRecord: 2.6ms)
+
+
+Started GET "/decks/15" for ::1 at 2016-08-11 00:09:50 +0800
+Processing by DecksController#show as HTML
+  Parameters: {"id"=>"15"}
+  [1m[36mDeck Load (0.6ms)[0m  [1m[34mSELECT  "decks".* FROM "decks" WHERE "decks"."id" = $1 LIMIT $2[0m  [["id", 15], ["LIMIT", 1]]
+  [1m[36mUser Load (2.0ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = $1 ORDER BY "users"."id" ASC LIMIT $2[0m  [["id", 2], ["LIMIT", 1]]
+  Rendering decks/show.html.erb within layouts/application
+  Rendered layouts/_navbar.html.erb (4.4ms)
+  [1m[36mUser Load (0.4ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = $1 LIMIT $2[0m  [["id", 2], ["LIMIT", 1]]
+  Rendered cards/_form.html.erb (20.2ms)
+  [1m[36mCard Load (0.3ms)[0m  [1m[34mSELECT "cards".* FROM "cards" WHERE "cards"."deck_id" = $1[0m  [["deck_id", 15]]
+  Rendered decks/show.html.erb within layouts/application (34.9ms)
+Completed 200 OK in 130ms (Views: 120.1ms | ActiveRecord: 3.2ms)
+
+
+Started GET "/" for ::1 at 2016-08-11 00:10:39 +0800
+Processing by StaticController#index as HTML
+  Rendering static/index.html.erb within layouts/application
+  [1m[36mUser Load (4.9ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = $1 ORDER BY "users"."id" ASC LIMIT $2[0m  [["id", 2], ["LIMIT", 1]]
+  Rendered layouts/_navbar.html.erb (12.1ms)
+  Rendered static/index.html.erb within layouts/application (23.9ms)
+Completed 200 OK in 130ms (Views: 120.6ms | ActiveRecord: 4.9ms)
+
+
+Started GET "/decks" for ::1 at 2016-08-11 00:10:42 +0800
+Processing by DecksController#index as HTML
+  [1m[36mUser Load (1.0ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = $1 ORDER BY "users"."id" ASC LIMIT $2[0m  [["id", 2], ["LIMIT", 1]]
+  Rendering decks/index.html.erb within layouts/application
+  Rendered layouts/_navbar.html.erb (4.5ms)
+  Rendered decks/_form.html.erb (12.5ms)
+  [1m[36mDeck Load (1.0ms)[0m  [1m[34mSELECT "decks".* FROM "decks" WHERE "decks"."user_id" = 2[0m
+  Rendered decks/index.html.erb within layouts/application (33.4ms)
+Completed 200 OK in 135ms (Views: 124.6ms | ActiveRecord: 2.0ms)
+
+
+Started GET "/decks/15" for ::1 at 2016-08-11 00:12:59 +0800
+Processing by DecksController#show as HTML
+  Parameters: {"id"=>"15"}
+  [1m[36mDeck Load (0.4ms)[0m  [1m[34mSELECT  "decks".* FROM "decks" WHERE "decks"."id" = $1 LIMIT $2[0m  [["id", 15], ["LIMIT", 1]]
+  [1m[36mUser Load (1.6ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = $1 ORDER BY "users"."id" ASC LIMIT $2[0m  [["id", 2], ["LIMIT", 1]]
+  Rendering decks/show.html.erb within layouts/application
+  Rendered layouts/_navbar.html.erb (5.5ms)
+  [1m[36mUser Load (5.8ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = $1 LIMIT $2[0m  [["id", 2], ["LIMIT", 1]]
+  Rendered cards/_form.html.erb (18.8ms)
+  [1m[36mCard Load (5.0ms)[0m  [1m[34mSELECT "cards".* FROM "cards" WHERE "cards"."deck_id" = $1[0m  [["deck_id", 15]]
+  Rendered decks/show.html.erb within layouts/application (51.8ms)
+Completed 200 OK in 168ms (Views: 146.4ms | ActiveRecord: 12.7ms)
+
+
+Started GET "/decks/15/cards/new" for ::1 at 2016-08-11 00:13:06 +0800
+Processing by CardsController#new as HTML
+  Parameters: {"deck_id"=>"15"}
+  [1m[36mDeck Load (1.2ms)[0m  [1m[34mSELECT  "decks".* FROM "decks" WHERE "decks"."id" = $1 LIMIT $2[0m  [["id", 15], ["LIMIT", 1]]
+  Rendering cards/new.html.erb within layouts/application
+  Rendered cards/_form.html.erb (22.2ms)
+  Rendered cards/new.html.erb within layouts/application (27.2ms)
+Completed 200 OK in 128ms (Views: 117.9ms | ActiveRecord: 1.2ms)
+
+
+Started POST "/decks/15/cards" for ::1 at 2016-08-11 00:13:37 +0800
+Processing by CardsController#create as HTML
+  Parameters: {"utf8"=>"✓", "authenticity_token"=>"KE2EBmHsuqxDuSJUySw6MG4WIj4ANrTvbP7li9fzz4qWBmjkyi8O5Tpztw1Q2Y1qgZG1NI5E+Hf8hibSNVE7kQ==", "card"=>{"prompt_text"=>"The monkey on your back", "answer"=>"Is the latest trend"}, "commit"=>"Create Card", "deck_id"=>"15"}
+  [1m[36mDeck Load (0.5ms)[0m  [1m[34mSELECT  "decks".* FROM "decks" WHERE "decks"."id" = $1 LIMIT $2[0m  [["id", 15], ["LIMIT", 1]]
+  [1m[35m (1.9ms)[0m  [1m[35mBEGIN[0m
+  [1m[35mSQL (0.8ms)[0m  [1m[32mINSERT INTO "cards" ("prompt_text", "answer", "created_at", "updated_at", "deck_id") VALUES ($1, $2, $3, $4, $5) RETURNING "id"[0m  [["prompt_text", "The monkey on your back"], ["answer", "Is the latest trend"], ["created_at", 2016-08-10 16:13:37 UTC], ["updated_at", 2016-08-10 16:13:37 UTC], ["deck_id", 15]]
+  [1m[35m (0.5ms)[0m  [1m[35mCOMMIT[0m
+Redirected to http://localhost:3000/decks/15
+Completed 302 Found in 14ms (ActiveRecord: 3.7ms)
+
+
+Started GET "/decks/15" for ::1 at 2016-08-11 00:13:37 +0800
+Processing by DecksController#show as HTML
+  Parameters: {"id"=>"15"}
+  [1m[36mDeck Load (0.3ms)[0m  [1m[34mSELECT  "decks".* FROM "decks" WHERE "decks"."id" = $1 LIMIT $2[0m  [["id", 15], ["LIMIT", 1]]
+  [1m[36mUser Load (0.8ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = $1 ORDER BY "users"."id" ASC LIMIT $2[0m  [["id", 2], ["LIMIT", 1]]
+  Rendering decks/show.html.erb within layouts/application
+  Rendered layouts/_navbar.html.erb (3.5ms)
+  [1m[36mUser Load (0.4ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = $1 LIMIT $2[0m  [["id", 2], ["LIMIT", 1]]
+  Rendered cards/_form.html.erb (13.0ms)
+  [1m[36mCard Load (0.4ms)[0m  [1m[34mSELECT "cards".* FROM "cards" WHERE "cards"."deck_id" = $1[0m  [["deck_id", 15]]
+  Rendered decks/show.html.erb within layouts/application (29.2ms)
+Completed 200 OK in 120ms (Views: 112.2ms | ActiveRecord: 1.8ms)
+
+
+Started GET "/decks/15" for ::1 at 2016-08-11 00:15:07 +0800
+Processing by DecksController#show as HTML
+  Parameters: {"id"=>"15"}
+  [1m[36mDeck Load (0.4ms)[0m  [1m[34mSELECT  "decks".* FROM "decks" WHERE "decks"."id" = $1 LIMIT $2[0m  [["id", 15], ["LIMIT", 1]]
+  [1m[36mUser Load (0.8ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = $1 ORDER BY "users"."id" ASC LIMIT $2[0m  [["id", 2], ["LIMIT", 1]]
+  Rendering decks/show.html.erb within layouts/application
+  Rendered layouts/_navbar.html.erb (6.3ms)
+  [1m[36mUser Load (0.3ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = $1 LIMIT $2[0m  [["id", 2], ["LIMIT", 1]]
+  Rendered cards/_form.html.erb (22.9ms)
+  [1m[36mCard Load (0.3ms)[0m  [1m[34mSELECT "cards".* FROM "cards" WHERE "cards"."deck_id" = $1[0m  [["deck_id", 15]]
+  Rendered decks/show.html.erb within layouts/application (43.4ms)
+Completed 200 OK in 156ms (Views: 147.0ms | ActiveRecord: 1.8ms)
+
+

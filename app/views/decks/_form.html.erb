@@ -1,6 +1,12 @@
+<!-- // FORM FOR NEW DECK -->
+
 <div class="form-wrap">
-  <p class="darkblue right"><%= link_to "Cancel", decks_path %></p>
-  <h5 class="darkblue">Create A New Deck</h5>
+
+  <div id="cancel" class="darkblue">
+    <span class="glyphicon glyphicon-remove" aria-hidden="true"></span>
+  </div>
+
+  <h5 class="darkblue bottompad">Create A New Deck</h5>
 
   <%= simple_form_for @deck, html: { multipart: true } do |f| %>
     <% if @deck.errors.any? %>

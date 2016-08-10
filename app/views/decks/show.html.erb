@@ -1,33 +1,56 @@
-<div class="flash">
-  <%= render "layouts/navbar" %>
+<%= render "layouts/navbar" %>
   <div class="wrapper">
-    <%= link_to "Back", decks_path, { class: 'right' } %>
-    <h5 class="toppad">By <%= @deck.user.username %></h5>
-    <h1><%= @deck.title %></h1>
-    <p><%= @deck.description %></p>
+    <!-- ============ NORMAL MODE ============= -->
+    <div id="normal-mode">
+      <div class="leftside">
+        <div class="back">
+          <%= link_to decks_path do %>
+            <span class="glyphicon glyphicon-triangle-left" aria-hidden="true"></span> Back
+          <% end %>
+        </div>
+
+        <h6 class="darkblue center toppad">
+          Created by <span class="pink2"><%= @deck.user.username %></span>
+        </h6>
+        <h3 class="darkblue center toppad"><%= @deck.title %></h3>
+        <p class="darkblue center toppad"><%= @deck.description %></p>
 
 
-    <% if @can_edit %>
-      <div class="add_btn center">
-        <span class="shift"><i class="fa fa-plus-square" aria-hidden="true"></i> Add a card
+        <div class="add_btn center">
+            <span class="shift"><i class="fa fa-plus-square" aria-hidden="true"></i> New Card
+        </div>
+
+        <div class="deck-form hidden">
+          <%= render 'cards/form' %>
+        </div>
+
+        <%= link_to "Edit Deck", edit_deck_path %>
+        <%= link_to "Delete this deck", deck_path, method: :delete, data: {confirm: "Are you sure?"} %>
+
+        <%= link_to "Add a card", new_deck_card_path(@deck.id), { class: 'add_btn' }  %>
       </div>
 
-      <div class="deck-form">
-        <%= render 'form' %>
+      <div class="rightside">
+        <% @deck.cards.each do |card| %>
+          <div class="card">
+            <div class="blue"><%= card.prompt_text %></div>
+            <div class="pink2"><%= card.answer %></div>
+          </div>
+        <%= link_to "Edit this card", edit_deck_card_path(@deck.id, card.id) %>
+        <%= link_to "Delete this card", deck_card_path(@deck.id, card.id), method: :delete, data: {confirm: "Are you sure?"} %>
+        <% end %>
       </div>
 
-    <% end %>
+    </div>
 
-
-
-
-
-    <div id="js-flip-2" class="flip">
+    <!-- ============ FLASH MODE ============= -->
+    <div id="flash-mode hidden">
+      <div id="js-flip-2" class="flip">
         <div class="card">
             <div class="face front">Prompt</div>
             <div class="face back">Answer</div>
         </div>
-    </div>
+      </div>
 
 
       <% @deck.cards.each do |card| %>
@@ -37,15 +60,11 @@
           <div class="face back"><%= card.answer %></div>
         </div>
       </div>
-      <%= link_to "Edit this card", edit_deck_card_path(@deck.id, card.id) %>
-      <%= link_to "Delete this card", deck_card_path(@deck.id, card.id), method: :delete, data: {confirm: "Are you sure?"} %>
+
       <% end %>
 
+    </div>
 
 
-
-    <%= link_to "Edit Deck", edit_deck_path %>
-    <%= link_to "Delete this deck", deck_path, method: :delete, data: {confirm: "Are you sure?"} %>
 
   </div>
-</div>
