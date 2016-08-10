@@ -1,21 +1,34 @@
 <%= render "layouts/navbar" %>
 <div class="wrapper">
-  <h1 class="darkblue"><%= current_user.username %>'s Decks</h1>
 
-  <div class="deck">
-    <h5> Deck Title</h5>
-    <p>deck.description</p>
+  <h1 class="darkblue center"><%= @user.username %>'s Decks</h1>
 
-    <% if @deck === 0 %>
-      <h5> Deck Title</h5>
-      <p>deck.description</p>
-    <% else %>
-      <% @decks.each do |deck| %>
-        <h5> <%= link_to deck.title, deck %> </h5>
-        <p><%= deck.description %></p>
-      <% end %>
+  <% if @can_edit %>
+  <div class="add_btn center">
+    <!-- "<%= link_to new_deck_path do %>" -->
+      <span class="shift"><i class="fa fa-plus-square" aria-hidden="true"></i> New Deck
     <% end %>
   </div>
 
-  <%= link_to "New Deck", new_deck_path %>
+    <div class="deck-form">
+      <%= render 'form' %>
+    </div>
+
+  <% end %>
+
+
+
+  <div class="deck-wrap">
+    <% @decks.each do |deck| %>
+      <div class="deck">
+        <h6> <%= link_to deck.title, deck %> </h6>
+        <p><%= deck.description %></p>
+
+      </div>
+    <% end %>
+  </div>
+
+
+
+
 </div>
