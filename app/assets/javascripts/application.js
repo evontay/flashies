@@ -23,4 +23,8 @@ $(document).ready(function () {
     console.log('add_btn clicked')
     $('.deck-form').show()
   })
+
+  $('#js-flip-2').bind('click mouseleave', function () {
+    $('#js-flip-2 .card').toggleClass('flipped')
+  })
 })

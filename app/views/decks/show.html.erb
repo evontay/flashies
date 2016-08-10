@@ -1,27 +1,44 @@
 <div class="flash">
-  <%= render "layouts/navbar2" %>
+  <%= render "layouts/navbar" %>
   <div class="wrapper">
     <%= link_to "Back", decks_path, { class: 'right' } %>
     <h5 class="toppad">By <%= @deck.user.username %></h5>
     <h1><%= @deck.title %></h1>
     <p><%= @deck.description %></p>
 
-    <%= render 'cards/form' %>
 
-    <h2>Cards</h2>
-    <%= link_to "Add a card", new_deck_card_path(@deck.id), { class: 'add_btn' }  %>
+    <% if @can_edit %>
+      <div class="add_btn center">
+        <span class="shift"><i class="fa fa-plus-square" aria-hidden="true"></i> Add a card
+      </div>
+
+      <div class="deck-form">
+        <%= render 'form' %>
+      </div>
+
+    <% end %>
+
+
+
+
+
+    <div id="js-flip-2" class="flip">
+        <div class="card">
+            <div class="face front">Prompt</div>
+            <div class="face back">Answer</div>
+        </div>
+    </div>
+
 
       <% @deck.cards.each do |card| %>
-      <div class="card">
-        <div class="front">
-          <h3><%= card.prompt_text %></h3>
+      <div id="js-flip-2" class="flip">
+        <div class="card">
+          <div class="face front"><%= card.prompt_text %></div>
+          <div class="face back"><%= card.answer %></div>
         </div>
-        <div class="back">
-          <p><%= card.answer %></p>
-        </div>
-        <%= link_to "Edit this card", edit_deck_card_path(@deck.id, card.id) %>
-        <%= link_to "Delete this card", deck_card_path(@deck.id, card.id), method: :delete, data: {confirm: "Are you sure?"} %>
       </div>
+      <%= link_to "Edit this card", edit_deck_card_path(@deck.id, card.id) %>
+      <%= link_to "Delete this card", deck_card_path(@deck.id, card.id), method: :delete, data: {confirm: "Are you sure?"} %>
       <% end %>
 
 

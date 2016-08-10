@@ -22,8 +22,6 @@ class DecksController < ApplicationController
 
   end
 
-
-
   def new
     @deck = current_user.decks.build
   end
@@ -40,7 +38,16 @@ class DecksController < ApplicationController
   end
 
   def show
+    if params[:username].present?
+      @user = User.find_by(username: params[:username])
+      return redirect_to root_path if @user.blank?
+
+    else
+      @user = current_user
+    end
+
     @card = Card.new
+    @can_edit = current_user.id == @user.id
   end
 
   def edit
