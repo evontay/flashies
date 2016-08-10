@@ -33,7 +33,9 @@
       </div>
 
       <div class="rightside">
-
+        <div class="add_btn center">
+            <span class="shift"><i class="fa fa-plus-square" aria-hidden="true"></i> New Card
+        </div>
         <% @deck.cards.each do |card| %>
           <div class="card">
             <div class="blue"><%= card.prompt_text %></div>
@@ -49,9 +51,7 @@
           </div>
         <% end %>
 
-        <div class="add_btn center">
-            <span class="shift"><i class="fa fa-plus-square" aria-hidden="true"></i> New Card
-        </div>
+
       </div>
 
 

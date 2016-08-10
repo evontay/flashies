@@ -217,7 +217,7 @@ h6 {font-size: 1.3em;}
   margin: 50px auto;
 }
 
-.start:hover {
+.start:hover{
   color: $pink;
   border: 2px solid $pink;
   text-decoration: none;
@@ -225,6 +225,10 @@ h6 {font-size: 1.3em;}
   -moz-transition: 0.2s ease-out;
   transition: 0.2s ease-out;
 }
+
+.start a:hover {
+  color: $pink;
+  text-decoration: none;}
 // DECK INDEX ===================
 
   .deck-wrap {
@@ -255,14 +259,13 @@ h6 {font-size: 1.3em;}
     .deck-content {
       display: inline-block;
       vertical-align: middle;
-      line-height: 1.5;
 
       .edit-grp {
         position: relative;
-        top: 50%;
+        bottom: 20px;
         border-top: 1px solid $light;
-        margin-top: 20px;
-        padding-top: 15px;
+        //margin-top: 20px;
+        //padding-top: 15px;
 
         a {
           padding: 0 10px;
@@ -271,14 +274,14 @@ h6 {font-size: 1.3em;}
       }
 
     }
-
+    h6, p {line-height: 1.5;}
     p {font-size: 0.9em;}
-
     h6 {
       color: $blue;
       text-decoration: underline;
       margin-bottom: 20px;
     }
+
     h6:hover {
       color: $pink;
       -webkit-transition: 0.2s ease-out;
@@ -355,6 +358,11 @@ h6 {font-size: 1.3em;}
   margin: 10px;
   padding: 30px;
   text-align: center;
+
+  .add_btn {
+    background-color: transparent;
+
+  }
 
   .card {
     display: flex;
