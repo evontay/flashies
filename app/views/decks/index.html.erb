@@ -3,28 +3,19 @@
   <h1 class="darkblue center"><%= @user.username %>'s Decks</h1>
 
   <% if @can_edit %>
-    <%= render 'form' %>
-  <% end %>
-    <!-- Modal Trigger -->
-  <a class="add_btn modal-trigger" href="#modal1">Modal</a>
-
-  <!-- Modal Structure -->
-  <div id="modal1" class="modal">
-    <div class="modal-content">
-      <h4>Modal Header</h4>
-      <p>A bunch of tsext</p>
-    </div>
-    <div class="modal-footer">
-      <a href="#!" class=" modal-action modal-close waves-effect waves-green btn-flat">Agree</a>
-    </div>
-  </div>
-
-
   <div class="add_btn center">
-    <%= link_to new_deck_path do %>
-      <span class="shift"><i class="tiny material-icons">queue</i></span> New Deck
+    <!-- "<%= link_to new_deck_path do %>" -->
+      <span class="shift"><i class="fa fa-plus-square" aria-hidden="true"></i> New Deck
     <% end %>
   </div>
+
+    <div class="deck-form">
+      <%= render 'form' %>
+    </div>
+
+  <% end %>
+
+
 
   <div class="deck-wrap">
     <% @decks.each do |deck| %>

@@ -1,26 +1,31 @@
-<%= simple_form_for @deck, html: { multipart: true } do |f| %>
-  <% if @deck.errors.any? %>
-    <div id="errors">
-      <h2>
-        <%= pluralize(@deck.errors.count, "error") %>
-        prevented this deck from saving
-      </h2>
-      <ul>
-        <% @deck.errors.full_messages.each do |msg| %>
-          <li>
-            <%= msg %>
-          </li>
-        <% end %>
-      </ul>
+<div class="wrapper">
+  <p class="darkblue right"><%= link_to "Cancel", decks_path %></p>
+  <h5 class="darkblue center">Create A New Deck</h5>
+
+  <%= simple_form_for @deck, html: { multipart: true } do |f| %>
+    <% if @deck.errors.any? %>
+      <div id="errors">
+        <h2>
+          <%= pluralize(@deck.errors.count, "error") %>
+          prevented this deck from saving
+        </h2>
+        <ul>
+          <% @deck.errors.full_messages.each do |msg| %>
+            <li>
+              <%= msg %>
+            </li>
+          <% end %>
+        </ul>
+      </div>
+    <% end %>
+
+    <div class="form-group">
+      <%= f.input :title, input_html: { class: 'form-control' } %>
     </div>
+    <div class="form-group">
+      <%= f.input :description, input_html: { class: 'form-control bottompad' } %>
+    </div>
+
+    <%= f.button :submit, class: "btn btn-primary" %>
   <% end %>
-
-  <div class="form-group">
-    <%= f.input :title, input_html: { class: 'form-control' } %>
-  </div>
-  <div class="form-group">
-    <%= f.input :description, input_html: { class: 'form-control bottompad' } %>
-  </div>
-
-  <%= f.button :submit, class: "btn btn-primary" %>
-<% end %>
+</div>
