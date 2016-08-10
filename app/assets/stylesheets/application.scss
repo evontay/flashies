@@ -283,11 +283,11 @@ h6 {font-size: 1.3em;}
     background-size: contain;
     background-repeat: no-repeat;
     background-position: center;
-    min-width: 180px;
-    max-width: 200px;
+    min-width: 200px;
+    max-width: 250px;
     height: 300px;
     text-align: center;
-    padding: 50px 25px 15px 25px;
+    padding: 50px 30px 15px 30px;
     overflow:hidden;
     color: $darkblue;
 
@@ -379,6 +379,19 @@ h6 {font-size: 1.3em;}
   box-shadow: 2px 2px 5px -2px #999;
   padding: 30px;
   margin: 20px;
+  max-width: 250px;
+  text-align: center;
+  color: $darkblue;
+  .front {
+    background-color: $blue;
+    color: white;
+    margin: 0;
+  }
+  .back {
+    background-color: $light;
+    color: $pink;
+    margin: 0;
+  }
 }
 
 

@@ -6,5 +6,5 @@ Rails.application.routes.draw do
     resources :cards
   end
 
-  get "/:username/decks" => "decks#index"
+  get ":username" => "decks#index"
 end

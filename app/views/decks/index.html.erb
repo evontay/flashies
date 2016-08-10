@@ -1,7 +1,10 @@
 <%= render "layouts/navbar" %>
 <div class="wrapper">
-  <h1 class="darkblue center"><%= current_user.username %>'s Decks</h1>
+  <h1 class="darkblue center"><%= @user.username %>'s Decks</h1>
 
+  <% if @can_edit %>
+    <%= render 'form' %>
+  <% end %>
     <!-- Modal Trigger -->
   <a class="add_btn modal-trigger" href="#modal1">Modal</a>
 
@@ -9,7 +12,7 @@
   <div id="modal1" class="modal">
     <div class="modal-content">
       <h4>Modal Header</h4>
-      <p>A bunch of text</p>
+      <p>A bunch of tsext</p>
     </div>
     <div class="modal-footer">
       <a href="#!" class=" modal-action modal-close waves-effect waves-green btn-flat">Agree</a>
