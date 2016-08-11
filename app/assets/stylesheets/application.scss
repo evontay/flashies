@@ -553,6 +553,28 @@ h6 {font-size: 1.3em;}
     cursor: pointer;
 }
 
+.directions {
+  height: 270px;
+  padding: 15px;
+  line-height: 270px;
+  flex:1;
+  color: white;
+  font-size: 2em;
+  cursor:pointer;
+}
+
+.directions:hover {
+  color: $pink;
+}
+
+#demo5-btn {
+  position: relative;
+
+  #demo5-backward {
+    text-align: right;
+  }
+}
+
 // SCROLL BOX ============
 
 .scroll-img {
