@@ -429,7 +429,9 @@ h6 {font-size: 1.3em;}
 
 // FLASH MODE ===================
 
-#flash-mode {
+#flash-mode
+
+.flash-wrapper {
   display: flex;
   flex-direction: row;
 }
@@ -468,8 +470,6 @@ h6 {font-size: 1.3em;}
 }
 
 // CARD FLIP ========
-
-
 .flip {
     -webkit-perspective: 800;
     width: 250px;
@@ -512,7 +512,9 @@ h6 {font-size: 1.3em;}
     cursor: pointer;
 }
 
+// PREVIOUS + NEXT CARD ============
+#prev {}
 
-
+#next {}
 
 // FOOTER ===================

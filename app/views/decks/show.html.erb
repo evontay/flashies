@@ -70,30 +70,34 @@
     <div id="flash">
       <h5><i class="icon-gamepad"></i>FLASH MODE!</h5>
     </div>
+
     <!-- ============ FLASH MODE ============= -->
     <div id="flash-mode" class="hidden">
 
-
-      <div id="js-flip-2" class="flip">
-        <div class="card">
-            <div class="face front">Prompt</div>
-            <div class="face back">Answer</div>
+      <div class="flash-wrapper">
+        <div id="js-flip-2" class="flip">
+          <div class="card">
+              <div class="face front">Prompt</div>
+              <div class="face back">Answer</div>
+          </div>
         </div>
+
+
+        <% @deck.cards.each do |card| %>
+        <div id="js-flip-2" class="flip">
+          <div class="card">
+            <div class="face front"><%= card.prompt_text %></div>
+            <div class="face back"><%= card.answer %></div>
+          </div>
+        </div>
+
+        <% end %>
+
       </div>
 
-
-      <% @deck.cards.each do |card| %>
-      <div id="js-flip-2" class="flip">
-        <div class="card">
-          <div class="face front"><%= card.prompt_text %></div>
-          <div class="face back"><%= card.answer %></div>
-        </div>
-      </div>
-
-      <% end %>
-
+      <div id="prev"><span class="glyphicon glyphicon-menu-left" aria-hidden="true"></span></div>
+      
+      <div id="next"><span class="glyphicon glyphicon-menu-right" aria-hidden="true"></span></div>
     </div>
-
-
 
   </div>
