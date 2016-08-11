@@ -3,11 +3,37 @@
 
   <h1 class="darkblue center"><%= @user.username %>'s Decks</h1>
 
-  <% if @can_edit %>
+  <!-- <% if @can_edit %>
     <div class="add_btn center toppad">
       <span class="glyphicon glyphicon-plus" aria-hidden="true"></span> New Deck
     </div>
+  <% end %> -->
+
+  <!-- Button trigger modal -->
+  <% if @can_edit %>
+    <button type="button" class="add_btn center" data-toggle="modal" data-target="#myModal">
+       <span class="glyphicon glyphicon-plus" aria-hidden="true"></span>New Deck
+    </button>
   <% end %>
+
+  <!-- Modal -->
+  <div class="modal fade" id="myModal" tabindex="-1" role="dialog" aria-labelledby="myModalLabel">
+    <div class="modal-dialog" role="document">
+      <div class="modal-content">
+        <div class="modal-header">
+          <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+            <span class="glyphicon glyphicon-remove" aria-hidden="true"></span>
+          </button>
+          <h4 class="modal-title" id="myModalLabel">Add a Deck</h4>
+        </div>
+        <div class="modal-body">
+          <%= render 'form' %>
+        </div>
+
+      </div>
+    </div>
+  </div>
+
 
   <div class="deck-form hidden">
     <%= render 'form' %>
@@ -22,7 +48,7 @@
             <%= link_to edit_deck_path(deck.id) do %>
               <span class="glyphicon glyphicon-edit" aria-hidden="true"></span>
             <% end %>
-            <%= link_to user_decks_path(username: @user.username, id: deck.id), method: :delete, data: {confirm: "Are you sure?"} do %>
+            <%= link_to decks_path(username: @user.username, id: deck.id), method: :delete, data: {confirm: "Are you sure?"} do %>
               <span class="glyphicon glyphicon-trash" aria-hidden="true"></span>
             <% end %>
           </div>

@@ -2,77 +2,102 @@
   <div class="wrapper">
     <!-- ============ NORMAL MODE ============= -->
     <div id="normal-mode">
-      <div class="leftside">
-        <div class="back">
-          <%= link_to decks_path do %>
-            <span class="glyphicon glyphicon-triangle-left" aria-hidden="true"></span> Back
+      <div class="normal-wrapper">
+
+        <div class="leftside">
+          <div class="back">
+            <%= link_to decks_path do %>
+              <span class="glyphicon glyphicon-triangle-left" aria-hidden="true"></span> Back
+            <% end %>
+          </div>
+
+          <div class="deck-form hidden">
+            <%= render 'cards/form' %>
+          </div>
+
+          <h6 class="darkblue toppad">
+            Created by <span class="pink2">
+              <%= link_to @deck.user.username, user_path(username: @deck.user.username) %></span>
+          </h6>
+          <h3 class="darkblue toppad"><%= @deck.title %></h3>
+          <p class="darkblue toppad"><%= @deck.description %></p>
+
+          <!-- ONLY OWNER CAN EDIT DECK -->
+          <% if @can_edit %>
+            <div class="edit-grp">
+              <%= link_to edit_deck_path do %>
+                <span class="glyphicon glyphicon-edit" aria-hidden="true"></span> Edit this deck
+              <% end %>
+              <%= link_to deck_path, method: :delete, data: {confirm: "Are you sure?"} do %>
+                <span class="glyphicon glyphicon-trash" aria-hidden="true"></span> Delete deck
+              <% end %>
+            </div>
           <% end %>
-        </div>
 
-        <div class="deck-form hidden">
-          <%= render 'cards/form' %>
-        </div>
+          <!-- Button trigger modal -->
+          <% if @can_edit %>
+            <button type="button" class="add_btn" data-toggle="modal" data-target="#myModal">
+               <span class="glyphicon glyphicon-plus" aria-hidden="true"></span>Add Card
+            </button>
+          <% end %>
 
-        <h6 class="darkblue toppad">
-          Created by <span class="pink2">
-            <%= link_to @deck.user.username, user_path(username: @deck.user.username) %></span>
-        </h6>
-        <h3 class="darkblue toppad"><%= @deck.title %></h3>
-        <p class="darkblue toppad"><%= @deck.description %></p>
+          <!-- Modal -->
+          <div class="modal fade" id="myModal" tabindex="-1" role="dialog" aria-labelledby="myModalLabel">
+            <div class="modal-dialog" role="document">
+              <div class="modal-content">
+                <div class="modal-header">
+                  <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                    <span class="glyphicon glyphicon-remove" aria-hidden="true"></span>
+                  </button>
+                  <h4 class="modal-title" id="myModalLabel">Add a card</h4>
+                </div>
+                <div class="modal-body">
+                  <%= render 'cards/form' %>
+                </div>
 
-        <!-- ONLY OWNER CAN EDIT DECK -->
-        <% if @can_edit %>
-          <div class="edit-grp">
-            <%= link_to edit_deck_path do %>
-              <span class="glyphicon glyphicon-edit" aria-hidden="true"></span> Edit this deck
-            <% end %>
-            <%= link_to deck_path, method: :delete, data: {confirm: "Are you sure?"} do %>
-              <span class="glyphicon glyphicon-trash" aria-hidden="true"></span> Delete deck
-            <% end %>
-          </div>
-        <% end %>
-
-        <!-- ONLY OWNER CAN ADD CARD -->
-        <% if @can_edit %>
-          <div class="add_btn">
-              <span class="glyphicon glyphicon-plus" aria-hidden="true"></span> New Card
-          </div>
-        <% end %>
-
-      </div>
-
-      <div class="rightside">
-
-        <% @deck.cards.each do |card| %>
-          <div class="card">
-            <div class="blue"><%= card.prompt_text %></div>
-            <div class="pink2"><%= card.answer %></div>
-
-            <!-- ONLY OWNER CAN EDIT CARD -->
-            <% if @can_edit %>
-              <div class="edit-grp">
-                <%= link_to edit_deck_card_path(@deck.id, card.id) do %>
-                    <span class="glyphicon glyphicon-edit" aria-hidden="true"></span>
-                <% end %>
-                <%= link_to deck_card_path(@deck.id, card.id), method: :delete, data: {confirm: "Are you sure?"} do %>
-                  <span class="glyphicon glyphicon-trash" aria-hidden="true"></span>
-                <% end %>
               </div>
-            <% end %>
+            </div>
           </div>
-        <% end %>
 
+        </div>
 
+        <div class="rightside">
+
+          <% @deck.cards.each do |card| %>
+            <div class="card">
+              <div class="blue"><%= card.prompt_text %></div>
+              <div class="pink2"><%= card.answer %></div>
+
+              <!-- ONLY OWNER CAN EDIT CARD -->
+              <% if @can_edit %>
+                <div class="edit-grp">
+                  <!-- <%= link_to edit_deck_card_path(@deck.id, card.id) do %>
+                      <span class="glyphicon glyphicon-edit" aria-hidden="true"></span>
+                  <% end %> -->
+                  <%= link_to deck_card_path(@deck.id, card.id), method: :delete, data: {confirm: "Are you sure?"} do %>
+                    <span class="glyphicon glyphicon-trash" aria-hidden="true"></span>
+                  <% end %>
+                </div>
+              <% end %>
+            </div>
+          <% end %>
+
+        </div>
       </div>
 
+      <div id="flash">
+        <h6><i class="icon-gamepad"></i>FLASH MODE!</h6>
+      </div>
 
     </div>
-    <div id="flash">
-      <h5><i class="icon-gamepad"></i>FLASH MODE!</h5>
-    </div>
+
 
     <!-- ============ FLASH MODE ============= -->
     <div id="flash-mode" class="hidden">
+
+      <div id="normal">
+        <h6>BACK</h6>
+      </div>
 
       <div class="flash-wrapper">
         <div id="js-flip-2" class="flip">
@@ -96,7 +121,7 @@
       </div>
 
       <div id="prev"><span class="glyphicon glyphicon-menu-left" aria-hidden="true"></span></div>
-      
+
       <div id="next"><span class="glyphicon glyphicon-menu-right" aria-hidden="true"></span></div>
     </div>
 

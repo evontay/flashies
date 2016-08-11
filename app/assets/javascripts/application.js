@@ -20,7 +20,8 @@ $(document).on('turbolinks:load', function () {
   console.log('hi')
   $('.add_btn').click(function () {
     console.log('add_btn clicked')
-    $('.deck-form').removeClass('hidden')
+    // $('.deck-form').removeClass('hidden')
+
   })
 
   $('#cancel').click(function () {
@@ -34,7 +35,14 @@ $(document).on('turbolinks:load', function () {
     $('#normal-mode').toggleClass('hidden')
   })
 
-  $('#js-flip-2').bind('click mouseleave', function () {
+  $('#normal').click(function () {
+    console.log('flash clicked')
+    $('#flash-mode').toggleClass('hidden')
+    $('#normal-mode').toggleClass('hidden')
+  })
+
+  // JS SCRIPT FOR FLIPPING
+  $('.card').bind('click mouseleave', function () {
     console.log('flip click')
     $('#js-flip-2 .card').toggleClass('flipped')
   })

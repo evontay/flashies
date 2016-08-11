@@ -330,21 +330,26 @@ h6 {font-size: 1.3em;}
   max-width: 600px;
   margin: 20px auto;
   padding: 30px;
-
-  #cancel {
-    text-align: right;
-    cursor: pointer;
-  }
-
-  .btn {
-    background-color: transparent;
-    border: 2px solid $blue;
-    color: $blue;
-  }
 }
 
+#cancel {
+  text-align: right;
+  cursor: pointer;
+}
+
+.btn {
+  background-color: transparent;
+  border: 2px solid $blue;
+  color: $blue;
+  border-radius: 0;
+  margin-top: 20px;
+}
+
+
 // NORMAL MODE ===================
-#normal-mode {
+#normal-mode {}
+
+.normal-wrapper {
   display: flex;
   flex-direction: row;
 
@@ -362,7 +367,22 @@ h6 {font-size: 1.3em;}
     color: $blue;
   }
 }
+
+.modal-content {
+    border: none;
+    border-radius: 0;
+
+    .btn {
+      margin-top: 20px;
+    }
+}
+
+.modal-body {
+  padding: 20px;
+}
+
 .leftside {
+  background-color: white;
   flex: 1;
   margin: 10px;
   padding: 30px;
@@ -386,7 +406,7 @@ h6 {font-size: 1.3em;}
 
   .add_btn {
     color: #999;
-    padding-left: 0;
+    //padding-left: 0;
     background-color: transparent;
     margin: 40px 0;
     text-align: center;
@@ -400,13 +420,13 @@ h6 {font-size: 1.3em;}
 .rightside {
   flex: 2;
   margin: 10px;
-  padding: 30px;
+  padding: 0 30px;
   text-align: center;
 
   .card {
     display: flex;
     flex-direction: row;
-    margin: 10px auto;
+    margin: 0 auto 10px auto;
 
     .blue {
       background-color: $darkblue;
@@ -419,7 +439,7 @@ h6 {font-size: 1.3em;}
 
     .blue, .pink2 {
       flex: 1;
-      margin: 10px;
+      margin: 0px 10px 20px 10px;
       padding: 15px;
       font-weight: 800;
       //background: white;
@@ -451,20 +471,21 @@ h6 {font-size: 1.3em;}
   }
 
 }
-#flash {
-  border: 2px solid #888;
+#flash, #normal {
+  border: 2px solid $blue;
+  background-color: white;
   padding: 10px;
-  width: 300px;
+  width: 50%;
   text-align: center;
   margin: 30px auto;
-  color: #888;
+  color: $blue;
   letter-spacing: 2px;
   text-transform: uppercase;
   cursor: pointer;
   i { padding-right: 10px;}
 }
 
-#flash:hover {
+#flash:hover, #normal:hover {
   color: $pink;
   border: 2px solid $pink;
 }
