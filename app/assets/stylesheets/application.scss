@@ -348,6 +348,11 @@ h6 {font-size: 1.3em;}
   display: flex;
   flex-direction: row;
 
+  h6 a:hover {
+    text-decoration: underline;
+    color: $pink;
+  }
+
   .edit-grp, .edit-grp a {
     padding-top: 15px;
     color: #999;
@@ -371,18 +376,24 @@ h6 {font-size: 1.3em;}
     color: #999;
   }
 
-  .edit-grp a { padding-right: 30px;}
+  .edit-grp a {
+    padding-right: 30px;
+  }
   .edit-grp a:hover {
     color: $blue;
     text-decoration: none;
   }
 
   .add_btn {
-    color: $blue;
+    color: #999;
     padding-left: 0;
     background-color: transparent;
     margin: 40px 0;
     text-align: center;
+  }
+
+  .add_btn:hover {
+    color: $blue;
   }
 }
 
@@ -405,6 +416,7 @@ h6 {font-size: 1.3em;}
       background-color: white;
       color: $pink;
     }
+
     .blue, .pink2 {
       flex: 1;
       margin: 10px;
