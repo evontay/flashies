@@ -11,7 +11,7 @@
 
   <!-- Button trigger modal -->
   <% if @can_edit %>
-    <button type="button" class="add_btn center" data-toggle="modal" data-target="#myModal">
+    <button type="button" class="add_btn center toppad" data-toggle="modal" data-target="#myModal">
        <span class="glyphicon glyphicon-plus" aria-hidden="true"></span>New Deck
     </button>
   <% end %>
@@ -21,10 +21,10 @@
     <div class="modal-dialog" role="document">
       <div class="modal-content">
         <div class="modal-header">
-          <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+          <button type="button" class="close darkblue" data-dismiss="modal" aria-label="Close">
             <span class="glyphicon glyphicon-remove" aria-hidden="true"></span>
           </button>
-          <h4 class="modal-title" id="myModalLabel">Add a Deck</h4>
+          <h4 class="modal-title darkblue" id="myModalLabel">Add a Deck</h4>
         </div>
         <div class="modal-body">
           <%= render 'form' %>
@@ -44,7 +44,7 @@
     <% @decks.each do |deck| %>
       <div class="deck">
         <% if @can_edit %>
-          <div class="edit-grp">
+          <div class="edit-grp" data-toggle="modal" data-target="#myModal-edit">
             <%= link_to edit_deck_path(deck.id) do %>
               <span class="glyphicon glyphicon-edit" aria-hidden="true"></span>
             <% end %>

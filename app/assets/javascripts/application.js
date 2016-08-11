@@ -41,6 +41,17 @@ $(document).on('turbolinks:load', function () {
     $('#normal-mode').toggleClass('hidden')
   })
 
+  $('#demo5').scrollbox({
+    direction: 'h',
+    distance: 270
+  })
+  $('#demo5-backward').click(function () {
+    $('#demo5').trigger('backward')
+  })
+  $('#demo5-forward').click(function () {
+    $('#demo5').trigger('forward')
+  })
+
   // JS SCRIPT FOR FLIPPING
   $('.card').bind('click mouseleave', function () {
     console.log('flip click')

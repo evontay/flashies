@@ -86,7 +86,7 @@
       </div>
 
       <div id="flash">
-        <h6><i class="icon-gamepad"></i>FLASH MODE!</h6>
+        <h6><span class="glyphicon glyphicon-flash" aria-hidden="true"></span>FLASH MODE!</h6>
       </div>
 
     </div>
@@ -120,9 +120,33 @@
 
       </div>
 
-      <div id="prev"><span class="glyphicon glyphicon-menu-left" aria-hidden="true"></span></div>
+      <div id="demo5" class="scroll-img">
+      <ul class="cards-box">
+        <li>
+            <div id="js-flip-2" class="flip">
+                <div class="card">
+                    <div class="face front">Prompt1</div>
+                    <div class="face back">Answer1</div>
+                </div>
+            </div>
+        </li>
+        <% @deck.cards.each do |card| %>
+        <li>
+            <div id="js-flip-2" class="flip">
+                <div class="card">
+                    <div class="face front"><%= card.prompt_text %></div>
+                    <div class="face back"><%= card.answer %></div>
+                </div>
+            </div>
+        </li>
+        <% end %>
+      </ul>
+    </div>
+    <div id="demo5-btn" class="text-center">
+      <button class="btn" id="demo5-backward"><i class="icon-chevron-right"></i></button>
+      <button class="btn" id="demo5-forward"><i class="icon-chevron-left"></i></button>
+    </div>
 
-      <div id="next"><span class="glyphicon glyphicon-menu-right" aria-hidden="true"></span></div>
     </div>
 
   </div>

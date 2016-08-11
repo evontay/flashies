@@ -298,14 +298,14 @@ h6 {font-size: 1.3em;}
   }
 
   .add_btn {
-    // background-color: white;
+    background-color: transparent;
     padding: 10px;
     max-width: 150px;
     color: #999;
-    margin: 20px 0;
+    margin: 0 auto;
     cursor: pointer;
     border: 2px solid #999;
-    margin: 20px auto;
+
     span {
       padding-right: 10px;
     }
@@ -318,10 +318,6 @@ h6 {font-size: 1.3em;}
     -moz-transition: 0.2s ease-out;
     transition: 0.2s ease-out;
   }
-  .shift {
-    margin-bottom: -15px;
-  }
-
 
 // DECK NEW ===================
 .form-wrap {
@@ -352,6 +348,7 @@ h6 {font-size: 1.3em;}
 .normal-wrapper {
   display: flex;
   flex-direction: row;
+  padding-top: 40px;
 
   h6 a:hover {
     text-decoration: underline;
@@ -383,6 +380,7 @@ h6 {font-size: 1.3em;}
 
 .leftside {
   background-color: white;
+  box-shadow: 2px 2px 5px -2px #999;
   flex: 1;
   margin: 10px;
   padding: 30px;
@@ -405,7 +403,8 @@ h6 {font-size: 1.3em;}
   }
 
   .add_btn {
-    color: #999;
+    border: 2px solid $darkblue;
+    color: $darkblue;
     //padding-left: 0;
     background-color: transparent;
     margin: 40px 0;
@@ -414,6 +413,7 @@ h6 {font-size: 1.3em;}
 
   .add_btn:hover {
     color: $blue;
+    border: 2px solid $blue;
   }
 }
 
@@ -427,14 +427,15 @@ h6 {font-size: 1.3em;}
     display: flex;
     flex-direction: row;
     margin: 0 auto 10px auto;
+    letter-spacing: 1px;
 
     .blue {
       background-color: $darkblue;
       color: $light;
     }
     .pink2 {
-      background-color: white;
-      color: $pink;
+      background-color: $pink;
+      color: white;
     }
 
     .blue, .pink2 {
@@ -454,6 +455,17 @@ h6 {font-size: 1.3em;}
 .flash-wrapper {
   display: flex;
   flex-direction: row;
+
+  .cards-box {
+    padding-left: 0 !important;
+  }
+  .card {
+  height: 250px;
+  width: 250px;
+  border-radius: 3px;
+  color: white;
+  }
+
 }
 
 .back {
@@ -495,8 +507,9 @@ h6 {font-size: 1.3em;}
     -webkit-perspective: 800;
     width: 250px;
     height: 250px;
+    border-radius: 3px;
     position: relative;
-    margin: 50px auto;
+    margin: 0 auto;
 }
 .flip .card.flipped {
     -webkit-transform: rotateY(-180deg);
@@ -514,11 +527,11 @@ h6 {font-size: 1.3em;}
     -webkit-backface-visibility: hidden;
     z-index: 2;
     text-align: center;
-    line-height: 200px;
 }
 .flip .card .front {
     position: absolute;
     z-index: 1;
+    border-radius: 3px;
     background: $darkblue;
     color: white;
     font-weight: 800;
@@ -526,16 +539,41 @@ h6 {font-size: 1.3em;}
 }
 .flip .card .back {
     -webkit-transform: rotateY(-180deg);
-    background: $darkblue;
     background: white;
     color: $pink;
     font-weight: 800;
+    border-radius: 3px;
     cursor: pointer;
 }
 
-// PREVIOUS + NEXT CARD ============
-#prev {}
+// SCROLL BOX ============
 
-#next {}
+.scroll-img {
+  // border: 1px solid $pink;
+  width: 270px;
+  height: 270px;
+  overflow: hidden;
+  margin: 0 auto;
+}
+.scroll-img ul {
+  width: 700px;
+  height: 600px;
+  margin: 0;
+  padding: 0 !important;
+}
+.scroll-img ul li {
+  display: inline-block;
+  margin: 10px 0 10px 10px;
+}
+
+#demo5.scroll-img ul {
+  width: 1500px;
+}
+
+#demo5-btn {
+  margin: 0 auto;
+  padding-top: 10px;
+}
+
 
 // FOOTER ===================
