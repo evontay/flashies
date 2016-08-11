@@ -53,7 +53,7 @@ $(document).on('turbolinks:load', function () {
   })
 
   // JS SCRIPT FOR FLIPPING
-  $('.card').bind('click mouseleave', function () {
+  $('.card').bind('click', function () {
     console.log('flip click')
     $('#js-flip-2 .card').toggleClass('flipped')
   })

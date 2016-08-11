@@ -519,6 +519,7 @@ h6 {font-size: 1.3em;}
     height: 100%;
     -webkit-transform-style: preserve-3d;
     -webkit-transition: 0.5s;
+    position: relative;
 }
 .flip .card .face {
     width: 100%;
@@ -527,6 +528,12 @@ h6 {font-size: 1.3em;}
     -webkit-backface-visibility: hidden;
     z-index: 2;
     text-align: center;
+    display: table;
+    p {
+      display: table-cell;
+      vertical-align: middle;
+      font-size: 1.2em;
+    }
 }
 .flip .card .front {
     position: absolute;

@@ -96,56 +96,44 @@
     <div id="flash-mode" class="hidden">
 
       <div id="normal">
-        <h6>BACK</h6>
+        <h6><span class="glyphicon glyphicon-triangle-left" aria-hidden="true"></span> BACK</h6>
       </div>
 
       <div class="flash-wrapper">
-        <div id="js-flip-2" class="flip">
-          <div class="card">
-              <div class="face front">Prompt</div>
-              <div class="face back">Answer</div>
-          </div>
+        <div id="demo5-btn" class="text-center">
+          <button class="btn" id="demo5-backward"><i class="icon-chevron-left"></i></button>
         </div>
 
-
-        <% @deck.cards.each do |card| %>
-        <div id="js-flip-2" class="flip">
-          <div class="card">
-            <div class="face front"><%= card.prompt_text %></div>
-            <div class="face back"><%= card.answer %></div>
-          </div>
+        <div id="demo5" class="scroll-img">
+          <ul class="cards-box">
+            <li>
+                <div id="js-flip-2" class="flip">
+                    <div class="card">
+                        <div class="face front"><p>Prompt1</p></div>
+                        <div class="face back"><p>Answer1</p></div>
+                    </div>
+                </div>
+            </li>
+            <% @deck.cards.each do |card| %>
+              <li>
+                  <div id="js-flip-2" class="flip">
+                      <div class="card">
+                          <div class="face front"><p><%= card.prompt_text %></p></div>
+                          <div class="face back"><p><%= card.answer %></p></div>
+                      </div>
+                  </div>
+              </li>
+            <% end %>
+          </ul>
         </div>
 
-        <% end %>
+        <div id="demo5-btn" class="text-center">
+          <button class="btn" id="demo5-forward"><i class="icon-chevron-right"></i></button>
+        </div>
 
       </div>
 
-      <div id="demo5" class="scroll-img">
-      <ul class="cards-box">
-        <li>
-            <div id="js-flip-2" class="flip">
-                <div class="card">
-                    <div class="face front">Prompt1</div>
-                    <div class="face back">Answer1</div>
-                </div>
-            </div>
-        </li>
-        <% @deck.cards.each do |card| %>
-        <li>
-            <div id="js-flip-2" class="flip">
-                <div class="card">
-                    <div class="face front"><%= card.prompt_text %></div>
-                    <div class="face back"><%= card.answer %></div>
-                </div>
-            </div>
-        </li>
-        <% end %>
-      </ul>
-    </div>
-    <div id="demo5-btn" class="text-center">
-      <button class="btn" id="demo5-backward"><i class="icon-chevron-right"></i></button>
-      <button class="btn" id="demo5-forward"><i class="icon-chevron-left"></i></button>
-    </div>
+      <h6 class="center pink2 toppad"><span class="glyphicon glyphicon-refresh" aria-hidden="true"></span> Click on card to flip!</h6>
 
     </div>
 
