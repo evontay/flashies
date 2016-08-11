@@ -4,6 +4,10 @@ class CardsController < ApplicationController
 
   def index
     @cards = @deck.cards.all
+    @can_edit = current_user.id == @user.id
+
+    @deck = Deck.where(user_id: @user)
+    @card = Card.new
   end
 
   def new
@@ -44,6 +48,10 @@ class CardsController < ApplicationController
 
   def set_deck
     @deck = Deck.find(params[:deck_id])
+
+    if current_user.id != @deck.user.id
+      return redirect_to @deck
+    end
   end
 
   def set_card

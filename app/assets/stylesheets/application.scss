@@ -95,7 +95,6 @@ h6 {font-size: 1.3em;}
   margin: 10px auto;
   padding: 10px;
   border: 1px solid $pink;
-  border-radius: 3px;
   color: $pink;
   text-align: center;
   max-width: 50%;
@@ -209,7 +208,6 @@ h6 {font-size: 1.3em;}
 }
 
 .start {
-  border-radius: 4px;
   border: 2px solid $blue;
   color: $blue;
   padding: 10px;
@@ -239,19 +237,21 @@ h6 {font-size: 1.3em;}
     margin: 0 auto;
   }
 
+
   .deck {
     flex: 1;
     background-image: url('deck.svg');
     background-size: contain;
     background-repeat: no-repeat;
-    background-position: center;
+    background-position: top;
+    background-color: transparent;
     min-width: 220px;
     max-width: 220px;
-    height: 300px;
-    line-height: 220px;
+    min-height: 300px;
+    max-height: 300px;
     text-align: center;
-    padding: 3%;
-    margin: 0 auto;
+    padding: 25px;
+    margin: 20px auto;
     margin-top: 20px;
     overflow:hidden;
     color: $darkblue;
@@ -259,30 +259,37 @@ h6 {font-size: 1.3em;}
     .deck-content {
       display: inline-block;
       vertical-align: middle;
+    }
 
-      .edit-grp {
-        position: relative;
-        bottom: 20px;
-        border-top: 1px solid $light;
-        //margin-top: 20px;
-        //padding-top: 15px;
-
-        a {
-          padding: 0 10px;
-          color: #999;
-        }
+    .edit-grp {
+      border-bottom: 1px solid $light;
+      margin-bottom: 10px;
+      padding-bottom: 10px;
+      color: #999;
+      span, a {
+        padding: 5px;
       }
 
-    }
-    h6, p {line-height: 1.5;}
-    p {font-size: 0.9em;}
-    h6 {
-      color: $blue;
-      text-decoration: underline;
-      margin-bottom: 20px;
+      a:hover {
+        color: $pink;
+        text-decoration: none;
+      }
     }
 
-    h6:hover {
+
+    p {
+      font-size: 1em;
+      line-height: 1.5;
+    }
+
+    h6 {
+      color: $blue;
+      //text-decoration: underline;
+      margin-bottom: 20px;
+      line-height: 1.5
+    }
+
+    h6 a:hover {
       color: $pink;
       -webkit-transition: 0.2s ease-out;
       -moz-transition: 0.2s ease-out;
@@ -291,16 +298,21 @@ h6 {font-size: 1.3em;}
   }
 
   .add_btn {
-    background-color: white;
+    // background-color: white;
     padding: 10px;
     max-width: 150px;
-    color: $blue;
-    margin: 20px auto;
+    color: #999;
+    margin: 20px 0;
     cursor: pointer;
-    border: 2px solid white;
+    border: 2px solid #999;
+    margin: 20px auto;
+    span {
+      padding-right: 10px;
+    }
   }
 
   .add_btn:hover {
+    color: $blue;
     border: 2px solid $blue;
     -webkit-transition: 0.2s ease-out;
     -moz-transition: 0.2s ease-out;
@@ -327,7 +339,6 @@ h6 {font-size: 1.3em;}
   .btn {
     background-color: transparent;
     border: 2px solid $blue;
-    border-radius: none;
     color: $blue;
   }
 }
@@ -339,7 +350,6 @@ h6 {font-size: 1.3em;}
 
   .edit-grp, .edit-grp a {
     padding-top: 15px;
-    margin: 10px;
     color: #999;
   }
 
@@ -351,6 +361,29 @@ h6 {font-size: 1.3em;}
   flex: 1;
   margin: 10px;
   padding: 30px;
+  p {font-weight: 800;}
+
+  .edit-grp {
+    border-top: 2px solid #999;
+    margin-top: 30px;
+    padding-top: 15px;
+    margin-right: 20px;
+    color: #999;
+  }
+
+  .edit-grp a { padding-right: 30px;}
+  .edit-grp a:hover {
+    color: $blue;
+    text-decoration: none;
+  }
+
+  .add_btn {
+    color: $blue;
+    padding-left: 0;
+    background-color: transparent;
+    margin: 40px 0;
+    text-align: center;
+  }
 }
 
 .rightside {
@@ -358,11 +391,6 @@ h6 {font-size: 1.3em;}
   margin: 10px;
   padding: 30px;
   text-align: center;
-
-  .add_btn {
-    background-color: transparent;
-
-  }
 
   .card {
     display: flex;
@@ -382,16 +410,13 @@ h6 {font-size: 1.3em;}
       margin: 10px;
       padding: 15px;
       font-weight: 800;
-      border-radius: 3px;
       //background: white;
     }
   }
 }
 
 // FLASH MODE ===================
-button #flash {
-  margin: 0 auto;
-}
+
 #flash-mode {
   display: flex;
   flex-direction: row;
@@ -399,44 +424,35 @@ button #flash {
 
 .back {
   margin: 0;
-  margin-top: 30px;
+  // margin-top: 30px;
 
   a{
     color: #999;
-    padding: 10px;
-    border: 2px solid #999;
-    border-radius: 3px;
     text-decoration: none;
   }
 
   a:hover {
-    color: $darkblue;
-    border: 2px solid $darkblue;
+    color: $blue;
+    // border: 2px solid $darkblue;
   }
 
 }
-.flash {
-  //background-image: url('background.jpeg');
-  //background-size: cover;
-  //background:
-    //linear-gradient($darkblue 0%, $pink 90%),
-    //url('background.jpeg');
-  //background-blend-mode: multiply, difference;;
-  //color: white;
-  //height: 100vh;
+#flash {
+  border: 2px solid #888;
+  padding: 10px;
+  width: 300px;
+  text-align: center;
+  margin: 30px auto;
+  color: #888;
+  letter-spacing: 2px;
+  text-transform: uppercase;
+  cursor: pointer;
+  i { padding-right: 10px;}
+}
 
-  h1, p {
-    margin: 0;
-    margin-top: 15px;
-  }
-  a {
-    color: $blue;
-    padding: 10px;
-  }
-
-  a:hover {
-    border-bottom: 2px solid $pink;
-  }
+#flash:hover {
+  color: $pink;
+  border: 2px solid $pink;
 }
 
 // CARD FLIP ========
@@ -464,23 +480,23 @@ button #flash {
     position: absolute;
     -webkit-backface-visibility: hidden;
     z-index: 2;
-    font-family: Georgia;
-    font-size: 3em;
     text-align: center;
     line-height: 200px;
 }
 .flip .card .front {
     position: absolute;
     z-index: 1;
-    background: black;
+    background: $darkblue;
     color: white;
+    font-weight: 800;
     cursor: pointer;
 }
 .flip .card .back {
     -webkit-transform: rotateY(-180deg);
-    background: blue;
+    background: $darkblue;
     background: white;
-    color: black;
+    color: $pink;
+    font-weight: 800;
     cursor: pointer;
 }
 

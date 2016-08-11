@@ -3,20 +3,23 @@ class DecksController < ApplicationController
 
   def index
 
-    # @decks = Deck.all.order("created_at DESC")
+    @decks = Deck.all.order("created_at ASC")
     @decks = Deck.where(user_id: params[:username]) || Deck.where(user_id: current_user)
 
     if params[:username].present?
       @user = User.find_by(username: params[:username])
       return redirect_to root_path if @user.blank?
-
     else
       @user = current_user
     end
 
-    @can_edit = current_user.id == @user.id
-    # @decks = Deck.all.order("created_at DESC")
-    #@decks = Deck.where(user_id: @user.user_id) ||
+    if current_user.id == @user.id
+      @can_edit = true
+    else
+      @can_edit = false
+    end
+
+    #@can_edit = current_user.id == @user.id
     @decks = Deck.where(user_id: @user)
     @deck = Deck.new
 
@@ -51,9 +54,16 @@ class DecksController < ApplicationController
   end
 
   def edit
+    if current_user.id != @deck.user.id
+      return redirect_to @deck
+    end
   end
 
   def update
+    if current_user.id != @deck.user.id
+      return redirect_to @deck
+    end
+
     if @deck.update(deck_params)
       redirect_to decks_path, notice: "Deck was Successfully updated!"
     else
@@ -62,6 +72,10 @@ class DecksController < ApplicationController
   end
 
   def destroy
+    if current_user.id != @deck.user.id
+      return redirect_to @deck
+    end
+
     @deck.destroy
     redirect_to decks_path
   end

@@ -16,7 +16,7 @@
 // = require turbolinks
 // = require_tree .
 
-$(document).ready(function () {
+$(document).on('turbolinks:load', function () {
   console.log('hi')
   $('.add_btn').click(function () {
     console.log('add_btn clicked')
