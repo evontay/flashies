@@ -3,7 +3,7 @@ class DecksController < ApplicationController
 
   def index
 
-    @decks = Deck.all.order("created_at ASC")
+    # @decks = Deck.all.order("created_at ASC")
     @decks = Deck.where(user_id: params[:username]) || Deck.where(user_id: current_user)
 
     if params[:username].present?
