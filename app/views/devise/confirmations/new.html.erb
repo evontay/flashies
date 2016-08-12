@@ -8,12 +8,14 @@
       <%= f.error_notification %>
       <%= f.full_error :confirmation_token %>
 
-      <div class="form-inputs">
+      <div class="form-inputs form-group">
         <%= f.input :username, required: true, autofocus: true %>
+      </div>
+      <div class="form-inputs form-group">
         <%= f.input :email, required: true, autofocus: true %>
       </div>
 
-      <div class="form-actions toppad bottompad">
+      <div class="form-group form-actions toppad bottompad">
         <%= f.button :submit, "Resend confirmation instructions" %>
       </div>
     <% end %>

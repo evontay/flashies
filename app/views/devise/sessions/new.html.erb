@@ -1,16 +1,20 @@
 <%= render "layouts/navbar" %>
 <div class="wrapper">
-  <div class="paper-wrap">
+  <div class="paper-wrap bottompad">
     <h2>Log in</h2>
 
     <%= simple_form_for(resource, as: resource_name, url: session_path(resource_name)) do |f| %>
-      <div class="form-inputs">
+      <div class="form-inputs form-group toppad">
         <%= f.input :email, required: false, autofocus: true %>
+      </div>
+      <div class="form-inputs form-group">
         <%= f.input :password, required: false %>
+      </div>
+      <div class="form-inputs form-group toppad">
         <%= f.input :remember_me, as: :boolean if devise_mapping.rememberable? %>
       </div>
 
-      <div class="form-actions bottompad toppad">
+      <div class="form-actions bottompad">
         <%= f.button :submit, "Log in" %>
       </div>
     <% end %>
