@@ -38,7 +38,7 @@ $light: #f2f2f2;
 body {
   font-family: 'Raleway', sans-serif;
   background-color: $light;
-  background-image: url('noisePattern.png');
+  background-image: url(<%= asset_data_uri 'noisePattern.png' %>);
   background-repeat: repeat;
   background-blend-mode: multiply;
   box-sizing: border-box;
@@ -231,7 +231,7 @@ h6 {font-size: 1.3em;}
     // background-color: $light;
     // background-blend-mode: multiply;
     flex:1;
-    background-image: url('deck.svg');
+    background-image: url(<%= asset_data_uri 'deck.svg' %>);
     background-size: contain;
     background-repeat: no-repeat;
     background-position: center;
