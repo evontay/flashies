@@ -1,7 +1,7 @@
 # Flashies
 A quick way to memorise things.
 
-<img src"http://imgur.com/a/fjzbL"/>
+<img src="http://i.imgur.com/9BrujX3.png"/>
 
 #### Built on:
 * Ruby '2.3.0'
