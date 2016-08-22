@@ -18,4 +18,8 @@ A quick way to memorise things.
 * gem 'rails_real_favicon'
 
 #### Database
-Postgresql
+* Postgresql
+
+#### Plugins
+* https://github.com/stephband/jquery.event.swipe
+* http://github.com/wmh/jquery-scrollbox

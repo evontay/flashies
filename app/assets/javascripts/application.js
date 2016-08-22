@@ -43,7 +43,7 @@ $(document).on('turbolinks:load', function () {
 
   $('#demo5').scrollbox({
     direction: 'h',
-    distance: 270
+    distance: 520
   })
   $('#demo5-backward').click(function () {
     $('#demo5').trigger('backward')

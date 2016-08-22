@@ -158,50 +158,7 @@ h6 {font-size: 1.3em;}
 }
 
 // APP INDEX ===================
-@media screen and (max-width: 430px) {
-  .wrapper {padding: 5px !important;}
-  .start {margin: 10px auto !important;}
-  .directions {padding:0 !important;}
-  .wrapper {width: 98% !important;}
-  .leftside .add_btn {margin: 0px !important;}
-  #flash {margin-top: 0px !important;}
-}
-@media screen and (max-width: 800px) {
-  .intro {flex-direction: column !important;}
-  .normal-wrapper {
-    display: flex;
-    flex-direction: column !important;
-    flex-wrap: wrap;
-    padding-top: 0px !important;
 
-  .edit-grp {
-    margin: 10px 0px !important;
-    flex-direction: column !important;
-  }
-    p {display: none;}
-  }
-  .leftside {
-    padding: 15px;
-  }
-  .leftside .add_btn {
-    margin: 15px 0;
-  }
-
-  .rightside {
-    padding: 0 0 !important;
-  }
-
-  .rightside .card {
-    margin: 0px 0px 10px 0px !important;
-    .edit-grp  {
-      padding-left: 5px !important;
-    }
-  }
-
-  .rightside .card .blue, .rightside .card .pink2 {
-    margin: 0px 0px 10px 0px !important;
-  }
-}
 .home {
 
   h5 {
@@ -507,8 +464,8 @@ h6 {font-size: 1.3em;}
     padding-left: 0 !important;
   }
   .card {
-  height: 250px;
-  width: 250px;
+  height: 500px;
+  width: 500px;
   border-radius: 3px;
   color: white;
   }
@@ -550,63 +507,130 @@ h6 {font-size: 1.3em;}
 }
 
 // CARD FLIP ========
+
+@media screen and (max-width: 430px) {
+  .wrapper {padding: 5px !important;}
+  .start {margin: 10px auto !important;}
+  .directions {padding:0 !important;}
+  .wrapper {width: 98% !important;}
+  .leftside .add_btn {margin: 0px !important;}
+  #flash {margin-top: 0px !important;}
+}
+@media screen and (max-width: 800px) {
+  .intro {flex-direction: column !important;}
+  .normal-wrapper {
+    display: flex;
+    flex-direction: column !important;
+    flex-wrap: wrap;
+    padding-top: 0px !important;
+
+  .edit-grp {
+    margin: 10px 0px !important;
+    flex-direction: column !important;
+  }
+    p {display: none;}
+  }
+  .leftside {
+    padding: 15px;
+  }
+  .leftside .add_btn {
+    margin: 15px 0;
+  }
+
+  .rightside {
+    padding: 0 0 !important;
+  }
+
+  .rightside .card {
+    margin: 0px 0px 10px 0px !important;
+    .edit-grp  {
+      padding-left: 5px !important;
+    }
+  }
+
+  .rightside .card .blue, .rightside .card .pink2 {
+    margin: 0px 0px 10px 0px !important;
+  }
+
+  .flip {
+    width: 250px !important;
+    height: 250px !important;
+  }
+
+  #flash-mode .flash-wrapper .card {
+    height: 250px !important;
+    width: 250px !important;
+  }
+
+  .directions {
+    height: 270px !important;
+    line-height: 270px !important;
+    font-size: 2em !important;
+  }
+
+  .scroll-img {
+    width: 270px !important;
+    height: 270px !important;
+  }
+}
+
 .flip {
-    -webkit-perspective: 800;
-    width: 250px;
-    height: 250px;
-    border-radius: 3px;
-    position: relative;
-    margin: 0 auto;
+  -webkit-perspective: 800;
+  width: 500px;
+  height: 500px;
+  border-radius: 3px;
+  position: relative;
+  margin: 0 auto;
 }
 .flip .card.flipped {
-    -webkit-transform: rotateY(-180deg);
+  -webkit-transform: rotateY(-180deg);
 }
 .flip .card {
-    width: 100%;
-    height: 100%;
-    -webkit-transform-style: preserve-3d;
-    -webkit-transition: 0.5s;
-    position: relative;
+  width: 100%;
+  height: 100%;
+  -webkit-transform-style: preserve-3d;
+  -webkit-transition: 0.5s;
+  position: relative;
 }
 .flip .card .face {
-    width: 100%;
-    height: 100%;
-    position: absolute;
-    -webkit-backface-visibility: hidden;
-    z-index: 2;
-    text-align: center;
-    display: table;
-    p {
-      display: table-cell;
-      vertical-align: middle;
-      font-size: 1.2em;
-    }
+  width: 100%;
+  height: 100%;
+  position: absolute;
+  -webkit-backface-visibility: hidden;
+  z-index: 2;
+  text-align: center;
+  display: table;
+  p {
+    display: table-cell;
+    vertical-align: middle;
+    font-size: 1.2em;
+  }
 }
 .flip .card .front {
-    position: absolute;
-    z-index: 1;
-    border-radius: 3px;
-    background: $darkblue;
-    color: white;
-    font-weight: 800;
-    cursor: pointer;
+  position: absolute;
+  z-index: 1;
+  border-radius: 3px;
+  background: $darkblue;
+  color: white;
+  font-weight: 800;
+  cursor: pointer;
 }
 .flip .card .back {
-    -webkit-transform: rotateY(-180deg);
-    background: white;
-    color: $pink;
-    font-weight: 800;
-    border-radius: 3px;
-    cursor: pointer;
+  -webkit-transform: rotateY(-180deg);
+  background: white;
+  color: $pink;
+  font-weight: 800;
+  border-radius: 3px;
+  cursor: pointer;
 }
 
 .directions {
-  height: 270px;
+  height: 520px;
   padding: 15px;
-  line-height: 270px;
+  line-height: 520px;
   flex:1;
   color: white;
-  font-size: 2em;
+  font-size: 3em;
   cursor:pointer;
 }
 
@@ -626,8 +650,8 @@ h6 {font-size: 1.3em;}
 
 .scroll-img {
   // border: 1px solid $pink;
-  width: 270px;
-  height: 270px;
+  width: 520px;
+  height: 520px;
   overflow: hidden;
   margin: 0 auto;
 }
