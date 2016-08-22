@@ -36394,3 +36394,88 @@ Processing by DecksController#show as HTML
 Completed 200 OK in 237ms (Views: 223.9ms | ActiveRecord: 7.3ms)
 
 
+Started GET "/Root/decks/17" for ::1 at 2016-08-22 19:46:57 +0800
+Processing by DecksController#show as HTML
+  Parameters: {"username"=>"Root", "id"=>"17"}
+  [1m[36mDeck Load (0.7ms)[0m  [1m[34mSELECT  "decks".* FROM "decks" WHERE "decks"."id" = $1 LIMIT $2[0m  [["id", 17], ["LIMIT", 1]]
+  [1m[36mUser Load (0.6ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."username" = $1 LIMIT $2[0m  [["username", "Root"], ["LIMIT", 1]]
+  [1m[36mUser Load (0.6ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = $1 ORDER BY "users"."id" ASC LIMIT $2[0m  [["id", 2], ["LIMIT", 1]]
+  Rendering decks/show.html.erb within layouts/application
+  Rendered layouts/_navbar.html.erb (40.5ms)
+  Rendered cards/_form.html.erb (8.6ms)
+  [1m[36mUser Load (0.6ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = $1 LIMIT $2[0m  [["id", 2], ["LIMIT", 1]]
+  Rendered cards/_form.html.erb (7.9ms)
+  [1m[36mCard Load (0.6ms)[0m  [1m[34mSELECT "cards".* FROM "cards" WHERE "cards"."deck_id" = $1[0m  [["deck_id", 17]]
+  Rendered decks/show.html.erb within layouts/application (73.8ms)
+  Rendered application/_favicon.html.erb (13.0ms)
+Completed 200 OK in 313ms (Views: 301.0ms | ActiveRecord: 3.0ms)
+
+
+Started GET "/Root/decks/17" for ::1 at 2016-08-22 19:48:50 +0800
+Processing by DecksController#show as HTML
+  Parameters: {"username"=>"Root", "id"=>"17"}
+  [1m[36mDeck Load (0.5ms)[0m  [1m[34mSELECT  "decks".* FROM "decks" WHERE "decks"."id" = $1 LIMIT $2[0m  [["id", 17], ["LIMIT", 1]]
+  [1m[36mUser Load (0.7ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."username" = $1 LIMIT $2[0m  [["username", "Root"], ["LIMIT", 1]]
+  [1m[36mUser Load (1.2ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = $1 ORDER BY "users"."id" ASC LIMIT $2[0m  [["id", 2], ["LIMIT", 1]]
+  Rendering decks/show.html.erb within layouts/application
+  Rendered layouts/_navbar.html.erb (2.8ms)
+  Rendered cards/_form.html.erb (6.9ms)
+  [1m[36mUser Load (0.5ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = $1 LIMIT $2[0m  [["id", 2], ["LIMIT", 1]]
+  Rendered cards/_form.html.erb (5.6ms)
+  [1m[36mCard Load (0.5ms)[0m  [1m[34mSELECT "cards".* FROM "cards" WHERE "cards"."deck_id" = $1[0m  [["deck_id", 17]]
+  Rendered decks/show.html.erb within layouts/application (28.5ms)
+  Rendered application/_favicon.html.erb (9.7ms)
+Completed 200 OK in 221ms (Views: 210.2ms | ActiveRecord: 3.4ms)
+
+
+Started GET "/Root/decks/17" for ::1 at 2016-08-22 19:51:09 +0800
+Processing by DecksController#show as HTML
+  Parameters: {"username"=>"Root", "id"=>"17"}
+  [1m[36mDeck Load (0.5ms)[0m  [1m[34mSELECT  "decks".* FROM "decks" WHERE "decks"."id" = $1 LIMIT $2[0m  [["id", 17], ["LIMIT", 1]]
+  [1m[36mUser Load (0.4ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."username" = $1 LIMIT $2[0m  [["username", "Root"], ["LIMIT", 1]]
+  [1m[36mUser Load (0.8ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = $1 ORDER BY "users"."id" ASC LIMIT $2[0m  [["id", 2], ["LIMIT", 1]]
+  Rendering decks/show.html.erb within layouts/application
+  Rendered layouts/_navbar.html.erb (4.2ms)
+  Rendered cards/_form.html.erb (6.6ms)
+  [1m[36mUser Load (0.7ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = $1 LIMIT $2[0m  [["id", 2], ["LIMIT", 1]]
+  Rendered cards/_form.html.erb (6.7ms)
+  [1m[36mCard Load (0.6ms)[0m  [1m[34mSELECT "cards".* FROM "cards" WHERE "cards"."deck_id" = $1[0m  [["deck_id", 17]]
+  Rendered decks/show.html.erb within layouts/application (32.6ms)
+  Rendered application/_favicon.html.erb (10.5ms)
+Completed 200 OK in 255ms (Views: 246.0ms | ActiveRecord: 3.1ms)
+
+
+Started GET "/Root/decks/17" for ::1 at 2016-08-22 19:53:03 +0800
+Processing by DecksController#show as HTML
+  Parameters: {"username"=>"Root", "id"=>"17"}
+  [1m[36mDeck Load (1.5ms)[0m  [1m[34mSELECT  "decks".* FROM "decks" WHERE "decks"."id" = $1 LIMIT $2[0m  [["id", 17], ["LIMIT", 1]]
+  [1m[36mUser Load (1.2ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."username" = $1 LIMIT $2[0m  [["username", "Root"], ["LIMIT", 1]]
+  [1m[36mUser Load (0.8ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = $1 ORDER BY "users"."id" ASC LIMIT $2[0m  [["id", 2], ["LIMIT", 1]]
+  Rendering decks/show.html.erb within layouts/application
+  Rendered layouts/_navbar.html.erb (4.6ms)
+  Rendered cards/_form.html.erb (10.9ms)
+  [1m[36mUser Load (4.6ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = $1 LIMIT $2[0m  [["id", 2], ["LIMIT", 1]]
+  Rendered cards/_form.html.erb (6.1ms)
+  [1m[36mCard Load (0.5ms)[0m  [1m[34mSELECT "cards".* FROM "cards" WHERE "cards"."deck_id" = $1[0m  [["deck_id", 17]]
+  Rendered decks/show.html.erb within layouts/application (57.3ms)
+  Rendered application/_favicon.html.erb (12.3ms)
+Completed 200 OK in 296ms (Views: 280.2ms | ActiveRecord: 8.5ms)
+
+
+Started GET "/Root/decks/17" for ::1 at 2016-08-22 19:53:18 +0800
+Processing by DecksController#show as HTML
+  Parameters: {"username"=>"Root", "id"=>"17"}
+  [1m[36mDeck Load (0.6ms)[0m  [1m[34mSELECT  "decks".* FROM "decks" WHERE "decks"."id" = $1 LIMIT $2[0m  [["id", 17], ["LIMIT", 1]]
+  [1m[36mUser Load (0.4ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."username" = $1 LIMIT $2[0m  [["username", "Root"], ["LIMIT", 1]]
+  [1m[36mUser Load (0.5ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = $1 ORDER BY "users"."id" ASC LIMIT $2[0m  [["id", 2], ["LIMIT", 1]]
+  Rendering decks/show.html.erb within layouts/application
+  Rendered layouts/_navbar.html.erb (3.3ms)
+  Rendered cards/_form.html.erb (5.3ms)
+  [1m[36mUser Load (0.5ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = $1 LIMIT $2[0m  [["id", 2], ["LIMIT", 1]]
+  Rendered cards/_form.html.erb (4.2ms)
+  [1m[36mCard Load (0.6ms)[0m  [1m[34mSELECT "cards".* FROM "cards" WHERE "cards"."deck_id" = $1[0m  [["deck_id", 17]]
+  Rendered decks/show.html.erb within layouts/application (25.2ms)
+  Rendered application/_favicon.html.erb (7.0ms)
+Completed 200 OK in 111ms (Views: 104.0ms | ActiveRecord: 2.7ms)
+
+

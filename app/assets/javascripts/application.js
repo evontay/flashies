@@ -41,10 +41,23 @@ $(document).on('turbolinks:load', function () {
     $('#normal-mode').toggleClass('hidden')
   })
 
-  $('#demo5').scrollbox({
-    direction: 'h',
-    distance: 520
-  })
+  var mq = window.matchMedia('(min-width: 800px)')
+  if (mq.matches) {
+    // window width is at least 800px
+    console.log('dist: 520')
+    $('#demo5').scrollbox({
+      direction: 'h',
+      distance: 520
+    })
+  } else {
+    // window width is less than 800px
+    console.log('dist: 270')
+    $('#demo5').scrollbox({
+      direction: 'h',
+      distance: 270
+    })
+  }
+
   $('#demo5-backward').click(function () {
     $('#demo5').trigger('backward')
   })
