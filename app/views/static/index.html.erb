@@ -4,12 +4,16 @@
 
     <img class="home-logo" src="<%= asset_path('flashieslogo_dark.svg')%>"/>
 
-    <h3 class="blue em bottompad toppad">Quick way to memorise things.</h3>
+    <h3 class="tagline">Quick way to memorise things.</h3>
 
     <% if user_signed_in? %>
-      <%= link_to 'My Decks', decks_path, class: 'start' %>
+      <%= link_to decks_path do %>
+        <div class="start">My Decks</div>
+      <% end %>
     <% else %>
-      <%= link_to 'Get Started', new_user_registration_path, class: 'start' %>
+      <%= link_to new_user_registration_path do %>
+        <div class="start">Get Started</div>
+      <% end %>
     <% end %>
 
     <div class="intro">

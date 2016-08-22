@@ -37201,3 +37201,159 @@ Processing by StaticController#index as HTML
 Completed 200 OK in 4203ms (Views: 4199.7ms | ActiveRecord: 0.8ms)
 
 
+Started GET "/" for ::1 at 2016-08-23 00:47:33 +0800
+Processing by StaticController#index as HTML
+  Rendering static/index.html.erb within layouts/application
+  [1m[36mUser Load (19.3ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = $1 ORDER BY "users"."id" ASC LIMIT $2[0m  [["id", 2], ["LIMIT", 1]]
+  Rendered layouts/_navbar.html.erb (59.1ms)
+  Rendered static/index.html.erb within layouts/application (84.9ms)
+  Rendered application/_favicon.html.erb (14.3ms)
+Completed 200 OK in 3559ms (Views: 3524.3ms | ActiveRecord: 19.3ms)
+
+
+Started GET "/" for ::1 at 2016-08-23 01:27:15 +0800
+Processing by StaticController#index as HTML
+  Rendering static/index.html.erb within layouts/application
+  [1m[36mUser Load (2.3ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = $1 ORDER BY "users"."id" ASC LIMIT $2[0m  [["id", 2], ["LIMIT", 1]]
+  Rendered layouts/_navbar.html.erb (37.7ms)
+  Rendered static/index.html.erb within layouts/application (61.3ms)
+  Rendered application/_favicon.html.erb (9.2ms)
+Completed 200 OK in 3315ms (Views: 3302.1ms | ActiveRecord: 2.2ms)
+
+
+Started GET "/" for ::1 at 2016-08-23 01:29:36 +0800
+Processing by StaticController#index as HTML
+  Rendering static/index.html.erb within layouts/application
+  [1m[36mUser Load (1.9ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = $1 ORDER BY "users"."id" ASC LIMIT $2[0m  [["id", 2], ["LIMIT", 1]]
+  Rendered layouts/_navbar.html.erb (8.2ms)
+  Rendered static/index.html.erb within layouts/application (15.8ms)
+  Rendered application/_favicon.html.erb (10.8ms)
+Completed 200 OK in 2828ms (Views: 2823.0ms | ActiveRecord: 1.9ms)
+
+
+Started GET "/" for ::1 at 2016-08-23 01:29:48 +0800
+Processing by StaticController#index as HTML
+  Rendering static/index.html.erb within layouts/application
+  [1m[36mUser Load (0.9ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = $1 ORDER BY "users"."id" ASC LIMIT $2[0m  [["id", 2], ["LIMIT", 1]]
+  Rendered layouts/_navbar.html.erb (5.4ms)
+  Rendered static/index.html.erb within layouts/application (10.1ms)
+  Rendered application/_favicon.html.erb (7.2ms)
+Completed 200 OK in 79ms (Views: 76.4ms | ActiveRecord: 0.9ms)
+
+
+Started GET "/" for ::1 at 2016-08-23 01:30:11 +0800
+Processing by StaticController#index as HTML
+  Rendering static/index.html.erb within layouts/application
+  [1m[36mUser Load (1.6ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = $1 ORDER BY "users"."id" ASC LIMIT $2[0m  [["id", 2], ["LIMIT", 1]]
+  Rendered layouts/_navbar.html.erb (7.0ms)
+  Rendered static/index.html.erb within layouts/application (13.8ms)
+  Rendered application/_favicon.html.erb (13.7ms)
+Completed 200 OK in 136ms (Views: 131.9ms | ActiveRecord: 1.6ms)
+
+
+Started GET "/" for ::1 at 2016-08-23 01:30:29 +0800
+Processing by StaticController#index as HTML
+  Rendering static/index.html.erb within layouts/application
+  [1m[36mUser Load (2.2ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = $1 ORDER BY "users"."id" ASC LIMIT $2[0m  [["id", 2], ["LIMIT", 1]]
+  Rendered layouts/_navbar.html.erb (7.5ms)
+  Rendered static/index.html.erb within layouts/application (14.2ms)
+  Rendered application/_favicon.html.erb (13.5ms)
+Completed 200 OK in 2948ms (Views: 2942.6ms | ActiveRecord: 2.2ms)
+
+
+Started GET "/decks" for ::1 at 2016-08-23 01:30:36 +0800
+Processing by DecksController#index as HTML
+  [1m[36mUser Load (2.0ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = $1 ORDER BY "users"."id" ASC LIMIT $2[0m  [["id", 2], ["LIMIT", 1]]
+  Rendering decks/index.html.erb within layouts/application
+  Rendered layouts/_navbar.html.erb (4.4ms)
+  Rendered decks/_form.html.erb (16.5ms)
+  Rendered decks/_form.html.erb (6.5ms)
+  [1m[36mDeck Load (4.4ms)[0m  [1m[34mSELECT "decks".* FROM "decks" WHERE "decks"."user_id" = 2[0m
+  Rendered decks/index.html.erb within layouts/application (57.4ms)
+  Rendered application/_favicon.html.erb (10.6ms)
+Completed 200 OK in 175ms (Views: 159.8ms | ActiveRecord: 6.4ms)
+
+
+Started GET "/" for ::1 at 2016-08-23 01:30:43 +0800
+Processing by StaticController#index as HTML
+  Rendering static/index.html.erb within layouts/application
+  [1m[36mUser Load (1.0ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = $1 ORDER BY "users"."id" ASC LIMIT $2[0m  [["id", 2], ["LIMIT", 1]]
+  Rendered layouts/_navbar.html.erb (6.6ms)
+  Rendered static/index.html.erb within layouts/application (15.1ms)
+  Rendered application/_favicon.html.erb (6.6ms)
+Completed 200 OK in 2996ms (Views: 2991.8ms | ActiveRecord: 1.0ms)
+
+
+Started GET "/" for ::1 at 2016-08-23 01:31:12 +0800
+Processing by StaticController#index as HTML
+  Rendering static/index.html.erb within layouts/application
+  [1m[36mUser Load (0.9ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = $1 ORDER BY "users"."id" ASC LIMIT $2[0m  [["id", 2], ["LIMIT", 1]]
+  Rendered layouts/_navbar.html.erb (5.9ms)
+  Rendered static/index.html.erb within layouts/application (12.6ms)
+  Rendered application/_favicon.html.erb (9.2ms)
+Completed 200 OK in 2762ms (Views: 2758.8ms | ActiveRecord: 0.9ms)
+
+
+Started GET "/" for ::1 at 2016-08-23 01:31:47 +0800
+Processing by StaticController#index as HTML
+  Rendering static/index.html.erb within layouts/application
+  [1m[36mUser Load (2.5ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = $1 ORDER BY "users"."id" ASC LIMIT $2[0m  [["id", 2], ["LIMIT", 1]]
+  Rendered layouts/_navbar.html.erb (7.9ms)
+  Rendered static/index.html.erb within layouts/application (16.7ms)
+  Rendered application/_favicon.html.erb (10.4ms)
+Completed 200 OK in 2653ms (Views: 2648.0ms | ActiveRecord: 2.5ms)
+
+
+Started GET "/" for ::1 at 2016-08-23 01:33:16 +0800
+Processing by StaticController#index as HTML
+  Rendering static/index.html.erb within layouts/application
+  [1m[36mUser Load (0.6ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = $1 ORDER BY "users"."id" ASC LIMIT $2[0m  [["id", 2], ["LIMIT", 1]]
+  Rendered layouts/_navbar.html.erb (4.7ms)
+  Rendered static/index.html.erb within layouts/application (11.0ms)
+  Rendered application/_favicon.html.erb (14.6ms)
+Completed 200 OK in 2715ms (Views: 2712.0ms | ActiveRecord: 0.6ms)
+
+
+Started GET "/" for ::1 at 2016-08-23 01:33:43 +0800
+Processing by StaticController#index as HTML
+  Rendering static/index.html.erb within layouts/application
+  [1m[36mUser Load (0.8ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = $1 ORDER BY "users"."id" ASC LIMIT $2[0m  [["id", 2], ["LIMIT", 1]]
+  Rendered layouts/_navbar.html.erb (5.9ms)
+  Rendered static/index.html.erb within layouts/application (11.8ms)
+  Rendered application/_favicon.html.erb (9.1ms)
+Completed 200 OK in 2752ms (Views: 2748.9ms | ActiveRecord: 0.8ms)
+
+
+Started GET "/" for ::1 at 2016-08-23 01:34:10 +0800
+Processing by StaticController#index as HTML
+  Rendering static/index.html.erb within layouts/application
+  [1m[36mUser Load (1.6ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = $1 ORDER BY "users"."id" ASC LIMIT $2[0m  [["id", 2], ["LIMIT", 1]]
+  Rendered layouts/_navbar.html.erb (39.9ms)
+  Rendered static/index.html.erb within layouts/application (60.3ms)
+  Rendered application/_favicon.html.erb (16.3ms)
+Completed 200 OK in 7529ms (Views: 7514.1ms | ActiveRecord: 1.6ms)
+
+
+Started GET "/" for ::1 at 2016-08-23 01:35:25 +0800
+Processing by StaticController#index as HTML
+  Rendering static/index.html.erb within layouts/application
+  [1m[36mUser Load (1.1ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = $1 ORDER BY "users"."id" ASC LIMIT $2[0m  [["id", 2], ["LIMIT", 1]]
+  Rendered layouts/_navbar.html.erb (5.5ms)
+  Rendered static/index.html.erb within layouts/application (11.0ms)
+  Rendered application/_favicon.html.erb (8.3ms)
+Completed 200 OK in 2808ms (Views: 2805.4ms | ActiveRecord: 1.1ms)
+
+
+Started GET "/decks" for ::1 at 2016-08-23 01:36:00 +0800
+Processing by DecksController#index as HTML
+  [1m[36mUser Load (1.1ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = $1 ORDER BY "users"."id" ASC LIMIT $2[0m  [["id", 2], ["LIMIT", 1]]
+  Rendering decks/index.html.erb within layouts/application
+  Rendered layouts/_navbar.html.erb (3.5ms)
+  Rendered decks/_form.html.erb (32.1ms)
+  Rendered decks/_form.html.erb (14.7ms)
+  [1m[36mDeck Load (0.9ms)[0m  [1m[34mSELECT "decks".* FROM "decks" WHERE "decks"."user_id" = 2[0m
+  Rendered decks/index.html.erb within layouts/application (71.6ms)
+  Rendered application/_favicon.html.erb (8.8ms)
+Completed 200 OK in 205ms (Views: 198.3ms | ActiveRecord: 1.9ms)
+
+
