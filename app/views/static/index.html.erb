@@ -4,7 +4,13 @@
 
     <img class="home-logo" src="<%= asset_path('flashieslogo_dark.svg')%>"/>
 
-    <h5 class="blue em bottompad toppad">Quick way to memorise things.</h5>
+    <h3 class="blue em bottompad toppad">Quick way to memorise things.</h3>
+
+    <% if user_signed_in? %>
+      <%= link_to 'My Decks', decks_path, class: 'start' %>
+    <% else %>
+      <%= link_to 'Get Started', new_user_registration_path, class: 'start' %>
+    <% end %>
 
     <div class="intro">
       <div class="home-deck">
@@ -26,12 +32,6 @@
       </div>
     </div>
 
-    <div class="start">
-      <% if user_signed_in? %>
-        <%= link_to 'My Decks', decks_path %>
-      <% else %>
-        <%= link_to 'Get Started', new_user_registration_path %>
-      <% end %>
-    </div>
+
   </div>
 </div>

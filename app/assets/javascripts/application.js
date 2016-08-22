@@ -24,6 +24,8 @@ $(document).on('turbolinks:load', function () {
 
   })
 
+  $('.alert').fadeIn().delay(2000).fadeOut('slow')
+
   $('#cancel').click(function () {
     console.log('cancel clicked')
     $('.deck-form').addClass('hidden')

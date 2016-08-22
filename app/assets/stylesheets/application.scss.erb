@@ -114,11 +114,34 @@ h6 {font-size: 1.3em;}
   color: $darkblue;
   background-color: transparent;
 
-  .pad {padding: 15px 15px;}
+  .pad {
+    padding: 15px 0;
+    margin: 0 15px;
+  }
 
-  a {color: $pink;}
+  a {
+    color: $pink;
+    border-bottom: 2px solid transparent;
+  }
 
-  a:hover {border-bottom: 2px solid $blue;}
+  a:hover {
+    border-bottom: 2px solid $blue;
+  }
+}
+
+.navbar-brand {
+    float: left;
+    padding: 15px 15px;
+    font-size: 18px;
+    line-height: 20px;
+    height: 60px;
+}
+
+@media (min-width: 768px) {
+.navbar-nav > li > a {
+    padding: 15px 0;
+    margin: 0 15px;
+  }
 }
 
 // DEVISE FORMS ===================
@@ -161,13 +184,17 @@ h6 {font-size: 1.3em;}
 
 .home {
 
+  h3 {
+    font-weight: 600;
+    margin-bottom: 30px;
+  }
   h5 {
     font-weight: 600;
     letter-spacing: 1px;
   }
 
   .wrapper {
-    padding: 70px 0;
+    padding: 40px 0;
     text-align: center;
   }
 
@@ -177,7 +204,7 @@ h6 {font-size: 1.3em;}
 }
 
 .intro {
-  margin: 0 auto;
+  margin: 30px auto;
   max-width: 90%;
   display: inline;
   display: flex;
@@ -209,16 +236,17 @@ h6 {font-size: 1.3em;}
 }
 
 .start {
-  border: 2px solid $blue;
-  color: $blue;
-  padding: 10px;
-  max-width: 150px;
-  margin: 50px auto;
+  border: 2px solid $pink;
+  color: $pink;
+  padding: 15px;
+  min-width: 200px;
+  margin: 30px auto;
+  font-size: 1.4em;
 }
 
 .start:hover{
-  color: $pink;
-  border: 2px solid $pink;
+  color: $blue;
+  border: 2px solid $blue;
   text-decoration: none;
   -webkit-transition: 0.2s ease-out;
   -moz-transition: 0.2s ease-out;
@@ -226,7 +254,7 @@ h6 {font-size: 1.3em;}
 }
 
 .start a:hover {
-  color: $pink;
+  color: $blue;
   text-decoration: none;}
 // DECK INDEX ===================
 
@@ -509,6 +537,18 @@ h6 {font-size: 1.3em;}
 // CARD FLIP ========
 
 @media screen and (max-width: 430px) {
+  .navbar-nav {
+    margin: 10px;
+    text-align: center;
+  }
+  .nav > li {
+      position: relative;
+      display: block;
+      border-bottom: 1px solid $blue;
+  }
+  .home .wrapper h3 {font-size: 1.4em;}
+  .home-logo {max-width: 60%;}
+  .navbar-brand {display: none;}
   .wrapper {padding: 5px !important;}
   .start {margin: 10px auto !important;}
   .directions {padding:0 !important;}
